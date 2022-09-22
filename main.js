@@ -104,7 +104,7 @@ __webpack_require__.r(__webpack_exports__);
 // When building for production, this file is replaced with `environment.prod.ts`.
 const environment = {
   production: false,
-  firebaseProject: ({"NODE_ENV":"development","NX_CLI_SET":"true","NX_WORKSPACE_ROOT":"/Users/user/Projects/monorepo","NX_TERMINAL_OUTPUT_PATH":"/Users/user/Projects/monorepo/node_modules/.cache/nx/terminalOutputs/7125618b29c914fff7dd84ed9be9b51585d9cd7284e3a02165870376d3d483b4","NX_STREAM_OUTPUT":"true","NX_TASK_TARGET_PROJECT":"mockup","NX_TASK_HASH":"7125618b29c914fff7dd84ed9be9b51585d9cd7284e3a02165870376d3d483b4"}).NX_FIREBASE_PROJECT || "MedDBriefer",
+  firebaseProject: ({"NODE_ENV":"development","NX_CLI_SET":"true","NX_WORKSPACE_ROOT":"/Users/user/Projects/monorepo","NX_TERMINAL_OUTPUT_PATH":"/Users/user/Projects/monorepo/node_modules/.cache/nx/terminalOutputs/daf65d34e920dd85bd25550e6f220b9ee8bd0af9d51259e2b7a1d9f7c062855b","NX_STREAM_OUTPUT":"true","NX_TASK_TARGET_PROJECT":"mockup","NX_TASK_HASH":"daf65d34e920dd85bd25550e6f220b9ee8bd0af9d51259e2b7a1d9f7c062855b"}).NX_FIREBASE_PROJECT || "MedDBriefer",
   classCode: "demo"
 };
 
@@ -578,8 +578,8 @@ const annotateInputEvents = (events, problems) => {
   let phaseObjects = [];
   let trackForStatus = {}; //save correct interventions that were done that require status checks later
   //let altFound = undefined   //can have only one set of alternative interventions per problem
-  // phases entry of that name and then use that index to retrieve the appropriate phase entried to
-  //add on the missing items (assessment or intervention) for that phase
+  // will create a phases entry of that name in phaseNames and then use that index to retrieve the appropriate phase entry
+  //in structure phases to add on the missing items (assessment or intervention) for that phase
 
   let priorPhase = "";
   let parentPhase = "";
@@ -860,23 +860,19 @@ const annotateInputEvents = (events, problems) => {
 
         let variant;
 
-        if (!!event.intvVariant) {
-          variant = (0,_meddbriefer_scenario_data__WEBPACK_IMPORTED_MODULE_0__.intvVariant2JSON)(event.intvVariant);
+        if (!!event.intvVariant && typeof event.intvVariant === 'string' && event.intvVariant !== "{}") {
+          let origVariant = JSON.parse(event.intvVariant); //intvVariant2JSON(event.intvVariant)}
+
+          let key = Object.keys(origVariant)[0];
+          let val = origVariant[key][0];
+          variant = "{\"" + key + "\":\"" + val + "\"}";
         } else {
           variant = "{}";
-        }
+        } //intvVariant2JSON({})} 
+
 
         let prescribedAnswers = (0,_meddebriefer_prompt_answer_grading__WEBPACK_IMPORTED_MODULE_8__.getPrescribedInvAnswers)(event.interventionID, variant);
-        eventObj = (0,_meddebriefer_prompt_answer_grading__WEBPACK_IMPORTED_MODULE_8__.processAnswers)(event, eventObj, prescribedAnswers, "incorrect-answers");
-
-        if (!eventObj.answerCorrect) {
-          if (eventObj.incorrectAnswersFB) {
-            eventObj.incorrectAnswersFB = eventObj.incorrectAnswersFB + ", and " + correctAnswerLabel;
-          } else {
-            eventObj.incorrectAnswersFB = correctAnswerLabel;
-          }
-        } //anything with leftover status of intervention means it wasn't part of the solution
-
+        eventObj = (0,_meddebriefer_prompt_answer_grading__WEBPACK_IMPORTED_MODULE_8__.processInterventionAnswers)(event, eventObj, prescribedAnswers, "incorrect-answers"); //anything with leftover status of intervention means it wasn't part of the solution
 
         if (eventObj.status === "intervention") {
           eventObj.status = "irrelevant";
@@ -885,7 +881,13 @@ const annotateInputEvents = (events, problems) => {
 
       if (eventObj.type === "decision-option") {
         let prescribedAnswers = scenario.checkListCorrectness;
-        eventObj = (0,_meddebriefer_prompt_answer_grading__WEBPACK_IMPORTED_MODULE_8__.processAnswers)(event, eventObj, prescribedAnswers, "decision-option-incorrect");
+        let parentItem = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_1__.getItem)(event.parentID, itemByID, itemByLabel);
+
+        if (parentItem) {
+          event.parentLabel = parentItem.label;
+        }
+
+        eventObj = (0,_meddebriefer_prompt_answer_grading__WEBPACK_IMPORTED_MODULE_8__.processAssessmentAnswers)(event, eventObj, prescribedAnswers, "decision-option-incorrect");
 
         if (!eventObj.answerCorrect) {
           eventObj.incorrectAnswersFB = "You should have responded " + eventObj.incorrectAnswersFB;
@@ -894,7 +896,13 @@ const annotateInputEvents = (events, problems) => {
 
       if (eventObj.type === "assessment-option") {
         let prescribedAnswers = scenario.checkListCorrectness;
-        eventObj = (0,_meddebriefer_prompt_answer_grading__WEBPACK_IMPORTED_MODULE_8__.processAnswers)(event, eventObj, prescribedAnswers, "assessment-option-incorrect");
+        let parentItem = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_1__.getItem)(event.parentID, itemByID, itemByLabel);
+
+        if (parentItem) {
+          event.parentLabel = parentItem.label;
+        }
+
+        eventObj = (0,_meddebriefer_prompt_answer_grading__WEBPACK_IMPORTED_MODULE_8__.processAssessmentAnswers)(event, eventObj, prescribedAnswers, "assessment-option-incorrect");
 
         if (!eventObj.answerCorrect) {
           eventObj.incorrectAnswersFB = "You should have responded " + eventObj.incorrectAnswersFB;
@@ -1069,13 +1077,16 @@ const checkForMissingAssessments = (problems, events, confirmedEvents, phaseName
         "assessmentFB": "",
         "timestamp": -1
       }; //copy over the step fields that exist (type dependent)
+      //does prompt does exist in checlistSteps???  9/20/22
 
-      const STEP_FIELDS = ["id", "label", "finding", "phase", "subPhase", "type", "prompt"];
+      const STEP_FIELDS = ["id", "label", "phase", "subPhase", "type", "prompt"];
       STEP_FIELDS.forEach(fldName => {
         if (!!cls[fldName]) {
           phaseObject[fldName] = cls[fldName];
         }
       });
+      let assessments = scenario.assessmentFindings;
+      phaseObject["finding"] = assessments[cls.id];
       let item;
 
       if (!!cls.subPhase) {
@@ -1111,6 +1122,11 @@ const checkForMissingAssessments = (problems, events, confirmedEvents, phaseName
 
       if (phaseObject.type === "required-action") {
         phaseObject.status = "missingRequiredAssessment";
+      } //assign special status for items marked as "not-graded"
+
+
+      if (!cls.graded) {
+        phaseObject.status = "not-graded";
       }
 
       (0,_actionInsertion__WEBPACK_IMPORTED_MODULE_3__.insertInPhaseRelativeToSuggestedOrder)(phaseNames, phases, phaseObject, checklistSteps, i, confirmedEvents, checklistHierarchy, requiredPhaseNames, requiredSubphases, phaseRequiredAtEnd); //insertInPhaseInOrder(phaseNames, phases, phaseObject, i);
@@ -10591,7 +10607,9 @@ const conditionalConstraints = {
     afterOp: "",
     type: "leafA"
   }
-}; // used to simulate conditional constraints, i.e. we hardcode which conditional constraint ids as
+}; //pre-post test problems: M2CA, B7CA, B1CA, M1CA  (need data filled out in order to grade but don't need at time of running experiments w/ students)
+//training problems: B4CA, B5CA, C5CA, SC8CP
+// used to simulate conditional constraints, i.e. we hardcode which conditional constraint ids as
 // defined under conditionalConstraints (above) are relevant to each scenario
 // although one could put global constraint ids under scenarios here, it would be redundant and may cause software
 // issues
@@ -10743,23 +10761,35 @@ const globalReassessmentFeedback = {
 // not yet in use
 
 const vitalsTakenDueToAssessmentSteps = {
-  "GCS": [["assess-loc"], ["required-action-obtains-vitals"], ["request-vitals-GCS"]],
-  "Pain": [["assess-loc"], ["required-action-obtains-vitals"], ["request-vitals-Pain"]],
-  "R": [["breathing-checks-rate", "breathing-checks-rhythm", "breathing-checks-quality"], ["required-action-obtains-vitals"], ["request-vitals-R"]],
-  "P": [["checked-carotid-pulse", "checks-pulse-rate", "checks-pulse-rhythm", "checks-pulse-quality"], ["checked-radial-pulse", "checks-pulse-rate", "checks-pulse-rhythm", "checks-pulse-quality"], ["required-action-obtains-vitals"], ["request-vitals-P"]],
-  "Skin": [["checks-skin-color", "checks-skin-temperature", "checks-skin-condition"], ["required-action-obtains-vitals"], ["request-vitals-Skin"]],
-  "BP": [["required-action-obtains-vitals"], ["request-vitals-BP"]],
-  "Glucose": [["required-action-obtains-vitals"], ["request-vitals-Glucose"]],
-  "ETCO2": [["required-action-obtains-vitals"], ["request-vitals-ETCO2"]],
-  "SpO2": [["required-action-obtains-vitals"], ["request-vitals-Spo2"]],
-  "Temp": [["required-action-obtains-vitals"], ["request-vitals-Temp"]]
+  "GCS": [//["assess-loc"], ["required-action-obtains-vitals"],
+  ["request-vitals-GCS"]],
+  "Pain": [//["assess-loc"], ["required-action-obtains-vitals"], 
+  ["request-vitals-Pain"]],
+  "R": [//["breathing-checks-rate", "breathing-checks-rhythm", "breathing-checks-quality"], ["required-action-obtains-vitals"], 
+  ["request-vitals-R"]],
+  "P": [//["checked-carotid-pulse", "checks-pulse-rate", "checks-pulse-rhythm", "checks-pulse-quality"], ["checked-radial-pulse", "checks-pulse-rate", "checks-pulse-rhythm", "checks-pulse-quality"],["required-action-obtains-vitals"], 
+  ["request-vitals-P"]],
+  "Skin": [//["checks-skin-color", "checks-skin-temperature", "checks-skin-condition"], ["required-action-obtains-vitals"], 
+  ["request-vitals-Skin"]],
+  "BP": [//["required-action-obtains-vitals"], 
+  ["request-vitals-BP"]],
+  "Glucose": [//["required-action-obtains-vitals"], 
+  ["request-vitals-Glucose"]],
+  "ETCO2": [//["required-action-obtains-vitals"], 
+  ["request-vitals-ETCO2"]],
+  "SpO2": [//["required-action-obtains-vitals"], 
+  ["request-vitals-Spo2"]],
+  "Temp": [//["required-action-obtains-vitals"], 
+  ["request-vitals-Temp"]]
 }; //per scenario sets of interventions that satisfy completion of critical actions for that scenario
 
 const criticalInterventions = {
+  //training scenarios
   B4CA: [["intv-supplemental-oxygen-device-nasal-cannula"], ["intv-supplemental-oxygen-device-non-rebreather-mask"]],
   B5CA: [["intv-supplemental-oxygen-device-non-rebreather-mask", "intv-occlusive-dressing", "intv-pleural-decompression"], ["intv-ventilation-technique-bag-valve-mask", "intv-occlusive-dressing", "intv-pleural-decompression"]],
   C5CA: [["intv-control-severe-bleeding-technique-direct-pressure", "intv-control-severe-bleeding-technique-tourniquet", "intv-nasopharyngeal-airway", "intv-ventilation-technique-bag-valve-mask", "intv-control-shock-technique-administer-iv-boluses"]],
   SC8CP: [["intv-open-airway-method-modified-jaw-thrust", "intv-airway-patency-technique-suction-airway", "intv-oropharyngeal-airway", "intv-orotracheal-intubation", "intv-ventilation-technique-bag-valve-mask"], ["intv-open-airway-method-modified-jaw-thrust", "intv-airway-patency-technique-suction-airway", "intv-nasopharyngeal-airway", "intv-orotracheal-intubation", "intv-ventilation-technique-bag-valve-mask"]],
+  //test scenarios
   B1CA: [["intv-nasopharyngeal-airway", "intv-ventilation-technique-bag-valve-mask", "intv-pleural-decompression"]],
   M1CA: [["intv-occlusive-dressing", "intv-open-airway-method-modified-jaw-thrust", "intv-nasopharyngeal-airway", "intv-sedation-assisted-intubation", "intv-ventilation-technique-bag-valve-mask"]],
   M2CA: [["intv-control-severe-bleeding-technique-direct-pressure", "intv-control-severe-bleeding-technique-tourniquet", "intv-open-airway-method-modified-jaw-thrust", "intv-sedation-assisted-intubation", "intv-nasopharyngeal-airway", "intv-ventilation-technique-bag-valve-mask", "intv-control-shock-technique-administer-iv-boluses"]],
@@ -10769,23 +10799,25 @@ const criticalInterventions = {
 //always want the completely good value as an effect)
 
 const intvStatusRules = {
+  //training scenarios
   B4CA: [],
   B5CA: [],
   C5CA: [],
   SC8CP: {
-    "intv-open-airway-method-modified-jaw-thrust": [["airway-has-intact-physical-structures", "patent"]],
-    "intv-airway-patency-technique-suction-airway": [["airway-is-open", "open"], ["inspects-mouth-fluids", "clear"]],
+    "intv-open-airway-method-modified-jaw-thrust": [["airway-has-intact-physical-structures", "intact"]],
+    "intv-airway-patency-technique-suction-airway": [["airway-is-open", "open"], ["inspects-mouth", "clear"], ["inspects-mouth-fluids", "clear"]],
     "intv-oropharyngeal-airway": [[]],
     "intv-orotracheal-intubation": [["breathing-checks-rate", "WNL"], ["breathing-checks-quality", "WNL"]],
     "intv-ventilation-technique-bag-valve-mask": [[]],
     "intv-nasopharyngeal-airway": [[]]
   },
+  //test scenarios
   B1CA: [],
   M1CA: [],
   M2CA: [],
   B7CA: []
 }; //all below is just for my editing purposes in the above structures
-//commented out ones that don't impact assessment findings
+//commented out ones that I don't impact assessment findings
 
 const interventions = ["intv-open-airway-method-head-tilt", "intv-open-airway-method-modified-jaw-thrust", "intv-airway-patency-technique-suction-airway", "intv-manual-finger-sweep", "intv-magill-forceps-assisted", "intv-heimlich-maneuver", "intv-back-blows-and-chest-thrusts", "intv-oropharyngeal-airway", "intv-nasopharyngeal-airway", "intv-orotracheal-intubation", "intv-nasotracheal-intubation", //"intv-rapid-sequence-intubation",
 "intv-sedation-assisted-intubation", "intv-needle-cricothyrotomy", "intv-surgical-cricothyrotomy", "intv-supplemental-oxygen-device-nasal-cannula", "intv-supplemental-oxygen-device-non-rebreather-mask", "intv-ventilation-technique-bag-valve-mask", "intv-control-severe-bleeding-technique-direct-pressure", "intv-control-severe-bleeding-technique-tourniquet", "intv-control-severe-bleeding-technique-2nd-tourniquet", "intv-control-severe-bleeding-technique-pack-wound-with-gauze", "intv-control-severe-bleeding-technique-pressure-bandage", //"intv-control-severe-bleeding-technique-load-and-go",
@@ -10865,6 +10897,7 @@ const fbTemplatesDef = {
   "misOrdered-redundant": ["Problem", "Redundant intervention +bos You already did an alternative to this: @redundantToFB +eos"],
   //don't give additional feedback on redudant intervention
   "misOrdered-goodIntv": ["Problem", "Mistimed intervention +bos @orderingFB"],
+  "not-graded": ["Caution", "Not reported +bos You would have been told that the finding for @label was @finding +eos"],
   //once software re-written to optimaize all design changes, this section should be condensed to just
   //"misOrdered-phase": ["Problem", "Section not completed before starting another +bos @orderingFB +eos"]
   //since we are no longer placing the phase feedback in the first item of a phase
@@ -10935,7 +10968,7 @@ const phaseStatusList = {
   errors: ["redundant", "misOrdered-redundant", "redundant-incorrect-answers", "misOrdered-redundant-incorrect-answers", "misOrdered-assessment", "misOrdered-assessment-option", "misOrdered-decision-option", "misOrdered-required-action", "misOrdered-goodIntv", "assessment-option-incorrect", "decision-option-incorrect", "incorrect-answers", "minimal-incorrect-answers", //"minimal", 
   "misOrdered-assessment-option-incorrect", "misOrdered-decision-option-incorrect", "misOrdered-incorrect-answers", "misOrdered-minimal-incorrect-answers", "misOrdered-minimal", "irrelevant", "unnecessary", "contraindicated", "errors", "misOrdered-irrelevant", "misOrdered-alternative", "misOrdered-unnecessary", "midOrdered-contraindicated", "error", "misordered", "misordered-error", "misOrdered-phase-assessment-option-incorrect", "misOrdered-phase-decision-option-incorrect", "misOrdered-phase-incorrect-answers", "misOrdered-phase-minimal-incorrect-answers"],
   good: ["good", "assessment", "assessment-option", "decision-option", "required-action", "goodIntv", "optional", //condition 2 does not address these so put them in the good category
-  "patientIntvCheck", "patientVitalCheck", "notNecessary", "notFound", "intvCheckWNoIntvFound", "unexpectedPatientIntvCheck", "default", //condition 2 does not need to address minimal as an error nor misordered-phase as that error appears as misordered at the phase or subphase level
+  "patientIntvCheck", "patientVitalCheck", "notNecessary", "notFound", "intvCheckWNoIntvFound", "unexpectedPatientIntvCheck", "default", "not-graded", //condition 2 does not need to address minimal as an error nor misordered-phase as that error appears as misordered at the phase or subphase level
   //condition 1 uses misOrdered-Phase as that error feedback goes on the first line in the phase/subphase
   //so without misOrdered-phase and/or minimal, these are good status values
   "minimal", "misOrdered-phase-minimal", "misOrdered-phase-assessment", "misOrdered-phase-assessment-option", "misOrdered-phase-decision-option", "misOrdered-phase-required-action", "misOrdered-phase-goodIntv"]
@@ -10946,7 +10979,7 @@ const leafStatusList = {
   misorderedError: ["misOrdered-assessment-option-incorrect", "misOrdered-decision-option-incorrect", "misOrdered-incorrect-answers", "misOrdered-minimal-incorrect-answers", "misOrdered-phase-assessment-option-incorrect", "misOrdered-phase-decision-option-incorrect", "misOrdered-phase-incorrect-answers", "misOrdered-phase-minimal-incorrect-answers"],
   error: ["assessment-option-incorrect", "decision-option-incorrect", "incorrect-answers", "minimal-incorrect-answers", "contraindicated", "irrelevant", "unnecessary", "redundant", "redundant-incorrect-answers", "misOrdered-redundant", "misOrdered-redundant-incorrect-answers"],
   good: ["assessment", "assessment-option", "decision-option", "required-action", "goodIntv", "optional", //condition 2 does not address these so put them in the good category
-  "patientIntvCheck", "patientVitalCheck", "notNecessary", "intvCheckWNoIntvFound", "unexpectedPatientIntvCheck", "default", //condition 2 does not need to address minimal as an error nor misordered-phase as that error appears as misordered at the phase or subphase level
+  "patientIntvCheck", "patientVitalCheck", "notNecessary", "not-graded", "intvCheckWNoIntvFound", "unexpectedPatientIntvCheck", "default", //condition 2 does not need to address minimal as an error nor misordered-phase as that error appears as misordered at the phase or subphase level
   //condition 1 uses misOrdered-Phase as that error feedback goes on the first line in the phase/subphase
   //so without misOrdered-phase and/or minimal, these are good status values
   "minimal", "misOrdered-phase-minimal", "misOrdered-phase-assessment", "misOrdered-phase-assessment-option", "misOrdered-phase-decision-option", "misOrdered-phase-required-action", "misOrdered-phase-goodIntv"]
@@ -19468,11 +19501,10 @@ const logicalExprParser = new expressionparser__WEBPACK_IMPORTED_MODULE_0__.Expr
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "evalForIncorrectAnswer": () => (/* reexport safe */ _prompt_answer_grading__WEBPACK_IMPORTED_MODULE_0__.evalForIncorrectAnswer),
-/* harmony export */   "getAnswerLabel": () => (/* reexport safe */ _prompt_answer_grading__WEBPACK_IMPORTED_MODULE_0__.getAnswerLabel),
 /* harmony export */   "getPrescribedInvAnswers": () => (/* reexport safe */ _prompt_answer_grading__WEBPACK_IMPORTED_MODULE_0__.getPrescribedInvAnswers),
 /* harmony export */   "initializePromptAnswerGrading": () => (/* reexport safe */ _prompt_answer_grading__WEBPACK_IMPORTED_MODULE_0__.initializePromptAnswerGrading),
-/* harmony export */   "processAnswers": () => (/* reexport safe */ _prompt_answer_grading__WEBPACK_IMPORTED_MODULE_0__.processAnswers)
+/* harmony export */   "processAssessmentAnswers": () => (/* reexport safe */ _prompt_answer_grading__WEBPACK_IMPORTED_MODULE_0__.processAssessmentAnswers),
+/* harmony export */   "processInterventionAnswers": () => (/* reexport safe */ _prompt_answer_grading__WEBPACK_IMPORTED_MODULE_0__.processInterventionAnswers)
 /* harmony export */ });
 /* harmony import */ var _prompt_answer_grading__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1095);
 
@@ -19485,21 +19517,28 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "evalForIncorrectAnswer": () => (/* binding */ evalForIncorrectAnswer),
-/* harmony export */   "getAnswerLabel": () => (/* binding */ getAnswerLabel),
 /* harmony export */   "getPrescribedInvAnswers": () => (/* binding */ getPrescribedInvAnswers),
 /* harmony export */   "initializePromptAnswerGrading": () => (/* binding */ initializePromptAnswerGrading),
-/* harmony export */   "processAnswers": () => (/* binding */ processAnswers)
+/* harmony export */   "processAssessmentAnswers": () => (/* binding */ processAssessmentAnswers),
+/* harmony export */   "processInterventionAnswers": () => (/* binding */ processInterventionAnswers)
 /* harmony export */ });
 /* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15735);
 /* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6886);
 /* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(39529);
+/* harmony import */ var core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_modules_es_string_includes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(31235);
+/* harmony import */ var core_js_modules_es_string_includes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_includes_js__WEBPACK_IMPORTED_MODULE_3__);
+
+
 
 
 let answerIDs = [];
 let scenario;
+let prompts;
 function initializePromptAnswerGrading(scen) {
+  prompts = scen._interventionPrompts;
   getAnswerIDs(scen);
   scenario = scen;
   return 'prompt-answer-grading-initialized';
@@ -19510,6 +19549,15 @@ function getAnswerIDs(scen) {
     let answers = scen._interventionPromptAnswers;
     answers.forEach(answer => {
       answerIDs[answer.id] = answer.label;
+    });
+  }
+
+  if (scen._checkListMetaData) {
+    let entries = scen._checkListMetaData;
+    entries.forEach(entry => {
+      if (entry.type === "decision-option") {
+        answerIDs[entry.id] = entry.label;
+      }
     });
   }
 }
@@ -19530,34 +19578,77 @@ function isEmpty(obj) {
 //being annotated during analysis
 
 
-function processAnswers(eventIn, eventOut, prescribedAnswers, errorStatusVal) {
+function processAssessmentAnswers(eventIn, eventOut, prescribedAnswers, errorStatusVal) {
+  if (prescribedAnswers) {
+    let answerDetails;
+    let correctAnswerLabel;
+    let givenAnswerLabel;
+    eventOut.answerCorrect = true;
+    let promptID = eventIn.parentID;
+    let answerID = eventIn.id;
+    let correctAnswerID = prescribedAnswers[promptID];
+    correctAnswerLabel = getAnswerLabel(correctAnswerID);
+    givenAnswerLabel = getAnswerLabel(answerID);
+
+    if (correctAnswerLabel && givenAnswerLabel) {
+      let answerCorrect = answerID === prescribedAnswers[promptID]; //store details of this answer and its grading
+
+      answerDetails = {
+        "correctAnswer": correctAnswerLabel,
+        "givenAnswer": givenAnswerLabel,
+        "correct": answerCorrect
+      }; //storing the prompt/answer details
+
+      eventOut.answerDetails[promptID] = answerDetails; //eventOut.actionDescription = eventOut.actionDescription + ", " + givenAnswerLabel;
+
+      if (!answerCorrect) {
+        eventOut.answerCorrect = false;
+        eventOut.status = errorStatusVal;
+
+        if (eventOut.incorrectAnswersFB) {
+          eventOut.incorrectAnswersFB = eventOut.incorrectAnswersFB + ", and " + correctAnswerLabel;
+        } else {
+          eventOut.incorrectAnswersFB = correctAnswerLabel;
+        }
+      }
+    }
+  }
+
+  eventOut.id = eventIn.parentID;
+  eventOut.label = eventIn.parentLabel;
+  eventOut.actionDescription = eventOut.label;
+  return eventOut;
+} //eventIn is the observer log event and eventOut is the event
+//being annotated during analysis
+
+function processInterventionAnswers(eventIn, eventOut, prescribedAnswers, errorStatusVal) {
   if (!!eventIn.answers && prescribedAnswers && !isEmpty(eventIn.answers)) {
-    eventOut.answerCorrect = undefined;
     let answerDetails;
     let correctAnswerLabel;
     let givenAnswerLabel;
     eventOut.answerCorrect = true; // move through the given answers and compare to the prescribed answers
 
-    for (const [promptID, answerID] of Object.entries(eventIn.answers)) {
-      let correctAnswerID = prescribedAnswers[promptID];
-      correctAnswerLabel = getAnswerLabel(correctAnswerID);
-      givenAnswerLabel = getAnswerLabel(answerID);
+    for (const [promptID, answerEntry] of Object.entries(eventIn.answers)) {
+      let answerType = getSelectionType(promptID);
+      let answerIDs = answerEntry; //let answerID = answerIDs[0]
 
-      if (!correctAnswerLabel || !givenAnswerLabel) {
-        eventOut.processingState = "bad";
-      } else {
-        //returns false if answered correctly
-        let wrongAnswer = evalForIncorrectAnswer(answerID, prescribedAnswers[promptID]); //store details of this answer and its grading
+      let correctAnswerIDs = prescribedAnswers[promptID];
+      correctAnswerLabel = getAnswerLabels(correctAnswerIDs);
+      givenAnswerLabel = getAnswerLabels(answerIDs);
+
+      if (correctAnswerLabel && givenAnswerLabel) {
+        //need to extract answerType from somewhere
+        let answerCorrectness = evalAnswers(answerIDs, correctAnswerIDs, answerType); //store details of this answer and its grading
 
         answerDetails = {
           "correctAnswer": correctAnswerLabel,
           "givenAnswer": givenAnswerLabel,
-          "correct": !wrongAnswer
+          "correct": answerCorrectness
         }; //storing the prompt/answer details
 
         eventOut.answerDetails[promptID] = answerDetails; //eventOut.actionDescription = eventOut.actionDescription + ", " + givenAnswerLabel;
 
-        if (wrongAnswer) {
+        if (!answerCorrectness) {
           eventOut.answerCorrect = false;
           eventOut.status = errorStatusVal;
 
@@ -19573,18 +19664,52 @@ function processAnswers(eventIn, eventOut, prescribedAnswers, errorStatusVal) {
 
   return eventOut;
 }
-const evalForIncorrectAnswer = (answerID, prescribedAnswers) => {
-  if (Array.isArray(prescribedAnswers)) {
-    //assumes an and for everything in the array
-    //returns bool regarding whether answerID NOT in answers
-    return !prescribedAnswers.find(ansId => ansId === answerID);
-  } else {
-    return prescribedAnswers !== answerID;
+
+function difference(setA, setB) {
+  return Array.from(setA).filter(e => !setB.includes(e));
+}
+
+const evalAnswers = (answerIDs, prescribedAnswerIDs, answerType) => {
+  switch (answerType) {
+    case "one-or-more":
+    case "one":
+    case "one-or-more-logical-or":
+      return difference(answerIDs, prescribedAnswerIDs).length === 0;
+
+    case "one-or-more-logical-and":
+      return difference(prescribedAnswerIDs, answerIDs).length === 0;
+
+    default:
+      break;
   }
 };
+
+const getSelectionType = promptID => {
+  let prompt = prompts.find(e => e.id === promptID);
+  return prompt.selectionType;
+};
+
 const getAnswerLabel = answerID => {
   let answerLabel = answerIDs[answerID];
   return answerLabel || "";
+};
+
+const getAnswerLabels = answerIDs => {
+  let answerLabel = "";
+
+  for (let answerID of answerIDs) {
+    if (answerLabel === "") {
+      answerLabel = getAnswerLabel(answerID);
+    } else {
+      let nextLabel = getAnswerLabel(answerID);
+
+      if (nextLabel !== "") {
+        answerLabel = answerLabel + ", " + nextLabel;
+      }
+    }
+  }
+
+  return answerLabel;
 };
 
 /***/ }),
@@ -20117,6 +20242,21 @@ const getScenarioByName = (db, scenarioName, schemaVersion) => {
 
 const addMissingScenarioTypeFields = scenTypeData => {
   const msgs = [];
+
+  if (scenTypeData.checklist) {
+    // console.log(CHECKLIST_STEP_TYPES)
+    scenTypeData.checklist.forEach(clItem => {
+      if (!("graded" in clItem)) {
+        if (_constants_js__WEBPACK_IMPORTED_MODULE_2__.CHECKLIST_STEP_TYPES.includes(clItem.type)) {
+          clItem["graded"] = true;
+          msgs.push(`set 'graded' to true for ${clItem.id}`);
+        } else {
+          clItem["graded"] = false;
+          msgs.push(`set 'graded' to false for ${clItem.id}`);
+        }
+      }
+    });
+  }
 
   if (!scenTypeData.interventions) {
     msgs.push("loading intvs from file");
