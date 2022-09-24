@@ -104,7 +104,7 @@ __webpack_require__.r(__webpack_exports__);
 // When building for production, this file is replaced with `environment.prod.ts`.
 const environment = {
   production: false,
-  firebaseProject: ({"NODE_ENV":"development","NX_CLI_SET":"true","NX_WORKSPACE_ROOT":"/Users/user/Projects/monorepo","NX_TERMINAL_OUTPUT_PATH":"/Users/user/Projects/monorepo/node_modules/.cache/nx/terminalOutputs/bdad4fd417752452e7078483cd1b7cd37a5cef64e83d281271508786d5fbd3fd","NX_STREAM_OUTPUT":"true","NX_TASK_TARGET_PROJECT":"mockup","NX_TASK_HASH":"bdad4fd417752452e7078483cd1b7cd37a5cef64e83d281271508786d5fbd3fd"}).NX_FIREBASE_PROJECT || "MedDBriefer",
+  firebaseProject: ({"NODE_ENV":"development","NX_CLI_SET":"true","NX_WORKSPACE_ROOT":"/Users/user/Projects/monorepo","NX_TERMINAL_OUTPUT_PATH":"/Users/user/Projects/monorepo/node_modules/.cache/nx/terminalOutputs/6a5f8e164d37b2e70fc939162efad768c721f501b086df3f0e07f4359688b258","NX_STREAM_OUTPUT":"true","NX_TASK_TARGET_PROJECT":"mockup","NX_TASK_HASH":"6a5f8e164d37b2e70fc939162efad768c721f501b086df3f0e07f4359688b258"}).NX_FIREBASE_PROJECT || "MedDBriefer",
   classCode: "demo"
 };
 
@@ -10882,6 +10882,12 @@ const criticalInterventions = {
 }; //could create a set of default good values but sounds like will
 //want to customize the descriptive text per scenario (and may not
 //always want the completely good value as an effect)
+//each scenario entry is a list of rules
+//each rule is an object with the ands field being any other interventions that must have also been done to
+//qualify doing the update in field updates.
+//the updates field is a list of pairs of assessment ids and the value to update in that assessments findings field
+//Note that each member of the ands field has its own set of rules in this table.  Only one of the rules will "fire"
+//but is repeated because we don't know the order in which the interventions may be done
 
 const intvStatusRules = {
   //training scenarios
@@ -10889,12 +10895,27 @@ const intvStatusRules = {
   B5CA: [],
   C5CA: [],
   SC8CP: {
-    "intv-open-airway-method-modified-jaw-thrust": [["airway-has-intact-physical-structures", "intact"]],
-    "intv-airway-patency-technique-suction-airway": [["airway-is-open", "open"], ["inspects-mouth", "clear"], ["inspects-mouth-fluids", "clear"]],
-    "intv-oropharyngeal-airway": [[]],
-    "intv-orotracheal-intubation": [["breathing-checks-rate", "WNL"], ["breathing-checks-quality", "WNL"]],
-    "intv-ventilation-technique-bag-valve-mask": [[]],
-    "intv-nasopharyngeal-airway": [[]]
+    "intv-airway-patency-technique-suction-airway": [//rule 1
+    {
+      ands: [],
+      updates: [["airway-is-open", "open"], ["inspects-mouth", "patent"], ["inspects-mouth-fluids", "patent"]]
+    }, //rule 2
+    {
+      ands: ["intv-ventilation-technique-bag-valve-mask", "intv-orotracheal-intubation"],
+      updates: [//update pairs
+      ["inspects-right-arm-pulse", "strong"], ["inspects-right-leg-pulse", "strong"], ["inspects-left-arm-pulse", "strong"], ["inspects-left-leg-pulse", "strong"]]
+    }],
+    //"intv-oropharyngeal-airway": [{ands: [], updates: [[]]}], 
+    "intv-orotracheal-intubation": [//rule 1
+    {
+      ands: ["intv-ventilation-technique-bag-valve-mask", "intv-airway-patency-technique-suction-airway"],
+      updates: [["inspects-right-arm-pulse", "strong"], ["inspects-right-leg-pulse", "strong"], ["inspects-left-arm-pulse", "strong"], ["inspects-left-leg-pulse", "strong"]]
+    }],
+    "intv-ventilation-technique-bag-valve-mask": [{
+      ands: ["intv-orotracheal-intubation", "intv-airway-patency-technique-suction-airway"],
+      updates: [["inspects-right-arm-pulse", "strong"], ["inspects-right-leg-pulse", "strong"], ["inspects-left-arm-pulse", "strong"], ["inspects-left-leg-pulse", "strong"]]
+    }] //"intv-nasopharyngeal-airway": [{ands: [], updates: [[]]}],
+
   },
   //test scenarios
   B1CA: [],
@@ -19316,23 +19337,33 @@ const ScenarioProvider = ({
 
   const updateAssessmentStatus = intvData => {
     let statusRules = _meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_14__.intvStatusRules[scenario.name];
-    let updates = statusRules[intvData.interventionID];
+    let rules = statusRules[intvData.interventionID];
 
-    if (updates) {
-      for (let update of updates) {
-        let assessment = update[0];
-        let findingsVal = update[1];
-        scenario.assessmentFindings[assessment] = findingsVal; //it turns out I didn't need to update the checklist
-        //too and in fact it messes up the logging to do so
-        //leaving it here for now
-        //find the state checklist item to update
+    if (!rules) {
+      rules = [];
+    }
 
-        /* let data = Object.values(checkListItems).filter(rec => rec.id === assessment)
-        if (data.length > 0){
-            data[0].findingToDisplay = findingsVal} */
+    for (let rule of rules) {
+      let ands = rule["ands"];
+      let andResult = intvHistory.concat(intvData).filter(e => ands.includes(e.interventionID));
+      let updates = rule["updates"];
 
-        /* setCheckListItems(prevState => ({
-            ...prevState, [assessment]: data[0]})) */
+      if (updates && (ands.length === 0 || !!andResult && ands.length === andResult.length)) {
+        for (let update of updates) {
+          let assessment = update[0];
+          let findingsVal = update[1];
+          scenario.assessmentFindings[assessment] = findingsVal; //it turns out I didn't need to update the checklist
+          //too and in fact it messes up the logging to do so
+          //leaving it here for now
+          //find the state checklist item to update
+
+          /* let data = Object.values(checkListItems).filter(rec => rec.id === assessment)
+          if (data.length > 0){
+              data[0].findingToDisplay = findingsVal} */
+
+          /* setCheckListItems(prevState => ({
+              ...prevState, [assessment]: data[0]})) */
+        }
       }
     }
   };
@@ -19454,7 +19485,7 @@ const ScenarioProvider = ({
     children: children
   }, void 0, false, {
     fileName: _jsxFileName,
-    lineNumber: 546,
+    lineNumber: 554,
     columnNumber: 9
   }, undefined);
 };
