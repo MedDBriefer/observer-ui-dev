@@ -104,7 +104,7 @@ __webpack_require__.r(__webpack_exports__);
 // When building for production, this file is replaced with `environment.prod.ts`.
 const environment = {
   production: false,
-  firebaseProject: ({"NODE_ENV":"development","NX_CLI_SET":"true","NX_WORKSPACE_ROOT":"/Users/user/Projects/monorepo","NX_TERMINAL_OUTPUT_PATH":"/Users/user/Projects/monorepo/node_modules/.cache/nx/terminalOutputs/daf65d34e920dd85bd25550e6f220b9ee8bd0af9d51259e2b7a1d9f7c062855b","NX_STREAM_OUTPUT":"true","NX_TASK_TARGET_PROJECT":"mockup","NX_TASK_HASH":"daf65d34e920dd85bd25550e6f220b9ee8bd0af9d51259e2b7a1d9f7c062855b"}).NX_FIREBASE_PROJECT || "MedDBriefer",
+  firebaseProject: ({"NODE_ENV":"development","NX_CLI_SET":"true","NX_WORKSPACE_ROOT":"/Users/user/Projects/monorepo","NX_TERMINAL_OUTPUT_PATH":"/Users/user/Projects/monorepo/node_modules/.cache/nx/terminalOutputs/bdad4fd417752452e7078483cd1b7cd37a5cef64e83d281271508786d5fbd3fd","NX_STREAM_OUTPUT":"true","NX_TASK_TARGET_PROJECT":"mockup","NX_TASK_HASH":"bdad4fd417752452e7078483cd1b7cd37a5cef64e83d281271508786d5fbd3fd"}).NX_FIREBASE_PROJECT || "MedDBriefer",
   classCode: "demo"
 };
 
@@ -10197,14 +10197,30 @@ const SC8CP_PhaseIE = {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "airwayAdjunct": () => (/* binding */ airwayAdjunct),
+/* harmony export */   "airwayOpen": () => (/* binding */ airwayOpen),
+/* harmony export */   "airwayPatent": () => (/* binding */ airwayPatent),
+/* harmony export */   "airwayProcedure": () => (/* binding */ airwayProcedure),
+/* harmony export */   "airwaySecured": () => (/* binding */ airwaySecured),
+/* harmony export */   "bad": () => (/* binding */ bad),
+/* harmony export */   "breathSounds": () => (/* binding */ breathSounds),
+/* harmony export */   "circulationPressure": () => (/* binding */ circulationPressure),
+/* harmony export */   "circulationTourniquet": () => (/* binding */ circulationTourniquet),
 /* harmony export */   "conditionalConstraints": () => (/* binding */ conditionalConstraints),
 /* harmony export */   "criticalInterventions": () => (/* binding */ criticalInterventions),
 /* harmony export */   "exceptionDefs": () => (/* binding */ exceptionDefs),
 /* harmony export */   "globalConstraints": () => (/* binding */ globalConstraints),
 /* harmony export */   "globalReassessmentFeedback": () => (/* binding */ globalReassessmentFeedback),
 /* harmony export */   "globalReassessmentKn": () => (/* binding */ globalReassessmentKn),
+/* harmony export */   "good": () => (/* binding */ good),
+/* harmony export */   "interventionStates": () => (/* binding */ interventionStates),
+/* harmony export */   "intubation": () => (/* binding */ intubation),
 /* harmony export */   "intvChecks": () => (/* binding */ intvChecks),
+/* harmony export */   "intvResults": () => (/* binding */ intvResults),
 /* harmony export */   "intvStatusRules": () => (/* binding */ intvStatusRules),
+/* harmony export */   "medCommandApproval": () => (/* binding */ medCommandApproval),
+/* harmony export */   "medEffects": () => (/* binding */ medEffects),
+/* harmony export */   "neutral": () => (/* binding */ neutral),
 /* harmony export */   "scenarioConstraintIDs": () => (/* binding */ scenarioConstraintIDs),
 /* harmony export */   "vitalChecks": () => (/* binding */ vitalChecks),
 /* harmony export */   "vitalsCheckFeedbackID": () => (/* binding */ vitalsCheckFeedbackID),
@@ -10615,10 +10631,12 @@ const conditionalConstraints = {
 // issues
 
 const scenarioConstraintIDs = {
+  //training
   "B4CA": [],
   "B5CA": [],
   "C5CA": [],
   "SC8CP": ["T12-c1"],
+  //test
   "B1CA": [],
   "M1CA": [],
   "M2CA": ["T12-c1"],
@@ -10629,27 +10647,68 @@ const scenarioConstraintIDs = {
 //is true or false.  If true it means should have requested status of this intervention.  If vitals key is
 //not empty then should have checked all of these vitals as well.  Will only check entries after an intervention
 //up until something other than an intervention check is done
-//updates wrt SC8CP-combined-goals-4-4
+//Not currently issueing intervention specific reminders for what vitals need to be checked
+//Instead doing it per scenario
 
 const intvChecks = {
-  "intv-supplemental-oxygen-device-nasal-cannula": {
-    intvStatusNeeded: false,
+  "intv-open-airway-method-head-tilt": {
+    intvStatusNeeded: true,
     vitalsNeeded: []
   },
-  "intv-supplemental-oxygen-device-non-rebreather-mask": {
-    intvStatusNeeded: false,
+  "intv-open-airway-method-modified-jaw-thrust": {
+    intvStatusNeeded: true,
     vitalsNeeded: []
   },
-  "intv-ventilation-technique-bag-valve-mask": {
-    intvStatusNeeded: false,
+  "intv-airway-patency-technique-suction-airway": {
+    intvStatusNeeded: true,
     vitalsNeeded: []
   },
-  "intv-pleural-decompression": {
-    intvStatusNeeded: false,
+  "intv-manual-finger-sweep": {
+    intvStatusNeeded: true,
     vitalsNeeded: []
   },
-  "intv-occlusive-dressing": {
-    intvStatusNeeded: false,
+  "intv-magill-forceps-assisted": {
+    intvStatusNeeded: true,
+    vitalsNeeded: []
+  },
+  "intv-heimlich-maneuver": {
+    intvStatusNeeded: true,
+    vitalsNeeded: []
+  },
+  "intv-back-blows-and-chest-thrusts": {
+    intvStatusNeeded: true,
+    vitalsNeeded: []
+  },
+  "intv-oropharyngeal-airway": {
+    intvStatusNeeded: true,
+    vitalsNeeded: []
+  },
+  "intv-nasopharyngeal-airway": {
+    intvStatusNeeded: true,
+    vitalsNeeded: []
+  },
+  "intv-orotracheal-intubation": {
+    intvStatusNeeded: true,
+    vitalsNeeded: []
+  },
+  "intv-nasotracheal-intubation": {
+    intvStatusNeeded: true,
+    vitalsNeeded: []
+  },
+  "intv-insert-advanced-airway": {
+    intvStatusNeeded: true,
+    vitalsNeeded: []
+  },
+  "intv-sedation-assisted-intubation": {
+    intvStatusNeeded: true,
+    vitalsNeeded: []
+  },
+  "intv-needle-cricothyrotomy": {
+    intvStatusNeeded: true,
+    vitalsNeeded: []
+  },
+  "intv-surgical-cricothyrotomy": {
+    intvStatusNeeded: true,
     vitalsNeeded: []
   },
   "intv-control-severe-bleeding-technique-direct-pressure": {
@@ -10660,26 +10719,48 @@ const intvChecks = {
     intvStatusNeeded: true,
     vitalsNeeded: []
   },
-  "intv-nasopharyngeal-airway": {
+  "intv-control-severe-bleeding-technique-2nd-tourniquet": {
     intvStatusNeeded: true,
     vitalsNeeded: []
   },
-  "intv-control-shock-technique-administer-iv-boluses": {
-    intvStatusNeeded: false,
-    vitalsNeeded: []
-  },
-  "intv-orotracheal-intubation": {
+  "intv-control-severe-bleeding-technique-pack-wound-with-gauze": {
     intvStatusNeeded: true,
     vitalsNeeded: []
   },
-  "intv-oropharyngeal-airway": {
+  "intv-control-severe-bleeding-technique-pressure-bandage": {
     intvStatusNeeded: true,
     vitalsNeeded: []
   },
-  "intv-sedation-assisted-intubation": {
+  "intv-occlusive-dressing": {
     intvStatusNeeded: true,
     vitalsNeeded: []
-  } //"": {intvStatusNeeded: true, vitalsNeeded: []},  
+  },
+  "intv-pleural-decompression": {
+    intvStatusNeeded: true,
+    vitalsNeeded: []
+  },
+  "intv-prepare-and-administer-pain-nausea-vomiting-medications": {
+    intvStatusNeeded: true,
+    vitalsNeeded: []
+  },
+  "intv-insert-advanced-airway": {
+    intvStatusNeeded: true,
+    vitalsNeeded: []
+  },
+  "intv-contact-medical-command": {
+    intvStatusNeeded: true,
+    vitalsNeeded: []
+  } // in general don't need to list if intvStatusNeeded is false but left these in in case want to use the
+  // vitalsNeeded field for these later on to do the reminder intervention by intervention
+  //"intv-supplemental-oxygen-device-nasal-cannula": {intvStatusNeeded: false, vitalsNeeded: []},
+  //"intv-supplemental-oxygen-device-non-rebreather-mask": {intvStatusNeeded: false, vitalsNeeded: []},
+  //"intv-ventilation-technique-bag-valve-mask": {intvStatusNeeded: false, vitalsNeeded: []},
+  //"intv-pleural-decompression": {intvStatusNeeded: false, vitalsNeeded: []},
+  //"intv-occlusive-dressing": {intvStatusNeeded: false, vitalsNeeded: []},
+  //"intv-supplemental-oxygen-device-nasal-cannula": {intvStatusNeeded: false, vitalsNeeded: []},
+  //"intv-supplemental-oxygen-device-non-rebreather-mask": {intvStatusNeeded: false, vitalsNeeded: []},
+  //"intv-ventilation-technique-bag-valve-mask": {intvStatusNeeded: false, vitalsNeeded: []},
+  //"": {intvStatusNeeded: true, vitalsNeeded: []},  
   //"": {intvStatusNeeded: true, vitalsNeeded: []},
 
 }; // this is the name of the assessment step or phase that will use for inserting global vitals check feedback
@@ -10691,10 +10772,12 @@ const vitalsCheckFeedbackLabel = undefined; //= "Ongoing Management & Reassessme
 
 const vitalsCheckFeedbackID = "reassess-vital-signs";
 const vitalChecks = {
+  //training
   "B4CA": ["P", "R", "SpO2"],
   "B5CA": ["BP", "P", "R", "SpO2"],
   "C5CA": ["BP", "P", "R", "SpO2"],
   "SC8CP": ["BP", "P", "R", "SpO2", "ETCO2"],
+  //test
   "B1CA": ["BP", "P", "R", "SpO2"],
   "M1CA": ["BP", "P", "R", "SpO2", "ETCO2"],
   "M2CA": ["BP", "P", "R", "SpO2", "ETCO2"],
@@ -10703,6 +10786,7 @@ const vitalChecks = {
 //need to write the software to handle these two structures instead of the above
 
 const globalReassessmentKn = {
+  //training
   "B4CA": {
     vitalLabels: ["P", "R", "SpO2"],
     requiredVitals: "P, R, and SpO2",
@@ -10727,6 +10811,7 @@ const globalReassessmentKn = {
     systems: "airway and breathing",
     criticalInterventions: "an airway maneuver, suctioning, intubation, and BVM ventilation with high concentration O2"
   },
+  //test
   "B1CA": {
     vitalLabels: ["BP", "P", "R", "SpO2"],
     requiredVitals: "BP, P, R, and SpO2",
@@ -10816,7 +10901,378 @@ const intvStatusRules = {
   M1CA: [],
   M2CA: [],
   B7CA: []
-}; //all below is just for my editing purposes in the above structures
+};
+const airwayOpen = "airwayOpen";
+const airwayPatent = "airwayPatent";
+const airwayAdjunct = "airwayAdjunct";
+const airwaySecured = "airwaySecured";
+const intubation = "intubation";
+const airwayProcedure = "airwayProcedure";
+const circulationPressure = "circulationPressure";
+const circulationTourniquet = "CirculationTourniquet";
+const breathSounds = "breathSounds";
+const medEffects = "medEffects";
+const medCommandApproval = "medCommandApproval";
+const good = "good";
+const neutral = "neutral";
+const bad = "bad";
+const interventionStates = Object.freeze({
+  airwayOpen: {
+    good: "open",
+    neutral: "no change",
+    bad: "not open"
+  },
+  airwayPatent: {
+    good: "patent",
+    neutral: "no change",
+    bad: "not patent"
+  },
+  airwayAdjunct: {
+    good: "accepted, secured",
+    bad: "rejected, not secured"
+  },
+  airwaySecured: {
+    good: "secured",
+    bad: "not secured"
+  },
+  intubation: {
+    good: "correctly placed, secured, tube visualized, breath sounds bilateral, gastric sounds absent, chest equal rise and fall, ETCO2 present",
+    bad: "incorrectly placed, not secured, tube not visualized, breath sounds absent, gastric sounds present, chest unequal rise and fall, ETCO2 absent"
+  },
+  airwayProcedure: {
+    good: "successful, secured, chest rise and fall present",
+    bad: "unsuccessful, secured, chest rise and fall absent"
+  },
+  circulationPressure: {
+    good: "controlled",
+    neutral: "no change",
+    bad: "not controlled"
+  },
+  circulationTourniquet: {
+    good: "controlled, pulse absent",
+    neutral: "no change in bleeding, pulse absent",
+    bad: "not controlled, pulse present"
+  },
+  breathSounds: {
+    good: "breath sounds bilateral",
+    neutral: "no change",
+    bad: "breath sounds absent"
+  },
+  medEffects: {
+    good: "effective, pain: decreased, nausea decreased, agitation decreased",
+    neutral: "no change",
+    bad: "ineffective, pain: no change, nausea: no change, agitation: no change"
+  },
+  medCommandApproval: {
+    good: "approved",
+    bad: "denied"
+  }
+}); //if an intervention has a specific text string defined for a scenario then use that, otherwise use the type values specified above, using good or bad value as indicated
+//if the values should be different from types available then define a new type or a new value type (e.g. good/bad) under the type
+// good if should be done to change patient state or would have no effect on patient state, 
+// bad if it definitely would not change a bad patient status, 
+// neutral if status could have changed by another correct intervention
+// or if it is not indicated by patient status (i.e. state is fine so doing this would not change the state)
+
+const intvResults = Object.freeze({
+  "intv-open-airway-method-head-tilt": {
+    type: airwayOpen,
+    B4CA: neutral,
+    B5CA: neutral,
+    C5CA: neutral,
+    SC8CP: good,
+    B1CA: neutral,
+    M1CA: good,
+    M2CA: good,
+    B7CA: good
+  },
+  "intv-open-airway-method-modified-jaw-thrust": {
+    type: airwayOpen,
+    B4CA: neutral,
+    B5CA: neutral,
+    C5CA: neutral,
+    SC8CP: good,
+    B1CA: neutral,
+    M1CA: good,
+    M2CA: good,
+    B7CA: good
+  },
+  "intv-airway-patency-technique-suction-airway": {
+    type: airwayPatent,
+    B4CA: neutral,
+    B5CA: neutral,
+    C5CA: neutral,
+    SC8CP: good,
+    B1CA: neutral,
+    M1CA: neutral,
+    M2CA: neutral,
+    B7CA: neutral
+  },
+  "intv-manual-finger-sweep": {
+    type: airwayPatent,
+    B4CA: neutral,
+    B5CA: neutral,
+    C5CA: neutral,
+    SC8CP: bad,
+    B1CA: neutral,
+    M1CA: neutral,
+    M2CA: neutral,
+    B7CA: neutral
+  },
+  "intv-magill-forceps-assisted": {
+    type: airwayPatent,
+    B4CA: neutral,
+    B5CA: neutral,
+    C5CA: neutral,
+    SC8CP: bad,
+    B1CA: neutral,
+    M1CA: neutral,
+    M2CA: neutral,
+    B7CA: neutral
+  },
+  "intv-heimlich-maneuver": {
+    type: airwayPatent,
+    B4CA: neutral,
+    B5CA: neutral,
+    C5CA: neutral,
+    SC8CP: bad,
+    B1CA: neutral,
+    M1CA: neutral,
+    M2CA: neutral,
+    B7CA: neutral
+  },
+  "intv-back-blows-and-chest-thrusts": {
+    type: airwayPatent,
+    B4CA: neutral,
+    B5CA: neutral,
+    C5CA: neutral,
+    SC8CP: bad,
+    B1CA: neutral,
+    M1CA: neutral,
+    M2CA: neutral,
+    B7CA: neutral
+  },
+  "intv-oropharyngeal-airway": {
+    type: airwayAdjunct,
+    B4CA: good,
+    B5CA: good,
+    C5CA: bad,
+    SC8CP: good,
+    B1CA: good,
+    M1CA: good,
+    M2CA: good,
+    B7CA: good
+  },
+  "intv-nasopharyngeal-airway": {
+    type: airwayAdjunct,
+    B4CA: good,
+    B5CA: good,
+    C5CA: good,
+    SC8CP: good,
+    B1CA: good,
+    M1CA: good,
+    M2CA: good,
+    B7CA: good
+  },
+  "intv-orotracheal-intubation": {
+    type: intubation,
+    B4CA: good,
+    B5CA: good,
+    C5CA: bad,
+    SC8CP: good,
+    B1CA: good,
+    M1CA: good,
+    M2CA: good,
+    B7CA: good
+  },
+  "intv-nasotracheal-intubation": {
+    type: intubation,
+    B4CA: good,
+    B5CA: good,
+    C5CA: good,
+    SC8CP: good,
+    B1CA: good,
+    M1CA: good,
+    M2CA: good,
+    B7CA: good
+  },
+  "intv-insert-advanced-airway": {
+    type: intubation,
+    B4CA: good,
+    B5CA: good,
+    C5CA: good,
+    SC8CP: good,
+    B1CA: good,
+    M1CA: good,
+    M2CA: good,
+    B7CA: good
+  },
+  //"intv-rapid-sequence-intubation",
+  "intv-sedation-assisted-intubation": {
+    type: intubation,
+    B4CA: good,
+    B5CA: good,
+    C5CA: bad,
+    SC8CP: neutral,
+    B1CA: neutral,
+    M1CA: good,
+    M2CA: good,
+    B7CA: neutral
+  },
+  "intv-needle-cricothyrotomy": {
+    type: airwayProcedure,
+    B4CA: good,
+    B5CA: good,
+    C5CA: good,
+    SC8CP: good,
+    B1CA: good,
+    M1CA: good,
+    M2CA: good,
+    B7CA: good
+  },
+  "intv-surgical-cricothyrotomy": {
+    type: airwayProcedure,
+    B4CA: good,
+    B5CA: good,
+    C5CA: good,
+    SC8CP: good,
+    B1CA: good,
+    M1CA: good,
+    M2CA: good,
+    B7CA: good
+  },
+  //"intv-supplemental-oxygen-device-nasal-cannula": {type:, B4CA: good, B5CA: good, C5CA: good, SC8CP: good, B1CA: good, M1CA: good, M2CA: good, B7CA: good},
+  //"intv-supplemental-oxygen-device-non-rebreather-mask": {type:, B4CA: good, B5CA: good, C5CA: good, SC8CP: good, B1CA: good, M1CA: good, M2CA: good, B7CA: good},
+  //"intv-ventilation-technique-bag-valve-mask": {type:, B4CA: good, B5CA: good, C5CA: good, SC8CP: good, B1CA: good, M1CA: good, M2CA: good, B7CA: good},
+  "intv-control-severe-bleeding-technique-direct-pressure": {
+    type: circulationPressure,
+    B4CA: neutral,
+    B5CA: neutral,
+    C5CA: bad,
+    SC8CP: neutral,
+    B1CA: neutral,
+    M1CA: good,
+    M2CA: bad,
+    B7CA: neutral
+  },
+  "intv-control-severe-bleeding-technique-tourniquet": {
+    type: circulationTourniquet,
+    B4CA: neutral,
+    B5CA: neutral,
+    C5CA: good,
+    SC8CP: neutral,
+    B1CA: neutral,
+    M1CA: good,
+    M2CA: good,
+    B7CA: neutral
+  },
+  "intv-control-severe-bleeding-technique-2nd-tourniquet": {
+    type: circulationTourniquet,
+    B4CA: neutral,
+    B5CA: neutral,
+    C5CA: neutral,
+    SC8CP: neutral,
+    B1CA: neutral,
+    M1CA: neutral,
+    M2CA: neutral,
+    B7CA: neutral
+  },
+  "intv-control-severe-bleeding-technique-pack-wound-with-gauze": {
+    type: circulationPressure,
+    B4CA: neutral,
+    B5CA: neutral,
+    C5CA: neutral,
+    SC8CP: neutral,
+    B1CA: neutral,
+    M1CA: neutral,
+    M2CA: neutral,
+    B7CA: neutral
+  },
+  "intv-control-severe-bleeding-technique-pressure-bandage": {
+    type: circulationPressure,
+    B4CA: neutral,
+    B5CA: neutral,
+    C5CA: neutral,
+    SC8CP: neutral,
+    B1CA: neutral,
+    M1CA: good,
+    M2CA: neutral,
+    B7CA: neutral
+  },
+  //"intv-control-severe-bleeding-technique-load-and-go",
+  //"intv-control-shock-technique-keep-patient-warm": {type:, B4CA: good, B5CA: good, C5CA: good, SC8CP: good, B1CA: good, M1CA: good, M2CA: good, B7CA: good},
+  //"intv-control-shock-technique-place-patient-supine-position": {type:, B4CA: good, B5CA: good, C5CA: good, SC8CP: good, B1CA: good, M1CA: good, M2CA: good, B7CA: good},
+  //"intv-control-shock-technique-administer-iv-boluses": {type:, B4CA: good, B5CA: good, C5CA: good, SC8CP: good, B1CA: good, M1CA: good, M2CA: good, B7CA: good},
+  "intv-occlusive-dressing": {
+    type: breathSounds,
+    B4CA: good,
+    B5CA: good,
+    C5CA: good,
+    SC8CP: good,
+    B1CA: good,
+    M1CA: good,
+    M2CA: good,
+    B7CA: good
+  },
+  "intv-pleural-decompression": {
+    type: breathSounds,
+    B4CA: good,
+    B5CA: good,
+    C5CA: good,
+    SC8CP: good,
+    B1CA: good,
+    M1CA: good,
+    M2CA: good,
+    B7CA: good
+  },
+  //"intv-spinal-immobilization-technique-manual-c-spine",
+  //"intv-spinal-immobilization-technique-cervical-collar",
+  //"intv-spinal-immobilization-technique-attach-cid",
+  //"intv-transport",
+  //"intv-apply-sterile-dressings",
+  "intv-prepare-and-administer-pain-nausea-vomiting-medications": {
+    type: medEffects,
+    B4CA: good,
+    B5CA: neutral,
+    C5CA: neutral,
+    SC8CP: neutral,
+    B1CA: neutral,
+    M1CA: neutral,
+    M2CA: neutral,
+    B7CA: neutral
+  },
+  //"intv-contact-receiving-facility",
+  //"intv-sling",
+  "intv-insert-advanced-airway": {
+    type: intubation,
+    B4CA: good,
+    B5CA: good,
+    C5CA: good,
+    SC8CP: good,
+    B1CA: good,
+    M1CA: good,
+    M2CA: good,
+    B7CA: good
+  },
+  //"intv-call-for-air-ambulance",
+  "intv-contact-medical-command": {
+    type: medCommandApproval,
+    B4CA: bad,
+    B5CA: bad,
+    C5CA: bad,
+    SC8CP: bad,
+    B1CA: bad,
+    M1CA: good,
+    M2CA: good,
+    B7CA: bad
+  } //"intv-establish-iv",
+  //"intv-prepare-amputated-part",
+  //"intv-splint-fracture",
+  //"intv-place-on-immobilization-device",
+  //"intv-walk-patient-to-ambulance",
+  //"intv-place-directly-on-stretcher",
+
+}); //all below is just for my editing purposes in the above structures
 //commented out ones that I don't impact assessment findings
 
 const interventions = ["intv-open-airway-method-head-tilt", "intv-open-airway-method-modified-jaw-thrust", "intv-airway-patency-technique-suction-airway", "intv-manual-finger-sweep", "intv-magill-forceps-assisted", "intv-heimlich-maneuver", "intv-back-blows-and-chest-thrusts", "intv-oropharyngeal-airway", "intv-nasopharyngeal-airway", "intv-orotracheal-intubation", "intv-nasotracheal-intubation", //"intv-rapid-sequence-intubation",
@@ -14915,8 +15371,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(71880);
 /* harmony import */ var _Panel__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(27383);
 /* harmony import */ var _PromptsForm__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(22582);
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(49663);
+/* harmony import */ var _meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(7686);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/forms/IntvForm.js";
+
 
 
 
@@ -14960,6 +15418,8 @@ function IntvForm({
     setFormMode(FORM_MODES.DISP_NONE);
     logIntv({
       interventionID: intvID,
+      label: form.abbrLabel,
+      patientStatus: determineInterventionStatus(),
       type: "intervention",
       intvVariant: intvVariant,
       timestamp: getTimestamp(),
@@ -14972,6 +15432,19 @@ function IntvForm({
     setCurrIntv(null);
     setCurrIntvCat("");
     setShowIntvSelection(true);
+  };
+
+  const determineInterventionStatus = () => {
+    let results = _meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_11__.intvResults[intvID];
+    let status = "";
+
+    if (results) {
+      let type = results.type;
+      let statusType = results[scenario.name];
+      status = _meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_11__.interventionStates[type][statusType];
+    }
+
+    return status;
   };
 
   const determinePromptCorrectness = (prompt, intvVariantAnswers) => {
@@ -15132,7 +15605,7 @@ function IntvForm({
   const displaySubForm = () => {
     switch (formMode) {
       case FORM_MODES.DISP_DIST_PROMPTS:
-        return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)(_PromptsForm__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_PromptsForm__WEBPACK_IMPORTED_MODULE_10__["default"], {
           prompts: form.distPrompts,
           isSelected: distPromptOptionIsSelected,
           getSelected: getDistPromptSelections,
@@ -15141,7 +15614,7 @@ function IntvForm({
           onSubmit: submitDistPrompts
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 209,
+          lineNumber: 223,
           columnNumber: 15
         }, this);
 
@@ -15149,16 +15622,16 @@ function IntvForm({
         if (!promptState) {
           // avoiding a race condition where we're waiting for state to be set which is async
           // and promptState still being undefined
-          return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)("div", {
+          return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)("div", {
             children: "loading..."
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 222,
+            lineNumber: 236,
             columnNumber: 22
           }, this);
         }
 
-        return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)(_PromptsForm__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_PromptsForm__WEBPACK_IMPORTED_MODULE_10__["default"], {
           prompts: form.prompts,
           isSelected: promptOptionIsSelected,
           getSelected: getPromptSelections,
@@ -15167,7 +15640,7 @@ function IntvForm({
           onSubmit: submitPrompts
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 225,
+          lineNumber: 239,
           columnNumber: 15
         }, this);
       // some other case
@@ -15186,27 +15659,27 @@ function IntvForm({
       // }
 
       default:
-        return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)("div", {
+        return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)("div", {
           children: "Neither distPrompts nor prompts. Not sure what to display currently"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 250,
+          lineNumber: 264,
           columnNumber: 15
         }, this);
     }
   };
 
   if (!form) {
-    return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)("div", {
+    return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)("div", {
       children: "processing...."
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 260,
+      lineNumber: 274,
       columnNumber: 17
     }, this);
   }
 
-  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)(_Panel__WEBPACK_IMPORTED_MODULE_9__["default"], {
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_Panel__WEBPACK_IMPORTED_MODULE_9__["default"], {
     title: form.abbrLabel,
     centerTitle: true,
     collapsable: false,
@@ -15214,7 +15687,7 @@ function IntvForm({
     children: displaySubForm()
   }, void 0, false, {
     fileName: _jsxFileName,
-    lineNumber: 263,
+    lineNumber: 277,
     columnNumber: 7
   }, this);
 }
@@ -17732,11 +18205,11 @@ const InterventionsGroup = ({
     logPatientStatusRequest
   } = (0,_contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_4__.useScenario)();
 
-  const clickHandler = intvID => {
+  const clickHandler = intv => {
     // const intervention = checkListItems.find(rec => rec.id === intvID)
     // FIXME: intervention.systemStatus is currently unimplemented so
     // we're logging "unknown"
-    logPatientStatusRequest(CATEGORY, intvID, "unknown");
+    logPatientStatusRequest(CATEGORY, intv.interventionID, intv.patientStatus);
   };
 
   return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("tbody", {
@@ -17748,7 +18221,7 @@ const InterventionsGroup = ({
         lineNumber: 27,
         columnNumber: 17
       }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("td", {
-        children: "unknown status"
+        children: intv.patientStatus
       }, void 0, false, {
         fileName: _jsxFileName,
         lineNumber: 28,
@@ -17758,7 +18231,7 @@ const InterventionsGroup = ({
           color: "success",
           size: "sm",
           className: "request-btn",
-          onClick: () => clickHandler(intv.id),
+          onClick: () => clickHandler(intv),
           children: "Requested"
         }, void 0, false, {
           fileName: _jsxFileName,
@@ -17770,7 +18243,7 @@ const InterventionsGroup = ({
         lineNumber: 29,
         columnNumber: 17
       }, undefined)]
-    }, `intv-performed-${intv.label}`, true, {
+    }, `intv-performed-${intv.interventionID}`, true, {
       fileName: _jsxFileName,
       lineNumber: 26,
       columnNumber: 13
@@ -17838,7 +18311,7 @@ const SystemsTable = ({
 const InterventionsStatus = () => {
   const {
     scenario,
-    checkListItems,
+    intvHistory,
     systemsTab,
     setSystemsTab
   } = (0,_contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_4__.useScenario)();
@@ -17851,7 +18324,7 @@ const InterventionsStatus = () => {
   };
 
   const getSystemIntvsPerformed = () => {
-    const recs = Object.values(checkListItems).filter(val => !!val).filter(rec => rec.type === _meddbriefer_scenario_data_constants_js__WEBPACK_IMPORTED_MODULE_5__.MDB_TYPES.INTERV).filter(rec => !!rec.system);
+    const recs = Object.values(intvHistory).filter(val => !!val).filter(rec => rec.type === _meddbriefer_scenario_data_constants_js__WEBPACK_IMPORTED_MODULE_5__.MDB_TYPES.INTERV).filter(rec => !!rec.system);
     recs.sort((a, b) => a.timestamp - b.timestamp); // console.log(system, recs)
 
     return recs;
@@ -17863,7 +18336,7 @@ const InterventionsStatus = () => {
     if (intvs !== intvsPerformed) {
       setIntvsPerformed(intvs);
     }
-  }, [checkListItems]);
+  }, [intvHistory]);
   return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_10__["default"], {
       tabs: true,
@@ -18459,7 +18932,7 @@ const ScenarioProvider = ({
   const [patientStatusRequests, setPatientStatusRequests] = (0,react__WEBPACK_IMPORTED_MODULE_9__.useState)([]);
   const [patientStatusTab, setPatientStatusTab] = (0,react__WEBPACK_IMPORTED_MODULE_9__.useState)("vitals");
   const [systemsTab, setSystemsTab] = (0,react__WEBPACK_IMPORTED_MODULE_9__.useState)("airway");
-  const [intvHistory, setIntvHistory] = (0,react__WEBPACK_IMPORTED_MODULE_9__.useState)([]);
+  const [intvHistory, setIntvHistory] = (0,react__WEBPACK_IMPORTED_MODULE_9__.useState)(defaultValues.intvHistory);
   const [started, setStarted] = (0,react__WEBPACK_IMPORTED_MODULE_9__.useState)(false);
   const [paused, setPaused] = (0,react__WEBPACK_IMPORTED_MODULE_9__.useState)(false);
   const [timestamp, setTimestamp] = (0,react__WEBPACK_IMPORTED_MODULE_9__.useState)(0);
@@ -18845,20 +19318,22 @@ const ScenarioProvider = ({
     let statusRules = _meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_14__.intvStatusRules[scenario.name];
     let updates = statusRules[intvData.interventionID];
 
-    for (let update of updates) {
-      let assessment = update[0];
-      let findingsVal = update[1];
-      scenario.assessmentFindings[assessment] = findingsVal; //it turns out I didn't need to update the checklist
-      //too and in fact it messes up the logging to do so
-      //leaving it here for now
-      //find the state checklist item to update
+    if (updates) {
+      for (let update of updates) {
+        let assessment = update[0];
+        let findingsVal = update[1];
+        scenario.assessmentFindings[assessment] = findingsVal; //it turns out I didn't need to update the checklist
+        //too and in fact it messes up the logging to do so
+        //leaving it here for now
+        //find the state checklist item to update
 
-      /* let data = Object.values(checkListItems).filter(rec => rec.id === assessment)
-      if (data.length > 0){
-          data[0].findingToDisplay = findingsVal} */
+        /* let data = Object.values(checkListItems).filter(rec => rec.id === assessment)
+        if (data.length > 0){
+            data[0].findingToDisplay = findingsVal} */
 
-      /* setCheckListItems(prevState => ({
-          ...prevState, [assessment]: data[0]})) */
+        /* setCheckListItems(prevState => ({
+            ...prevState, [assessment]: data[0]})) */
+      }
     }
   };
 
@@ -18972,13 +19447,14 @@ const ScenarioProvider = ({
       systemsTab,
       setSystemsTab,
       logIntv,
+      intvHistory,
       getIntvHistory,
       getIntvVariantHistory
     },
     children: children
   }, void 0, false, {
     fileName: _jsxFileName,
-    lineNumber: 545,
+    lineNumber: 546,
     columnNumber: 9
   }, undefined);
 };
@@ -19127,7 +19603,8 @@ const getDefaultValues = scen => {
   return {
     vitals: scen.initialVitalSigns,
     vitalsRecomputed: false,
-    checkListItems: {}
+    checkListItems: {},
+    intvHistory: []
   };
 };
 /*
@@ -19168,7 +19645,7 @@ function Scenario() {
       children: "Loading scenario..."
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 58,
+      lineNumber: 59,
       columnNumber: 17
     }, this);
   } else {
@@ -19178,12 +19655,12 @@ function Scenario() {
       defaultValues: initValues,
       children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(_components_layouts_ScenarioLayout__WEBPACK_IMPORTED_MODULE_6__["default"], {}, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 66,
+        lineNumber: 67,
         columnNumber: 17
       }, this)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 62,
+      lineNumber: 63,
       columnNumber: 13
     }, this);
   }
