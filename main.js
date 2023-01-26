@@ -1,6 +1,6 @@
 (self["webpackChunkmockup"] = self["webpackChunkmockup"] || []).push([["main"],{
 
-/***/ 37295:
+/***/ 6619:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -10,10 +10,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(47933);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(7267);
-/* harmony import */ var _meddbriefer_mdb_firebase__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(89526);
-/* harmony import */ var _meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(36011);
-/* harmony import */ var _meddbriefer_observer_ui__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(42012);
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(53015);
+/* harmony import */ var _meddbriefer_mdb_firebase__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(44551);
+/* harmony import */ var _meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(97650);
+/* harmony import */ var _meddbriefer_observer_ui__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(13162);
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(57216);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/apps/mockup/src/App.js";
 
@@ -92,7 +92,7 @@ function App(props) {
 
 /***/ }),
 
-/***/ 53015:
+/***/ 57216:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -104,13 +104,13 @@ __webpack_require__.r(__webpack_exports__);
 // When building for production, this file is replaced with `environment.prod.ts`.
 const environment = {
   production: false,
-  firebaseProject: "PamDev" || 0,
-  classCode: "demo"
+  firebaseProject: "MedDBrieferDev" || 0,
+  classCode: "pilot"
 };
 
 /***/ }),
 
-/***/ 57645:
+/***/ 39782:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -118,7 +118,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(17029);
-/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(37295);
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6619);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/apps/mockup/src/main.js";
 
@@ -140,7 +140,7 @@ root.render( /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.
 
 /***/ }),
 
-/***/ 44231:
+/***/ 20084:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -355,7 +355,7 @@ const findHeaderFor = (numericalID, log) => {
 
 /***/ }),
 
-/***/ 84654:
+/***/ 69265:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -363,17 +363,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "analyzeEvents": () => (/* binding */ analyzeEvents)
 /* harmony export */ });
-/* harmony import */ var _meddbriefer_scenario_data__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(48913);
-/* harmony import */ var _debriefingUtils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(85064);
-/* harmony import */ var _summarizeAnalysis__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(80838);
-/* harmony import */ var _constraintHandling__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(22296);
-/* harmony import */ var _actionInsertion__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(44231);
-/* harmony import */ var _handleMinimal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(72283);
-/* harmony import */ var _organizeCond1Display__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(3769);
-/* harmony import */ var _vitalsChecking__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(15700);
-/* harmony import */ var _meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(9205);
-/* harmony import */ var _meddebriefer_prompt_answer_grading__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(87988);
-/* harmony import */ var _scenarioDataAccesors__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(94548);
+/* harmony import */ var _meddbriefer_scenario_data__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(81657);
+/* harmony import */ var _debriefingUtils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6612);
+/* harmony import */ var _summarizeAnalysis__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(70742);
+/* harmony import */ var _constraintHandling__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2263);
+/* harmony import */ var _actionInsertion__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(20084);
+/* harmony import */ var _handleMinimal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(13773);
+/* harmony import */ var _organizeCond1Display__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(21908);
+/* harmony import */ var _meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(72536);
+/* harmony import */ var _meddebriefer_prompt_answer_grading__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(54386);
+/* harmony import */ var _scenarioDataAccesors__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(42227);
+/* harmony import */ var _inferencing__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(81828);
 
 
  //for debug
@@ -381,6 +381,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+ //import { doVitalsCounts, doVitalsFeedback } from './vitalsChecking';
 
 
 
@@ -409,22 +410,22 @@ var itemByLabel; // sts 1/23/22 - added as global
 let checklistHierarchy;
 let training; // analysisFields to include in output
 
-let analysisFields = ["numericalID", "actionDescription", "id", "type", "label", "labelID", "answerDetails", "vital", "vitalType", "value", "subPhase", "finding", "intvStatus", "vitalsNotDoneTwice", "vitalsDoneTwice", "probLabel", "feedback", "phFeedback", "why", "orderingFB", "vitalsFB", "incorrectAnswersFB", "intvStatusFB", "redundantToFB", "minimalWhy", "timestamp", "status", "displayColor", "comment"];
+let analysisFields = ["numericalID", "actionDescription", "id", "type", "label", "labelID", "answerDetails", "vital", "vitalType", "value", "subPhase", "finding", "intvStatus", "vitalsStage", "vitalsStageCoverage", "probLabel", "feedback", "phFeedback", "phaseOrderStatus", "lateRelativeTo", "why", "orderingFB", "vitalsFB", "minVitalsFB", "incorrectAnswersFB", "intvStatusFB", "redundantToFB", "minimalWhy", "timestamp", "status", "displayColor", "comment"];
 
 function initGlobals(scen) {
-  problemStates = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_1__.getStatesForStatus)("Problem", _meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_8__.fbTemplatesDef);
-  cautionStates = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_1__.getStatesForStatus)("Caution", _meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_8__.fbTemplatesDef);
+  problemStates = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_1__.getStatesForStatus)("Problem", _meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_7__.fbTemplatesDef);
+  cautionStates = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_1__.getStatesForStatus)("Caution", _meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_7__.fbTemplatesDef);
   phaseRequiredAtEnd = "ongoing-mgmt-plan";
   scenario = scen;
   (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_1__.initializeConstraints)(scen.name);
   getPromptIDs(scenario);
   training = scenario.info.debriefing;
-  (0,_meddebriefer_prompt_answer_grading__WEBPACK_IMPORTED_MODULE_9__.initializePromptAnswerGrading)(scenario);
+  (0,_meddebriefer_prompt_answer_grading__WEBPACK_IMPORTED_MODULE_8__.initializePromptAnswerGrading)(scenario);
   itemByID = initializeItemLookupByID(scen);
   itemByLabel = initializeItemLookupByLabel(scen);
-  requiredPhaseNames = (0,_scenarioDataAccesors__WEBPACK_IMPORTED_MODULE_10__.getChecklistItemsByType)(scen, _meddbriefer_scenario_data__WEBPACK_IMPORTED_MODULE_0__.MDB_TYPES.PHASE).map(e => e.id).concat(["Unknown"]);
-  requiredSubphases = (0,_scenarioDataAccesors__WEBPACK_IMPORTED_MODULE_10__.getChecklistItemsByType)(scen, _meddbriefer_scenario_data__WEBPACK_IMPORTED_MODULE_0__.MDB_TYPES.SUB_PHASE).map(e => e.id);
-  checklistHierarchy = (0,_scenarioDataAccesors__WEBPACK_IMPORTED_MODULE_10__.getChecklistHierarchy)(scen);
+  requiredPhaseNames = (0,_scenarioDataAccesors__WEBPACK_IMPORTED_MODULE_9__.getChecklistItemsByType)(scen, _meddbriefer_scenario_data__WEBPACK_IMPORTED_MODULE_0__.MDB_TYPES.PHASE).map(e => e.id).concat(["Unknown"]);
+  requiredSubphases = (0,_scenarioDataAccesors__WEBPACK_IMPORTED_MODULE_9__.getChecklistItemsByType)(scen, _meddbriefer_scenario_data__WEBPACK_IMPORTED_MODULE_0__.MDB_TYPES.SUB_PHASE).map(e => e.id);
+  checklistHierarchy = (0,_scenarioDataAccesors__WEBPACK_IMPORTED_MODULE_9__.getChecklistHierarchy)(scen);
   requiredPhaseAndSubPhases = findPhaseSubphasesOrdered(checklistHierarchy);
   checklistHierarchy.forEach(ph => {
     if (undefined === ph.subPhases) {
@@ -452,13 +453,13 @@ function getPromptIDs(scen) {
 
 
 const initializeItemLookupByID = scenario => {
-  let checklistLookupByID = (0,_scenarioDataAccesors__WEBPACK_IMPORTED_MODULE_10__.groupByKey)(scenario._checkListMetaData.filter(e => _meddbriefer_scenario_data__WEBPACK_IMPORTED_MODULE_0__.ANALYSIS_TYPES.includes(e.type)), "id");
+  let checklistLookupByID = (0,_scenarioDataAccesors__WEBPACK_IMPORTED_MODULE_9__.groupByKey)(scenario._checkListMetaData.filter(e => _meddbriefer_scenario_data__WEBPACK_IMPORTED_MODULE_0__.ANALYSIS_TYPES.includes(e.type)), "id");
   let intvLookupByID;
 
   if (!!scenario._interventions) {
-    intvLookupByID = (0,_scenarioDataAccesors__WEBPACK_IMPORTED_MODULE_10__.groupByKey)(scenario._interventions, "id");
+    intvLookupByID = (0,_scenarioDataAccesors__WEBPACK_IMPORTED_MODULE_9__.groupByKey)(scenario._interventions, "id");
   } else {
-    intvLookupByID = (0,_scenarioDataAccesors__WEBPACK_IMPORTED_MODULE_10__.groupByKey)(scenario.intvMetaData.filter(e => _meddbriefer_scenario_data__WEBPACK_IMPORTED_MODULE_0__.ANALYSIS_TYPES.includes(e.type)), "id");
+    intvLookupByID = (0,_scenarioDataAccesors__WEBPACK_IMPORTED_MODULE_9__.groupByKey)(scenario.intvMetaData.filter(e => _meddbriefer_scenario_data__WEBPACK_IMPORTED_MODULE_0__.ANALYSIS_TYPES.includes(e.type)), "id");
   }
 
   let result = Object.assign(checklistLookupByID, intvLookupByID);
@@ -466,13 +467,13 @@ const initializeItemLookupByID = scenario => {
 };
 
 const initializeItemLookupByLabel = scenario => {
-  let checklistLookupByLabel = (0,_scenarioDataAccesors__WEBPACK_IMPORTED_MODULE_10__.groupByKey)(scenario._checkListMetaData.filter(e => _meddbriefer_scenario_data__WEBPACK_IMPORTED_MODULE_0__.ANALYSIS_TYPES.includes(e.type)), "label");
+  let checklistLookupByLabel = (0,_scenarioDataAccesors__WEBPACK_IMPORTED_MODULE_9__.groupByKey)(scenario._checkListMetaData.filter(e => _meddbriefer_scenario_data__WEBPACK_IMPORTED_MODULE_0__.ANALYSIS_TYPES.includes(e.type)), "label");
   let intvLookupByLabel;
 
   if (!!scenario._interventions) {
-    intvLookupByLabel = (0,_scenarioDataAccesors__WEBPACK_IMPORTED_MODULE_10__.groupByKey)(scenario._interventions, "label");
+    intvLookupByLabel = (0,_scenarioDataAccesors__WEBPACK_IMPORTED_MODULE_9__.groupByKey)(scenario._interventions, "label");
   } else {
-    intvLookupByLabel = (0,_scenarioDataAccesors__WEBPACK_IMPORTED_MODULE_10__.groupByKey)(scenario.intvMetaData.filter(e => _meddbriefer_scenario_data__WEBPACK_IMPORTED_MODULE_0__.ANALYSIS_TYPES.includes(e.type)), "label");
+    intvLookupByLabel = (0,_scenarioDataAccesors__WEBPACK_IMPORTED_MODULE_9__.groupByKey)(scenario.intvMetaData.filter(e => _meddbriefer_scenario_data__WEBPACK_IMPORTED_MODULE_0__.ANALYSIS_TYPES.includes(e.type)), "label");
   }
 
   let result = Object.assign(checklistLookupByLabel, intvLookupByLabel);
@@ -958,26 +959,23 @@ const annotateInputEvents = (events, problems) => {
         }); //Do the grading of the event and return an event with
         //added fields with results
 
-        let variant;
+        let variant = "{}";
 
         if (!!event.intvVariant && typeof event.intvVariant === 'string' && event.intvVariant !== "{}") {
           let origVariant = JSON.parse(event.intvVariant); //intvVariant2JSON(event.intvVariant)}
 
           let key = Object.keys(origVariant)[0];
-          let val = origVariant[key][0]; //9/28/22 commenting out for trial 1 because no variants encoded in condition 2 feedback
-          //eventObj.variantID = val
-
+          let val = origVariant[key][0];
+          eventObj.variantID = val;
           variant = "{\"" + key + "\":\"" + val + "\"}";
-        } else {
-          variant = "{}";
-        } //intvVariant2JSON({})} 
+        } //else { variant = "{}" }   //intvVariant2JSON({})} 
 
 
-        let prescribedAnswers = (0,_meddebriefer_prompt_answer_grading__WEBPACK_IMPORTED_MODULE_9__.getPrescribedInvAnswers)(event.interventionID, variant);
-        eventObj = (0,_meddebriefer_prompt_answer_grading__WEBPACK_IMPORTED_MODULE_9__.processInterventionAnswers)(event, eventObj, prescribedAnswers, "incorrect-answers"); //anything with leftover status of intervention means it wasn't part of the solution
+        let prescribedAnswers = (0,_meddebriefer_prompt_answer_grading__WEBPACK_IMPORTED_MODULE_8__.getPrescribedInvAnswers)(event.interventionID, variant);
+        eventObj = (0,_meddebriefer_prompt_answer_grading__WEBPACK_IMPORTED_MODULE_8__.processInterventionAnswers)(event, eventObj, prescribedAnswers, "incorrect-answers"); //anything with leftover status of intervention means it wasn't part of the solution
 
         if (eventObj.status === "intervention") {
-          eventObj.status = "irrelevant";
+          eventObj.status = "not indicated";
         }
       }
 
@@ -989,7 +987,7 @@ const annotateInputEvents = (events, problems) => {
           event.parentLabel = parentItem.label;
         }
 
-        eventObj = (0,_meddebriefer_prompt_answer_grading__WEBPACK_IMPORTED_MODULE_9__.processAssessmentAnswers)(event, eventObj, prescribedAnswers, "decision-option-incorrect");
+        eventObj = (0,_meddebriefer_prompt_answer_grading__WEBPACK_IMPORTED_MODULE_8__.processAssessmentAnswers)(event, eventObj, prescribedAnswers, "decision-option-incorrect");
       }
 
       if (eventObj.type === "assessment-option") {
@@ -1000,7 +998,7 @@ const annotateInputEvents = (events, problems) => {
           event.parentLabel = parentItem.label;
         }
 
-        eventObj = (0,_meddebriefer_prompt_answer_grading__WEBPACK_IMPORTED_MODULE_9__.processAssessmentAnswers)(event, eventObj, prescribedAnswers, "assessment-option-incorrect");
+        eventObj = (0,_meddebriefer_prompt_answer_grading__WEBPACK_IMPORTED_MODULE_8__.processAssessmentAnswers)(event, eventObj, prescribedAnswers, "assessment-option-incorrect");
       } // add the formatted object to our list of formatted objects for the current phase and the id to our set of confirmed ids
 
 
@@ -1042,10 +1040,10 @@ const setupStatusChecking = (eventObj, trackForStatus) => {
   let statusChecking; //the entry retrieve from intvChecks
 
   let intv = eventObj.id;
-  statusChecking = _meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_8__.intvChecks[eventObj.label];
+  statusChecking = _meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_7__.intvChecks[eventObj.label];
 
   if (!statusChecking) {
-    statusChecking = _meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_8__.intvChecks[eventObj.id];
+    statusChecking = _meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_7__.intvChecks[eventObj.id];
   }
 
   if (!!statusChecking) {
@@ -1125,7 +1123,7 @@ const checkForMissingAssessments = (problems, events, confirmedEvents, phaseName
 
   var exceptions = [];
 
-  for (let exceptionDef of _meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_8__.exceptionDefs) {
+  for (let exceptionDef of _meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_7__.exceptionDefs) {
     if (exceptionDef.scenarioName === scenario.name) {
       exceptions = exceptionDef.exceptions;
       break;
@@ -1276,9 +1274,7 @@ const setupProblems = (defs, sols, actions) => {
           }
 
           switch (act.protocolRelationship) {
-            case "contraindicated":
-            case "irrelevant":
-            case "unnecessary":
+            case "not indicated":
               solution.otherActions.push(act);
               (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_1__.pushNew)(act, problem.allContras); //need to be able to annotate an action without deciding yet on which solution under
 
@@ -1541,7 +1537,7 @@ const insertMissingInterventions = (problems, confirmedEvents, indexCounter, pha
 
       phaseObject.status = "missing" + capitalizeFirstLetter(phaseObject.protocolRelationship); //assume actions are in the suggested order to solve a problem
 
-      if (!["optional", "unnecessary", "irrelevant", "redundant"].includes(phaseObject.protocolRelationship)) {
+      if (!["optional", "not indicated", "unnecessary", "irrelevant", "redundant"].includes(phaseObject.protocolRelationship)) {
         let orderingIndex = sol.ordering.findIndex(x => x.interventionID === phaseObject.id);
         (0,_actionInsertion__WEBPACK_IMPORTED_MODULE_4__.insertInPhaseRelativeToSuggestedOrder)(phaseNames, phases, phaseObject, sol.ordering, orderingIndex, confirmedEvents, checklistHierarchy, requiredPhaseNames, requiredSubphases, phaseRequiredAtEnd);
         indexCounter++;
@@ -1570,21 +1566,19 @@ function analyzeEvents(scen, log) {
   let problemDefs = scenario.problems;
   let problemActions = scenario.actions;
   let problemSolutions = scenario.solutions;
-  let problems;
+  let problems; //if (training){
 
-  if (training) {
-    problems = setupProblems(problemDefs, problemSolutions, problemActions);
-  }
-
-  ; //In the remainder, just dealing with the first solution for each problem
+  problems = setupProblems(problemDefs, problemSolutions, problemActions); //};
+  //In the remainder, just dealing with the first solution for each problem
   //so if we ever have more than one solution for a problem this code needs to
   //be updated.  Would need to consider the additional solutions to decide which
   //solution is the best fit for the observer student
 
-  let formattedActions = [];
+  let formattedActions = []; //if (training && problems.length !== 0) {
 
-  if (training && problems.length !== 0) {
-    let expectedScenInterventions = collectScenInterventions(problems);
+  if (problems.length !== 0) {
+    let expectedScenInterventions = collectScenInterventions(problems); //add annotations that indicate what role each event plays in the problem solution
+
     let annotatedResults = annotateInputEvents(events, problems); //phaseNames and phases are two arrays synchronized be array indices
     //phases contains just the steps under the phase (thus could be a phase or subphase in observer interface)
     //phaseNames contains the label for each phase in phases.  Makes it a bit easier to search phaseNames to get the
@@ -1593,53 +1587,44 @@ function analyzeEvents(scen, log) {
     let phases = annotatedResults[0];
     let phaseNames = annotatedResults[1];
     let confirmedEvents = annotatedResults[2];
-    let intvsTracking = annotatedResults[3];
-    /* //now create some similar structures for the parents of the above phases
-    //so have all the associated event objects in parents and parentNames
-    //for easy lookup
-    let parentResults = collectParentPh(phaseNames)
-    let parents = parentResults[0]  //events under this parent
-    let parentNames = parentResults[1] */
-    //update relative to constraints and comprises definitions
-    //for now it just compares two constraint args of the same type
-    //for what currently exists
+    let intvsTracking = annotatedResults[3]; //check the temporal constraints
+    //first find the constraints relevant to this scenario
+    //then determine which constraints if any were violated and setup the feedback
 
     (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_1__.filterConstraintsBySolutions)(expectedScenInterventions);
     let kbUpdates = (0,_constraintHandling__WEBPACK_IMPORTED_MODULE_3__.checkAgainstKB)(phases, phaseNames, requiredPhaseNames, requiredSubphases, checklistHierarchy, itemByID, itemByLabel, constraintsViolated, phaseFB);
     phases = kbUpdates[0];
     phaseNames = kbUpdates[1]; //add missing phase names to phaseNames
-    //as do insertions should consider the temporal ordering constraints
+    //In the future, as do insertions for missing items may want to try to consider the temporal ordering constraints
 
     let updatedPhases = insertMissingSubphases(phases, phaseNames);
     phases = updatedPhases[0];
-    phaseNames = updatedPhases[1]; // check for missing checklist steps
-    //as do insertions should consider the temporal ordering constraints
+    phaseNames = updatedPhases[1]; // check for missing assessment checklist steps and insert them
 
     let postAssessmentReview = checkForMissingAssessments(problems, events, confirmedEvents, phaseNames, phases);
     confirmedEvents = postAssessmentReview[0];
     phaseNames = postAssessmentReview[1];
     phases = postAssessmentReview[2];
-    let indexCounter = postAssessmentReview[3]; // this section could be moved into a separate function so that
-    // the parts of the main analysis are clearer
-    // start insert missing interventions
+    let indexCounter = postAssessmentReview[3]; // check for and insert missing interventions
+    // In the future may want to implement some dependency checking since interventions depend on appropriate assessments having
+    // been done
 
     let postInterventionReview = insertMissingInterventions(problems, confirmedEvents, indexCounter, phaseNames, phases);
     indexCounter = postInterventionReview[0];
     phaseNames = postInterventionReview[1];
-    phases = postInterventionReview[2]; // search for missing interventions for each action
-    // Doing this separately from the earlier actions loop because
-    // we wanted to add in missing assessment steps first
-    // since interventions depend on appropriate assessments having
-    // been done
-    // end insert missing interventions
+    phases = postInterventionReview[2]; // end insert missing interventions
     // put together the phases into a single array ordered as directed by phases
 
     formattedActions = (0,_organizeCond1Display__WEBPACK_IMPORTED_MODULE_6__.organizeLogDisplay)(phaseNames, phases, requiredPhaseNames, problemStates, cautionStates, checklistHierarchy, subPhases, phaseFB, itemByID, itemByLabel); // Now that it is all rejoined into a single list, do some updating with additional
-    // analysis results
+    // analysis results such as what intervention status checking was not done at some
+    // time after the intervention was done
 
-    formattedActions = insertMissingIntvChecks(formattedActions, intvsTracking);
+    formattedActions = insertMissingIntvChecks(formattedActions, intvsTracking); // check if any missing assessments can be inferred
+
+    formattedActions = (0,_inferencing__WEBPACK_IMPORTED_MODULE_10__.inferenceCheckingForAssessments)(events, formattedActions, scen.name);
     let priorProb = "N/A";
     let finalActions = []; //insert intervention headers in condition 1 log if the switch is set to do so
+    //currently insertInterventionHeader is false
 
     formattedActions.forEach((eventObj, j) => {
       let intvHeaderIndex = 1;
@@ -1668,10 +1653,10 @@ function analyzeEvents(scen, log) {
     // Here only for development purposes
 
     console.log("Constraint Violation Results", constraintsViolated); // verify that scenario specified vitals have been checked twice
-
-    let vitalsCounts = (0,_vitalsChecking__WEBPACK_IMPORTED_MODULE_7__.doVitalsCounts)(finalActions, scen.name);
-    (0,_vitalsChecking__WEBPACK_IMPORTED_MODULE_7__.doVitalsFeedback)(finalActions, vitalsCounts, scen.name);
-    console.log("vitalsCounts: ", vitalsCounts); //remove analysis fields not needed by others before returning them
+    //let vitalsCounts = doVitalsCounts(finalActions, scen.name)
+    //doVitalsFeedback(finalActions, vitalsCounts, scen.name)
+    //console.log("vitalsCounts: ", vitalsCounts)
+    //remove analysis fields not needed by others before returning them
 
     let trimmedActions = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_1__.trimActions)(finalActions, analysisFields);
     const retVal = {
@@ -1703,7 +1688,7 @@ function analyzeEvents(scen, log) {
 
 /***/ }),
 
-/***/ 22296:
+/***/ 2263:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1711,8 +1696,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "checkAgainstKB": () => (/* binding */ checkAgainstKB)
 /* harmony export */ });
-/* harmony import */ var _debriefingUtils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(85064);
-/* harmony import */ var _actionInsertion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(44231);
+/* harmony import */ var _debriefingUtils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6612);
+/* harmony import */ var _actionInsertion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(20084);
+/* harmony import */ var _meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(72536);
+
 
  //start support functions for constraint checking
 
@@ -1760,23 +1747,7 @@ const findObjByNumerialID = (numericalID, phases, phaseNames, checklistHierarchy
   }
 };
 
-const storeMisOrderedArgs = (numericalID, arg2, phases, phaseNames, checklistHierarchy) => {
-  let result = findObjByNumerialID(numericalID, phases, phaseNames, checklistHierarchy);
-  let objToModify = result[0];
-
-  if (!objToModify) {
-    console.log("no object found for numericalID = ", numericalID);
-  } //just for debugging
-  else {
-    if (!objToModify.arg2) {
-      objToModify.arg2 = [arg2.id];
-    } else {
-      objToModify.arg2 = objToModify.arg2.concat([arg2.id]);
-    }
-  }
-};
-
-const storeMisOrderedFB = (numericalID, lateArg, FB, constraintType, phases, phaseNames, checklistHierarchy, phaseFB) => {
+const storeMisOrderedFB = (numericalID, lateArg, otherArg, FB, constraintType, phases, phaseNames, checklistHierarchy, phaseFB) => {
   let result = findObjByNumerialID(numericalID, phases, phaseNames, checklistHierarchy);
   let objToModify = result[0];
 
@@ -1786,7 +1757,7 @@ const storeMisOrderedFB = (numericalID, lateArg, FB, constraintType, phases, pha
     } //just for debugging
     else {
       if (objToModify.orderingFB !== "") {
-        objToModify.orderingFB = objToModify.orderingFB + ".\xa0\xa0" + FB;
+        objToModify.orderingFB = objToModify.orderingFB + "\xa0\xa0" + FB;
       } else {
         objToModify.orderingFB = FB;
       }
@@ -1801,9 +1772,12 @@ const storeMisOrderedFB = (numericalID, lateArg, FB, constraintType, phases, pha
     }
   } else {
     if (!!phaseFB[lateArg]) {
-      phaseFB[lateArg] = phaseFB[lateArg] + ".  " + FB;
+      phaseFB[lateArg].arg2 = phaseFB[lateArg].arg2.concat([otherArg]);
+      phaseFB[lateArg].feedback = phaseFB[lateArg].feedback + ".  " + FB;
     } else {
-      phaseFB[lateArg] = FB;
+      phaseFB[lateArg] = {};
+      phaseFB[lateArg].arg2 = [otherArg];
+      phaseFB[lateArg].feedback = FB;
     }
   }
 }; //flattens out the phases and phaseNames data structures so that all phase and subphase
@@ -1853,7 +1827,7 @@ const collectEntriesToCheckConstraints = (phases, phaseNames, requiredPhaseNames
   return [listOfNames, uniqueListOfNames, listOfEntries];
 };
 
-const saveFailedConstraint = (lateArg, otherArg, constraintID, constraintsViolated) => {
+const saveFailedConstraint = (lateArg, lateNum, otherArg, constraintID, constraintsViolated) => {
   let type;
 
   if (["phase", "sub-phase"].includes(lateArg.type)) {
@@ -1864,198 +1838,189 @@ const saveFailedConstraint = (lateArg, otherArg, constraintID, constraintsViolat
 
   constraintsViolated.push({
     constraintID: constraintID,
-    arg1: lateArg,
+    arg1: lateArg.id,
+    arg1Num: lateNum,
     op: "before",
-    arg2: otherArg,
+    arg2: otherArg.id,
     type: type
   });
   return type;
 };
 
-const addToListOfFeedback = (parPhFB, last, label, repeating) => {
-  //feedback for nonphase
-  if (repeating) {
-    if (last) {
-      parPhFB = parPhFB + " and ";
-    } else {
-      parPhFB = parPhFB + ", ";
-    }
-  }
-
-  parPhFB = parPhFB + label.toLowerCase();
-  return parPhFB;
-};
-
-const checkAgainst2ndArgs = (arg1st, args2nd, op, direction, constraintID, entryNames, entries, phases, phaseNames, checklistHierarchy, itemByID, itemByLabel, constraintsViolated, phaseFB) => {
+const checkAgainst2ndArgs = (arg1st, args2nd, op, constraintID, entryNames, entries, itemByID, itemByLabel, constraintsViolated) => {
   let endNum1st = findNameNumID(entryNames, entries, arg1st, "end");
   let startNum1st = findNameNumID(entryNames, entries, arg1st, "start");
-  let label1st = arg1st.label;
-  let phFB = "";
-  let par1PhFB = "";
-  let par2PhFB = "";
-  let repeating;
-  let constraintType;
+
+  if (!["phase", "sub-phase"].includes(arg1st.type) && startNum1st !== endNum1st) {
+    //means have duplicate entries for a single item
+    //so use the earliest entry only to test before
+    endNum1st = startNum1st;
+  }
 
   if (args2nd.length > 0) {
-    let counter = 0;
-    let violations = 0;
-
     for (let arg of args2nd) {
-      let last = false;
       let arg2nd = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_0__.getItem)(arg, itemByID, itemByLabel);
 
       if (!!arg2nd) {
-        counter++;
+        let startNum2nd = findNameNumID(entryNames, entries, arg2nd, "start");
 
-        if (counter === args2nd.length) {
-          last = true;
+        if (!!endNum1st && !!startNum2nd) {
+          if (!(endNum1st < startNum2nd)) {
+            //if failed constraint i.e. arg1 is late
+            saveFailedConstraint(arg1st, startNum1st, arg2nd, constraintID, constraintsViolated);
+          } else {
+            if (op === "or") {
+              return;
+            }
+          }
+        }
+      }
+    }
+  }
+};
+
+const generateConstraintFB = (constraints, itemByID, itemByLabel, phases, phaseNames, checklistHierarchy, phaseFB) => {
+  for (const [, entry] of Object.entries(constraints)) {
+    let FB = "";
+    let orig1stLabel = "";
+    const {
+      arg1: arg1st,
+      arg1Num,
+      type: cType,
+      arg2: args2
+    } = entry;
+    let arg1stItem = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_0__.getItem)(arg1st, itemByID, itemByLabel);
+    let label1st;
+
+    if (!!arg1stItem) {
+      orig1stLabel = arg1stItem.label;
+      label1st = arg1stItem.label;
+    } else {
+      label1st = arg1st;
+    }
+
+    label1st = label1st[0].toLowerCase() + label1st.substring(1);
+
+    if (cType === "phase") {
+      FB = "You should have completed the " + label1st;
+    } else {
+      FB = "You should have " + label1st;
+    } //turn arg2s into labels
+
+
+    let part2 = "";
+    let arg2Labels = "";
+
+    for (let i = 0; i < args2.length; i++) {
+      let argItem = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_0__.getItem)(args2[i], itemByID, itemByLabel);
+      let label2nd;
+
+      if (!!argItem) {
+        label2nd = argItem.label;
+      } else {
+        label2nd = args2[i];
+      }
+
+      label2nd = label2nd[0].toLowerCase() + label2nd.substring(1);
+
+      if (args2.length > 1) {
+        if (i === 0) {
+          //first item in list
+          part2 = " before you started " + label2nd;
+          arg2Labels = label2nd;
         }
 
-        let label2nd = arg2nd["label"];
-        let startNum2nd = findNameNumID(entryNames, entries, arg2nd, "start");
-        let endNum2nd = findNameNumID(entryNames, entries, arg2nd, "end");
+        if (i + 1 === args2.length) {
+          //last item in list
+          part2 = part2 + ", and " + label2nd;
+          arg2Labels = arg2Labels + " and " + label2nd;
+        }
+      } else {
+        //only item in the list
+        part2 = " before you did " + label2nd;
+        arg2Labels = label2nd;
+      }
+    }
 
-        switch (direction) {
-          case "before":
-            if (!!endNum1st && !!startNum2nd) {
-              if (!(endNum1st < startNum2nd)) {
-                //if failed constraint i.e. arg1 is late
-                //result = collectFB (constraintID, counter, arg1st, arg2nd, startNum1st, startNum2nd, endNum1st, endNum2nd, label1st, label2nd, last, constraintType, phases, phaseNames)
-                //feedback for item
-                violations++;
+    FB = FB + part2 + ".";
+    storeMisOrderedFB(arg1Num, orig1stLabel, arg2Labels, FB, cType, phases, phaseNames, checklistHierarchy, phaseFB);
+  }
+};
 
-                if (par1PhFB === "") {
-                  if (startNum1st === endNum1st) {
-                    par1PhFB = "You should have ";
-                    par1PhFB = addToListOfFeedback(par1PhFB, last, label1st, false);
-                  } //feedback for phase
-                  else {
-                    par1PhFB = "You should have completed the ";
-                    par1PhFB = addToListOfFeedback(par1PhFB, last, label1st, false);
-                  }
-                }
+const findAggregateLabel = item => {
+  for (const [label, arr] of Object.entries(_meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_2__.aggregateLabels)) {
+    if (arr.includes(item)) {
+      return label;
+    }
+  }
 
-                if (startNum2nd === endNum2nd) {
-                  if (par2PhFB === "") {
-                    par2PhFB = par2PhFB + " before you did ";
-                  } //feedback for item
+  return undefined;
+};
+
+const aggregateArguments = constraintsViolated => {
+  //first collect together all the args that late items/phases are late with respect to, in order
+  //to aggregate when possible the list of items in the feedback
+  let lateArgEntries = {};
+
+  for (const [, instance] of Object.entries(constraintsViolated)) {
+    const {
+      arg1: lateArg,
+      arg1Num: lateNum,
+      type,
+      arg2
+    } = instance;
+    let key = lateArg + "-" + type;
+    let currentObj = lateArgEntries[key];
+
+    if (!!currentObj) {
+      currentObj.arg2 = currentObj.arg2.concat(arg2);
+    } else {
+      currentObj = {
+        arg1: lateArg,
+        arg1Num: lateNum,
+        arg2: [arg2],
+        type: type
+      };
+    }
+
+    lateArgEntries[key] = currentObj;
+  } //now replace the arg2s that can be replaced by an aggregate label
 
 
-                  if (violations > 1) {
-                    repeating = true;
-                  } else {
-                    repeating = false;
-                  }
+  for (const [lateArg, entry] of Object.entries(lateArgEntries)) {
+    let arg2s = entry.arg2;
+    let newArgs = JSON.parse(JSON.stringify(arg2s)); //make a deep copy
 
-                  par2PhFB = addToListOfFeedback(par2PhFB, last, label2nd, repeating);
-                } else {
-                  if (par2PhFB === "") {
-                    par2PhFB = par2PhFB + " before starting the ";
-                  } //feedback for phase
+    for (var i = 0; i < arg2s.length; i++) {
+      let aggregateLabel = findAggregateLabel(arg2s[i]);
+      let index = newArgs.findIndex(e => e === arg2s[i]);
 
+      if (!!aggregateLabel) {
+        newArgs.splice(index, 1); //remove the item
 
-                  if (violations > 1) {
-                    repeating = true;
-                  } else {
-                    repeating = false;
-                  }
-
-                  par2PhFB = addToListOfFeedback(par2PhFB, last, label2nd, repeating);
-                }
-
-                storeMisOrderedArgs(startNum1st, arg2nd, phases, phaseNames, checklistHierarchy);
-                constraintType = saveFailedConstraint(arg1st, arg2nd, constraintID, constraintsViolated);
-              } else {
-                if (op === "or") {
-                  return;
-                }
-              }
-            }
-
-            break;
-
-          case "after":
-            //for after just reverse 1st and 2nd args
-            if (!!startNum1st && !!endNum2nd) {
-              if (!(startNum1st > endNum2nd)) {
-                //if failed constraint  i.e. arg2 is late
-                violations++;
-
-                if (startNum1st === endNum1st) {
-                  //feedback for item
-                  if (par1PhFB === "") {
-                    par1PhFB = "You should have ";
-                  }
-
-                  if (violations > 1) {
-                    repeating = true;
-                  } else {
-                    repeating = false;
-                  }
-
-                  par1PhFB = addToListOfFeedback(par1PhFB, last, label2nd, repeating);
-                } //feedback for phase
-                else {
-                  if (par1PhFB === "") {
-                    par1PhFB = "You should have completed ";
-                  }
-
-                  if (violations > 1) {
-                    repeating = true;
-                  } else {
-                    repeating = false;
-                  }
-
-                  par1PhFB = addToListOfFeedback(par1PhFB, last, label2nd, repeating);
-                }
-
-                if (par2PhFB === "") {
-                  if (startNum2nd === endNum2nd) {
-                    par2PhFB = par2PhFB + " before you did ";
-                    par2PhFB = addToListOfFeedback(par2PhFB, last, label1st, false);
-                  } else {
-                    par2PhFB = par2PhFB + " before starting "; //feedback for nonphase
-
-                    par2PhFB = addToListOfFeedback(par2PhFB, last, label1st, false);
-                  }
-                }
-
-                storeMisOrderedArgs(startNum2nd, arg1st, phases, phaseNames, checklistHierarchy); //feedback for phase
-
-                constraintType = saveFailedConstraint(arg2nd, arg1st, constraintID);
-              } else {
-                if (op === "or") {
-                  return;
-                }
-              }
-            }
-
-            break;
-
-          default:
-            break;
+        if (!newArgs.includes(aggregateLabel)) {
+          newArgs = newArgs.concat(aggregateLabel);
         }
       }
     }
 
-    phFB = par1PhFB + par2PhFB;
-
-    if (phFB !== "") {
-      phFB = phFB + ".";
-      storeMisOrderedFB(startNum1st, label1st, phFB, constraintType, phases, phaseNames, checklistHierarchy, phaseFB);
-    }
+    entry.arg2 = newArgs;
+    lateArgEntries[lateArg] = entry;
   }
+
+  return lateArgEntries;
 };
 
-const checkConstraintsForArg = (arg1st, constraint, phases, phaseNames, entryNames, entries, checklistHierarchy, itemByID, itemByLabel, constraintsViolated, phaseFB) => {
-  let args2nd = constraint.before;
-  let op = constraint.beforeOp;
-  checkAgainst2ndArgs(arg1st, args2nd, op, "before", constraint.id, entryNames, entries, phases, phaseNames, checklistHierarchy, itemByID, itemByLabel, constraintsViolated, phaseFB);
-  args2nd = constraint.after;
-  op = constraint.afterOp;
-  checkAgainst2ndArgs(arg1st, args2nd, op, "after", constraint.id, entryNames, entries, phases, phaseNames, checklistHierarchy, itemByID, itemByLabel, constraintsViolated, phaseFB);
+const checkConstraintsForArg = (arg1st, constraint, entryNames, entries, itemByID, itemByLabel, constraintsViolated) => {
+  let op;
+  let args2nd = constraint.before.filter(l => entryNames.includes(l));
+
+  if (args2nd.length > 0) {
+    op = constraint.beforeOp;
+    checkAgainst2ndArgs(arg1st, args2nd, op, constraint.id, entryNames, entries, itemByID, itemByLabel, constraintsViolated);
+  }
 }; //end support functions for constraint checking
-//To DO: filter constraints in/out based on findings available for this scenario
+//To DO Future: filter constraints in/out based on findings available for this scenario
 //main function for constraint checking
 
 
@@ -2068,24 +2033,26 @@ const checkAgainstKB = (phases, phaseNames, requiredPhaseNames, requiredSubphase
     let firstArgItem = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_0__.getItem)(firstArg, itemByID, itemByLabel);
 
     if (!!firstArgItem) {
-      processFirstArg(firstArgItem, phases, phaseNames, entryNames, entries, checklistHierarchy, itemByID, itemByLabel, constraintsViolated, phaseFB);
+      processFirstArg(firstArgItem, entryNames, entries, itemByID, itemByLabel, constraintsViolated);
     }
-  }); //only expect to change objects in phases
+  });
+  let aggregatedConstraints = aggregateArguments(constraintsViolated);
+  generateConstraintFB(aggregatedConstraints, itemByID, itemByLabel, phases, phaseNames, checklistHierarchy, phaseFB); //only expect to change objects in phases
 
   return [phases, phaseNames];
 };
 
-const processFirstArg = (firstArgItem, phases, phaseNames, entryNames, entries, checklistHierarchy, itemByID, itemByLabel, constraintsViolated, phaseFB) => {
+const processFirstArg = (firstArgItem, entryNames, entries, itemByID, itemByLabel, constraintsViolated) => {
   let constraint = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_0__.getConstraint)(firstArgItem); //will find only one constraint per 1st arg
 
   if (!!constraint) {
-    checkConstraintsForArg(firstArgItem, constraint, phases, phaseNames, entryNames, entries, checklistHierarchy, itemByID, itemByLabel, constraintsViolated, phaseFB);
+    checkConstraintsForArg(firstArgItem, constraint, entryNames, entries, itemByID, itemByLabel, constraintsViolated);
   }
 };
 
 /***/ }),
 
-/***/ 85064:
+/***/ 6612:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2105,6 +2072,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "getStatesForStatus": () => (/* binding */ getStatesForStatus),
 /* harmony export */   "getTimestamp": () => (/* binding */ getTimestamp),
 /* harmony export */   "initializeConstraints": () => (/* binding */ initializeConstraints),
+/* harmony export */   "intersects": () => (/* binding */ intersects),
 /* harmony export */   "pushNew": () => (/* binding */ pushNew),
 /* harmony export */   "saveAnalysisLog": () => (/* binding */ saveAnalysisLog),
 /* harmony export */   "saveCommentLog": () => (/* binding */ saveCommentLog),
@@ -2114,10 +2082,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "trimAction": () => (/* binding */ trimAction),
 /* harmony export */   "trimActions": () => (/* binding */ trimActions)
 /* harmony export */ });
-/* harmony import */ var _meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9205);
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(86957);
-/* harmony import */ var _meddbriefer_scenario_data__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(48913);
-/* harmony import */ var _scenarioDataAccesors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(94548);
+/* harmony import */ var _meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(72536);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(68356);
+/* harmony import */ var _meddbriefer_scenario_data__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(81657);
+/* harmony import */ var _scenarioDataAccesors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(42227);
  //import {  requiredPhaseNames } from "./analyzeEvents";
 // constraintsViolated,
 // import { c2FB } from "./summarizeAnalysis";
@@ -2136,7 +2104,7 @@ let gradingReport = false; //a true setting will true the analysis log into a fo
 
 const C2_FIELDS = ["feedbackAbsent", "feedbackOutOfOrder", "feedbackErrors"];
 const scenarios = {
-  M2CA: _meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_0__.M2CA_PhaseIE,
+  //M2CA: M2CA_PhaseIE,
   SC8CP: _meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_0__.SC8CP_PhaseIE,
   B5CA: _meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_0__.B5CA_PhaseIE,
   B4CA: _meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_0__.B4CA_PhaseIE,
@@ -2145,6 +2113,15 @@ const scenarios = {
 const pushNew = (elt, array) => {
   if (!array.includes(elt)) {
     array.push(elt);
+  }
+};
+const intersects = (arr1, arr2) => {
+  let result = arr1.filter(x => arr2.indexOf(x) !== -1);
+
+  if (result.length > 0) {
+    return true;
+  } else {
+    return false;
   }
 }; // Not yet tested.  May not need these two
 
@@ -2193,10 +2170,13 @@ const getPhaseStatus = statuses => {
 
 
   statuses.forEach(status => {
-    pushNew(status, itemStatuses);
+    if (status !== "notFound") {
+      pushNew(status, itemStatuses);
+    }
     /* if (!itemStatuses.includes(status)){
             itemStatuses.push(status)
         } */
+
   }); //turn the item status values into phase level status values
 
   let res;
@@ -2210,10 +2190,22 @@ const getPhaseStatus = statuses => {
   }
 
   if (phaseStatuses.length === 1) {
-    return phaseStatuses[0];
-  } // to be absent or good, all entries must be good or absent
+    if (phaseStatuses[0] === "error") {
+      return "errors";
+    } else {
+      return phaseStatuses[0];
+    }
+  } // to be absent or good, all entries must be that value 
   else {
-    return "errors";
+    if (phaseStatuses.length === 2 && phaseStatuses.includes("good") && intersects(phaseStatuses, ["misordered", "misOrdered"])) {
+      return "misordered";
+    } else {
+      if (intersects(phaseStatuses, ["misordered", "misOrdered", "misorderedErrors", "misorderedError", "misOrderedError"]) && intersects(phaseStatuses, ["error", "errors", "absent"])) {
+        return "misorderedErrors";
+      } else {
+        return "errors";
+      }
+    }
   } //otherwise they are not all good to that translates to errors
 
 }; // functions that extract info from above or create the feedback from the above
@@ -2326,7 +2318,9 @@ const generateIntvStatusFB = currentEntry => {
 let fbSource = "json"; //values are "db" or "json"
 
 function getFBField(currentEntry, field, c2FB) {
-  let result;
+  let tailoredFB = "";
+  let genFB = "";
+  let combinedResult = "";
   let indexLabel;
 
   if (currentEntry.variantID) {
@@ -2345,18 +2339,18 @@ function getFBField(currentEntry, field, c2FB) {
         case "assessmentFB":
           //get from c2 ds field feedbackAbsent
           if (fb && fb.feedbackAbsent && fb.feedbackAbsent[0] !== "") {
-            result = fb.feedbackAbsent;
+            tailoredFB = fb.feedbackAbsent;
           }
 
           break;
 
         case "why":
-          if (fb && ["contraindicated", "unnecessary", "irrelevant"].includes(status) && fb.feedbackErrors && fb.feedbackErrors[0] !== "") {
-            result = fb.feedbackErrors;
+          if (fb && ["not indicated"].includes(status) && fb.feedbackErrors && fb.feedbackErrors[0] !== "") {
+            tailoredFB = fb.feedbackErrors;
           }
 
-          if (fb && !["contraindicated", "unnecessary", "irrelevant"].includes(status) && fb.feedbackAbsent && fb.feedbackAbsent[0] !== "") {
-            result = fb.feedbackAbsent;
+          if (fb && !["not indicated"].includes(status) && fb.feedbackAbsent && fb.feedbackAbsent[0] !== "") {
+            tailoredFB = fb.feedbackAbsent;
           }
 
           break;
@@ -2364,19 +2358,22 @@ function getFBField(currentEntry, field, c2FB) {
         case "incorrectAnswersFB":
           //get from c2 ds field feedbackErrors
           if (fb && fb.feedbackErrors && fb.feedbackErrors[0] !== "") {
-            result = fixStrSp(currentEntry[field]) + ".\xa0\xa0" + fb.feedbackErrors;
+            genFB = fixStrSp(currentEntry[field]) + ".\xa0\xa0";
+            tailoredFB = fb.feedbackErrors;
           }
 
           break;
 
         case "orderingFB":
           if (fb && fb.feedbackOutOfOrder && fb.feedbackOutOfOrder[0] !== "") {
-            result = fb.feedbackOutOfOrder;
+            tailoredFB = fb.feedbackOutOfOrder;
           }
 
           break;
 
         default:
+          genFB = fixStrSp(currentEntry[field]) + ".\xa0\xa0";
+          break;
       }
 
       break;
@@ -2384,16 +2381,24 @@ function getFBField(currentEntry, field, c2FB) {
     default:
   }
 
-  let combinedResult = "";
+  if (!!tailoredFB && Array.isArray(tailoredFB)) {
+    tailoredFB.forEach((para, i) => {
+      //use below commented out block instead if want to preserve breaks put in condition 2 feedback
 
-  if (!!result && Array.isArray(result)) {
-    result.forEach(para => {
-      combinedResult = combinedResult + "\xa0\xa0" + para;
+      /* if (i < tailoredFB.length-1){
+        combinedResult = combinedResult + para + "</p>"}
+      else {combinedResult = combinedResult + para} */
+      if (combinedResult !== "") {
+        combinedResult = combinedResult + "\xa0\xa0" + para;
+      } else {
+        combinedResult = para;
+      }
     });
+    combinedResult = genFB + combinedResult;
   } //to deal with old analysis/feedback file from before c2FB feedback fields became an array of strings instead of a string
   else {
-    if (!!result) {
-      combinedResult = result;
+    if (!!tailoredFB) {
+      combinedResult = genFB + tailoredFB;
     }
   }
 
@@ -2423,6 +2428,14 @@ const getPhaseFeedback = (entry, phaseFBGiven, c2FB) => {
 
       if (fb && fb.feedbackOutOfOrder) {
         result = fb.feedbackOutOfOrder;
+      } else {
+        result = entry.phFeedback;
+      }
+
+      if (fb && fb.feedbackOutOfOrder && fb.feedbackOutOfOrder !== "") {
+        result = fb.feedbackOutOfOrder;
+      } else {
+        result = entry.phFeedback;
       }
     } else {
       result = entry.phFeedback;
@@ -2471,7 +2484,7 @@ const applyFBTemplate = (rep, c2FB, template) => {
           if (feedbackArray[i - 1] === "+bos") {
             feedbackArray[i - 1] = "";
 
-            if (feedbackArray[i - 2][0] !== "+") {
+            if (!!feedbackArray[i - 2] && feedbackArray[i - 2][0] !== "+") {
               //don't want to alter a command that has not been processed
               if (feedbackArray[i - 2][feedbackArray[i - 2].length - 1] !== ".") {
                 feedbackArray[i - 2] = feedbackArray[i - 2] + ".\xa0";
@@ -2578,10 +2591,10 @@ const applyFBTemplate = (rep, c2FB, template) => {
 };
 const getFeedback = (currentEntry, c2FB, fbTemplates) => {
   let vitalsCheckFB = "";
-
-  if (currentEntry.id === _meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_0__.vitalsCheckFeedbackID) {
-    vitalsCheckFB = currentEntry.vitalsFB;
-  }
+  let feedbackString = "";
+  /* if (currentEntry.id === vitalsCheckFeedbackID){
+    vitalsCheckFB = currentEntry.vitalsFB
+  } */
 
   if (currentEntry.type !== "header") {
     if (!!currentEntry.intvStatus && currentEntry.intvStatus.length > 0) {
@@ -2590,16 +2603,19 @@ const getFeedback = (currentEntry, c2FB, fbTemplates) => {
     }
 
     let feedbackTemplate = fixStrSp(getAssessmentEntry(currentEntry, 1, fbTemplates)).trim();
-    let feedbackString = applyFBTemplate(currentEntry, c2FB, feedbackTemplate); //console.log(feedbackString)
+
+    if (feedbackTemplate !== "") {
+      feedbackString = applyFBTemplate(currentEntry, c2FB, feedbackTemplate);
+    } //console.log(feedbackString)
+
 
     if (vitalsCheckFB !== "") {
-      feedbackString = vitalsCheckFB + feedbackString;
+      feedbackString = vitalsCheckFB + "</p>" + feedbackString;
     }
 
     return feedbackString;
-  } else {
-    return vitalsCheckFB;
-  }
+  } //else {return vitalsCheckFB}
+
 };
 const filterConstraintsBySolutions = expectedScenInterventions => {
   scenarioConstraints = Object.assign(initialConstraints);
@@ -2612,20 +2628,46 @@ const filterConstraintsBySolutions = expectedScenInterventions => {
 }; //built by the function initializeConstraints
 
 var initialConstraints = {};
-var scenarioConstraints = {}; // adds on scenario specific constraints where the constraint is only applicable if certain patient
+var scenarioConstraints = {};
+var AFTER_FIELDS = ["id", "before", "beforeOp", "type"]; // adds on scenario specific constraints where the constraint is only applicable if certain patient
 // conditions hold.  Since assessment callouts are text and have no associated representation, we
 // can yet implement true conditional constraints.
 
 const initializeConstraints = scenarioName => {
-  // look up applicable conditional constraints from const structure scenarioConstraintIDs
+  initialConstraints = Object.assign(JSON.parse(JSON.stringify(_meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_0__.globalConstraints))); // look up applicable conditional constraints from const structure scenarioConstraintIDs
+
   let constraintIDs = _meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_0__.scenarioConstraintIDs[scenarioName];
-  initialConstraints = JSON.parse(JSON.stringify(_meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_0__.globalConstraints));
 
   if (!!constraintIDs && constraintIDs.length !== 0) {
     for (const [key, val] of Object.entries(_meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_0__.conditionalConstraints)) {
       if (constraintIDs.includes(val.id)) {
         initialConstraints[key] = val;
       }
+    }
+  } //rewrite the afters as before constraints
+
+
+  for (const [arg1st, constraint] of Object.entries(initialConstraints)) {
+    if (constraint.after.length !== 0) {
+      let afters = constraint.after;
+      constraint.after = [];
+      initialConstraints[arg1st] = constraint;
+      afters.forEach(arg => {
+        let argConstraint = {};
+
+        if (initialConstraints[arg]) {
+          argConstraint = initialConstraints[arg];
+        } else {
+          AFTER_FIELDS.forEach(fldName => {
+            if (!!constraint[fldName]) {
+              argConstraint[fldName] = constraint[fldName];
+            }
+          });
+        }
+
+        argConstraint.before = argConstraint.before.concat([arg1st]);
+        initialConstraints[arg] = argConstraint;
+      });
     }
   }
 }; //gets one constraint since each id/label would be a key
@@ -2970,7 +3012,7 @@ const getItem = (val, itemByID, itemByLabel) => {
 
 /***/ }),
 
-/***/ 72283:
+/***/ 13773:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -3108,15 +3150,15 @@ function checkForMinimalCases(actions, formattedActions, problems) {
 
 /***/ }),
 
-/***/ 54303:
+/***/ 72105:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "analyzeEvents": () => (/* reexport safe */ _analyzeEvents__WEBPACK_IMPORTED_MODULE_1__.analyzeEvents),
+/* harmony export */   "analyzeEvents": () => (/* reexport safe */ _analyzeEvents__WEBPACK_IMPORTED_MODULE_2__.analyzeEvents),
 /* harmony export */   "applyFBTemplate": () => (/* reexport safe */ _debriefingUtils__WEBPACK_IMPORTED_MODULE_0__.applyFBTemplate),
-/* harmony export */   "doVitalsCounts": () => (/* reexport safe */ _vitalsChecking__WEBPACK_IMPORTED_MODULE_2__.doVitalsCounts),
+/* harmony export */   "doVitalsCounts": () => (/* reexport safe */ _inferencing__WEBPACK_IMPORTED_MODULE_1__.doVitalsCounts),
 /* harmony export */   "getAssessmentIcon": () => (/* reexport safe */ _debriefingUtils__WEBPACK_IMPORTED_MODULE_0__.getAssessmentIcon),
 /* harmony export */   "getColor": () => (/* reexport safe */ _debriefingUtils__WEBPACK_IMPORTED_MODULE_0__.getColor),
 /* harmony export */   "getFeedback": () => (/* reexport safe */ _debriefingUtils__WEBPACK_IMPORTED_MODULE_0__.getFeedback),
@@ -3127,18 +3169,263 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "saveLog": () => (/* reexport safe */ _debriefingUtils__WEBPACK_IMPORTED_MODULE_0__.saveLog),
 /* harmony export */   "summarizeAnalysis": () => (/* reexport safe */ _summarizeAnalysis__WEBPACK_IMPORTED_MODULE_3__.summarizeAnalysis)
 /* harmony export */ });
-/* harmony import */ var _debriefingUtils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(85064);
-/* harmony import */ var _analyzeEvents__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(84654);
-/* harmony import */ var _vitalsChecking__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(15700);
-/* harmony import */ var _summarizeAnalysis__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(80838);
+/* harmony import */ var _debriefingUtils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6612);
+/* harmony import */ var _inferencing__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(81828);
+/* harmony import */ var _analyzeEvents__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(69265);
+/* harmony import */ var _summarizeAnalysis__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(70742);
 
 
+ //export { doVitalsCounts } from "./vitalsChecking";
 
  // setC2FB, ,  c2FB , setRequiredPhaseNames
 
 /***/ }),
 
-/***/ 3769:
+/***/ 81828:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "doVitalsCounts": () => (/* binding */ doVitalsCounts),
+/* harmony export */   "inferenceCheckingForAssessments": () => (/* binding */ inferenceCheckingForAssessments)
+/* harmony export */ });
+/* harmony import */ var _meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7696);
+/* harmony import */ var _debriefingUtils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6612);
+
+
+ //events are what was observed 
+//actions is the observations that have been annotated with prior analysis results
+
+function inferenceCheckingForAssessments(events, actions, scenName) {
+  let lComprises = { ..._meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_0__.comprises
+  };
+
+  for (const [id, rule] of Object.entries(lComprises)) {
+    let found;
+    let done;
+    let notDone;
+    let numNeeded = 1;
+
+    if (rule.type === "reassessment vitals") {
+      let args = _meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_0__.globalReassessmentKn[scenName]["vitalLabels"];
+      rule["args"] = args;
+      numNeeded = 2;
+    }
+
+    let vitals = rule["args"];
+    let translation;
+
+    switch (rule.type) {
+      case "sample":
+        translation = _meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_0__.sampleToStep;
+        break;
+
+      case "opqrst":
+        translation = _meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_0__.opqrstToStep;
+        break;
+
+      default:
+        translation = _meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_0__.vitalsToStep;
+        break;
+    }
+
+    let vitalsCount = doVitalsCounts(events, vitals, translation); //collect which required vitals were checked twice and which
+    //were not according to the vitalsCount
+
+    for (const [vital, count] of Object.entries(vitalsCount)) {
+      if (count < numNeeded) {
+        if (!!notDone) {
+          notDone = notDone + ", " + vital;
+        } else {
+          notDone = vital;
+        }
+      } else {
+        if (!!done) {
+          done = done + ", " + vital;
+        } else {
+          done = vital;
+        }
+      }
+    }
+
+    if (!done && !!notDone) {
+      found = "none";
+    }
+
+    if (!!done && !notDone) {
+      found = "all";
+    }
+
+    if (!!done && !!notDone) {
+      found = "some";
+    }
+
+    if (rule.op === "or" && found != "none") {
+      found = "all";
+    } // map loggedIDs and missingEvents to vital labels
+    //look for the id in the rule when rule type is for reassessment-vitals or baseline-vitals 
+    //because these are what we can infer fully, partially or not at all
+
+
+    switch (found) {
+      case "all":
+        updateStatus(id, rule.type, actions, "inferred-allDone", [], done, scenName);
+        break;
+
+      case "some":
+        updateStatus(id, rule.type, actions, "inferred-someDone", notDone, done, scenName);
+        break;
+
+      default:
+        updateStatus(id, rule.type, actions, "inferred-notDone", notDone, [], scenName);
+        break;
+    }
+  }
+
+  return actions;
+}
+
+function updateStatus(id, type, actions, status, notDone, done, scen) {
+  let actsToUpdate = actions.filter(e => e.id === id);
+  actsToUpdate.forEach(act => {
+    act.status = status;
+    act.notDone = notDone;
+    act.done = done;
+    act.vitalsStage = type;
+
+    switch (type) {
+      case "reassessment vitals":
+        act.vitalsFB = doVitalsReassessmentFeedback(act, status, scen);
+        break;
+
+      case "initial vitals":
+        act.minVitalsFB = doVitalsFB(act, status);
+        break;
+
+      default:
+        if (status === "inferred-notDone") {
+          act.vitalsStageCoverage = "any";
+        }
+
+        break;
+    }
+  });
+}
+
+function doVitalsReassessmentFeedback(act, status, scen) {
+  let entry = { ..._meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_0__.globalReassessmentKn[scen]
+  };
+  let fbTemplates = _meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_0__.globalReassessmentFeedback;
+  let finalFB;
+  let template; //save the list of what was and wasn't done two or more times
+
+  entry.notDone = act.notDone;
+  entry.done = act.done;
+
+  switch (status) {
+    case "inferred-notDone":
+      template = fbTemplates["absent"];
+      act.vitalsStageCoverage = "all";
+      break;
+
+    case "inferred-allDone":
+      template = fbTemplates["good"];
+      break;
+
+    case "inferred-someDone":
+      template = fbTemplates["errors"];
+      act.vitalsStageCoverage = "some";
+      break;
+
+    default:
+      template = fbTemplates["errors"];
+      act.vitalsStageCoverage = "some";
+      break;
+  } //Fill in the template using the field values in object entry.
+  //For now am not passing in c2FB (which would be arg 2 below)
+  //because we didn't define this feedback at the leaf level
+
+
+  finalFB = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_1__.applyFBTemplate)(entry, {}, template);
+  return finalFB;
+}
+
+function doVitalsFB(act, status) {
+  let fbTemplates = _meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_0__.vitalsFeedback;
+  let finalFB;
+  let template;
+
+  switch (status) {
+    case "inferred-notDone":
+      template = fbTemplates["absent"];
+      act.vitalsStageCoverage = "all";
+      break;
+
+    case "inferred-allDone":
+      template = fbTemplates["good"];
+      break;
+
+    default:
+      template = fbTemplates["errors"];
+      act.vitalsStageCoverage = "some";
+      break;
+  } //Fill in the template using the field values in object entry.
+  //For now am not passing in c2FB (which would be arg 2 below)
+  //because we didn't define this feedback at the leaf level
+
+
+  finalFB = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_1__.applyFBTemplate)(act, {}, template);
+  return finalFB;
+}
+
+function doVitalsCounts(actions, vitalsToCheck, vitalsTranslation) {
+  let vitalsCount = [];
+  let numVitalFound;
+  let actionIDs = actions.map(e => e.id);
+  let numFound;
+  let minFound;
+
+  for (const [vital, idEntries] of Object.entries(vitalsTranslation)) {
+    if (vitalsToCheck.includes(vital)) {
+      numVitalFound = 0;
+      vitalsCount[vital] = 0;
+
+      for (let entry of idEntries) {
+        minFound = 999; //going through the "and" entries or assessment ids and assuming all must be present in 
+        //same numbers to count as a complete request for the vital (e.g. asks for each "sub"
+        //measure separately for some assessments)
+
+        for (let id of entry) {
+          if (actionIDs.includes(id)) {
+            numFound = actions.filter(action => action.id === id && action.timestamp !== -1).length;
+
+            if (numFound < minFound) {
+              minFound = numFound;
+            }
+
+            if (minFound === 0) {
+              break;
+            }
+          } else {
+            minFound = 0;
+            break;
+          }
+        }
+
+        numVitalFound = numVitalFound + minFound;
+      }
+
+      vitalsCount[vital] = vitalsCount[vital] + numVitalFound;
+    }
+  }
+
+  return vitalsCount;
+}
+
+/***/ }),
+
+/***/ 21908:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -3146,8 +3433,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "organizeLogDisplay": () => (/* binding */ organizeLogDisplay)
 /* harmony export */ });
-/* harmony import */ var _debriefingUtils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(85064);
-/* harmony import */ var _actionInsertion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(44231);
+/* harmony import */ var _debriefingUtils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6612);
+/* harmony import */ var _actionInsertion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(20084);
 
  //to display the log using the phase structures accumulated
 // i.e. puts the phases data together in the order in which
@@ -3232,6 +3519,13 @@ const organizeLogDisplay = (phaseNames, phases, requiredPhaseNames, problemState
       subheader.labelID = localPhaseItem.id;
       subheader.status = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_0__.getPhaseStatus)(subPhaseStatuses);
       subheader.displayColor = subPhaseColor;
+
+      if (!!phaseFB[subheader.label]) {
+        subheader.phaseOrderStatus = "misOrdered";
+        subheader.phFeedback = phaseFB[subheader.label].feedback;
+        subheader.lateRelativeTo = phaseFB[subheader.label].arg2;
+      }
+
       let highLevelPhase = subPhases[localPhaseName];
       let highLevelPhaseItem = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_0__.getItem)(highLevelPhase, itemByID, itemByLabel);
       subheader.phaseID = highLevelPhaseItem.id; //Note that the inserted headers will have their own numerical id and
@@ -3259,7 +3553,8 @@ const organizeLogDisplay = (phaseNames, phases, requiredPhaseNames, problemState
 
           if (!!phaseFB[header.label]) {
             header.phaseOrderStatus = "misOrdered";
-            header.phFeedback = phaseFB[header.label];
+            header.phFeedback = phaseFB[header.label].feedback;
+            header.lateRelativeTo = phaseFB[header.label].arg2;
           }
 
           displayObjects.push(header);
@@ -3297,7 +3592,8 @@ const organizeLogDisplay = (phaseNames, phases, requiredPhaseNames, problemState
 
           if (!!phaseFB[header.label]) {
             header.phaseOrderStatus = "misOrdered";
-            header.phFeedback = phaseFB[header.label];
+            header.phFeedback = phaseFB[header.label].feedback;
+            header.lateRelativeTo = phaseFB[header.label].arg2;
           }
 
           phaseStatuses = [];
@@ -3355,7 +3651,7 @@ const determineHLcolor = (lowerColor, higherColor) => {
 
 /***/ }),
 
-/***/ 94548:
+/***/ 42227:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -3366,7 +3662,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "getChecklistItemsByType": () => (/* binding */ getChecklistItemsByType),
 /* harmony export */   "groupByKey": () => (/* binding */ groupByKey)
 /* harmony export */ });
-/* harmony import */ var _meddbriefer_scenario_data__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(48913);
+/* harmony import */ var _meddbriefer_scenario_data__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(81657);
  // input: list of objects and a fieldName
 // returns: an object who's attributes are the distinct values for that fieldName mapped to the subset
 // of list items which share that field value
@@ -3421,7 +3717,7 @@ const getChecklistHierarchy = scenario => {
 
 /***/ }),
 
-/***/ 80838:
+/***/ 70742:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -3429,37 +3725,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "summarizeAnalysis": () => (/* binding */ summarizeAnalysis)
 /* harmony export */ });
-/* harmony import */ var _debriefingUtils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(85064);
-/* harmony import */ var _meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9205);
+/* harmony import */ var _debriefingUtils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6612);
+/* harmony import */ var _meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(72536);
  // import { requiredPhaseNames } from "./analyzeEvents";
 
  // constants
 
-const summaryFields = ["label", "status", "phaseOrderStatus", "phase", "subPhase", "labelID", "phaseID", "probLabel", "answerCorrect", "answerDetails", "timestamp", "type"]; // globals
+const summaryFields = ["label", "status", "phaseOrderStatus", "lateRelativeTo", "phase", "subPhase", "labelID", "phaseID", "probLabel", "answerCorrect", "answerDetails", "timestamp", "type"]; // globals
 
 let analysis; // helper functions
 //regularize status values, by examining status values grouped into categories
-//of good, error, etc
+//of good, error, etc in leafStatusList
 
 function regularizeStatus(event) {
-  if (_meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_1__.leafStatusList.good.includes(event.status)) {
-    event.status = "good";
-  }
-
-  if (_meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_1__.leafStatusList.error.includes(event.status)) {
-    event.status = "error";
-  }
-
-  if (_meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_1__.leafStatusList.misorderedError.includes(event.status)) {
-    event.status = "misorderedError";
-  }
-
-  if (_meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_1__.leafStatusList.misordered.includes(event.status)) {
-    event.status = "misordered";
-  }
-
-  if (_meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_1__.leafStatusList.absent.includes(event.status)) {
-    event.status = "absent";
+  for (const [key, statuses] of Object.entries(_meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_1__.leafStatusList)) {
+    if (statuses.includes(event.status)) {
+      event.status = key;
+      break;
+    }
   }
 
   return event;
@@ -3476,7 +3759,8 @@ function determineStatusOfNotFound(id, promptIDarray) {
   } else {
     return "notFound";
   } //notFound is an unidentified id (could be a typo in some
-  //of the hand coded data or forgot an id in contraindicated or unnecessary for)
+  //of the hand coded data or forgot an id in not indicated for the scenario
+  //since now all interventions are categorized in the problem definition for a scenario)
 
 }
 
@@ -3492,34 +3776,44 @@ function examineDups(events) {
   //However, if any of the dups are misordered then can report it as
   //misOrdered in the summary
 
-  for (const event of events) {
-    interimEvent = regularizeStatus(event);
+  let lastEvent = events[events.length - 1];
+  newEvent = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_0__.trimAction)(lastEvent, summaryFields);
 
-    if (!["error", "misOrderedError"].includes(interimEvent.status)) {
-      noError = true;
+  if (events.length > 1) {
+    for (const event of events) {
+      interimEvent = regularizeStatus(event);
+
+      if (!["error", "misorderedError"].includes(interimEvent.status)) {
+        //absent can't happen because if dups then wouldn't insert it was absent
+        noError = true;
+      }
+
+      if (["misordered", "misorderedError"].includes(interimEvent.status)) {
+        misordered = true;
+      }
+
+      if (misordered && noError) {
+        break;
+      }
     }
 
-    if (["misOrdered", "misOrderedError"].includes(interimEvent.status)) {
-      misordered = true;
+    newEvent = regularizeStatus(newEvent);
+
+    if (!misordered) {
+      if (!noError) {
+        newEvent.status = "error";
+      } else {
+        newEvent.status = "good";
+      }
+    } else {
+      if (noError) {
+        newEvent.status = "misordered";
+      } else {
+        newEvent.status = "misorderedError";
+      }
     }
-
-    if (misordered && noError) {
-      break;
-    }
-  }
-
-  newEvent = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_0__.trimAction)(events[events.length - 1], summaryFields);
-
-  if (noError && !misordered) {
-    newEvent.status = "good";
-  }
-
-  if (misordered && noError) {
-    newEvent.status = "misOrdered";
-  }
-
-  if (misordered && !noError) {
-    newEvent.stuatus = "misorderedError";
+  } else {
+    newEvent = regularizeStatus(newEvent);
   }
 
   return newEvent;
@@ -3538,6 +3832,7 @@ function processNextLevel(summary, top, decisionPromptIDs) {
   };
 
   if (top.subActions.length === 0) {
+    //at a leaf node
     events = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_0__.getEvents)(analysis, "id", top.id);
 
     if (events.length !== 0) {
@@ -3550,14 +3845,22 @@ function processNextLevel(summary, top, decisionPromptIDs) {
       childIDs.push(newEvent.id);
       children.push(newEvent);
     } else {
-      //didn't find the event; that means it isn't a recognized event or is specified as contraindicated/unnecessary but is not present
-      //all contraindicated, unnecessary are specified in problem solutions now.  So their
-      //presence will be marked as contraindicated then as an error in the summary
+      //didn't find the event; that means it isn't a recognized event or is specified as not indicated but is not present
+      //all not indicated are specified in problem solutions now.  So their
+      //presence will be marked as not indicated then as an error in the summary
       let status = determineStatusOfNotFound(top.id, decisionPromptIDs);
       statuses = [status];
       dummyEvent.status = status;
       childIDs.push(top.id);
-      children.push(dummyEvent);
+      children.push(dummyEvent); //alternative to above 2 lines to
+      //remove notFound because confuses cond 2 algorithm.
+      //However it wasn't requested that I remove these and
+      //it made no difference in how the cond 2 algorithm
+      //behaved, so I'll leave it out and discuss with Scott
+
+      /* if (status !== "notFound"){
+        childIDs.push(top.id);
+        children.push(dummyEvent);} */
     }
 
     return [children, childIDs, statuses];
@@ -3570,12 +3873,29 @@ function processNextLevel(summary, top, decisionPromptIDs) {
       phaseOrderStatus: "good",
       type: "header"
     };
+    let event = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_0__.getEvents)(analysis, "labelID", top.id)[0];
+    let headerStatus = "";
+
+    if (!!event && !!event.phaseOrderStatus) {
+      headerStatus = event.phaseOrderStatus;
+      header.phaseOrderStatus = headerStatus;
+
+      if (!!event.lateRelativeTo && event.lateRelativeTo.length >= 1) {
+        header.lateRelativeTo = event.lateRelativeTo;
+      }
+    }
+
     top.subActions.forEach(action => {
       results = processNextLevel(summary, action, decisionPromptIDs);
       header.children = header.children.concat(results[0]);
       header.childIDs = header.childIDs.concat(results[1]);
       statuses = statuses.concat(results[2]);
     });
+
+    if (headerStatus !== "" && headerStatus !== "good") {
+      statuses = statuses.concat(headerStatus);
+    }
+
     header.status = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_0__.getPhaseStatus)(statuses);
     summary[top.id] = [header].concat(header.children);
     delete header.children;
@@ -3587,6 +3907,8 @@ let idsNotFound;
 let itemsByID = undefined; // main entry point (should be the only thing which needs to be exported)
 
 function summarizeAnalysis(analysisData, scenIEFeedback, itemByIDArray = undefined) {
+  //if optional arg itemByIDArray is passed then will report leaf ids that were not found that are
+  //used in the condition 2 data structure
   idsNotFound = [];
 
   if (!!itemByIDArray) {
@@ -3595,84 +3917,16 @@ function summarizeAnalysis(analysisData, scenIEFeedback, itemByIDArray = undefin
 
   const {
     events: finalActions,
-    constraintsViolated,
     decisionPromptIDs
   } = analysisData;
   let summary = {}; //holds results for condition 2
-
-  let childLookup = {}; //holds parent info for each leaf node
 
   analysis = finalActions; //work through the condition 2 DS and create entries for it and summarize status of children for the current level
   // if (scenarios[scen.name]) {
 
   let ds = scenIEFeedback.Action; //scenarios[scen.name].Action;
 
-  processNextLevel(summary, ds, decisionPromptIDs); //create a child lookup for summary in order to modify the summary in the
-  //appropriate place in next section of code
-
-  for (const [parentKey, entry] of Object.entries(summary)) {
-    let children = entry[0].childIDs;
-    children.forEach(child => {
-      if (!summary[child]) {
-        childLookup[child] = parentKey;
-      }
-    });
-  } // store phase level contraint feedback at the header level for condition 2
-  // (Note that for condition 1 it was stored during the analysis at the phase
-  // header 
-
-
-  let entryToModify;
-  let firstAction;
-  let origAction;
-  let section;
-  let childSection;
-  constraintsViolated.forEach(constraint => {
-    firstAction = finalActions.filter(e => !!e.labelID && e.labelID === constraint.arg1.id || e.id === constraint.arg1.id);
-
-    if (firstAction.length !== 0) {
-      origAction = firstAction[0];
-      let secLabel = origAction.labelID; //labelID is only for phase / subphase
-
-      section = summary[secLabel];
-
-      if (!section) {
-        childSection = childLookup[origAction.id];
-        section = summary[childSection];
-      }
-    } else {
-      console.log("unable to find event in which to report constraint violation: ", constraint);
-    }
-
-    if (!!section) {
-      if (constraint.type === "phase") {
-        entryToModify = section[0];
-        entryToModify.phaseOrderStatus = "misOrdered";
-
-        if (!entryToModify.arg2) {
-          entryToModify.arg2 = [constraint.arg2.id];
-        } else {
-          entryToModify.arg2 = entryToModify.arg2.concat([constraint.arg2.id]);
-        }
-      } else {
-        entryToModify = section.filter(e => e.id === origAction.id)[0];
-
-        if (entryToModify.status === "error") {
-          entryToModify.status = "misorderedError";
-        } else {
-          entryToModify.status = "misOrdered";
-        }
-
-        if (!entryToModify.arg2) {
-          entryToModify.arg2 = [constraint.arg2.id];
-        } else {
-          entryToModify.arg2 = entryToModify.arg2.concat([constraint.arg2.id]);
-        }
-      }
-    } else {
-      console.log("unable to find find summary section with entry to contain constraint violation report: ", firstAction, constraint);
-    }
-  }); // }
+  processNextLevel(summary, ds, decisionPromptIDs);
 
   if (idsNotFound.length !== 0) {
     console.log("idsNotFound: ", idsNotFound);
@@ -3683,7 +3937,7 @@ function summarizeAnalysis(analysisData, scenIEFeedback, itemByIDArray = undefin
 
 /***/ }),
 
-/***/ 86957:
+/***/ 68356:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -3697,149 +3951,7 @@ const formatAsMinSecs = seconds => {
 
 /***/ }),
 
-/***/ 15700:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "doVitalsCounts": () => (/* binding */ doVitalsCounts),
-/* harmony export */   "doVitalsFeedback": () => (/* binding */ doVitalsFeedback)
-/* harmony export */ });
-/* harmony import */ var _meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7686);
-/* harmony import */ var _debriefingUtils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(85064);
-
-
-function doVitalsFeedback(actions, vitalsCount, scen) {
-  let FBitems;
-  let entry = { ..._meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_0__.globalReassessmentKn[scen]
-  };
-  let fbTemplates = _meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_0__.globalReassessmentFeedback; // only one of vitalsCheckFeedbackID and vitalsCheckFeedbackLabel
-  // should be defined.  But will default to using label if both are.
-  // Need to use label to find where to insert for phase level FB and
-  // id for inserting FB at leaf level
-
-  if (!!_meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_0__.vitalsCheckFeedbackID) {
-    FBitems = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_1__.getEvents)(actions, "id", _meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_0__.vitalsCheckFeedbackID);
-  }
-
-  if (!!_meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_0__.vitalsCheckFeedbackLabel) {
-    FBitems = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_1__.getEvents)(actions, "label", _meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_0__.vitalsCheckFeedbackLabel);
-  } //multiple entries for the above label or id may be found but just need one.  
-  //Assuming the first found is fine for inserting the fb for condition 1
-
-
-  let FBitem = FBitems[0];
-  let finalFB;
-  let done;
-  let notDone;
-  let template; //collect which required vitals were checked twice and which
-  //were not according to the vitalsCount
-
-  for (const [vital, count] of Object.entries(vitalsCount)) {
-    if (count < 2) {
-      if (!!notDone) {
-        notDone = notDone + ", " + vital;
-      } else {
-        notDone = vital;
-      }
-    } else {
-      if (!!done) {
-        done = done + ", " + vital;
-      } else {
-        done = vital;
-      }
-    }
-  } //save the list of what was and wasn't done two or more times
-
-
-  entry.notDone = notDone;
-  entry.done = done; //select the apppropriate feedback template
-
-  if (!done && !!notDone) {
-    template = fbTemplates["absent"];
-  }
-
-  if (!!done && !notDone) {
-    template = fbTemplates["good"];
-  }
-
-  if (!!done && !!notDone) {
-    template = fbTemplates["errors"];
-  } //Fill in the template using the field values in object entry.
-  //For now am not passing in c2FB because we haven't defined
-  //where the global vitals check feedback should be located (i.e.
-  //a separate id or the id where appears in condition 1 but with
-  //a different field specified?  I would think the former but
-  //need to confirm with Patty/Scott)
-
-
-  finalFB = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_1__.applyFBTemplate)(entry, {}, template); //save the vitals found/not found in the action/event object where
-  //the fb string is stored.  Probably don't need it saved since the
-  //fb string has already been generated
-
-  if (!!done) {
-    FBitem.vitalsDoneTwice = done;
-  }
-
-  if (!!notDone) {
-    FBitem.vitalsNotDoneTwice = notDone;
-  } //save the feedback string in the action/event object if one was 
-  //generated
-
-
-  if (!!finalFB) {
-    FBitem.vitalsFB = finalFB;
-  }
-}
-function doVitalsCounts(actions, scen) {
-  let vitalsCount = [];
-  let numVitalFound;
-  let vitalsToCheck = _meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_0__.globalReassessmentKn[scen]["vitalLabels"];
-  let actionIDs = actions.map(e => e.id);
-  let numFound;
-  let minFound;
-
-  for (const [vital, idEntries] of Object.entries(_meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_0__.vitalsTakenDueToAssessmentSteps)) {
-    if (vitalsToCheck.includes(vital)) {
-      numVitalFound = 0;
-      vitalsCount[vital] = 0;
-
-      for (let entry of idEntries) {
-        minFound = 999; //going through the "and" entries or assessment ids and assuming all must be present in 
-        //same numbers to count as a complete request for the vital (e.g. asks for each "sub"
-        //measure separately for some assessments)
-
-        for (let id of entry) {
-          if (actionIDs.includes(id)) {
-            numFound = actions.filter(action => action.id === id && action.timestamp !== -1).length;
-
-            if (numFound < minFound) {
-              minFound = numFound;
-            }
-
-            if (minFound === 0) {
-              break;
-            }
-          } else {
-            minFound = 0;
-            break;
-          }
-        }
-
-        numVitalFound = numVitalFound + minFound;
-      }
-
-      vitalsCount[vital] = vitalsCount[vital] + numVitalFound;
-    }
-  }
-
-  return vitalsCount;
-}
-
-/***/ }),
-
-/***/ 78586:
+/***/ 74898:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -3847,7 +3959,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "B4CA_PhaseDEBRF": () => (/* binding */ B4CA_PhaseDEBRF)
 /* harmony export */ });
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(54354);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2294);
 // type Phase_D = {
 //     step:  string;
 //     title: string;
@@ -3983,7 +4095,9 @@ const B4CA_PhaseDEBRF = [{
 }, {
   step: "R",
   slides: [{
-    paragraphs: [(0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("In an idealized scenario, you arrive on scene and find a man dressed in motocross gear lying on the ground. Your initial assessment reveals a helmeted patient who is awake and alert with shallow breaths.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You immediately direct your partner to provide"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("manual c-spine stabilization", "Spinal precautions should be taken with any patient involved in a motor-vehicle accident or any instance where a patient was thrown."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("while removing the helmet and apply a cervical collar. You note the patient has an open airway and that his breathing is rapid and shallow, so you place him on either a"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("non-rebreather mask or nasal cannula.", "While this patient is in mild respiratory distress and has hypoxia, his mental status and respiratory effort are appropriate, so he does not need assistance with ventilation."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("His extremity pulses are strong.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You instruct another responder to obtain a set of baseline vitals and obtain a SAMPLE and OPQRST history from the race official while you perform a rapid head-to-toe assessment. You note that the patient has diminished breath sounds on the left but"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("no signs of decreased cardiac output.", "This patient has a pneumothorax, as evidenced by his hypoxia and unequal breath sounds, but without evidence of decreased cardiac output (ex. JVD, hypotension), he does not have a tension pneumothorax and does not require needle decompression at this time."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("After checking the patient’s anterior, you and your partner log roll the patient, check his posterior, and secure him onto a long back board.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("Once the CID is in place, you and your partners then place the patient on a stretcher, cover him with a blanket, and transfer him to the ambulance. You notify the Level I trauma center you are on the way. En route, you establish two large bore IVs, reassess the patient"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("every five minutes,", "Critically ill patients should be reassessed every 5 minutes."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and confirm that all interventions are working properly, modifying any as necessary."))]
+    paragraphs: [(0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("In an idealized scenario, you arrive on scene and find a man dressed in motocross gear lying on the ground. Your initial assessment reveals a helmeted patient who is awake and alert with shallow breaths.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You immediately direct your partner to provide"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("manual c-spine stabilization", "Spinal precautions should be taken with any patient involved in a motor-vehicle accident or any instance where a patient was thrown."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("while removing the helmet and apply a cervical collar. You note the patient has an open airway and that his breathing is rapid and shallow, so you place him on either a"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("non-rebreather mask or nasal cannula.", "While this patient is in mild respiratory distress and has hypoxia, his mental status and respiratory effort are appropriate, so he does not need assistance with ventilation."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("His extremity pulses are strong."))]
+  }, {
+    paragraphs: [(0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You instruct another responder to obtain a set of baseline vitals and obtain a SAMPLE and OPQRST history from the race official while you perform a rapid head-to-toe assessment. You note that the patient has diminished breath sounds on the left but"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("no signs of decreased cardiac output.", "This patient has a pneumothorax, as evidenced by his hypoxia and unequal breath sounds, but without evidence of decreased cardiac output (ex. JVD, hypotension), he does not have a tension pneumothorax and does not require needle decompression at this time."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("After checking the patient’s anterior, you and your partner log roll the patient, check his posterior, and secure him onto a long back board.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("Once the CID is in place, you and your partners then place the patient on a stretcher, cover him with a blanket, and transfer him to the ambulance. You notify the Level I trauma center you are on the way. En route, you establish two large bore IVs, reassess the patient"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("every five minutes,", "Critically ill patients should be reassessed every 5 minutes."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and confirm that all interventions are working properly, modifying any as necessary."))]
   }]
 }, {
   step: "F",
@@ -3994,7 +4108,7 @@ const B4CA_PhaseDEBRF = [{
 
 /***/ }),
 
-/***/ 60827:
+/***/ 51440:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -4002,7 +4116,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "B4CA_PhaseIE": () => (/* binding */ B4CA_PhaseIE)
 /* harmony export */ });
-/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(20573);
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(39384);
 /* Data for phase scenario B4CA for phase IE 
 This data structure holds all the information to create the slides to present during the IE phase.
 It mirrors the tree structure that is presented in the Excel file. All nodes in the tree are called actions whether 
@@ -4010,24 +4124,32 @@ they are assessments or interventions. Subactions are the children of the action
 Fields:
 id: identifies the action-node in the tree. It is a string since it is unique.
 label: text for the action as it will appear on the slide
-type: indicates whether the action is Required, Contraindicated, Unnecessary, Irrelevant, Optional, Alternative.
+type: indicates whether the action is Required, Not indicated, Optional, Alternative (Contraindicated, Unnecessary, Irrelevant).
     Required, it will be listed in the left side of the slide so that students are asked if they performed it.
+    Not indicated: it will be listed on a list of not indicated actions that the student performed accompanied by 
+    the feedback on the feedbackErrors field.
+    Optional: it will be accepted as correct if performed.
+    Alternative: will be used for those interventions that can be performed as alternative to required ones.
+    [
+    Not used for the pilot study but was used for trial 1:
     Contraindicated: it will be listed on the right side under a list of contraindicated actions that the student performed
     accompanied by the feedback on the feedbackErrors field.
     Unnecessary: it will be listed on the right side under a list of unnecessary actions that the student performed
     accompanied by the feedback on the feedbackErrors field.
     Irrelevent: it will be listed on the right side under a list of irrelevant actions that the student performed
     accompanied by the feedback on the feedbackErrors field.
-    Optional: it will be accepted as correct if performed. We are considering it the same as Unnecessary.
-    Alternative: will be used for those interventions that can be performed as alternative to required ones.
+    ]
+    
 AlternativeToIntv: indicates the intervention for which the current one is an alternative. It will only have a value if
 the type is Alternative.
 feedbackAbsent: feedback given if the action was no performed
 feedbackOutOfOrder: feedback given if the action was done late (e.g., if the action is Scene size-up and it was done 
     after Primary Survey)
 feedbackErrors: feedback if the action was performed incorrectly (e.g., wrong ventilation rate)
-examine: boolean to indicate if this Action needs to be examined (phase E)
-prompts: prompts to be included in question headers in phase E, to hint on how to reflect
+examineIfAbsent: boolean to indicate if this Action needs to be examined when it is Absent (phase E)
+examineIfErrors: boolean to indicate if this Action needs to be examined when there are performance errors (phase E)
+promptsIfAbsent: prompts to be included in question headers in phase E, to hint on how to reflect when Action was Absent
+promptsIfErrors: prompts to be included in question headers in phase E, to hint on how to reflect when Action was performed incorrectly
 subActionsList: boolean that indicates whether the subActions need to be listed as bullet points on the slide. If they
     don't need to be listed it is usually because they have been grouped however, the subActions still need to be 
     included in the subActions field because they are used by the analysis to give a summary of their status.
@@ -4053,12 +4175,14 @@ const B4CA_PhaseIE = {
     feedbackErrors: [""]
     /*feedback if the action was performed incorrectly (e.g. wrong Ventilation rate)*/
     ,
-    examine: false
+    examineIfAbsent: false
     /* boolean to indicate if this Action needs to be examined (phase E) */
     ,
-    prompts: ""
+    examineIfErrors: false,
+    promptsIfAbsent: ""
     /* prompts to the included in question in phase E to hint on how to reflect */
     ,
+    promptsIfErrors: "",
     subActionsList: true
     /* boolean that indicates if subActions need to be listed as bullet points on slide */
     ,
@@ -4071,8 +4195,10 @@ const B4CA_PhaseIE = {
       feedbackAbsent: ["Your first steps should have been to don your protective wear, including eye protection, and to ensure the scene is safe. You cannot assist a patient if you are not safe yourself.", "Your scene size up gives you a big-picture view of what is going on before you even begin examining the patient and includes determining the mechanism of injury and number of patients, requesting additional help if necessary, and considering stabilization of the spine.", "In this case, you would have learned that this is a motorbike crash, which should have prompted you to think about a possible spinal cord injury and the need to secure the patient's spine immediately."],
       feedbackOutOfOrder: ["Your first steps should have been to don your protective wear, including eye protection, and to ensure the scene is safe. You cannot assist a patient if you are not safe yourself.", "Your scene size up also gives you a big-picture view of what is going on before you even begin examining the patient. This includes determining the mechanism of injury and number of patients, requesting additional help if necessary, and considering stabilization of spine."],
       feedbackErrors: [""],
-      examine: false,
-      prompts: "",
+      examineIfAbsent: false,
+      examineIfErrors: false,
+      promptsIfAbsent: "",
+      promptsIfErrors: "",
       subActionsList: true,
       subActions: [{
         id: "required-action-BSI",
@@ -4081,8 +4207,10 @@ const B4CA_PhaseIE = {
         feedbackAbsent: ["Your first steps should have been to don your protective wear, including eye protection, and to ensure the scene is safe. You cannot assist a patient if you are not safe yourself."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -4092,8 +4220,10 @@ const B4CA_PhaseIE = {
         feedbackAbsent: ["Your first steps should have been to don your protective wear, including eye protection, and to ensure the scene is safe. You cannot assist a patient if you are not safe yourself."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -4103,8 +4233,10 @@ const B4CA_PhaseIE = {
         feedbackAbsent: ["Knowing what caused the patient's injury or illness can allow you to start developing a plan of action before you even assess your patient.", "By determining the mechanism of injury, you would have learned that this is a motorbike accident, which should have prompted you to think about potential head or spinal injury, injuries to the extremities, and other blunt impact injuries to the chest and abdomen."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -4114,8 +4246,10 @@ const B4CA_PhaseIE = {
         feedbackAbsent: ["Usually you will have one patient, but if there is more than one you will need to plan accordingly."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -4125,8 +4259,10 @@ const B4CA_PhaseIE = {
         feedbackAbsent: ["Consider the need for extra help based on number of patients, mechanism of injury, and your patient's status.", "Although police and fire personnel were already on scene, you should have considered the need for additional ALS support."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -4136,8 +4272,10 @@ const B4CA_PhaseIE = {
         feedbackAbsent: ["All trauma patients are at risk for spinal injury, including those in high-speed accidents. Take this into consideration before initial contact with the patient to prevent unintentional injury."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }]
@@ -4148,8 +4286,10 @@ const B4CA_PhaseIE = {
       feedbackAbsent: ["The primary survey is an assessment of mental status, life-threats, and the patient's ABCs. It is where you will identify and address the patient's most serious injuries.", "In this case, the Primary Survey would have revealed a patient who is conscious with chest pain and shortness of breath. Your primary survey does not reveal any apparently life threats so you can move forward to the next step of your assessment."],
       feedbackOutOfOrder: ["You should have started your Primary Survey after the Scene Size-up and completed it before starting the Secondary Survey. Only interrupt your assessment to control life-threats: (1) Conditions that compromise a patent airway (2) Conditions that compromise breathing or respirations, such as a tension pneumothorax, (3) Conditions that compromise circulation, such as severe bleeding, (4) Cardiac arrest, and any  other potentially life threatening injuries or conditions.  Your patient's condition will deteriorate if these conditions are not addressed before continuing on with your assessment and history taking."],
       feedbackErrors: [""],
-      examine: false,
-      prompts: "",
+      examineIfAbsent: false,
+      examineIfErrors: false,
+      promptsIfAbsent: "",
+      promptsIfErrors: "",
       subActionsList: true,
       subActions: [{
         id: "general-impression",
@@ -4158,8 +4298,10 @@ const B4CA_PhaseIE = {
         feedbackAbsent: ["You should have performed an Initial Assessment: gathered a general impression, identified any apparent life threats, and determined your patient's level of consciousness.  Your Initial Assessment  would have revealed a patient who is unconscious."],
         feedbackOutOfOrder: ["While you may be tempted to jump straight into your ABCs, apparent life threats (i.e. uncontrolled bleeding) should be addressed first, as they can cause a patient to deteriorate quickly. Also, be sure to assess the patient's mental status, as an unconscious patient will need a pulse check first, to ensure he or she does not require CPR."],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "assess-patient-condition",
@@ -4168,8 +4310,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["Your general impression allows you to start developing a plan of action before you even assess your patient.", "In this case, your general impression would have been of a man thrown from a motor bike."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -4179,8 +4323,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["The patient's level of consciousness alters how you progress through your assessment.", "The patient is conscious with a GCS of 15."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -4190,8 +4336,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["If you had determined apparent life threats, you would have noticed that the patient was conscious without apparent immediate life threats."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -4202,8 +4350,10 @@ const B4CA_PhaseIE = {
         feedbackAbsent: ["This patient was thrown from a motorcycle and landed on his back, which could have caused a fracture of the spine and/or neck. You should have taken manual c-spine stabilization before performing your ABC assessment and maintained it throughout and applied an appropriately sized cervical collar."],
         feedbackOutOfOrder: ["Managing the cervical spine is one of the first things you should do for any trauma patient, as you must ensure you do not cause any further injury during the remainder of your assessment and management."],
         feedbackErrors: [""],
-        examine: true,
-        prompts: "Did not consider risk for cervical spine injury; Considered cervical spine injury but did not think the mechanism necessitated spinal stabilization",
+        examineIfAbsent: true,
+        examineIfErrors: false,
+        promptsIfAbsent: "Did not consider risk for cervical spine injury; Considered cervical spine injury but did not think the mechanism necessitated spinal stabilization",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "intv-spinal-immobilization-technique-manual-c-spine",
@@ -4212,8 +4362,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["Part of managing a head and/or spinal injury includes manual stabilization of the cervical spine before beginning your assessment, as movement may further injure the patient. When you arrive, this patient is helmeted, but the helmet should be removed while maintaining c-spine stability, even if this requires additional people."],
           feedbackOutOfOrder: ["During trauma situations it is necessary to stabilize the c-spine before continuing as not doing so may cause further injury to the patient."],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -4223,8 +4375,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["A cervical collar will help you maintain stability while you continue with your exam."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -4235,8 +4389,10 @@ const B4CA_PhaseIE = {
         feedbackAbsent: ["Be sure to assess the airway for patency and intact physical structures.", "You would have found this patient's airway to be patent, as evidenced by the fact that he can speak to you."],
         feedbackOutOfOrder: ["If your patient is conscious, you should examine the airway before breathing and circulation. If a patient is unconscious, you should assess the pulse first to evaluate for possible cardiac arrest, then go through your ABCs."],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "airway-is-open",
@@ -4245,8 +4401,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["The first step of your airway assessment is to see if the patient's airway is open. If the patient is speaking normally, like in this patient, it is open. Signs like stridor or gasping may indicate an airway obstruction."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -4256,203 +4414,250 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["Though this patient did not have any facial trauma, be sure to look for injuries such as gun-shot wounds or facial fractures, as these may affect what basic or advanced airways you can use.  Avoid using a nasopharyngeal airway in patients with a suspected basilar skull fracture or nasal injury."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-open-airway-method-head-tilt"
-          /*contraindicated intervention */
+          /*not indicated intervention */
           ,
           label: "Head tilt chin lift",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["This patient's airway is patent, as is evident by the fact that he is talking--for example, complaining about pain and difficulty breathing.  If his condition deteriorates and you have reason to suspect  that his airway may be compromised, you should check the  airway using a modified jaw thrust maneuver instead of a head tilt chin lift."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-open-airway-method-modified-jaw-thrust",
 
-          /* unnecessary intervention */
+          /* Optional intervention */
           label: "Open the patient's airway with a jaw thrust maneuver",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.UNNEC,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.OPT,
+          feedbackAbsent: [""],
+          feedbackOutOfOrder: ["You should have performed a jaw thrust maneuver before starting the secondary survey because all life-threatening conditions should be managed before starting the secondary survey."],
+          feedbackErrors: ["This patient's airway is patent, as is evident by the fact that he is talking--for example, complaining about pain and difficulty breathing.  If his condition deteriorates and you have reason to suspect  that his airway may be compromised, you should check the  airway using a modified jaw thrust maneuver instead of a head tilt chin lift."],
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
+          subActionsList: false,
+          subActions: []
+        }, {
+          id: "intv-airway-patency-technique-suction-airway"
+          /* not indicated intervention */
+          ,
+          label: "Suctioned the patient's airway",
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
-          feedbackErrors: ["This patient's airway is patent, as is evident by the fact that he is talking--for example, complaining about pain and difficulty breathing.  If his condition deteriorates and you have reason to suspect  that his airway may be compromised, you should check the  airway using a modified jaw thrust maneuver instead of a head tilt chin lift."],
-          examine: false,
-          prompts: "",
+          feedbackErrors: ["This patient's airway was patent. There is no need to suction."],
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-manual-finger-sweep"
-          /* contraindicated intervention */
+          /* not indicated intervention */
           ,
           label: "Manual (finger sweep)",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["If there is a visible foreign body in the mouth, it should be removed. However, a blind finger sweep is contraindicated as it could lodge a foreign body deeper into the airway. Further, there is no evidence of foreign body in this patient's mouth."],
-          examine: true,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-magill-forceps-assisted"
-          /* contraindicated intervention */
+          /* not indicated intervention */
           ,
           label: "Magill forceps assisted removal",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["If there is a visible foreign body in the mouth, it should be removed. However, there is no evidence of a foreign body in this patient's mouth."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-heimlich-maneuver"
-          /* contraindicated intervention */
+          /* not indicated intervention */
           ,
           label: "Heimlich Maneuver",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["You have no evidence the patient is choking on an object so the Heimlich maneuver is not appropriate at this time."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-back-blows-and-chest-thrusts"
-          /* contraindicated intervention */
+          /* not indicated intervention */
           ,
           label: "Back blows and chest thrusts",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["You have no evidence the patient is choking on an object so back blows and chest thrusts are not appropriate at this time."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-oropharyngeal-airway"
-          /* contraindicated intervention */
+          /* not indicated intervention */
           ,
           label: "Oropharyngeal airway (OPA)",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["This patient requires only a nasal canula or non-rebreather mask. An airway adjunct is unnecessary and would likely be refused by this conscious patient."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-nasopharyngeal-airway"
-          /* contraindicated intervention */
+          /* not indicated intervention */
           ,
           label: "Nasopharyngeal airway (NPA)",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["This patient requires only a nasal canula or non-rebreather mask. An airway adjunct is unnecessary and would likely be refused by this conscious patient."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-orotracheal-intubation"
-          /* contraindicated intervention */
+          /* not indicated intervention */
           ,
           label: "Orotracheal intubation",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["This patient's respiratory status can be stabilized with oxygen administered via a nasal canula or non-rebreather mask. More invasive airway support is unnecessary and dangerous."],
-          examine: true,
-          prompts: "Thought this patient needed to be intubated",
+          examineIfAbsent: false,
+          examineIfErrors: true,
+          promptsIfAbsent: "",
+          promptsIfErrors: "Thought this patient needed to be intubated",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-nasotracheal-intubation"
-          /* contraindicated intervention */
+          /* not indicated intervention */
           ,
           label: "Nasotracheal intubation",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["This patient's respiratory status can be stabilized with oxygen administered via a nasal canula or non-rebreather mask. More invasive airway support is unnecessary and dangerous."],
-          examine: true,
-          prompts: "Thought this patient needed to be intubated",
+          examineIfAbsent: false,
+          examineIfErrors: true,
+          promptsIfAbsent: "",
+          promptsIfErrors: "Thought this patient needed to be intubated",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-insert-advanced-airway"
-          /* contraindicated intervention */
+          /* not indicated intervention */
           ,
           label: "Insert advanced/rescue airway",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["This patient's respiratory status can be stabilized with oxygen administered via a nasal canula or non-rebreather mask. More invasive airway support is unnecessary and dangerous."],
-          examine: true,
-          prompts: "Thought this patient needed to be intubated",
+          examineIfAbsent: false,
+          examineIfErrors: true,
+          promptsIfAbsent: "",
+          promptsIfErrors: "Thought this patient needed to be intubated",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-rapid-sequence-intubation"
-          /* contraindicated intervention */
+          /* not indicated intervention */
           ,
           label: "Rapid-sequence intubation",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["RSI is not in the paramedic's scope of practice in Pennsylvania. This patient's respiratory status can be stabilized with oxygen administered via a nasal canula or non-rebreather mask. More invasive airway support is unnecessary and dangerous."],
-          examine: true,
-          prompts: "Thought this patient needed to be intubated",
+          examineIfAbsent: false,
+          examineIfErrors: true,
+          promptsIfAbsent: "",
+          promptsIfErrors: "Thought this patient needed to be intubated",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-sedation-assisted-intubation"
-          /* contraindicated intervention */
+          /* not indicated intervention */
           ,
           label: "Sedation-assisted intubation",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["This patient's respiratory status can be stabilized with oxygen administered via a nasal canula or non-rebreather mask. More invasive airway support is unnecessary and dangerous."],
-          examine: true,
-          prompts: "Thought this patient needed to be intubated",
+          examineIfAbsent: false,
+          examineIfErrors: true,
+          promptsIfAbsent: "",
+          promptsIfErrors: "Thought this patient needed to be intubated",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-needle-cricothyrotomy"
-          /* contraindicated intervention */
+          /* not indicated intervention */
           ,
           label: "Needle cricothyrotomy",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["A cricothrotomy is indicated when there is an upper airway obstruction that cannot be removed. This patient has a patent airway."],
-          examine: true,
-          prompts: "thought the patient had an upper airway obstruction",
+          examineIfAbsent: false,
+          examineIfErrors: true,
+          promptsIfAbsent: "",
+          promptsIfErrors: "thought the patient had an upper airway obstruction",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-surgical-cricothyrotomy"
-          /* contraindicated intervention */
+          /* not indicated intervention */
           ,
           label: "Surgical cricothyrotomy",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["A cricothyrotomy is indicated when there is an upper airway obstruction that cannot be removed. This patient has a patent airway."],
-          examine: true,
-          prompts: "thought the patient had an upper airway obstruction",
+          examineIfAbsent: false,
+          examineIfErrors: true,
+          promptsIfAbsent: "",
+          promptsIfErrors: "thought the patient had an upper airway obstruction",
           subActionsList: false,
           subActions: []
         }]
@@ -4463,8 +4668,10 @@ const B4CA_PhaseIE = {
         feedbackAbsent: ["After assessing the patient's airway, assess their breathing by listening for breath sounds and observing their respiratory rate, rhythm, and effort.", "You would have found tachypnea with diminished sounds on the left, suggesting possible pneumothorax or hemothorax."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "breathing-checks-rate",
@@ -4473,8 +4680,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["A significantly elevated or depressed respiratory rate can suggest impending respiratory failure.", "This patient's tachypnea suggests the need for some respiratory support."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -4484,8 +4693,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["Although not found in this case, a patient who is breathing irregularly needs ventilatory support."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -4495,8 +4706,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["Sounds like stridor, crackles, or wheezing will help you diagnose and manage your patient's respiratory problems.", "This patient had diminished sounds on the left with crepitus, suggesting a possible pneumothorax."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -4507,8 +4720,10 @@ const B4CA_PhaseIE = {
         feedbackAbsent: ["The patient is taking rapid, shallow breaths. He is diminished on the L with an SpO2 of 88%. These are signs that this patient has a pneumothorax, possibly even a tension pneumothorax, and requires respiratory support."],
         feedbackOutOfOrder: ["Problems with ventilation and oxygenation are life threatening and should be addressed before you move on to your secondary survey. Repeat your exam and check vitals to ensure your interventions have worked as you expected. If not, your patient may deteriorate as you continue on with your examination."],
         feedbackErrors: [""],
-        examine: true,
-        prompts: "Didn't realize that the patient's respiratory status was threatened; Didn't know the best way to support this patient's breathing",
+        examineIfAbsent: true,
+        examineIfErrors: false,
+        promptsIfAbsent: "Didn't realize that the patient's respiratory status was threatened; Didn't know the best way to support this patient's breathing",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "intv-non-rebreather-mask-or-nasal-cannula",
@@ -4517,8 +4732,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["The patient's respiratory rate is fast, but he is ventilating adequately. His SpO2, however, is low, suggesting inadequate oxygenation. You can use either a nasal canula or non-rebreather mask to help with oxygenation. Note that you are not assisting the patient with ventilation. In the case of a pneumothorax, you should avoid positive pressure ventilation, if possible, as this could increase the amount of air outside of the lungs, turning a pneumothorax into a tension pneumothorax."],
           feedbackOutOfOrder: ["Oxygen administration should be performed during the primary survey as this intervention falls under 'Breathing' in the ABC's."],
           feedbackErrors: ["This patient should be allowed to breathe independently. O2 flow rate should be adjusted to achieve an SpO2 between 95 and 99%."],
-          examine: true,
-          prompts: "Didn't realize that the patient's respiratory status was threatened; thought this patient needed ventilatory support; did not recognize the possibility of a pneumothorax",
+          examineIfAbsent: true,
+          examineIfErrors: false,
+          promptsIfAbsent: "Didn't realize that the patient's respiratory status was threatened; thought this patient needed ventilatory support; did not recognize the possibility of a pneumothorax",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "intv-supplemental-oxygen-device-non-rebreather-mask",
@@ -4543,69 +4760,96 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["When you decide your patient needs a treatment, you must ensure your treatment had the intended outcomes. In this case, after applying oxygen, you want to check to make sure his SpO2 and RR have improved. If not, you will want to reflect on why you did not see the expected improvements? Did you select an incorrect intervention? Do you need to escalate your therapies? Are you performing the intervention correctly?", "For example, you may need to recheck your BVM seal, reposition the patient's head or jaw to ensure the airway is open, or place an oropharyngeal or nasopharyngeal airway if not already done."],
           feedbackOutOfOrder: ["Problems with ventilation and oxygenation are life threatening and should be addressed before you move on to your secondary survey. Repeat your exam and check vitals (SpO2) to ensure your interventions have worked as you expected. If not, your patient may deteriorate as you continue on with your examination."],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "request-vitals-R",
             label: "check R",
             type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-            feedbackAbsent: ["You should have checked R"],
+            feedbackAbsent: ["When you decide your patient needs a treatment, you must ensure your treatment had the intended outcomes. In this case, after applying oxygen, you want to check to make sure his RR has improved. If not, you will want to reflect on why you did not see the expected improvements? Did you select an incorrect intervention? Do you need to escalate your therapies? Are you performing the intervention correctly?", "For example, you may need to recheck your BVM seal, reposition the patient's head or jaw to ensure the airway is open, or place an oropharyngeal or nasopharyngeal airway if not already done."],
             feedbackOutOfOrder: [""],
             feedbackErrors: [""],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }, {
             id: "request-vitals-Spo2",
             label: "check Spo2",
             type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-            feedbackAbsent: ["You should have checked Spo2"],
+            feedbackAbsent: ["When you decide your patient needs a treatment, you must ensure your treatment had the intended outcomes. In this case, after applying oxygen, you want to check to make sure his SpO2 has improved. If not, you will want to reflect on why you did not see the expected improvements? Did you select an incorrect intervention? Do you need to escalate your therapies? Are you performing the intervention correctly?", "For example, you may need to recheck your BVM seal, reposition the patient's head or jaw to ensure the airway is open, or place an oropharyngeal or nasopharyngeal airway if not already done."],
             feedbackOutOfOrder: [""],
             feedbackErrors: [""],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }]
         }, {
           id: "intv-ventilation-technique-bag-valve-mask"
-          /* contraindicated intervention */
+          /* not indicated intervention */
           ,
           label: "Bag valve mask",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["This patient's respiratory status can be stabilized with oxygen administered via a nasal cannula or non-rebreather mask. More invasive airway support is unnecessary and dangerous."],
-          examine: true,
-          prompts: "Thought this patient needed ventilatory support in addition to oxygenation",
+          examineIfAbsent: false,
+          examineIfErrors: true,
+          promptsIfAbsent: "",
+          promptsIfErrors: "Thought this patient needed ventilatory support in addition to oxygenation",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-occlusive-dressing"
-          /* contraindicated intervention */
+          /* not indicated intervention */
           ,
           label: "Occlusive dressing",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["The patient did not have a penetrating chest wound."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
+          subActionsList: false,
+          subActions: []
+        }, {
+          id: "intv-bulky-dressing"
+          /* optional intervention */
+          ,
+          label: "Bulky dressing",
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.OPT,
+          feedbackAbsent: [""],
+          feedbackOutOfOrder: [""],
+          feedbackErrors: [""],
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-pleural-decompression"
-          /* contraindicated intervention */
+          /* not indicated intervention */
           ,
           label: "Needle decompression",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["This patient had a pneumothorax but did not have a tension pneumothorax. Specifically, he had no signs of cardiac obstruction (hypotension, hypoperfusion of the extremities, JVD). While a tension pneumothorax requires needle decompression to treat and prevent obstruction shock, a simple pneumothorax does not. The patient should be continuously monitored, because a simple pneumothorax has the potential to turn into a tension pneumothorax."],
-          examine: true,
-          prompts: "Thought a simple pneumothorax requires needle decompression; Thought the patient had a tension pneumothorax",
+          examineIfAbsent: false,
+          examineIfErrors: true,
+          promptsIfAbsent: "",
+          promptsIfErrors: "Thought a simple pneumothorax requires needle decompression; Thought the patient had a tension pneumothorax",
           subActionsList: false,
           subActions: []
         }]
@@ -4616,8 +4860,10 @@ const B4CA_PhaseIE = {
         feedbackAbsent: ["Evaluate the patient's pulse and skin to assess the patient for shock.  With an unconscious patient, be sure to check the carotid pulse first, or simultaneously with the radial pulse, to determine if CPR is necessary. Be sure to also perform a gross blood sweep.", "You would have noticed that your patient had a strong, regular pulse and mild tachycardia."],
         feedbackOutOfOrder: ["All unconscious patients should have a pulse check before starting the ABCs. If the patient is pulseless, you will start high-quality CPR immediately."],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "pulse-checks",
@@ -4626,8 +4872,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["First check for a radial pulse. However, if you don't feel one, you want to check a carotid pulse.", "This patient's radial pulses were absent, but he did have a weak carotid pulse, which would prompt you to worry about shock.", "Checking this patient's pulse rate would have revealed that he was tachycardic. A significantly elevated or depressed pulse rate can suggest shock or respiratory failure.", "While this patient's heart had a regular rhythm, remember that an irregular rhythm can suggest impending cardiac arrest or arrhythmia.", "A patient in shock may have weak or absent pulses distally, such as this patient, suggestive of shock."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: true,
           subActions: [{
             id: "prompt-to-specify-pulse",
@@ -4635,9 +4883,11 @@ const B4CA_PhaseIE = {
             type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
             feedbackAbsent: ["First check for a radial pulse. However, if you don't feel one, you want to check a carotid pulse.", "This patient's radial pulses were absent, but he did have a weak carotid pulse, which would prompt you to worry about shock."],
             feedbackOutOfOrder: [""],
-            feedbackErrors: ["First check for a radial pulse. However, if you don't feel one, you want to check a carotid pulse.", "This patient's radial pulses were absent, but he did have a weak carotid pulse, which would prompt you to worry about shock."],
-            examine: false,
-            prompts: "",
+            feedbackErrors: ["If you have established that a patient has peripheral pulses, even if weak, you do not need to check for a central pulse."],
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }, {
@@ -4647,8 +4897,10 @@ const B4CA_PhaseIE = {
             feedbackAbsent: ["Checking this patient's pulse rate would have revealed that he was tachycardic. A significantly elevated or depressed pulse rate can suggest shock or respiratory failure.", "While this patient's heart had a regular rhythm, remember that an irregular rhythm can suggest impending cardiac arrest or arrhythmia.", "A patient in shock may have weak or absent pulses distally, such as this patient, suggestive of shock."],
             feedbackOutOfOrder: [""],
             feedbackErrors: [""],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: [{
               id: "checks-pulse-rate",
@@ -4657,8 +4909,10 @@ const B4CA_PhaseIE = {
               feedbackAbsent: ["Checking this patient's pulse rate would have revealed that he was tachycardic. A significantly elevated or depressed pulse rate can suggest shock or respiratory failure."],
               feedbackOutOfOrder: [""],
               feedbackErrors: [""],
-              examine: false,
-              prompts: "",
+              examineIfAbsent: false,
+              examineIfErrors: false,
+              promptsIfAbsent: "",
+              promptsIfErrors: "",
               subActionsList: false,
               subActions: []
             }, {
@@ -4668,8 +4922,10 @@ const B4CA_PhaseIE = {
               feedbackAbsent: ["While this patient's heart had a regular rhythm, remember that an irregular rhythm can suggest impending cardiac arrest or arrhythmia."],
               feedbackOutOfOrder: [""],
               feedbackErrors: [""],
-              examine: false,
-              prompts: "",
+              examineIfAbsent: false,
+              examineIfErrors: false,
+              promptsIfAbsent: "",
+              promptsIfErrors: "",
               subActionsList: false,
               subActions: []
             }, {
@@ -4679,21 +4935,25 @@ const B4CA_PhaseIE = {
               feedbackAbsent: ["A patient in shock may have weak or absent pulses distally, such as this patient, suggestive of shock."],
               feedbackOutOfOrder: [""],
               feedbackErrors: [""],
-              examine: false,
-              prompts: "",
+              examineIfAbsent: false,
+              examineIfErrors: false,
+              promptsIfAbsent: "",
+              promptsIfErrors: "",
               subActionsList: false,
               subActions: []
             }]
           }]
         }, {
           id: "checks-skin",
-          label: "checks skin",
+          label: "check skin",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
           feedbackAbsent: ["Pallor and cyanosis are signs of inadequate oxygenation and may be caused by shock or respiratory failure. This patient had pink skin.", "While cold skin suggests decompensated shock, a patient with warm skin, like this patient, may be hemodynamically stable or they may be in compensated shock.", "This patient had diaphoretic skin, which in this case is non-specific, but should prompt you to think about shock."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: true,
           subActions: [{
             id: "checks-skin-color",
@@ -4702,8 +4962,10 @@ const B4CA_PhaseIE = {
             feedbackAbsent: ["Pallor and cyanosis are signs of inadequate oxygenation and may be caused by shock or respiratory failure. This patient had pink skin."],
             feedbackOutOfOrder: [""],
             feedbackErrors: [""],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }, {
@@ -4713,8 +4975,10 @@ const B4CA_PhaseIE = {
             feedbackAbsent: ["While cold skin suggests decompensated shock, a patient with warm skin, like this patient, may be hemodynamically stable or they may be in compensated shock."],
             feedbackOutOfOrder: [""],
             feedbackErrors: [""],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }, {
@@ -4724,8 +4988,10 @@ const B4CA_PhaseIE = {
             feedbackAbsent: ["This patient had diaphoretic skin, which in this case is non-specific, but should prompt you to think about shock."],
             feedbackOutOfOrder: [""],
             feedbackErrors: [""],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }]
@@ -4736,87 +5002,86 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["A gross blood sweep, which was negative in this patient, will help you identify any life-threatening bleeding you may have missed earlier when forming your general impression."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
       }, {
         id: "intv-control-severe-bleeding-technique-direct-pressure"
-        /* contraindicated intervention */
+        /* not indicated intervention */
         ,
         label: "Direct pressure",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["The patient did not have significant bleeding."],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-control-severe-bleeding-technique-tourniquet"
-        /* contraindicated intervention */
+        /* not indicated intervention */
         ,
         label: "Tourniquet",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["The patient did not have significant bleeding."],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-control-severe-bleeding-technique-2nd-tourniquet"
-        /* contraindicated intervention */
+        /* not indicated intervention */
         ,
         label: "Second tourniquet",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["The patient did not have significant bleeding."],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-control-severe-bleeding-technique-pack-wound-with-gauze"
-        /* contraindicated intervention */
+        /* not indicated intervention */
         ,
         label: "Pack wound with gauze or hemostatic gauze",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["The patient did not have significant bleeding."],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-control-severe-bleeding-technique-pressure-bandage"
-        /* contraindicated intervention */
+        /* not indicated intervention */
         ,
         label: "Pressure dressing",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["The patient did not have significant bleeding."],
-        examine: false,
-        prompts: "",
-        subActionsList: false,
-        subActions: []
-      }, {
-        id: "intv-control-severe-bleeding-technique-load-and-go"
-        /* contraindicated intervention */
-        ,
-        label: "Load and go due to uncontrolled bleeding.",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
-        feedbackAbsent: [""],
-        feedbackOutOfOrder: [""],
-        feedbackErrors: ["The patient did not have significant bleeding."],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -4826,8 +5091,10 @@ const B4CA_PhaseIE = {
         feedbackAbsent: ["Your ABCs and evaluation for life threats and level of consciousness will dictate where you transfer your patient.", "Because of the patient's tachypnea and mechanism of injury, you choose to transfer the patient to the nearby Level 1 trauma center."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "decision-is-load-and-go",
@@ -4836,8 +5103,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["This patient has a pneumothorax and is requiring O2 to maintain a normal SpO2. This is a patient who could deteriorate quickly so you want to make sure he gets to a hospital quickly."],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["This patient has a pneumothorax and is requiring O2 to maintain a normal SpO2. This is a patient who could deteriorate quickly so you want to make sure he gets to a hospital quickly."],
-          examine: true,
-          prompts: "didn't realize this was a critically ill patient; felt this patient should be further stabilized on site prior to transfer",
+          examineIfAbsent: true,
+          examineIfErrors: false,
+          promptsIfAbsent: "didn't realize this was a critically ill patient; felt this patient should be further stabilized on site prior to transfer",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -4846,24 +5115,26 @@ const B4CA_PhaseIE = {
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
           feedbackAbsent: ["This patient should be evaluated at the Level I trauma center that is 12 minutes away, where they can provide definitive care for his injuries. The need for a Level 1 trauma center is indicated by the mechanism of injury--namely, a motorcycle crash > 20 mph and fall after a 15-ft jump."],
           feedbackOutOfOrder: ["Initial transport decisions should be made following the 'Primary Survey' (ABCs) because that is when the provider decides whether the patient can be further stabilized on scene or taken directly to a hospital in a 'load and go' scenario. The secondary assessment is only performed on scene if the situation is NOT a 'load and go.' Making transport decisions early is especially important if you are calling for an air ambulance to account for the time it takes for them to arrive."],
-          feedbackErrors: [""
-          /*This patient should be evaluated at the Level I trauma center that is 12 minutes away, where they can provide definitive care for his injuries. The need for a Level 1 trauma center is indicated by the mechanism of injury--namely, a motorcycle crash > 20 mph and fall after a 15-ft jump.*/
-          ],
-          examine: false,
-          prompts: "",
+          feedbackErrors: ["This patient should be evaluated at the Level I trauma center that is 12 minutes away, where they can provide definitive care for his injuries. The need for a Level 1 trauma center is indicated by the mechanism of injury--namely, a motorcycle crash > 20 mph and fall after a 15-ft jump."],
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-call-for-air-ambulance"
-          /* contraindicated intervention */
+          /* not indicated intervention */
           ,
           label: "Call for air ambulance",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["Air ambulance was not available."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -4872,20 +5143,24 @@ const B4CA_PhaseIE = {
         label: "Trauma expose the patient",
         type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
         feedbackAbsent: ["Exposure is necessary to properly inspect the patient for injuries. Only the area being inspected should be uncovered and then recovered to prevent heat loss and hypothermia."],
-        feedbackOutOfOrder: ["It is important expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
+        feedbackOutOfOrder: ["It is important to expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: [{
           id: "exposes-body-parts",
           label: "Exposed (and recovered) anatomical areas as necessary",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
           feedbackAbsent: ["Exposure is necessary to properly inspect the patient for injuries. Only the area being inspected should be uncovered and then recovered to prevent heat loss and hypothermia."],
-          feedbackOutOfOrder: ["It is important expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
+          feedbackOutOfOrder: ["It is important to expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -4897,8 +5172,10 @@ const B4CA_PhaseIE = {
       feedbackAbsent: ["Vital signs will help you decide how to manage your patient, as will a history. Even if you cannot obtain a history from the patient directly, you should still try to get as much information as you can (e.g., from a bystander)."],
       feedbackOutOfOrder: [""],
       feedbackErrors: [""],
-      examine: false,
-      prompts: "",
+      examineIfAbsent: false,
+      examineIfErrors: false,
+      promptsIfAbsent: "",
+      promptsIfErrors: "",
       subActionsList: true,
       subActions: [{
         id: "required-action-obtains-vitals",
@@ -4907,8 +5184,10 @@ const B4CA_PhaseIE = {
         feedbackAbsent: ["Baseline vitals are critical; they will help you assess, manage, and continue to monitor your patient.", "You would have found that this patient was tachycardic, tachypneic, and hypoxic on room air, prompting you to think about possible causes for these symptoms (such as pain, pneumothorax, hemothorax, shock)."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -4918,8 +5197,10 @@ const B4CA_PhaseIE = {
         feedbackAbsent: ["Take an efficient but thorough history from the patient or the witnesses: symptoms, allergies, medications, past medical history, last oral intake, events preceding.", "You would have learned that the patient was thrown from his bike after landing a 15-foot jump, landing on his back 20 feet away. You also learn that he has a history of a right forearm fracture 2 years ago but otherwise has no significant past medical history."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -4929,8 +5210,10 @@ const B4CA_PhaseIE = {
         feedbackAbsent: ["Assess the patient's pain: in this case the patient reports 9/10 pain in his right wrist and in his left chest and shoulder. That started when he was thrown from his bike."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }]
@@ -4941,8 +5224,10 @@ const B4CA_PhaseIE = {
       feedbackAbsent: ["The Secondary Survey is a thorough exam of your patient to ensure you have a complete understanding of what is going on and how you need to manage your patient."],
       feedbackOutOfOrder: [""],
       feedbackErrors: [""],
-      examine: false,
-      prompts: "",
+      examineIfAbsent: false,
+      examineIfErrors: false,
+      promptsIfAbsent: "",
+      promptsIfErrors: "",
       subActionsList: true,
       subActions: [{
         id: "head",
@@ -4951,18 +5236,22 @@ const B4CA_PhaseIE = {
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
-          id: "assessment-inspects-skull",
-          label: "Inspect and palpate the scalp and skull",
+          id: "assessment-head-injury",
+          label: "Check head for injury",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -4972,8 +5261,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["Inspecting the face for bruising and palpating for facial deformity may indicate facial fractures."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -4983,15 +5274,13 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["Abnormal eye movement or pupils, which this patient fortunately did not have, suggest intracranial injury and should prompt you to rapidly transfer your patient to a trauma center.", "Additionally, bruising around the eyes may be caused by basilar skull fracture, though this aspect of the exam was normal in this patient."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
-          subActions: [
-          /* subActions used for analysis but not for listing as bullet points
-                               summary of combined subActions' statuses will be in "inspect-eyes" status */
-          {
+          subActions: [{
             id: "inspects-eyes-PERRLA",
-            //an example of needing to bottom out at a defined interface id
             feedbackAbsent: ["Abnormal eye movement or pupils, which this patient fortunately did not have, suggest intracranial injury and should prompt you to rapidly transfer your patient to a trauma center."],
             subActions: []
           }, {
@@ -5003,11 +5292,13 @@ const B4CA_PhaseIE = {
           id: "inspects-ears",
           label: 'Inspect the ears for blood, other fluids, and bruising ("battle signs")',
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-          feedbackAbsent: ["Although not found in this case, bleeding from the ear may be indicative of a basilar skull fracture and bruising behind the ear suggests a basilar skull fracture (Battle's sign)."],
+          feedbackAbsent: ["Although not found in this case, bleeding from the ear or bruising behind the ear may be indicative of a basilar skull fracture (Battle's sign)."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "inspects-ears-blood",
@@ -5025,8 +5316,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["This patient had no drainage from the nose but consider CSF leak from a basilar skull fracture if you see clear drainage."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -5036,8 +5329,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["If the patient had had secretions or blood in the mouth, you would have needed to apply suction to clear the airway.", "Any visualized foreign bodies in the mouth should be removed. A blind finger sweep is never indicated, as you could lodge a foreign body deeper into the airway. There were no obstructions in this patient’s mouth."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [
             /*{
@@ -5063,8 +5358,10 @@ const B4CA_PhaseIE = {
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "assessment-neck-injury",
@@ -5073,8 +5370,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -5084,8 +5383,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["This patient's neck exam was normal, but remember, tracheal deviation suggests unequal intrathoracic pressure (for example, a pneumothorax). The trachea will be deviated away from the side with increased pressure."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -5095,8 +5396,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["This patient's neck exam was normal, but remember,  JVD suggests that the heart is not adequately pushing out blood. Consider obstructive processes like a tension pneumothorax or hemothorax."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -5106,8 +5409,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["This patient's neck exam was normal, but remember, a palpable step-off suggests a fracture."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -5118,8 +5423,10 @@ const B4CA_PhaseIE = {
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "assessment-check-breath-sounds",
@@ -5128,8 +5435,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["The presence and quality of breath sounds can clue you into underlying problems (e.g., pneumothorax, asthma, fluid build-up in the lungs).", "This patient had diminished sounds on the left with crepitus, suggesting pneumothorax."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -5139,8 +5448,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["Inspecting the shoulders for discoloration symmetry or deformity may identify dislocation or fracture of the shoulder (ex. humerus and scapula). This patient had pain with movement of the left shoulder."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -5150,8 +5461,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["The clavicles should be inspected for any evidence of fractures. Though rare, clavicle fractures can cause a pneumothorax. This patient’s clavicles were normal."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -5161,8 +5474,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["The patient had some left-sided crepitus, suggesting that there is air under the skin, likely from an underlying lung injury, namely a pneumothorax.", "The patient had symmetric movement of his chest. Recall that paradoxical chest wall motion suggests flail chest, where multiple rib fractures lead to an unstable portion of the chest wall."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "inspects-chest-injury",
@@ -5170,7 +5485,7 @@ const B4CA_PhaseIE = {
             subActions: []
           }, {
             id: "inspects-palpates-anterior-thorax-crepitation",
-            feedbackAbsent: ["The patient had some left-sided crepitus, suggesting that there is air under the skin, likely from an underlying lung injury, namely a pneumothorax.", "The patient had symmetric movement of his chest. Recall that paradoxical chest wall motion suggests flail chest, where multiple rib fractures lead to an unstable portion of the chest wall."],
+            feedbackAbsent: ["The patient had some left-sided crepitus, suggesting that there is air under the skin, likely from an underlying lung injury, namely a pneumothorax."],
             subActions: []
           }, {
             id: "inspects-anterior-thorax-paradoxical-motion",
@@ -5185,8 +5500,10 @@ const B4CA_PhaseIE = {
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "inspects-abdomen-injury",
@@ -5195,8 +5512,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -5206,8 +5525,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["A distended abdomen suggests trauma and internal bleeding. Fortunately, the patient's abdominal exam was normal."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -5217,8 +5538,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["A rigid abdomen suggests trauma and internal bleeding. Fortunately, the patient's abdominal exam was normal."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -5229,8 +5552,10 @@ const B4CA_PhaseIE = {
         feedbackAbsent: ["Be sure to do a thorough exam of the pelvis as the pelvis can be a source of life-threatening bleeding. The presence of blood or other fluids may indicate urethral, vaginal or rectal injury. Your exam of this patient’s pelvis and genitalia would have been normal."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "assessment-checks-pelvis",
@@ -5239,8 +5564,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["Be sure to do a thorough exam of the pelvis as the pelvis can be a source of life-threatening bleeding. Fortunately, the patient's pelvis exam was normal."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -5250,8 +5577,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["The presence of blood or other fluids may indicate urethral, vaginal or rectal injury. Your exam of this patient’s pelvis and genitalia would have been normal."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -5262,8 +5591,10 @@ const B4CA_PhaseIE = {
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "inspects-extremities-injury",
@@ -5272,8 +5603,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "inspects-right-arm-injury",
@@ -5295,8 +5628,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["Extremity pulses may be weak or non-palpable if your patient is in shock. This patient had normal extremity pulses"],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "inspects-right-arm-pulse",
@@ -5322,8 +5657,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["Diminished or absent mobility may suggest spinal cord or other nervous system injury. This patient was moving his extremities normally."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "inspects-right-arm-motor-ability",
@@ -5349,8 +5686,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["Diminished or absent sensation may suggest spinal cord or other nervous system injury. This patient's sensation was intact in his extremities."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "inspects-right-arm-sensory-function",
@@ -5377,30 +5716,36 @@ const B4CA_PhaseIE = {
         feedbackAbsent: ["You will need a partner to help you roll the patient safely in order to do a thorough exam of the posterior thorax, lumbar, and buttocks for injury and step-offs. A palpable step-off, which the patient did not have, would suggest a fracture."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
-        subActionsList: true,
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
+        subActionsList: false,
         subActions: [{
           id: "inspects-posterior-other-injury",
 
           /* no feedback in excel sheet */
+          label: "inspect posterior for injury",
           feedbackAbsent: [""],
           subActions: []
         }, {
           id: "inspects-posterior-step-offs",
+          label: "inspect posterior for step-offs",
           feedbackAbsent: ["A palpable step-off, which the patient did not have, would suggest a fracture."],
           subActions: []
         }]
       }]
     }, {
       id: "ongoing-mgmt-plan",
-      label: "Continue to provide adequate prehospital care until arriving at the receiving faciliaty",
+      label: "Continue to provide adequate prehospital care until arriving at the receiving facility",
       type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
       feedbackAbsent: [""],
       feedbackOutOfOrder: [""],
       feedbackErrors: [""],
-      examine: false,
-      prompts: "",
+      examineIfAbsent: false,
+      examineIfErrors: false,
+      promptsIfAbsent: "",
+      promptsIfErrors: "",
       subActionsList: true,
       subActions: [{
         id: "Manage non-life-threatening injuries",
@@ -5409,38 +5754,47 @@ const B4CA_PhaseIE = {
         feedbackAbsent: ["Splint the patient's wrist and apply a sling to his injured shoulder before transferring him to an immobilization device."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: [{
           id: "intv-splint-fracture",
+          label: "splint wrist",
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
           feedbackAbsent: ["Splint the patient's wrist before transferring him to an immobilization device."],
           subActions: []
         }, {
           id: "intv-sling",
+          label: "sling shoulder",
           feedbackAbsent: ["Apply a sling to the patient's injured shoulder before transferring him to an immobilization device."],
           subActions: []
         }]
       }, {
         id: "intv-place-on-immobilization-device",
-        label: "Placing the patient on an immobilization device",
+        label: "Place the patient on an immobilization device",
         type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
         feedbackAbsent: ["An immobilization device (e.g., long backboard, vacuum mattress) maintains spinal alignment for transfer to the stretcher. This patient requires full spinal immobilization due to his mechanism of injury.  Failure to fully immobilize this patient could lead to further spinal injury."],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["Full spinal immobilization is required and should be maintained throughout transfer to the ambulance and transport to the care facility, due to the mechanism of injury and high likelihood of spinal injury."],
-        examine: true,
-        prompts: "Thought cervical collar was adequate; Did not know how to transfer patient while maintaining spinal stability",
+        examineIfAbsent: true,
+        examineIfErrors: false,
+        promptsIfAbsent: "Thought cervical collar was adequate; Did not know how to transfer patient while maintaining spinal stability",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-spinal-immobilization-technique-attach-cid",
-        label: "applied padding (e.g., CID, towels) to keep head inline with spine",
+        label: "apply padding (e.g., CID, towels) to keep head inline with spine",
         type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
         feedbackAbsent: ["Once the patient is transferred onto a long backboard or other spinal immobilization device, the CID should be utilized to maintain cervical spine precautions. This will reduce cervical motion and prevent further injury."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -5450,8 +5804,10 @@ const B4CA_PhaseIE = {
         feedbackAbsent: ["It is important to reassess your patient after every intervention and every clinical change. This includes repeating the primary survey, secondary survey, and vital signs. A critically ill patient should be reassessed more frequently to ensure he or she is still stable--approximately every 5 minutes."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "reassess-vitals-plus-frequency",
@@ -5460,8 +5816,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["Vitals should be reassessed after every intervention and every clinical change, and a critically ill patient should be reassessed every 5 minutes since their condition could deteriorate rapidly."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "reassess-vital-signs",
@@ -5470,8 +5828,10 @@ const B4CA_PhaseIE = {
             feedbackAbsent: ["Vitals should be reassessed after every intervention and every clinical change, and a critically ill patient should be reassessed more frequently to ensure he or she is still stable."],
             feedbackOutOfOrder: [""],
             feedbackErrors: [""],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }, {
@@ -5481,8 +5841,10 @@ const B4CA_PhaseIE = {
             feedbackAbsent: ["Critical patients' vital signs should be reassessed every 5 minutes, since their condition could deteriorate rapidly."],
             feedbackOutOfOrder: [""],
             feedbackErrors: ["Critical patients' vital signs should be reassessed every 5 minutes, since their condition could deteriorate rapidly."],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }]
@@ -5493,8 +5855,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["It is important to reassess your patient after every intervention and every clinical change, which includes the primary survey. For example, a patient with a neck injury whose breathing was initially non-labored may develop stridor as the airway becomes swollen."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -5504,8 +5868,10 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["It is important to reassess your patient after every intervention and every clinical change, which includes your secondary survey. For example, a patient may lose their pulses if you initially failed to notice and treat a source of hemorrhage."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -5518,30 +5884,36 @@ const B4CA_PhaseIE = {
         feedbackAbsent: ["This patient is hypotensive with a fast heart rate, suggesting possible shock. Patients in shock have trouble maintaining their body temperatures, so they should be kept warm. It is important to keep this patient warm because hypothermia can cause additional problems or worsening of the patient's current problems, including worsening hypotension, arrhythmias, or even cardiac arrest."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-establish-iv",
         label: "Establish at least one large bore IV en route",
         type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-        feedbackAbsent: ["All trauma patient should have at least one, ideally two, large-bore IVs placed, even if they do not require fluid resuscitation."],
+        feedbackAbsent: ["All trauma patient should have at least one, ideally two, large bore IVs (i.e., 14 or 16 gauge) placed, even if they do not require fluid resuscitation."],
         feedbackOutOfOrder: [""],
-        feedbackErrors: ["With a critical patient, you should ideally establish two large bore IV's while en route to the receiving facility, so as not to delay transfer to definitive care.  While this patient does not require fluid resuscitation at this time, you want to ensure you are prepared should this change."],
-        examine: false,
-        prompts: "",
+        feedbackErrors: ["With a critical patient, you should ideally establish two large bore IVs (i.e., 14 or 16 gauge) while en route to the receiving facility, so as not to delay transfer to definitive care.  While this patient does not require fluid resuscitation at this time, you want to ensure you are prepared should this change."],
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-prepare-and-administer-pain-nausea-vomiting-medications",
-
-        /* optional intervention */
         label: "Prepare and administer medications",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.OPT,
-        feedbackAbsent: [""],
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
+        feedbackAbsent: ["A conscious patient with a 9/10 pain level may benefit from analgesia. Fentanyl at 1 mcg/kg (per protocol) likely would have minimal effects -- if any -- on his respiratory drive.  However, full spinal immobilization and administering life-saving interventions would take priority over starting an IV and administering pain medications."],
         feedbackOutOfOrder: [""],
-        feedbackErrors: ["A conscious patient with a 9/10 pain level may benefit from analgesia. Fentanyl at 1 mcg/kg (per protocol) likely would have minimal effects -- if any -- on his respiratory drive.  However, full spinal immobilization and administering life-saving interventions would take priority over starting an IV and administering pain medications."],
+        feedbackErrors: ["This patient’s pain level is 9/10.  He may benefit from Fentanyl at 1 mcg/kg (per protocol) administered by IV, IO, or IM, which for this patient would be an initial dose of 70 mcg.  As long as you don’t exceed a maximum dose of 3 mcg/kg (for this patient, 210 kg), you could administer a half dose every 5 minutes as needed.  Contact Medical Command if intense pain persists."],
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -5558,13 +5930,15 @@ const B4CA_PhaseIE = {
         id: "reassess-med-admin",
 
         /* optional intervention */
-        label: "Checks that pain medications are working.",
+        label: "Check that pain medications are working.",
         type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.OPT,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -5574,73 +5948,85 @@ const B4CA_PhaseIE = {
         feedbackAbsent: ["The hospital requires notification for all incoming patients 5 -15 prior to arrival, which is especially important for critical patients as the receiving team needs time to prepare equipment and space."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-place-directly-on-stretcher"
-        /* contraindicated intervention */
+        /* not indicated intervention */
         ,
         label: "Place patient directly on stretcher",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["This patient requires full spinal immobilization due to his mechanism of injury."],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-walk-patient-to-ambulance"
-        /* contraindicated intervention */
+        /* not indicated intervention */
         ,
         label: "Walk patient to ambulance",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["This patient requires full spinal immobilization due to his mechanism of injury."],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-control-shock-technique-administer-iv-boluses"
-        /* unnecessary intervention */
+        /* not indicated intervention */
         ,
-        label: "IV fluid resuscitation",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.UNNEC,
+        label: "Administer IV fluid resuscitation",
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["This patient is not hypotensive and does not require fluid resuscitation. You should establish IV access, however, and should this change, you would be prepared to start fluids."],
-        examine: true,
-        prompts: "thought that hypotension should be treated with fluid boluses regardless of etiology",
+        examineIfAbsent: false,
+        examineIfErrors: true,
+        promptsIfAbsent: "",
+        promptsIfErrors: "thought that hypotension should be treated with fluid boluses regardless of etiology",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-apply-sterile-dressings"
-        /* contraindicated intervention */
+        /* not indicated intervention */
         ,
         label: "Apply sterile dressings",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["The patient did not have any signifcant injuries to the skin."],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-prepare-amputated-part"
-        /* contraindicated intervention */
+        /* not indicated intervention */
         ,
         label: "Prepare amputated part for transport",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["The patient did not have an amputation."],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }]
@@ -5650,7 +6036,7 @@ const B4CA_PhaseIE = {
 
 /***/ }),
 
-/***/ 40351:
+/***/ 72591:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -5658,7 +6044,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "B5CA_PhaseDEBRF": () => (/* binding */ B5CA_PhaseDEBRF)
 /* harmony export */ });
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(54354);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2294);
 // type Phase_D = {
 //     step:  string;
 //     title: string;
@@ -5797,7 +6183,9 @@ const B5CA_PhaseDEBRF = [{
 }, {
   step: "R",
   slides: [{
-    paragraphs: [(0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("In an idealized scenario, you arrive on scene and find a patient leaning against the bar. Your initial assessment reveals a patient who is awake but responds only to verbal requests and is holding his hand over a bloody chest wound.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You immediately direct your partner to provide"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("manual c-spine stabilization", "Though there is no apparent spine trauma, given that you do not know the full extent of what happened in the fight, it is safest to assume spinal precautions at the beginning of your assessment."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and apply a cervical collar. You note the patient’s airway is patent but his breathing is rapid and shallow so you place him on a"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("non-rebreather mask.", "Though you might consider using a bag-valve mask to assist with ventilation in this patient, the patient has a penetrating chest wound and could have a tension pneumothorax, so positive-pressure ventilation should be avoided if possible."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("His extremity pulses are weak and his skin is pale and diaphoretic.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You instruct another responder to obtain a set of baseline vitals and obtain a SAMPLE and OPQRST history from a bystander while you perform a rapid head-to-toe assessment. As you examine the patient you note diminished breath sounds on the right and a stab wound to the right chest. Combined with his significant hypotension, you suspect the patient has a right tension pneumothorax. You perform"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("needle decompression of the right lung,", "A large bore needle (at least 14 or 16 gauge) should be inserted in the R chest at the 2nd or 3rd intercostal space at the mid-clavicular line OR fourth of fifth intercostal space at the mid-axillary line to decompress the tension pneumothorax that is causing the patient’s respiratory distress and obstructive shock."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("the success of which you confirm with a repeat lung exam and note an improvement in the patient’s vital signs. Additionally, you place an"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("occlusive dressing", "This patient has a penetrating chest wound that, if untreated, will continue to allow air to collect around the lungs, worsening his tension pneumothorax. Be sure to only tape 3 sides to prevent air from entering the lungs while still allowing blood and air to escape."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("over the initial penetrating chest wound to prevent re-accumulation of air. After completing your secondary survey, you then"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("use a scoop stretcher", "While a cervical collar is appropriate when you approach this trauma patient, further spinal immobilization is contraindicated in this patient with a penetrating chest wound, as immobilization on a spine board may cause further injury."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("to transfer him to the ambulance.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("While en route, you and your partner cover the patient with a blanket and notify the level II trauma center of the patient’s condition and give an ETA. You establish two large bore IVs, administer fluids only as needed to"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("maintain systolic BP >90,", "Initially this patient’s BP is 58/palp, which is due to obstruction shock secondary to his tension pneumothorax. With appropriate management of the tension pneumothorax and resumption of normal cardiac output, you should see an improvement in the patient’s blood pressure without need for significant fluid resuscitation."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("reassess the patient"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("every five minutes,", "This critically ill patient should be reassessed every 5 minutes"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and confirm that all interventions are working properly, modifying any as necessary."))]
+    paragraphs: [(0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("In an idealized scenario, you arrive on scene and find a patient leaning against the bar. Your initial assessment reveals a patient who is awake but responds only to verbal requests and is holding his hand over a bloody chest wound.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You immediately direct your partner to provide"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("manual c-spine stabilization", "Though there is no apparent spine trauma, given that you do not know the full extent of what happened in the fight, it is safest to assume spinal precautions at the beginning of your assessment."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and apply a cervical collar. You note the patient’s airway is patent but his breathing is rapid and shallow so you place him on a"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("non-rebreather mask.", "Though you might consider using a bag-valve mask to assist with ventilation in this patient, the patient has a penetrating chest wound and could have a tension pneumothorax, so positive-pressure ventilation should be avoided if possible."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("His extremity pulses are weak and his skin is pale and diaphoretic."))]
+  }, {
+    paragraphs: [(0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You instruct another responder to obtain a set of baseline vitals and obtain a SAMPLE and OPQRST history from a bystander while you perform a rapid head-to-toe assessment. As you examine the patient you note diminished breath sounds on the right and a stab wound to the right chest. Combined with his significant hypotension, you suspect the patient has a right tension pneumothorax. You perform"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("needle decompression of the right lung,", "A large bore needle (at least 14 or 16 gauge) should be inserted in the R chest at the 2nd or 3rd intercostal space at the mid-clavicular line OR fourth of fifth intercostal space at the mid-axillary line to decompress the tension pneumothorax that is causing the patient’s respiratory distress and obstructive shock."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("the success of which you confirm with a repeat lung exam and note an improvement in the patient’s vital signs. Additionally, you place an"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("occlusive dressing", "This patient has a penetrating chest wound that, if untreated, will continue to allow air to collect around the lungs, worsening his tension pneumothorax. Be sure to only tape 3 sides to prevent air from entering the lungs while still allowing blood and air to escape."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("over the initial penetrating chest wound to prevent re-accumulation of air. After completing your secondary survey, you then"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("use a scoop stretcher", "While a cervical collar is appropriate when you approach this trauma patient, further spinal immobilization is contraindicated in this patient with a penetrating chest wound, as immobilization on a spine board may cause further injury."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("to transfer him to the ambulance.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("While en route, you and your partner cover the patient with a blanket and notify the level II trauma center of the patient’s condition and give an ETA. You establish two large bore IVs, administer fluids only as needed to"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("maintain systolic BP >90,", "Initially this patient’s BP is 58/palp, which is due to obstruction shock secondary to his tension pneumothorax. With appropriate management of the tension pneumothorax and resumption of normal cardiac output, you should see an improvement in the patient’s blood pressure without need for significant fluid resuscitation."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("reassess the patient"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("every five minutes,", "This critically ill patient should be reassessed every 5 minutes"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and confirm that all interventions are working properly, modifying any as necessary."))]
   }]
 }, {
   step: "F",
@@ -5808,7 +6196,7 @@ const B5CA_PhaseDEBRF = [{
 
 /***/ }),
 
-/***/ 6220:
+/***/ 76664:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -5816,7 +6204,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "B5CA_PhaseIE": () => (/* binding */ B5CA_PhaseIE)
 /* harmony export */ });
-/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(20573);
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(39384);
 /* Data for scenario C5CA phase IE 
 This data structure holds all the information to create the slides to present during the IE phase.
 It mirrors the tree structure that is presented in the Excel file. All nodes in the tree are called actions whether 
@@ -5824,24 +6212,32 @@ they are assessments or interventions. Subactions are the children of the action
 Fields:
 id: identifies the action-node in the tree. It is a string since it is unique.
 label: text for the action as it will appear on the slide
-type: indicates whether the action is Required, Contraindicated, Unnecessary, Irrelevant, Optional, Alternative.
-    Required, it will be listed in the left side of the slide so that students are asked if they performed it.
-    Contraindicated: it will be listed on the right side under a list of contraindicated actions that the student performed
-    accompanied by the feedback on the feedbackErrors field.
-    Unnecessary: it will be listed on the right side under a list of unnecessary actions that the student performed
-    accompanied by the feedback on the feedbackErrors field.
-    Irrelevent: it will be listed on the right side under a list of irrelevant actions that the student performed
-    accompanied by the feedback on the feedbackErrors field.
-    Optional: it will be accepted as correct if performed. We are considering it the same as Unnecessary.
+type: indicates whether the action is Required, Not indicated, Optional, Alternative.
+    Required: students are asked if they performed it.
+    Not indicated: it will be listed on a list of not indicated actions that the student performed accompanied by 
+    the feedback on the feedbackErrors field.
+    Optional: it will be accepted as correct if performed.
     Alternative: will be used for those interventions that can be performed as alternative to required ones.
+    [
+    Not used for the pilot study but was used for trial 1:
+    Contraindicated: it will be listed under a list of contraindicated actions that the student performed
+    accompanied by the feedback on the feedbackErrors field.
+    Unnecessary: it will be listed under a list of unnecessary actions that the student performed
+    accompanied by the feedback on the feedbackErrors field.
+    Irrelevent: it will be listed under a list of irrelevant actions that the student performed
+    accompanied by the feedback on the feedbackErrors field.
+    ]
 AlternativeToIntv: indicates the intervention for which the current one is an alternative. It will only have a value if
 the type is Alternative.
-feedbackAbsent: feedback given if the action was no performed
+feedbackAbsent: feedback given if the action was no performed. Each element in the array corresponds to a paragraph.
 feedbackOutOfOrder: feedback given if the action was done late (e.g., if the action is Scene size-up and it was done 
-    after Primary Survey)
-feedbackErrors: feedback if the action was performed incorrectly (e.g., wrong ventilation rate)
-examine: boolean to indicate if this Action needs to be examined (phase E)
-prompts: prompts to be included in question headers in phase E, to hint on how to reflect
+    after Primary Survey). Each element in the array corresponds to a paragraph.
+feedbackErrors: feedback if the action was performed incorrectly (e.g., wrong ventilation rate). Each element in the array
+ corresponds to a paragraph.
+examineIfAbsent: boolean to indicate if this Action needs to be examined when it is Absent (phase E)
+examineIfErrors: boolean to indicate if this Action needs to be examined when there are performance errors (phase E)
+promptsIfAbsent: prompts to be included in question headers in phase E, to hint on how to reflect when Action was Absent
+promptsIfErrors: prompts to be included in question headers in phase E, to hint on how to reflect when Action was performed incorrectly
 subActionsList: boolean that indicates whether the subActions need to be listed as bullet points on the slide. If they
     don't need to be listed it is usually because they have been grouped however, the subActions still need to be 
     included in the subActions field because they are used by the analysis to give a summary of their status.
@@ -5867,12 +6263,14 @@ const B5CA_PhaseIE = {
     feedbackErrors: [""],
 
     /*feedback if the action was performed incorrectly (e.g. wrong Ventilation rate)*/
-    examine: false,
+    examineIfAbsent: false,
 
     /* boolean to indicate if this Action needs to be examined (phase E) */
-    prompts: "",
+    examineIfErrors: false,
+    promptsIfAbsent: "",
 
     /* prompts to the included in question in phase E to hint on how to reflect */
+    promptsIfErrors: "",
     subActionsList: true,
 
     /* boolean that indicates if subActions need to be listed as bullet points on slide */
@@ -5885,8 +6283,10 @@ const B5CA_PhaseIE = {
       feedbackAbsent: ["Your first steps should have been to don your protective wear, including eye protection, and to ensure the scene is safe. You cannot assist a patient if you are not safe yourself.", "Your scene size up gives you a big-picture view of what is going on before you even begin examining the patient and includes determining the mechanism of injury and number of patients, requesting additional help if necessary, and considering stabilization of the spine.", "In this case, you would have learned that this patient was involved in a bar fight and stabbed in the chest with a knife, which should prompt you to think about potential intrathoracic injuries, such as a pneumothorax or an injury to the aorta or other major vessel."],
       feedbackOutOfOrder: ["Your first steps should have been to don your protective wear, including eye protection, and to ensure the scene is safe. You cannot assist a patient if you are not safe yourself.", "Your scene size up also gives you a big-picture view of what is going on before you even begin examining the patient. This includes determining the mechanism of injury and number of patients, requesting additional help if necessary, and considering stabilization of spine."],
       feedbackErrors: [""],
-      examine: false,
-      prompts: "",
+      examineIfAbsent: false,
+      examineIfErrors: false,
+      promptsIfAbsent: "",
+      promptsIfErrors: "",
       subActionsList: true,
       subActions: [{
         id: "required-action-BSI",
@@ -5895,8 +6295,10 @@ const B5CA_PhaseIE = {
         feedbackAbsent: ["Your first steps should have been to don your protective wear, including eye protection, and to ensure the scene is safe. You cannot assist a patient if you are not safe yourself."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -5906,8 +6308,10 @@ const B5CA_PhaseIE = {
         feedbackAbsent: ["Your first steps should have been to don your protective wear, including eye protection, and to ensure the scene is safe. You cannot assist a patient if you are not safe yourself."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -5917,8 +6321,10 @@ const B5CA_PhaseIE = {
         feedbackAbsent: ["Knowing what caused the patient's injury or illness can allow you to start developing a plan of action before you even assess your patient.", "In this case, you would have learned that this patient was involved in a bar fight and stabbed in the chest with a knife, which should prompt you to think about potential intrathoracic injuries, such as a pneumothorax or an injury to the aorta or other major vessel."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -5928,8 +6334,10 @@ const B5CA_PhaseIE = {
         feedbackAbsent: ["Usually you will have one patient, but if there is more than one you will need to plan accordingly."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -5939,8 +6347,10 @@ const B5CA_PhaseIE = {
         feedbackAbsent: ["Consider extra help based on number of patients, mechanism of injury, or your patient's status."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -5950,8 +6360,10 @@ const B5CA_PhaseIE = {
         feedbackAbsent: ["All trauma patients are at risk for spinal injury. Take this into consideration before initial contact with the patient to prevent unintentional injury. While a stab wound to the chest may not be high-risk, if you don't know everything that happened during the altercation, you should have erred on the side of caution."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }]
@@ -5962,8 +6374,10 @@ const B5CA_PhaseIE = {
       feedbackAbsent: ["The primary survey is an assessment of mental status, life-threats, and the patient's ABCs. It is where you will identify and address the patient's most serious injuries.", "In this case, the Primary Survey would have revealed a patient who is conscious but is having trouble breathing. Your primary survey does not reveal any apparently life threats so you can move forward to the next step of your assessment."],
       feedbackOutOfOrder: ["You should have started your Primary Survey after the Scene Size-up and completed it before starting the Secondary Survey. Only interrupt your assessment to control life-threats: (1) Conditions that comprimise a patent airway (2) Conditions that compromise breathing or respirations, such as a tension pneumothorax, (3) Conditions that compromise circulation, such as severe bleeding, (4) Cardiac arrest, and any  other potentially life threatening injuries or conditions.  Your patient's condition will deteriorate if these conditions are not addressed before continuing on with your assessment and history taking."],
       feedbackErrors: [""],
-      examine: false,
-      prompts: "",
+      examineIfAbsent: false,
+      examineIfErrors: false,
+      promptsIfAbsent: "",
+      promptsIfErrors: "",
       subActionsList: true,
       subActions: [{
         id: "general-impression",
@@ -5972,8 +6386,10 @@ const B5CA_PhaseIE = {
         feedbackAbsent: ["You should have performed an Initial Assessment: gathered a general impression, identified any apparent life threats, and determined your patient's level of consciousness.  Your Initial Assessment would have revealed a patient who is conscious but having respiratory distress."],
         feedbackOutOfOrder: ["While you may be tempted to jump straight into your ABCs, apparent life threats (i.e., uncontrolled bleeding) should be addressed first, as they can cause a patient to deteriorate quickly. Also, be sure to assess the patient's level of consciousness as an unconscious patient will need a pulse check first to ensure he or she does not require CPR."],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "assess-patient-condition",
@@ -5982,8 +6398,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["Your general impression allows you to start developing a plan of action before you even assess your patient.", "In this case, your general impression would have been of a man stabbed in the chest with a knife."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -5993,8 +6411,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["The patient's level of consciousness alters how you progress through your assessment.", "The patient is conscious, but with a GCS of 13 (eyes closed, responds to verbal stimuli)."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -6004,41 +6424,70 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["If you had determined apparent life threats, you would have noticed that the patient was conscious without apparent immediate life threats."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
       }, {
-        id: "Manage a potential head or spinal injury",
-        label: "Manage a potential head or spinal injury",
+        id: "intv-position-patient",
+        label: "Place patient in supine position",
         type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
+        feedbackAbsent: ["This patient presents leaning forward at a bar. You and your partner should carefully place him in supine position in order to examine him. Due to hypotension, he should remain in supine position except while you examine his posterior during the secondary survey."],
+        feedbackOutOfOrder: ["You should have placed the patient in supine position before starting the secondary survey because all life-threatening conditions should be managed before starting the secondary survey."],
+        feedbackErrors: [""],
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
+        subActionsList: false,
+        subActions: []
+      }, {
+        id: "Manage a potential head or spinal injury",
+
+        /* optional intervention because subActions are optional*/
+        label: "Manage a potential head or spinal injury",
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.OPT,
         feedbackAbsent: ["Part of managing a head and/or spinal injury includes manual stabilization of the cervical spine before beginning your assessment, as movement may further injure the patient. While this patient may not have an obvious injury to the head or spine, you want to always stabilize the spine before you begin your assessment. As you continue your assessment, you may decide he no longer needs spinal stabilization, but you will never be wrong to err on the side of caution. A cervical collar will help you maintain stability while you continue with your exam."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: true,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+
+        /*Did not consider risk for cervical spine injury; considered cervical spine injury but did not think the mechanism necessitated spinal stabilization*/
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "intv-spinal-immobilization-technique-manual-c-spine",
+
+          /* optional intervention */
           label: "Apply (or direct a partner to apply) manual c-spine stabilization",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.OPT,
           feedbackAbsent: ["Part of managing a head and/or spinal injury includes manual stabilization of the cervical spine before beginning your assessment, as movement may further injure the patient. While this patient may not have an obvious injury to the head or spine, you want to always stabilize the spine before you begin your assessment. As you continue your assessment, you may decide he no longer needs spinal stabilization, but you will never be wrong to err on the side of caution."],
           feedbackOutOfOrder: ["During trauma situations it is necessary to stabilize the c-spine before continuing as not doing so may cause further injury to the patient."],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-spinal-immobilization-technique-cervical-collar",
+
+          /* optional intervention */
           label: "Apply an appropriately sized cervical collar",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.OPT,
           feedbackAbsent: ["A cervical collar will help you maintain stability while you continue with your exam."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -6049,8 +6498,10 @@ const B5CA_PhaseIE = {
         feedbackAbsent: ["Be sure to assess the airway for patency and intact physical structures.", "You would have found this patient's airway to be patent, as evidenced by the fact that he can speak to you."],
         feedbackOutOfOrder: ["If your patient is conscious, you should examine the airway before breathing and circulation. If a patient is unconscious, you should assess the pulse first to evaluate for possible cardiac arrest, then go through your ABCs."],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "airway-is-open",
@@ -6059,8 +6510,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["The first step of your airway assessment is to see if the patient's airway is open. If the patient is speaking normally, like in this patient, it is open. Signs like stridor or gasping may indicate an airway obstruction."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -6070,216 +6523,266 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["Though this patient did not have any facial trauma, be sure to look for injuries such as gun-shot wounds or facial fractures, as these may affect what basic or advanced airways you can use.  Avoid using a nasopharyngeal airway in patients with a suspected basilar skull fracture or nasal injury."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-open-airway-method-head-tilt",
 
-          /*contraindicated intervention */
+          /*not indicated intervention */
           label: "Head tilt chin lift",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["This patient's airway is patent, as is evident by the fact that he is talking--for example, complaining about pain and difficulty breathing.  If his condition deteriorates and you have reason to suspect that his airway may be compromised, you should check the  airway while maintaining the cervical spine: use a modified jaw thrust maneuver instead of a head tilt chin lift."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-open-airway-method-modified-jaw-thrust",
 
-          /* unnecessary intervention */
+          /* optional intervention */
           label: "Open the patient's airway with a jaw thrust maneuver",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.UNNEC,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.OPT,
           feedbackAbsent: [""],
-          feedbackOutOfOrder: [""],
+          feedbackOutOfOrder: ["You should have performed a jaw thrust maneuver before starting the secondary survey because all life-threatening conditions should be managed before starting the secondary survey."],
           feedbackErrors: ["This patient's airway is patent, as is evident by the fact that he is talking--for example, complaining about pain and difficulty breathing.  If his condition deteriorates and you have reason to suspect that his airway may be compromised, you should check the  airway while maintaining the cervical spine: use a modified jaw thrust maneuver instead of a head tilt chin lift."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-airway-patency-technique-suction-airway",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Suction the patient's mouth using a Yankauer (rigid)  or Long multi-use catheter",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["This patient's airway was patent. There is no need to suction."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
+          subActionsList: false,
+          subActions: []
+        }, {
+          id: "intv-position-patient",
+
+          /* optional intervention */
+          label: "Position the patient",
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.OPT,
+          feedbackAbsent: [""],
+          feedbackOutOfOrder: [""],
+          feedbackErrors: [""],
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-manual-finger-sweep",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Manual (finger sweep)",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["If there is a visible foreign body in the mouth, it should be removed. However, a blind finger sweep is contraindicated as it could lodge a foreign body deeper into the airway. Further, there is no evidence of foreign body in this patient's mouth."],
-          examine: true,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-magill-forceps-assisted",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Magill forceps assisted removal",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["If there is a visible foreign body in the mouth, it should be removed. However, there is no evidence of a foreign body in this patient's mouth."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-heimlich-maneuver",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Heimlich Maneuver",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["You have no evidence the patient is choking on an object so the Heimlich maneuver is not appropriate at this time."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-back-blows-and-chest-thrusts",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Back blows and chest thrusts",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["You have no evidence the patient is choking on an object so back blows and chest thrusts are not appropriate at this time."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-oropharyngeal-airway",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Oropharyngeal airway (OPA)",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["This patient requires only a nasal canula or non-rebreather mask. An airway adjunct is unnecessary and would likely be refused by this conscious patient."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-nasopharyngeal-airway",
 
-          /* contraindicated intervention */
-          label: "Sasopharyngeal airway (NPA)",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          /* not indicated intervention */
+          label: "Nasopharyngeal airway (NPA)",
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["This patient requires only a nasal canula or non-rebreather mask. An airway adjunct is unnecessary and would likely be refused by this conscious patient."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-orotracheal-intubation",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Orotracheal intubation",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["This patient's respiratory status can be stabilized with oxygen administered via a nasal canula or non-rebreather mask. More invasive airway support is unnecessary and dangerous."],
-          examine: true,
-          prompts: "Thought this patient needed to be intubated",
+          examineIfAbsent: false,
+          examineIfErrors: true,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
+          promptsIfErrors: "Thought this patient needed to be intubated",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-nasotracheal-intubation",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Nasotracheal intubation",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["This patient's respiratory status can be stabilized with oxygen administered via a nasal canula or non-rebreather mask. More invasive airway support is unnecessary and dangerous."],
-          examine: true,
-          prompts: "Thought this patient needed to be intubated",
+          examineIfAbsent: false,
+          examineIfErrors: true,
+          promptsIfAbsent: "",
+          promptsIfErrors: "Thought this patient needed to be intubated",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-insert-advanced-airway",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Insert advanced/rescue airway",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["This patient's respiratory status can be stabilized with oxygen administered via a nasal canula or non-rebreather mask. More invasive airway support is unnecessary and dangerous."],
-          examine: true,
-          prompts: "Thought this patient needed to be intubated",
+          examineIfAbsent: false,
+          examineIfErrors: true,
+          examineIfAbsent: "",
+          promptsIfErrors: "Thought this patient needed to be intubated",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-rapid-sequence-intubation",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Rapid-sequence intubation",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["RSI is not in the paramedic's scope of practice in Pennsylvania. This patient's respiratory status can be stabilized with oxygen administered via a nasal canula or non-rebreather mask. More invasive airway support is unnecessary and dangerous."],
-          examine: true,
-          prompts: "Thought this patient needed to be intubated",
+          examineIfAbsent: false,
+          examineIfErrors: true,
+          promptsIfAbsent: "",
+          promptsIfErrors: "Thought this patient needed to be intubated",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-sedation-assisted-intubation",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Sedation-assisted intubation",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["This patient's respiratory status can be stabilized with oxygen administered via a nasal canula or non-rebreather mask. More invasive airway support is unnecessary and dangerous."],
-          examine: true,
-          prompts: "Thought this patient needed to be intubated",
+          examineIfAbsent: false,
+          examineIfErrors: true,
+          promptsIfAbsent: "",
+          promptsIfErrors: "Thought this patient needed to be intubated",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-needle-cricothyrotomy",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Needle cricothyrotomy",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["A cricothrotomy is indicated when there is an upper airway obstruction that cannot be removed. This patient has a patent airway."],
-          examine: true,
-          prompts: "thought the patient had an upper airway obstruction",
+          examineIfAbsent: false,
+          examineIfErrors: true,
+          promptsIfAbsent: "",
+          promptsIfErrors: "thought the patient had an upper airway obstruction",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-surgical-cricothyrotomy",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Surgical cricothyrotomy",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["A cricothyrotomy is indicated when there is an upper airway obstruction that cannot be removed. This patient has a patent airway."],
-          examine: true,
-          prompts: "thought the patient had an upper airway obstruction",
+          examineIfAbsent: false,
+          examineIfErrors: true,
+          promptsIfAbsent: "",
+          promptsIfErrors: "thought the patient had an upper airway obstruction",
           subActionsList: false,
           subActions: []
         }]
@@ -6290,8 +6793,10 @@ const B5CA_PhaseIE = {
         feedbackAbsent: ["After assessing the patient's airway, assess their breathing by listening for breath sounds and observing their respiratory rate, rhythm, and effort.", "You would have found tachypnea, shallow breaths, with absent sounds on the right, suggesting possible pneumothorax or hemothorax."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "breathing-checks-rate",
@@ -6300,8 +6805,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["A significantly elevated or depressed respiratory rate can suggest impending respiratory failure.", "This patient's tachypnea suggests the need for some respiratory support."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -6311,8 +6818,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["Although not found in this case, a patient who is breathing irregularly needs ventilatory support."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -6322,8 +6831,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["Sounds like stridor, crackles, or wheezing will help you diagnose and manage your patient's respiratory problems.", "This patient had absent breath sounds on the right, suggesting a possible pneumothorax or hemothorax."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -6334,39 +6845,48 @@ const B5CA_PhaseIE = {
         feedbackAbsent: ["The patient is taking rapid, shallow breaths. He is diminished on the L with an SpO2 of 88%. These are signs that this patient has a pneumothorax, possibly even a tension pneumothorax, and requires respiratory support."],
         feedbackOutOfOrder: ["Problems with ventilation and oxygenation are life threatening and should be addressed before you move on to your secondary survey. Repeat your exam and check vitals to ensure your interventions have worked as you expected. If not, your patient may deteriorate as you continue on with your examination."],
         feedbackErrors: [""],
-        examine: true,
-        prompts: "thought the patient had a simple pneumothora; didn't realize the patient had a pneumothorax; didn't know the best way to manage the patient's tension pneumothorax",
+        examineIfAbsent: true,
+        examineIfErrors: false,
+        promptsIfAbsent: "thought the patient had a simple pneumothora; didn't realize the patient had a pneumothorax; didn't know the best way to manage the patient's tension pneumothorax",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "intv-non-rebreather-mask-or-nasal-cannula",
           label: "administering concentrated oxygen via a non-rebreather mask or nasal cannula",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
           feedbackAbsent: ["The patient's respiratory rate is fast, but he is ventilating adequately. His SpO2, however, is low, suggesting inadequate oxygenation. You can use either a nasal canula or non-rebreather mask to help with oxygenation. Note that you are not assisting the patient with ventilation. In the case of a pneumothorax, you should avoid positive pressure ventilation, if possible, as this could increase the amount of air outside of the lungs, turning a pneumothorax into a tension pneumothorax."],
-          feedbackOutOfOrder: [""],
+          feedbackOutOfOrder: ["Oxygen administration should be performed during the primary survey as this intervention falls under 'Breathing' in the ABC's."],
           feedbackErrors: ["This patient should be allowed to breathe independently. O2 flow rate should be adjusted to achieve an SpO2 between 95 and 99%."],
-          examine: true,
-          prompts: "didn't realize that the patient's respiratory status was threatened; thought this patient needed ventilatory support; did not recognize the possibility of a pneumothorax",
+          examineIfAbsent: true,
+          examineIfErrors: false,
+          promptsIfAbsent: "didn't realize that the patient's respiratory status was threatened; thought this patient needed ventilatory support; did not recognize the possibility of a pneumothorax",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "intv-supplemental-oxygen-device-non-rebreather-mask",
             label: "administer concentrated oxygen via a non-rebreather mask",
             type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
             feedbackAbsent: ["The patient's respiratory rate is fast, but he is ventilating adequately. His SpO2, however, is low, suggesting inadequate oxygenation. You can use either a nasal canula or non-rebreather mask to help with oxygenation. Note that you are not assisting the patient with ventilation. In the case of a pneumothorax, you should avoid positive pressure ventilation, if possible, as this could increase the amount of air outside of the lungs, turning a pneumothorax into a tension pneumothorax."],
-            feedbackOutOfOrder: [""],
+            feedbackOutOfOrder: ["Oxygen administration should be performed during the primary survey as this intervention falls under 'Breathing' in the ABC's."],
             feedbackErrors: ["This patient should be allowed to breathe independently. O2 flow rate should be adjusted to achieve an SpO2 between 95 and 99%."],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }, {
             id: "intv-supplemental-oxygen-device-nasal-cannula",
             label: "administer concentrated oxygen via a nasal cannula",
             type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.ALT,
+            alternativeToIntv: "intv-supplemental-oxygen-device-non-rebreather-mask",
             feedbackAbsent: ["The patient's respiratory rate is fast, but he is ventilating adequately. His SpO2, however, is low, suggesting inadequate oxygenation. You can use either a nasal canula or non-rebreather mask to help with oxygenation. Note that you are not assisting the patient with ventilation. In the case of a pneumothorax, you should avoid positive pressure ventilation, if possible, as this could increase the amount of air outside of the lungs, turning a pneumothorax into a tension pneumothorax."],
-            feedbackOutOfOrder: [""],
+            feedbackOutOfOrder: ["Oxygen administration should be performed during the primary survey as this intervention falls under 'Breathing' in the ABC's."],
             feedbackErrors: ["This patient should be allowed to breathe independently. O2 flow rate should be adjusted to achieve an SpO2 between 95 and 99%."],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }]
@@ -6375,10 +6895,12 @@ const B5CA_PhaseIE = {
           label: "identify that this patient has a tension pneumothorax and perform pleural decompression appropriately by inserting a large bore needle between ribs 2 and 3 mid-clavicular or between ribs 5 and 6 midaxillary on the right side of the chest",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
           feedbackAbsent: ["This patient had absent breath sounds after being stabbed with a knife to the chest. Your differential diagnosis includes pneumothorax or hemothorax. The patient also has signs of diminished cardiac output, including his hypotension and poor perfusion (pale, diaphoretic skin, and weak distal pulses) suggest that he may have a tension pneumothorax, which necessitates needle decompression. Other signs of a tension pneumothorax, which this patient did not have, include JVD or tracheal deviation."],
-          feedbackOutOfOrder: [""],
-          feedbackErrors: ["Once you have identified a tension pneumothorax, decompression is the appropriate next step. You should use a large-bore needle (ideally 14 or 16 gauge and at least 2 inches in length) and insert it into either:", "- the 2nd or 3rd intercostal space at the mid-clavicular line", "- the 4th or 5th intercostal space at the mid-axillary line", "Remember to insert the needle above the rib, not below, because there is a neurovascular bundle that runs below each rib you want to avoid damaging."],
-          examine: true,
-          prompts: "thought the patient had a simple pneumothorax; didn't realize the patient had a pneumothorax; didn't know the best way to manage the patient's tension pneumothorax",
+          feedbackOutOfOrder: ["Tension pneumothorax is an injury that affects breathing.  It is a potentially life threatening condition that requires prompt intervention. For these reasons, it should be addressed during the primary survey."],
+          feedbackErrors: ["Once you have identified a tension pneumothorax, decompression is the appropriate next step. You should use a large bore needle (ideally 14 or 16 gauge and at least 2 inches in length) and insert it into either:", "- the 2nd or 3rd intercostal space at the mid-clavicular line", "- the 4th or 5th intercostal space at the mid-axillary line", "Remember to insert the needle above the rib, not below, because there is a neurovascular bundle that runs below each rib you want to avoid damaging."],
+          examineIfAbsent: true,
+          examineIfErrors: false,
+          promptsIfAbsent: "thought the patient had a simple pneumothorax; didn't realize the patient had a pneumothorax; didn't know the best way to manage the patient's tension pneumothorax",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -6386,78 +6908,92 @@ const B5CA_PhaseIE = {
           label: "Apply an occlusive dressing over the stab wound to prevent air from getting into the chest",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
           feedbackAbsent: ["An open chest wound, such as one caused by a stab-wound after the object has been pulled out, may lead to a worsening tension pneumothorax. As the patient inhales, creating negative intrathoracic pressure, air may be sucked in through the wound and collect in the intrapleural cavity. An occlusive dressing, taped on 3 sides to allow air to escape, will protect against this."],
-          feedbackOutOfOrder: [""],
+          feedbackOutOfOrder: ["Tension pneumothorax is an injury that affects breathing.  It is a potentially life threatening condition that requires prompt intervention. For these reasons, it should be addressed during the primary survey."],
           feedbackErrors: [""],
-          examine: true,
-          prompts: "didn't realize the patient had a pneumothorax; didn't know the best way to manage the patient's tension pneumothorax; thought that needle decompression would suffice",
+          examineIfAbsent: true,
+          examineIfErrors: false,
+          promptsIfAbsent: "didn't realize the patient had a pneumothorax; didn't know the best way to manage the patient's tension pneumothorax; thought that needle decompression would suffice",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "reassess-AB",
           label: "Check that breathing management interventions are working by listening for a rush of air, listening for bilateral lung sounds, and requesting relevant vitals--in particular, BP, P, R, and SpO2",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-          feedbackAbsent: ["When you decide your patient needs a treatment, you must ensure your treatment had the intended outcomes. In this case, after performing a needle decompression, you will listen for a rush of air and look for improvement in the patient's exam: is he breathing more comfortably, do you hear breath sounds bilaterally? You will also assess his vitals: how do his HR, RR, and BP look? If your intervention does not yield the expected results, ask yourself: was my diagnosis correct? Was my intervention correct? What else should I consider?"],
+          feedbackAbsent: ["When you decide your patient needs a treatment, you must ensure your treatment had the intended outcomes. In this case, after performing a needle decompression, you will listen for a rush of air and look for improvement in the patient's exam: is he breathing more comfortably, do you hear breath sounds bilaterally? You will also assess his vitals: how do his HR, RR, BP, and SpO2 look? If your intervention does not yield the expected results, ask yourself: was my diagnosis correct? Was my intervention correct? What else should I consider?"],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "request-vitals-BP",
             label: "vital BP",
             type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-            feedbackAbsent: ["You should have checked BP"],
+            feedbackAbsent: ["When you decide your patient needs a treatment, you must ensure your treatment had the intended outcomes. In this case, after performing a needle decompression, you will listen for a rush of air and look for improvement in the patient's exam: is he breathing more comfortably, do you hear breath sounds bilaterally? You will also assess his vitals: how does his BP look? If your intervention does not yield the expected results, ask yourself: was my diagnosis correct? Was my intervention correct? What else should I consider?"],
             feedbackOutOfOrder: [""],
             feedbackErrors: [""],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }, {
             id: "request-vitals-Spo2",
             label: "check Spo2",
             type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-            feedbackAbsent: ["You should have checked Spo2"],
+            feedbackAbsent: ["When you decide your patient needs a treatment, you must ensure your treatment had the intended outcomes. In this case, after performing a needle decompression, you will listen for a rush of air and look for improvement in the patient's exam: is he breathing more comfortably, do you hear breath sounds bilaterally? You will also assess his vitals: how does his SpO2 look? If your intervention does not yield the expected results, ask yourself: was my diagnosis correct? Was my intervention correct? What else should I consider?"],
             feedbackOutOfOrder: [""],
             feedbackErrors: [""],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }, {
             id: "request-vitals-R",
             label: "check R",
             type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-            feedbackAbsent: ["You should have checked R"],
+            feedbackAbsent: ["When you decide your patient needs a treatment, you must ensure your treatment had the intended outcomes. In this case, after performing a needle decompression, you will listen for a rush of air and look for improvement in the patient's exam: is he breathing more comfortably, do you hear breath sounds bilaterally? You will also assess his vitals: how does his RR look? If your intervention does not yield the expected results, ask yourself: was my diagnosis correct? Was my intervention correct? What else should I consider?"],
             feedbackOutOfOrder: [""],
             feedbackErrors: [""],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }, {
             id: "request-vitals-P",
             label: "check P",
             type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-            feedbackAbsent: ["You should have checked P"],
+            feedbackAbsent: ["When you decide your patient needs a treatment, you must ensure your treatment had the intended outcomes. In this case, after performing a needle decompression, you will listen for a rush of air and look for improvement in the patient's exam: is he breathing more comfortably, do you hear breath sounds bilaterally? You will also assess his vitals: how does his HR look? If your intervention does not yield the expected results, ask yourself: was my diagnosis correct? Was my intervention correct? What else should I consider?"],
             feedbackOutOfOrder: [""],
             feedbackErrors: [""],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }]
         }, {
           id: "intv-ventilation-technique-bag-valve-mask",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "BVM assisted ventilation",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["This patient's respiratory status can be stabilized with oxygen administered via a nasal cannula or non-rebreather mask. More invasive airway support is unnecessary and dangerous, unless the patient refuses a mask or it is ineffective."],
-          examine: true,
-          prompts: "thought this patient needed ventilatory support in addition to oxygenation",
+          examineIfAbsent: false,
+          examineIfErrors: true,
+          promptsIfAbsent: "",
+          promptsIfErrors: "thought this patient needed ventilatory support in addition to oxygenation",
           subActionsList: false,
           subActions: []
         }]
@@ -6468,8 +7004,10 @@ const B5CA_PhaseIE = {
         feedbackAbsent: ["Evaluate the patient's pulse and skin to assess the patient for shock.  Be sure to also perform a gross blood sweep.", "You would have noticed that your patient had a very weak radial pulse, suggesting that he may be in shock."],
         feedbackOutOfOrder: ["All unconscious patients should have a pulse check before starting the ABCs. If the patient is pulseless, you will start high-quality CPR immediately."],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "pulse-checks",
@@ -6478,8 +7016,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["First check for a radial pulse. However, if you don't feel one, you want to check a carotid pulse.", "This patient's radial pulses were absent, but he did have a weak carotid pulse, which would prompt you to worry about shock.", "Checking this patient's pulse rate would have revealed that he was tachycardic. A significantly elevated or depressed pulse rate can suggest shock or respiratory failure.", "While this patient's heart had a regular rhythm, remember that an irregular rhythm can suggest impending cardiac arrest or arrhythmia.", "A patient in shock may have weak or absent pulses distally, such as this patient, suggestive of shock."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: true,
           subActions: [{
             id: "prompt-to-specify-pulse",
@@ -6487,9 +7027,11 @@ const B5CA_PhaseIE = {
             type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
             feedbackAbsent: ["When checking for a pulse, check distally first. If you don't detect distal pulses (for example, a radial pulse), check centrally next.", "If you checked his radial pulses, you would have appreciated a pulse, though it was weak."],
             feedbackOutOfOrder: [""],
-            feedbackErrors: ["When checking for a pulse, check distally first. If you don't detect distal pulses (for example, a radial pulse), check centrally next.", "If you checked his radial pulses, you would have appreciated a pulse, though it was weak."],
-            examine: false,
-            prompts: "",
+            feedbackErrors: ["If you have established that a patient has peripheral pulses, even if weak, you do not need to check for a central pulse."],
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }, {
@@ -6499,8 +7041,10 @@ const B5CA_PhaseIE = {
             feedbackAbsent: ["Checking this patient's pulse rate would have revealed that he was tachycardic. A significantly elevated or depressed pulse rate can suggest shock or respiratory failure.", "While this patient's heart had a regular rhythm, remember that an irregular rhythm can suggest impending cardiac arrest or arrhythmia.", "A patient in shock may have weak or absent pulses distally, such as this patient, suggestive of shock."],
             feedbackOutOfOrder: [""],
             feedbackErrors: [""],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: [{
               id: "checks-pulse-rate",
@@ -6509,8 +7053,10 @@ const B5CA_PhaseIE = {
               feedbackAbsent: ["Checking this patient's pulse rate would have revealed that he was tachycardic. A significantly elevated or depressed pulse rate can suggest shock or respiratory failure."],
               feedbackOutOfOrder: [""],
               feedbackErrors: [""],
-              examine: false,
-              prompts: "",
+              examineIfAbsent: false,
+              examineIfErrors: false,
+              promptsIfAbsent: "",
+              promptsIfErrors: "",
               subActionsList: false,
               subActions: []
             }, {
@@ -6520,8 +7066,10 @@ const B5CA_PhaseIE = {
               feedbackAbsent: ["While this patient's heart had a regular rhythm, remember that an irregular rhythm can suggest impending cardiac arrest or arrhythmia."],
               feedbackOutOfOrder: [""],
               feedbackErrors: [""],
-              examine: false,
-              prompts: "",
+              examineIfAbsent: false,
+              examineIfErrors: false,
+              promptsIfAbsent: "",
+              promptsIfErrors: "",
               subActionsList: false,
               subActions: []
             }, {
@@ -6531,8 +7079,10 @@ const B5CA_PhaseIE = {
               feedbackAbsent: ["A patient in shock may have weak or absent pulses distally, such as this patient, suggestive of shock."],
               feedbackOutOfOrder: [""],
               feedbackErrors: [""],
-              examine: false,
-              prompts: "",
+              examineIfAbsent: false,
+              examineIfErrors: false,
+              promptsIfAbsent: "",
+              promptsIfErrors: "",
               subActionsList: false,
               subActions: []
             }]
@@ -6544,8 +7094,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["Pallor, which this patient had, and cyanosis are signs of inadequate oxygenation and may be caused by shock or respiratory failure.", "While cold skin suggests decompensated shock, a patient with warm skin, like this patient, may be hemodynamically stable or they may be in compensated shock.", "This patient had diaphoretic skin, which in this case is non-specific, but should prompt you to think about shock."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: true,
           subActions: [{
             id: "checks-skin-color",
@@ -6554,8 +7106,10 @@ const B5CA_PhaseIE = {
             feedbackAbsent: ["Pallor, which this patient had, and cyanosis are signs of inadequate oxygenation and may be caused by shock or respiratory failure."],
             feedbackOutOfOrder: [""],
             feedbackErrors: [""],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }, {
@@ -6565,8 +7119,10 @@ const B5CA_PhaseIE = {
             feedbackAbsent: ["While cold skin suggests decompensated shock, a patient with warm skin, like this patient, may be hemodynamically stable or they may be in compensated shock."],
             feedbackOutOfOrder: [""],
             feedbackErrors: [""],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }, {
@@ -6576,8 +7132,10 @@ const B5CA_PhaseIE = {
             feedbackAbsent: ["This patient had diaphoretic skin, which in this case is non-specific, but should prompt you to think about shock."],
             feedbackOutOfOrder: [""],
             feedbackErrors: [""],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }]
@@ -6588,89 +7146,103 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["A gross blood sweep, which was negative in this patient, will help you identify any life-threatening bleeding you may have missed earlier when forming your general impression."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-control-severe-bleeding-technique-direct-pressure",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Direct pressure",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["The patient did not have significant bleeding."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-control-severe-bleeding-technique-tourniquet",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Tourniquet",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["The patient did not have significant bleeding."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-control-severe-bleeding-technique-2nd-tourniquet",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Second tourniquet",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["The patient did not have significant bleeding."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-control-severe-bleeding-technique-pack-wound-with-gauze",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Pack wound with gauze or hemostatic gauze",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["The patient did not have significant bleeding."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-control-severe-bleeding-technique-pressure-bandage",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Pressure dressing",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["The patient did not have significant bleeding."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
-        }, {
-          id: "intv-control-severe-bleeding-technique-load-and-go",
-
-          /* contraindicated intervention */
+        }
+        /*{
+          id: "intv-control-severe-bleeding-technique-load-and-go", /* not indicated intervention
           label: "Load and go due to uncontrolled bleeding.",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
-          feedbackErrors: ["The patient did not have significant bleeding."],
-          examine: false,
-          prompts: "",
+          feedbackErrors: ["The patient did not have uncontrolled bleeding or other life threats that could not be stabilized on site."],
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
-          subActions: []
-        }]
+          subActions: [],
+        },*/
+        ]
       }, {
         id: "transport-decision",
         label: "Make appropriate transport decisions based on your findings so far",
@@ -6678,8 +7250,10 @@ const B5CA_PhaseIE = {
         feedbackAbsent: ["Your ABCs and evaluation for life threats and level of consciousness will dictate where you transfer your patient.", "Because of the patient's respiratory distress and weak pulses, you decide to transfer the patient immediately to the nearby level II trauma center."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "decision-is-load-and-go",
@@ -6688,8 +7262,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["This patient has a tension pneumothorax with hypotension and a penetrating chest injury. This is a patient who could deteriorate quickly so you want to make sure he gets to a hospital as soon as possible."],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["This patient has a tension pneumothorax with hypotension and a penetrating chest injury. This is a patient who could deteriorate quickly so you want to make sure he gets to a hospital as soon as possible."],
-          examine: true,
-          prompts: "didn't realize this was a critically ill patient; felt this patient should be further stabilized on site prior to transfer",
+          examineIfAbsent: true,
+          examineIfErrors: false,
+          promptsIfAbsent: "didn't realize this was a critically ill patient; felt this patient should be further stabilized on site prior to transfer",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -6699,21 +7275,25 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["This patient should be evaluated at the level II trauma center 7 minutes away. He should be transported by ambulance."],
           feedbackOutOfOrder: ["Initial transport decisions should be made following the 'Primary Survey' (ABCs) because that is when the provider decides whether the patient can be further stabilized on scene or taken directly to a hospital in a 'load and go' scenario. The secondary assessment is only performed on scene if the situation is NOT a 'load and go.' Making transport decisions early is especially important if you are calling for an air ambulance to account for the time it takes for them to arrive."],
           feedbackErrors: ["This patient should be evaluated at the level II trauma center 7 minutes away. He should be transported by ambulance."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-call-for-air-ambulance",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Call for air ambulance",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["Air ambulance was not available."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -6722,20 +7302,24 @@ const B5CA_PhaseIE = {
         label: "Trauma expose the patient",
         type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
         feedbackAbsent: ["Exposure is necessary to properly inspect the patient for injuries. Only the area being inspected should be uncovered and then recovered to prevent heat loss and hypothermia."],
-        feedbackOutOfOrder: ["It is important expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
+        feedbackOutOfOrder: ["It is important to expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: [{
           id: "exposes-body-parts",
           label: "Exposed (and recovered) anatomical areas as necessary",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
           feedbackAbsent: ["Exposure is necessary to properly inspect the patient for injuries. Only the area being inspected should be uncovered and then recovered to prevent heat loss and hypothermia."],
-          feedbackOutOfOrder: ["It is important expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
+          feedbackOutOfOrder: ["It is important to expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -6747,8 +7331,10 @@ const B5CA_PhaseIE = {
       feedbackAbsent: ["Vital signs will help you decide how to manage your patient, as will a history. Even if you cannot obtain a history from the patient directly, you should still try to get as much information as you can (e.g., from a bystander)."],
       feedbackOutOfOrder: [""],
       feedbackErrors: [""],
-      examine: false,
-      prompts: "",
+      examineIfAbsent: false,
+      examineIfErrors: false,
+      promptsIfAbsent: "",
+      promptsIfErrors: "",
       subActionsList: true,
       subActions: [{
         id: "required-action-obtains-vitals",
@@ -6757,8 +7343,10 @@ const B5CA_PhaseIE = {
         feedbackAbsent: ["Baseline vitals are critical; they will help you assess, manage, and continue to monitor your patient.", "You would have found that this patient was tachycardic, tachypneic, and hypoxic on room air, prompting you to think about possible causes for these symptoms (such as pain, pneumothorax, hemothorax, shock)."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -6768,8 +7356,10 @@ const B5CA_PhaseIE = {
         feedbackAbsent: ["Take an efficient but thorough history from the patient or the witnesses: symptoms, allergies, medications, past medical history, last oral intake, events preceding.", "You would have learned that the patient was stabbed in the R chest after having had beer, most recently 20 minutes ago."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -6779,8 +7369,10 @@ const B5CA_PhaseIE = {
         feedbackAbsent: ["Assess the patient's pain: in this case the patient is not able to tell you, but you should have considered getting more information from bystanders if necessary."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }]
@@ -6791,8 +7383,10 @@ const B5CA_PhaseIE = {
       feedbackAbsent: ["The Secondary Survey is a thorough exam of your patient to ensure you have a complete understanding of what is going on and how you need to manage your patient."],
       feedbackOutOfOrder: [""],
       feedbackErrors: [""],
-      examine: false,
-      prompts: "",
+      examineIfAbsent: false,
+      examineIfErrors: false,
+      promptsIfAbsent: "",
+      promptsIfErrors: "",
       subActionsList: true,
       subActions: [{
         id: "head",
@@ -6801,18 +7395,22 @@ const B5CA_PhaseIE = {
         feedbackAbsent: ["You would have noted a 1.5 inch laceration on the R side of the patient's head, above his ear.", "Inspecting the face for bruising and palpating for facial deformity may indicate facial fractures.", "Abnormal eye movement or pupils, which this patient fortunately did not have, suggest intracranial injury and should prompt you to rapidly transfer your patient to a trauma center. Additionally, bruising around the eyes may be caused by basilar skull fracture, though this aspect of the exam was normal in this patient.", "Bleeding or CF from the ear may be indicative of a basilar skull fracture. Additionally, although not found in this case, bruising behind the ear suggests a basilar skull fracture (Battle's sign).", "This patient had no drainage from the nose but consider CSF leak from a basilar skull fracture if you see clear drainage.", "If the patient had had secretions or blood in the mouth, you would have needed to apply suction to clear the airway. Additionally, any visualized foreign bodies in the mouth should be removed. A blind finger sweep is never indicated, as you could lodge a foreign body deeper into the airway. There were no obstructions in this patient’s mouth."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
-          id: "assessment-inspects-skull",
-          label: "Inspect and palpate the scalp and skull",
+          id: "assessment-head-injury",
+          label: "Check head for injury",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-          feedbackAbsent: ["You would have noted a 1.5 inch laceration on the R side of the patient's head, above his ear."],
+          feedbackAbsent: ["If you had checked the skull, you would have noted a 1.5 inch laceration on the R side of the patient's head, above his ear."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -6822,8 +7420,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["Inspecting the face for bruising and palpating for facial deformity may indicate facial fractures."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -6833,8 +7433,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["Abnormal eye movement or pupils, which this patient fortunately did not have, suggest intracranial injury and should prompt you to rapidly transfer your patient to a trauma center. Additionally, bruising around the eyes may be caused by basilar skull fracture, though this aspect of the exam was normal in this patient."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "inspects-eyes-PERRLA",
@@ -6849,15 +7451,17 @@ const B5CA_PhaseIE = {
           id: "inspects-ears",
           label: "Inspect the ears for blood, other fluids, and bruising (\"battle signs\")",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-          feedbackAbsent: ["Bleeding or CF from the ear may be indicative of a basilar skull fracture. Additionally, although not found in this case, bruising behind the ear suggests a basilar skull fracture (Battle's sign)."],
+          feedbackAbsent: ["Although not found in this case, bleeding or CF from the ear or bruising behind the ear may suggest a basilar skull fracture (Battle's sign)."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "inspects-ears-blood",
-            feedbackAbsent: ["Bleeding or CF from the ear may be indicative of a basilar skull fracture."],
+            feedbackAbsent: ["Although not found in this case, bleeding or CF from the ear may be indicative of a basilar skull fracture"],
             subActions: []
           }, {
             id: "inspects-ears-bruising",
@@ -6871,8 +7475,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["This patient had no drainage from the nose but consider CSF leak from a basilar skull fracture if you see clear drainage."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -6882,8 +7488,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["If the patient had had secretions or blood in the mouth, you would have needed to apply suction to clear the airway.", "Additionally, any visualized foreign bodies in the mouth should be removed. A blind finger sweep is never indicated, as you could lodge a foreign body deeper into the airway. There were no obstructions in this patient’s mouth."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -6894,8 +7502,10 @@ const B5CA_PhaseIE = {
         feedbackAbsent: ["This patient's neck exam was normal, but remember, tracheal deviation suggests unequal intrathoracic pressure (for example, a pneumothorax). The trachea will be deviated away from the side with increased pressure.", "This patient's neck exam was normal, but remember, JVD suggests that the heart is not adequately pushing out blood. Consider obstructive processes like a tension pneumothorax or hemothorax.", "This patient's neck exam was normal, but remember, a palpable step-off suggests a fracture."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "assessment-neck-injury",
@@ -6904,8 +7514,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -6915,8 +7527,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["This patient's neck exam was normal, but remember, tracheal deviation suggests unequal intrathoracic pressure (for example, a pneumothorax). The trachea will be deviated away from the side with increased pressure."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -6926,8 +7540,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["This patient's neck exam was normal, but remember, JVD suggests that the heart is not adequately pushing out blood. Consider obstructive processes like a tension pneumothorax or hemothorax."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -6937,8 +7553,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["This patient's neck exam was normal, but remember, a palpable step-off suggests a fracture."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -6949,8 +7567,10 @@ const B5CA_PhaseIE = {
         feedbackAbsent: ["The presence and quality of breath sounds can clue you into underlying problems (e.g., pneumothorax, asthma, fluid build-up in the lungs). Additionally, this patient had diminished sounds on the right, suggesting a possible pneumothorax or hemothorax.", "Inspecting the shoulders for discoloration symmetry or deformity may identify dislocation or fracture of the shoulder (clavicle, humerus and scapula).", "This patient had a 1 inch wound to the R chest at the sixth intercostal space with minor external bleeding."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "assessment-check-breath-sounds",
@@ -6959,8 +7579,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["The presence and quality of breath sounds can clue you into underlying problems (e.g., pneumothorax, asthma, fluid build-up in the lungs).", "This patient had diminished sounds on the right, suggesting a possible pneumothorax or hemothorax."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -6970,8 +7592,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["Inspecting the shoulders for discoloration symmetry or deformity may identify dislocation or fracture of the shoulder (clavicle, humerus and scapula)"],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -6981,8 +7605,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["The clavicles should be inspected for any evidence of fractures. Though rare, clavicle fractures can cause a pneumothorax. This patient’s clavicles were normal."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -6992,8 +7618,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["This patient had a 1 inch wound to the R chest at the sixth intercostal space with minor external bleeding.", "If the patient had had anterior thorax and rib crepitation, you should suspect air outside of the lungs, which would raise your suspicion for a pneumothorax.", "Recall that paradoxical chest wall motion suggests flail chest, where multiple rib fractures lead to an unstable portion of the chest wall."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "inspects-chest-injury",
@@ -7016,8 +7644,10 @@ const B5CA_PhaseIE = {
         feedbackAbsent: ["A distended or rigit abdomen suggests trauma and internal bleeding. Fortunately, the patient's abdominal exam was normal."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "inspects-abdomen-injury",
@@ -7026,8 +7656,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -7037,8 +7669,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["A distended abdomen suggests trauma and internal bleeding. Fortunately, the patient's abdominal exam was normal."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -7048,8 +7682,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["A rigid abdomen suggests trauma and internal bleeding. Fortunately, the patient's abdominal exam was normal."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -7060,8 +7696,10 @@ const B5CA_PhaseIE = {
         feedbackAbsent: ["Be sure to do a thorough exam of the pelvis as the pelvis can be a source of life-threatening bleeding. The presence of blood or other fluids may indicate urethral, vaginal or rectal injury.Fortunately, the patient's pelvis exam was normal."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "assessment-checks-pelvis",
@@ -7070,8 +7708,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["Be sure to do a thorough exam of the pelvis as the pelvis can be a source of life-threatening bleeding. Fortunately, the patient's pelvis exam was normal."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -7081,8 +7721,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["The presence of blood or other fluids may indicate urethral, vaginal or rectal injury."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -7093,8 +7735,10 @@ const B5CA_PhaseIE = {
         feedbackAbsent: ["Extremity pulses may be weak or non-palpable if your patient is in shock. This patient had normal extremity pulses.", "Diminished or absent mobility may suggest spinal cord or other nervous system injury. This patient was moving his extremities normally.", "Diminished or absent sensation may suggest spinal cord or other nervous system injury. This patient's sensation was intact in his extremities."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "inspects-extremities-injury",
@@ -7103,8 +7747,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["You would have observed superficial lacerations to the hands."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "inspects-right-arm-injury",
@@ -7128,8 +7774,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["Extremity pulses may be weak or non-palpable if your patient is in shock. This patient had normal extremity pulses"],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "inspects-right-arm-pulse",
@@ -7155,8 +7803,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["Diminished or absent mobility may suggest spinal cord or other nervous system injury. This patient was moving his extremities normally."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "inspects-right-arm-motor-ability",
@@ -7182,8 +7832,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["Diminished or absent sensation may suggest spinal cord or other nervous system injury. This patient's sensation was intact in his extremities."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "inspects-right-arm-sensory-function",
@@ -7210,28 +7862,34 @@ const B5CA_PhaseIE = {
         feedbackAbsent: ["You will need a partner to help you roll the patient safely in order to do a thorough exam of the posterior thorax, lumbar, and buttocks for injury and step-offs. A palpable step-off, which the patient did not have, would suggest a fracture."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
-        subActionsList: true,
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
+        subActionsList: false,
         subActions: [{
           id: "inspects-posterior-other-injury",
+          label: "injury",
           feedbackAbsent: [""],
           subActions: []
         }, {
           id: "inspects-posterior-step-offs",
+          labe: "step-offs",
           feedbackAbsent: ["A palpable step-off, which the patient did not have, would suggest a fracture."],
           subActions: []
         }]
       }]
     }, {
       id: "ongoing-mgmt-plan",
-      label: "Continue to provide adequate prehospital care until arriving at the receiving faciliaty",
+      label: "Continue to provide adequate prehospital care until arriving at the receiving facility",
       type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
       feedbackAbsent: ["It is important to reassess your patient after every intervention and every clinical change. This includes repeating the primary survey, secondary survey, and vital signs. A critically ill patient should be reassessed more frequently to ensure he or she is still stable--approximately every 5 minutes."],
       feedbackOutOfOrder: [""],
       feedbackErrors: [""],
-      examine: false,
-      prompts: "",
+      examineIfAbsent: false,
+      examineIfErrors: false,
+      promptsIfAbsent: "",
+      promptsIfErrors: "",
       subActionsList: true,
       subActions: [{
         id: "intv-apply-sterile-dressings",
@@ -7240,30 +7898,63 @@ const B5CA_PhaseIE = {
         feedbackAbsent: ["Once the patient has been stabilized, dress his superficial wounds with sterile dressings."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
-        id: "intv-place-on-immobilization-device",
-        label: "Place the patient on an a transfer or immobilization device, taking care not to compress puncture wounds and to move him to the ambulance with minimal spinal motion.",
+        id: "intv-place-on-immobilization-device-or-stretcher",
+        label: "Place the patient on a transfer device, taking care not to compress puncture wounds and to move him to the ambulance with minimal spinal motion.",
         type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
         feedbackAbsent: ["Since this patient has a penetrating chest wound, you need to be careful while strapping him onto a transfer or immobilization device, since doing so may cause further injury.  A scoop stretcher would be an appropriate way to safely transfer the patient.  If unavailable, a longboard or other device could be used (with straps carefully placed) and then removed once the patient is on the stretcher."],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["Since this patient has a penetrating chest wound, you need to be careful while strapping him onto a transfer or immobilization device, since doing so may cause further injury.  A scoop stretcher would be an appropriate way to safely transfer the patient.  If unavailable, a longboard or other device could be used (with straps carefully placed) and then removed once the patient is on the stretcher.", "In addition, this patient should be kept in a supine position. Remember that shock occurs when the body is unable to adequately perfuse the body's vital organs and periphery. When a patient is kept upright while in shock, cerebral perfusion is further hindered by gravity. Lying the patient down takes gravity out of the equation."],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
-        subActions: []
+        subActions: [{
+          id: "intv-place-on-immobilization-device",
+          label: "Place the patient on a transfer device, taking care not to compress puncture wounds and to move him to the ambulance with minimal spinal motion.",
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
+          feedbackAbsent: ["Since this patient has a penetrating chest wound, you need to be careful while strapping him onto a transfer or immobilization device, since doing so may cause further injury.  A scoop stretcher would be an appropriate way to safely transfer the patient.  If unavailable, a longboard or other device could be used (with straps carefully placed) and then removed once the patient is on the stretcher."],
+          feedbackOutOfOrder: [""],
+          feedbackErrors: ["Since this patient has a penetrating chest wound, you need to be careful while strapping him onto a transfer or immobilization device, since doing so may cause further injury.  A scoop stretcher would be an appropriate way to safely transfer the patient.  If unavailable, a longboard or other device could be used (with straps carefully placed) and then removed once the patient is on the stretcher.", "In addition, this patient should be kept in a supine position. Remember that shock occurs when the body is unable to adequately perfuse the body's vital organs and periphery. When a patient is kept upright while in shock, cerebral perfusion is further hindered by gravity. Lying the patient down takes gravity out of the equation."],
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
+          subActionsList: false,
+          subActions: []
+        }, {
+          id: "intv-place-directly-on-stretcher",
+          label: "Place patient directly on stretcher",
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.ALT,
+          alternativeToIntv: "intv-place-on-immobilization-device",
+          feedbackAbsent: ["Since this patient has a penetrating chest wound, you need to be careful while strapping him onto a transfer or immobilization device, since doing so may cause further injury.  A scoop stretcher would be an appropriate way to safely transfer the patient.  If unavailable, a longboard or other device could be used (with straps carefully placed) and then removed once the patient is on the stretcher."],
+          feedbackOutOfOrder: [""],
+          feedbackErrors: ["Since this patient has a penetrating chest wound, you need to be careful while strapping him onto a transfer or immobilization device, since doing so may cause further injury.  A scoop stretcher would be an appropriate way to safely transfer the patient.  If unavailable, a longboard or other device could be used (with straps carefully placed) and then removed once the patient is on the stretcher.", "In addition, this patient should be kept in a supine position. Remember that shock occurs when the body is unable to adequately perfuse the body's vital organs and periphery. When a patient is kept upright while in shock, cerebral perfusion is further hindered by gravity. Lying the patient down takes gravity out of the equation."],
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
+          subActionsList: false,
+          subActions: []
+        }]
       }, {
         id: "intv-spinal-immobilization-technique-attach-cid",
-        label: "applied padding (e.g., CID, towels) to keep head inline with spine",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-        feedbackAbsent: ["Once the patient is transferred to a scoop stretcher (or another immobilization device), padding should be utilized to maintain cervical spine precautions. This will reduce cervical motion and prevent further injury."],
+        label: "apply padding (e.g., CID, towels) to keep head inline with spine",
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.OPT,
+        feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -7273,8 +7964,10 @@ const B5CA_PhaseIE = {
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "reassess-vitals-plus-frequency",
@@ -7283,8 +7976,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["Vitals should be reassessed after every intervention and every clinical change, and a critically ill patient should be reassessed every 5 minutes since their condition could deteriorate rapidly."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "reassess-vital-signs",
@@ -7293,8 +7988,10 @@ const B5CA_PhaseIE = {
             feedbackAbsent: ["Vitals should be reassessed after every intervention and every clinical change, and a critically ill patient should be reassessed more frequently to ensure he or she is still stable."],
             feedbackOutOfOrder: [""],
             feedbackErrors: [""],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }, {
@@ -7304,8 +8001,10 @@ const B5CA_PhaseIE = {
             feedbackAbsent: ["Critical patients' vital signs should be reassessed every 5 minutes, since their condition could deteriorate rapidly."],
             feedbackOutOfOrder: [""],
             feedbackErrors: ["Critical patients' vital signs should be reassessed every 5 minutes, since their condition could deteriorate rapidly."],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }]
@@ -7316,8 +8015,10 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["It is important to reassess your patient after every intervention and every clinical change, which includes the primary survey. For example, a patient with a neck injury whose breathing was initially non-labored may develop stridor as the airway becomes swollen."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -7327,31 +8028,24 @@ const B5CA_PhaseIE = {
           feedbackAbsent: ["It is important to reassess your patient after every intervention and every clinical change, which includes your secondary survey. For example, a patient may lose their pulses if you initially failed to notice and treat a source of hemorrhage."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
       }, {
-        id: "intv-control-shock-technique-keep-patient-warm",
-        label: "keeping the patient warm, using some of the following methods: a) applying heat packs to the patient's groin or armpits, b) covering the patient with blankets, c) turning the heat up in the ambulance.",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-        feedbackAbsent: ["This patient is hypotensive with a fast heart rate, suggesting possible shock. Patients in shock have trouble maintaining their body temperatures, so they should be kept warm. It is important to keep this patient warm because hypothermia can cause additional problems or worsening of the patient's current problems, including worsening hypotension, arrhythmias, or even cardiac arrest."],
-        feedbackOutOfOrder: [""],
-        feedbackErrors: [""],
-        examine: false,
-        prompts: "",
-        subActionsList: false,
-        subActions: []
-      }, {
         id: "intv-establish-iv",
         label: "Establish at least one large bore IV en route",
         type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-        feedbackAbsent: ["All trauma patients should have at least one, ideally two, large-bore IVs placed, even if they do not require fluid resuscitation."],
+        feedbackAbsent: ["All trauma patients should have at least one, ideally two, large bore IVs (i.e., 14 or 16 gauge) placed, even if they do not require fluid resuscitation."],
         feedbackOutOfOrder: [""],
-        feedbackErrors: ["With a critical patient, you should ideally establish two large bore IV's while en route to the receiving facility, so as not to delay transfer to definitive care.  While this patient does not require fluid resuscitation at this time, you want to ensure you are prepared should this change."],
-        examine: false,
-        prompts: "",
+        feedbackErrors: ["With a critical patient, you should ideally establish two large bore IVs (i.e., 14 or 16 gauge) while en route to the receiving facility, so as not to delay transfer to definitive care.  While this patient does not require fluid resuscitation at this time, you want to ensure you are prepared should this change."],
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -7361,99 +8055,143 @@ const B5CA_PhaseIE = {
         feedbackAbsent: ["The hospital requires notification for all incoming patients 5 -15 prior to arrival, which is especially important for critical patients as the receiving team needs time to prepare equipment and space."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
+        subActionsList: false,
+        subActions: []
+      }, {
+        id: "intv-control-shock-technique-keep-patient-warm",
+        label: "keep the patient warm, using some of the following methods: a) applying heat packs to the patient's groin or armpits, b) covering the patient with blankets, c) turning the heat up in the ambulance.",
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
+        feedbackAbsent: ["This patient is hypotensive with a fast heart rate, suggesting possible shock. Patients in shock have trouble maintaining their body temperatures, so they should be kept warm. It is important to keep this patient warm because hypothermia can cause additional problems or worsening of the patient's current problems, including worsening hypotension, arrhythmias, or even cardiac arrest."],
+        feedbackOutOfOrder: [""],
+        feedbackErrors: [""],
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-control-shock-technique-administer-iv-boluses",
 
-        /* unnecessary intervention */
+        /* optional intervention */
         label: "Bolus normal saline or Lactated Ringers to a maintain BP of 90mm Hg systolic en route, if time allows",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.UNNEC,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.OPT,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["While it is true the patient was hypotensive, the reason for his hypotension was because of obstructive shock, not hypovolemia. Appropriate management of the patient's tension pneumothorax would allow resumption of adequate cardiac output, resulting in an improved BP and exam. This patient does have a penetrating chest wound, however, so should he remain hypotensive after you successfully treated his tension pneumothorax, you should consider hemorrhagic shock; at this point, fluid resuscitation may be appropriate."],
-        examine: true,
-        prompts: "Thought that hypotension should be treated with fluid boluses regardless of etiology",
+        examineIfAbsent: false,
+        examineIfErrors: true,
+        promptsIfAbsent: "",
+        promptsIfErrors: "Thought that hypotension should be treated with fluid boluses regardless of etiology",
         subActionsList: false,
         subActions: []
       }, {
-        id: "intv-place-directly-on-stretcher",
+        id: "intv-contact-medical-command",
 
-        /* contraindicated intervention */
-        label: "Place patient directly on stretcher",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+        /* optional intervention */
+        label: "Contacted Medical Command",
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.OPT,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
-        feedbackErrors: ["This patient should be transferred with a device given his altered mental status, hypotension and penetrating chest wound."],
-        examine: false,
-        prompts: "",
+        feedbackErrors: [""],
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-walk-patient-to-ambulance",
 
-        /* contraindicated intervention */
+        /* not indicated intervention */
         label: "Walk patient to ambulance",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["This patient should be transferred given his altered mental status, hypotension and penetrating chest wound."],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-splint-fracture",
 
-        /* contraindicated intervention */
+        /* not indicated intervention */
         label: "Splint fractures",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["The patient did not have any fractures."],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-sling",
 
-        /* contraindicated intervention */
+        /* not indicated intervention */
         label: "Apply sling",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["This patient did not have any injuries to the upper extremities."],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
+        subActionsList: false,
+        subActions: []
+      }, {
+        id: "intv-bulky-dressing ",
+
+        /* not indicated intervention */
+        label: "Bulky dressing",
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
+        feedbackAbsent: [""],
+        feedbackOutOfOrder: [""],
+        feedbackErrors: ["This patient did not have any injuries that needed to be stabilized by a bulky dressing."],
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-prepare-amputated-part",
 
-        /* contraindicated intervention */
+        /* not indicated intervention */
         label: "Prepare amputated part for transport",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["The patient did not have an amputation."],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-prepare-and-administer-pain-nausea-vomiting-medications",
 
-        /* contraindicated intervention */
+        /* not indicated intervention */
         label: "Prepare and administer medications",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["A pain level for this patient is not available, and there is no evidence of nausea, vomiting, or need for sedation."],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }]
@@ -7463,7 +8201,7 @@ const B5CA_PhaseIE = {
 
 /***/ }),
 
-/***/ 19628:
+/***/ 73935:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -7629,7 +8367,7 @@ const M2CA_PhaseIE = {
 
 /***/ }),
 
-/***/ 34077:
+/***/ 77239:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -7637,7 +8375,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "C5CA_PhaseDEBRF": () => (/* binding */ C5CA_PhaseDEBRF)
 /* harmony export */ });
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(54354);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2294);
 // type Phase_D = {
 //     step:  string;
 //     title: string;
@@ -7776,7 +8514,9 @@ const C5CA_PhaseDEBRF = [{
 }, {
   step: "R",
   slides: [{
-    paragraphs: [(0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("In an idealized scenario, you arrive on scene and find a young man lying on the ground in a parking lot surrounded by police officers and bystanders. Your initial assessment reveals a conscious but lethargic patient who has significant bleeding from a gunshot wound to his left upper anterior mid-thigh despite a bystander holding pressure.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You immediately direct your partner to provide manual c-spine stabilization, while you"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("apply a tourniquet", "The patient is hemorrhaging from his upper leg, which is an immediate life threat and should be addressed before progressing on with your exam, including before assessing the patient’s ABCs "), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("to the patient’s left upper leg, proximal to the injury, and confirm that this has stopped the bleeding.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("Next, you find the patient’s airway to be patent but his breathing is rapid and shallow so you assist his ventilations with a"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("bag valve mask", "This patient was not adequately ventilating (rapid, shallow breaths) so O2 delivered via nasal canula or non-rebreather mask alone would not have been adequate."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and turn the O2 up to 15L. His extremity pulses are absent and skin is pale and diaphoretic. You instruct another responder to obtain a set of baseline vitals and obtain a SAMPLE history from a bystander while you perform a rapid head-to-toe assessment.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You and your partners then place the patient"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("on a scoop stretcher,", "Spinal immobilization is contraindicated in this patient with a penetrating abdominal wound; immobilization on a spine board may cause further injury."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("cover him with a blanket, and transfer him to the ambulance. Worried for"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("hemorrhagic shock,", "This GSW victim with a known source of significant bleeding is hypotensive, most likely from hemorrhagic shock, which should be managed with rapid fluid resuscitation, keeping the patient supine, administering O2, and keeping the patient warm"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("you place two large-bore IVs en route and start fluid resuscitation to a goal systolic BP >90.  You notify the Level 2 trauma center you are on the way, reassess the patient"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("every five minutes,", "Critically ill patients should be reassessed every 5 minutes"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and confirm that all interventions are working properly, modifying any as necessary."))]
+    paragraphs: [(0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("In an idealized scenario, you arrive on scene and find a young man lying on the ground in a parking lot surrounded by police officers and bystanders. Your initial assessment reveals a conscious but lethargic patient who has significant bleeding from a gunshot wound to his left upper anterior mid-thigh despite a bystander holding pressure.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You immediately direct your partner to provide manual c-spine stabilization, while you"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("apply a tourniquet", "The patient is hemorrhaging from his upper leg, which is an immediate life threat and should be addressed before progressing on with your exam, including before assessing the patient’s ABCs "), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("to the patient’s left upper leg, proximal to the injury, and confirm that this has stopped the bleeding."))]
+  }, {
+    paragraphs: [(0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("Next, you find the patient’s airway to be patent but his breathing is rapid and shallow so you assist his ventilations with a"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("bag valve mask", "This patient was not adequately ventilating (rapid, shallow breaths) so O2 delivered via nasal canula or non-rebreather mask alone would not have been adequate."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and turn the O2 up to 15L. His extremity pulses are absent and skin is pale and diaphoretic. You instruct another responder to obtain a set of baseline vitals and obtain a SAMPLE history from a bystander while you perform a rapid head-to-toe assessment.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You and your partners then place the patient"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("on a scoop stretcher,", "Spinal immobilization is contraindicated in this patient with a penetrating abdominal wound; immobilization on a spine board may cause further injury."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("cover him with a blanket, and transfer him to the ambulance. Worried for"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("hemorrhagic shock,", "This GSW victim with a known source of significant bleeding is hypotensive, most likely from hemorrhagic shock, which should be managed with rapid fluid resuscitation, keeping the patient supine, administering O2, and keeping the patient warm"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("you place two large-bore IVs en route and start fluid resuscitation to a goal systolic BP >90.  You notify the Level 2 trauma center you are on the way, reassess the patient"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("every five minutes,", "Critically ill patients should be reassessed every 5 minutes"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and confirm that all interventions are working properly, modifying any as necessary."))]
   }]
 }, {
   step: "F",
@@ -7787,7 +8527,7 @@ const C5CA_PhaseDEBRF = [{
 
 /***/ }),
 
-/***/ 98547:
+/***/ 56582:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -7795,7 +8535,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "C5CA_PhaseIE": () => (/* binding */ C5CA_PhaseIE)
 /* harmony export */ });
-/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(20573);
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(39384);
 /* Data for scenario C5CA phase IE 
 This data structure holds all the information to create the slides to present during the IE phase.
 It mirrors the tree structure that is presented in the Excel file. All nodes in the tree are called actions whether 
@@ -7803,24 +8543,32 @@ they are assessments or interventions. Subactions are the children of the action
 Fields:
 id: identifies the action-node in the tree. It is a string since it is unique.
 label: text for the action as it will appear on the slide
-type: indicates whether the action is Required, Contraindicated, Unnecessary, Irrelevant, Optional, Alternative.
-    Required, it will be listed in the left side of the slide so that students are asked if they performed it.
-    Contraindicated: it will be listed on the right side under a list of contraindicated actions that the student performed
-    accompanied by the feedback on the feedbackErrors field.
-    Unnecessary: it will be listed on the right side under a list of unnecessary actions that the student performed
-    accompanied by the feedback on the feedbackErrors field.
-    Irrelevent: it will be listed on the right side under a list of irrelevant actions that the student performed
-    accompanied by the feedback on the feedbackErrors field.
-    Optional: it will be accepted as correct if performed. We are considering it the same as Unnecessary.
+type: indicates whether the action is Required, Not indicated, Optional, Alternative.
+    Required: students are asked if they performed it.
+    Not indicated: it will be listed on a list of not indicated actions that the student performed accompanied by 
+    the feedback on the feedbackErrors field.
+    Optional: it will be accepted as correct if performed.
     Alternative: will be used for those interventions that can be performed as alternative to required ones.
+    [
+    Not used for the pilot study but was used for trial 1:
+    Contraindicated: it will be listed under a list of contraindicated actions that the student performed
+    accompanied by the feedback on the feedbackErrors field.
+    Unnecessary: it will be listed under a list of unnecessary actions that the student performed
+    accompanied by the feedback on the feedbackErrors field.
+    Irrelevent: it will be listed under a list of irrelevant actions that the student performed
+    accompanied by the feedback on the feedbackErrors field.
+    ]
 AlternativeToIntv: indicates the intervention for which the current one is an alternative. It will only have a value if
 the type is Alternative.
-feedbackAbsent: feedback given if the action was no performed
+feedbackAbsent: feedback given if the action was no performed. Each element in the array corresponds to a paragraph.
 feedbackOutOfOrder: feedback given if the action was done late (e.g., if the action is Scene size-up and it was done 
-    after Primary Survey)
-feedbackErrors: feedback if the action was performed incorrectly (e.g., wrong ventilation rate)
-examine: boolean to indicate if this Action needs to be examined (phase E)
-prompts: prompts to be included in question headers in phase E, to hint on how to reflect
+    after Primary Survey). Each element in the array corresponds to a paragraph.
+feedbackErrors: feedback if the action was performed incorrectly (e.g., wrong ventilation rate). Each element in the array
+ corresponds to a paragraph.
+examineIfAbsent: boolean to indicate if this Action needs to be examined when it is Absent (phase E)
+examineIfErrors: boolean to indicate if this Action needs to be examined when there are performance errors (phase E)
+promptsIfAbsent: prompts to be included in question headers in phase E, to hint on how to reflect when Action was Absent
+promptsIfErrors: prompts to be included in question headers in phase E, to hint on how to reflect when Action was performed incorrectly
 subActionsList: boolean that indicates whether the subActions need to be listed as bullet points on the slide. If they
     don't need to be listed it is usually because they have been grouped however, the subActions still need to be 
     included in the subActions field because they are used by the analysis to give a summary of their status.
@@ -7846,12 +8594,14 @@ const C5CA_PhaseIE = {
     feedbackErrors: [""],
 
     /*feedback if the action was performed incorrectly (e.g. wrong Ventilation rate)*/
-    examine: false,
+    examineIfAbsent: false,
 
     /* boolean to indicate if this Action needs to be examined (phase E) */
-    prompts: "",
+    examineIfErrors: false,
+    promptsIfAbsent: "",
 
     /* prompts to the included in question in phase E to hint on how to reflect */
+    promptsIfErrors: "",
     subActionsList: true,
 
     /* boolean that indicates if subActions need to be listed as bullet points on slide */
@@ -7864,8 +8614,10 @@ const C5CA_PhaseIE = {
       feedbackAbsent: ["Your first steps should have been to don your protective wear, including eye protection, and to ensure the scene is safe. You cannot assist a patient if you are not safe yourself.", "Your scene size up gives you a big-picture view of what is going on before you even begin examining the patient and includes determining the mechanism of injury and number of patients, requesting additional help if necessary, and considering stabilization of the spine.", "In this case, you would have learned that your patient has been shot multiple times, so you know that controlling bleeding will be one of your top priorities."],
       feedbackOutOfOrder: ["Your first steps should have been to don your protective wear, including eye protection, and to ensure the scene is safe. You cannot assist a patient if you are not safe yourself.", "Your scene size up also gives you a big-picture view of what is going on before you even begin examining the patient. This includes determining the mechanism of injury and number of patients, requesting additional help if necessary, and considering stabilization of spine."],
       feedbackErrors: [""],
-      examine: false,
-      prompts: "",
+      examineIfAbsent: false,
+      examineIfErrors: false,
+      promptsIfAbsent: "",
+      promptsIfErrors: "",
       subActionsList: true,
       subActions: [{
         id: "required-action-BSI",
@@ -7874,8 +8626,10 @@ const C5CA_PhaseIE = {
         feedbackAbsent: ["Your first steps should have been to don your protective wear, including eye protection, and to ensure the scene is safe. You cannot assist a patient if you are not safe yourself."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -7885,8 +8639,10 @@ const C5CA_PhaseIE = {
         feedbackAbsent: ["Your first steps should have been to don your protective wear, including eye protection, and to ensure the scene is safe. You cannot assist a patient if you are not safe yourself."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -7896,8 +8652,10 @@ const C5CA_PhaseIE = {
         feedbackAbsent: ["Knowing what caused the patient's injury or illness can allow you to start developing a plan of action before you even assess your patient.", "By determining the mechanism of injury, you would have learned that your patient has been shot multiple times, so you know that controlling bleeding will be one of your top priorities."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -7907,8 +8665,10 @@ const C5CA_PhaseIE = {
         feedbackAbsent: ["Usually you will have one patient, but if there is more than one you will need to plan accordingly."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -7918,8 +8678,10 @@ const C5CA_PhaseIE = {
         feedbackAbsent: ["Consider the need for extra help based on number of patients, mechanism of injury, and your patient's status."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -7929,8 +8691,10 @@ const C5CA_PhaseIE = {
         feedbackAbsent: ["Be sure to consider the need for spinal immobilization in this trauma patient. In this case, you have a low level of concern for a spinal injury; further, know that spinal stabilization is contraindicated in patients with penetrating abdominal wounds."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }]
@@ -7941,8 +8705,10 @@ const C5CA_PhaseIE = {
       feedbackAbsent: ["The primary survey is an assessment of mental status, life-threats, and the patient's ABCs. It is where you will identify and address the patient's most serious injuries.", "In this case, the Primary Survey would have revealed a patient who is lethargic, bleeding profusely from the L upper leg, and breathing rapidly."],
       feedbackOutOfOrder: ["You should have started your Primary Survey after the Scene Size-up and completed it before starting the Secondary Survey. Only interrupt your assessment to control life-threats: (1) Conditions that compromise a patent airway (2) Conditions that compromise breathing or respirations, such as a tension pneumothorax, (3) Conditions that compromise circulation, such as severe bleeding, (4) Cardiac arrest, and any  other potentially life threatening injuries or conditions.  Your patient's condition will deteriorate if these conditions are not addressed before continuing on with your assessment and history taking."],
       feedbackErrors: [""],
-      examine: false,
-      prompts: "",
+      examineIfAbsent: false,
+      examineIfErrors: false,
+      promptsIfAbsent: "",
+      promptsIfErrors: "",
       subActionsList: true,
       subActions: [{
         id: "general-impression",
@@ -7951,8 +8717,10 @@ const C5CA_PhaseIE = {
         feedbackAbsent: ["You should have performed an Initial Assessment: gathered a general impression, identified any apparent life threats, and determined your patient's level of consciousness.  Your Initial assessment would have revealed a patient who is lethargic and bleeding profusely from the L leg."],
         feedbackOutOfOrder: ["While you may be tempted to jump straight into your ABCs, apparent life threats (i.e., uncontrolled bleeding) should be addressed first, as they can cause a patient to deteriorate quickly. Also, be sure to assess the patient's level of consciousness as an unconscious patient will need a pulse check first to ensure he or she does not require CPR."],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "assess-patient-condition",
@@ -7961,8 +8729,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["Your general impression allows you to start developing a plan of action before you even assess your patient.", "In this case, your general impression would have been of a man with multiple gunshot wounds."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -7972,8 +8742,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["The patient's level of consciousness alters how you progress through your assessment.", "The patient is lethargic with a GCS of 12. This rules out the need for immediate CPR, so you would start your primary survey with an assessment of the patient's airway."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -7983,8 +8755,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["If you had determined apparent life threats, you would have noticed that the patient had life-threatening bleeding from his leg that should be addressed immediately."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -7995,8 +8769,10 @@ const C5CA_PhaseIE = {
         feedbackAbsent: ["This patient has been shot in the abdomen and leg. While this may not directly suggest an injury to the spine, if you are unable to definitively rule out the possibility of a spinal injury (e.g., could he have fallen and hit his head after being shot?), you should have taken manual c-spine stabilization. You should have maintained it throughout until you were able to definitively rule out an injury to the spine."],
         feedbackOutOfOrder: ["During trauma situations it is necessary to stabilize the c-spine before continuing as not doing so may cause further injury to the patient."],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -8006,28 +8782,34 @@ const C5CA_PhaseIE = {
         feedbackAbsent: ["This patient has severe bleeding from his left upper thigh. There are large vessels in the leg (including the femoral artery) that can bleed rapidly and quickly lead to hemorrhagic shock and death. Remember, that even if you don't see significant bleeding, any significant injury to the upper leg (ex. GSW, femur fracture) has the potential to lead to hemorrhagic shock."],
         feedbackOutOfOrder: ["Severe bleeding is a life threatening injury that should be considered and dealt with prior to the rest of the ABCs. For extremity injuries, this means a tourniquet is likely needed while other injuries may require direct pressure and bandaging or an occlusive dressing (e.g., for a severe neck bleed)."],
         feedbackErrors: [""],
-        examine: true,
-        prompts: "Didn't realize that the patient's bleeding could be life-threatening; didn't know the best way to manage the patient's bleeding",
+        examineIfAbsent: true,
+        examineIfErrors: false,
+        promptsIfAbsent: "Didn't realize that the patient's bleeding could be life-threatening; didn't know the best way to manage the patient's bleeding",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "intv-control-bleeding-direct-pressure-and-tourniquet",
-          label: "applying direct pressure and a tourniquet as far proximal to the gun shot wound on the patient's left thigh as possible",
+          label: "apply direct pressure and a tourniquet as far proximal to the gun shot wound on the patient's left thigh as possible",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
           feedbackAbsent: ["When you recognize the patient's life-threatening bleed, the first thing you should do is apply direct pressure or direct someone else to do so.", "While the ultimate management of this patient's life-threatening bleed is surgical, it is critical that you stop the bleeding as soon as possible. To do this, you should use a tourniquet and place it as far proximally as possible."],
-          feedbackOutOfOrder: [""],
+          feedbackOutOfOrder: ["You should have managed severe external bleeding by applying a tourniquet before starting the secondary survey because all life-threatening conditions should be managed before starting the secondary survey."],
           feedbackErrors: ["Be sure to place the tourniquet as far proximally to the wound as possible."],
-          examine: true,
-          prompts: "Didn't realize that the patient's bleeding could be life-threatening; didn't know the best way to manage the patient's bleeding was with a tourniquet",
+          examineIfAbsent: true,
+          examineIfErrors: false,
+          promptsIfAbsent: "Didn't realize that the patient's bleeding could be life-threatening; didn't know the best way to manage the patient's bleeding was with a tourniquet",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "intv-control-severe-bleeding-technique-direct-pressure",
             label: "manage severe external bleeding by applying direct pressure",
             type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-            feedbackAbsent: ["When you recognize the patient's life-threatening bleed, the first thing you should do is apply direct pressure or direct someone else to do so. In instances of limb injury with significant bleeding a tourniquet may be appropriate first-line management is apply direct pressure or direct someone else to do so."],
-            feedbackOutOfOrder: [""],
+            feedbackAbsent: ["When you recognize the patient's life-threatening bleed, the first thing you should do is apply direct pressure or direct someone else to do so."],
+            feedbackOutOfOrder: ["You should have managed severe external bleeding by applying direct pressure to the leg before starting the secondary survey because all life-threatening conditions should be managed before starting the secondary survey."],
             feedbackErrors: [""],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }, {
@@ -8035,10 +8817,12 @@ const C5CA_PhaseIE = {
             label: "manage severe external bleeding by applying tourniquet as far proximal to the wound as possible",
             type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
             feedbackAbsent: ["While the ultimate management of this patient's life-threatening bleed is surgical, it is critical that you stop the bleeding as soon as possible. To do this, you should use a tourniquet and place it as far proximally as possible."],
-            feedbackOutOfOrder: [""],
+            feedbackOutOfOrder: ["You should have managed severe external bleeding by applying tourniquet before starting the secondary survey because all life-threatening conditions should be managed before starting the secondary survey."],
             feedbackErrors: ["Be sure to place the tourniquet as far proximally to the wound as possible."],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }]
@@ -8046,59 +8830,69 @@ const C5CA_PhaseIE = {
           id: "check-bleeding",
           label: "Confirm that bleeding stopped and pulses are absent",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-          feedbackAbsent: ["After you apply direct pressure and place your tourniquet, you should ensure that the bleeding has stopped and check to ensure that pulses are absent. If this is not the cause, you may need a second tourniquet."],
+          feedbackAbsent: ["After you apply direct pressure and place your tourniquet, you should ensure that the bleeding has stopped and check to ensure that pulses are absent. If this is not the case, you may need a second tourniquet."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: true,
-          prompts: "Thought that one tourniquet was enough; did not realize a second tourniquet could be used if necessary",
+          examineIfAbsent: true,
+          examineIfErrors: false,
+          promptsIfAbsent: "Thought that one tourniquet was enough; did not realize a second tourniquet could be used if necessary",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "request-intervention-status-intv-control-severe-bleeding-technique-direct-pressure",
             label: "Request status of direct pressure technique",
             type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-            feedbackAbsent: ["After you apply direct pressure and place your tourniquet, you should ensure that the bleeding has stopped and check to ensure that pulses are absent. If this is not the cause, you may need a second tourniquet."],
+            feedbackAbsent: ["After you apply direct pressure, you should ensure that the bleeding has stopped and check to ensure that pulses are absent. If this is not the case, you will need to apply a tourniquet."],
             feedbackOutOfOrder: [""],
             feedbackErrors: [""],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }, {
             id: "request-intervention-status-intv-control-severe-bleeding-technique-tourniquet",
             label: "",
             type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-            feedbackAbsent: ["After you place your tourniquet, you should ensure that the bleeding has stopped"],
+            feedbackAbsent: ["After you place your tourniquet, you should ensure that the bleeding has stopped and check to ensure that pulses are absent. If this is not the case, you may need a second tourniquet."],
             feedbackOutOfOrder: [""],
             feedbackErrors: [""],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }]
         }, {
           id: "intv-control-severe-bleeding-technique-2nd-tourniquet",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Second tourniquet",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["You achieved hemostasis with the first tourniquet; a second tourniquet is not necessary."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-control-severe-bleeding-technique-pack-wound-with-gauze",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Pack wound with gauze or hemostatic gauze",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["This patient's gun shot wounds to the abdomen and thigh are shallow and therefore can't be packed with gauze."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -8108,23 +8902,27 @@ const C5CA_PhaseIE = {
           label: "Pressure dressing",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.OPT,
           feedbackAbsent: [""],
-          feedbackOutOfOrder: [""],
+          feedbackOutOfOrder: ["You should have applied a pressure dressing before starting the secondary survey because all life-threatening conditions should be managed before starting the secondary survey."],
           feedbackErrors: ["After dressing the patient's GSWs, a pressure dressing could be placed to maintain bleeding control."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-control-severe-bleeding-technique-load-and-go",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Load and go due to uncontrolled bleeding.",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["You achieved hemostasis with the first tourniquet."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -8135,8 +8933,10 @@ const C5CA_PhaseIE = {
         feedbackAbsent: ["Be sure to assess the airway for patency and intact physical structures.", "You would have found this patient's airway to be patent, as evidenced by the fact that you hear him moaning in pain."],
         feedbackOutOfOrder: ["If your patient is conscious, you should examine the airway before breathing and circulation. If a patient is unconscious, you should assess the pulse first to evaluate for possible cardiac arrest, then go through your ABCs."],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "airway-is-open",
@@ -8145,8 +8945,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["The first step of your airway assessment is to see if the patient's airway is open. This patient's moaning indicates he has an open airway. Signs like stridor or gasping may indicate an airway obstruction."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -8156,176 +8958,232 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["Though this patient did not have any facial trauma, be sure to look for injuries such as gun-shot wounds or facial fractures, as these may affect what basic or advanced airways you can use.  Avoid using a nasopharyngeal airway in patients with a suspected basilar skull fracture or nasal injury."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
+          subActionsList: false,
+          subActions: []
+        }, {
+          id: "intv-open-airway-method-modified-jaw-thrust",
+          label: "Used a modified jaw thrust to check this patient's airway",
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
+          feedbackAbsent: ["Use a modified jaw thrust instead of a head-tilt chin-lift to check this patient’s airway, since there is potential head or spinal injury in assault cases such as this."],
+          feedbackOutOfOrder: ["You should have performed a modified jaw thrust before starting the secondary survey because all life-threatening conditions should be managed before starting the secondary survey."],
+          feedbackErrors: ["A modified jaw thrust could make it easier to perform bag-valve mask ventilation, since it opens the airway."],
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
+          subActionsList: false,
+          subActions: []
+        }, {
+          id: "intv-airway-patency-technique-suction-airway",
+
+          /* not indicated intervention */
+          label: "Suction the patient's mouth using a Yankauer (rigid) or Long multi-use catheter",
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
+          feedbackAbsent: [""],
+          feedbackOutOfOrder: [""],
+          feedbackErrors: ["This patient's airway was patent. There is no need to suction."],
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-open-airway-method-head-tilt",
-          // unnecessary intervention
+          // not indicated intervention
           label: "Head tilt chin lift",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.UNNEC,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
-          feedbackErrors: ["A modified jaw thrust could make it easier to perform bag-valve mask ventilation, since it opens the airway.  However, doing so is not always necessary.  In this case, the patient's airway was patent."],
-          examine: false,
-          prompts: "",
+          feedbackErrors: ["A head-tilt chin lift is contraindicated for a patient with suspected c-spine injury as tilting the head could cause further damage to the neck. You should have used a modified jaw thrust to check this patient's airway."],
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-manual-finger-sweep",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Manual (finger sweep)",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["If there is a visible foreign body in the mouth, it should be removed. However, a blind finger sweep is contraindicated as it could lodge a foreign body deeper into the airway. Further, there is no evidence of foreign body in this patient's mouth."],
-          examine: true,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-magill-forceps-assisted",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Magill forceps assisted removal",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["If there is a visible foreign body in the mouth, it should be removed. However, there is no evidence of a foreign body in this patient's mouth."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-heimlich-maneuver",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Heimlich Maneuver",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["You have no evidence the patient is choking on an object so the Heimlich maneuver is not appropriate at this time."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-back-blows-and-chest-thrusts",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Back blows and chest thrusts",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["You have no evidence the patient is choking on an object so back blows and chest thrusts are not appropriate at this time."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-oropharyngeal-airway",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Oropharyngeal airway (OPA)",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["While an airway adjunct may be helpful in this case, the patient is conscious and he would likely refuse an oral airway."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-orotracheal-intubation",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Orotracheal intubation",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["This patient's respiratory status can be stabilized with a BVM. There is no airway injury or lung injury and the patient's GCS is 12. More invasive airway support is unnecessary and dangerous."],
-          examine: true,
-          prompts: "Thought this patient needed to be intubated",
+          examineIfAbsent: false,
+          examineIfErrors: true,
+          promptsIfAbsent: "",
+          promptsIfErrors: "Thought this patient needed to be intubated",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-nasotracheal-intubation",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Nasotracheal intubation",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["This patient's respiratory status can be stabilized with a BVM. There is no airway injury or lung injury and the patient's GCS is 12. More invasive airway support is unnecessary and dangerous."],
-          examine: true,
-          prompts: "Thought this patient needed to be intubated",
+          examineIfAbsent: false,
+          examineIfErrors: true,
+          promptsIfAbsent: "",
+          promptsIfErrors: "Thought this patient needed to be intubated",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-insert-advanced-airway",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Insert advanced/rescue airway",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["This patient's respiratory status can be stabilized with a BVM. There is no airway injury or lung injury and the patient's GCS is 12. More invasive airway support is unnecessary and dangerous."],
-          examine: true,
-          prompts: "Thought this patient needed to be intubated",
+          examineIfAbsent: false,
+          examineIfErrors: true,
+          promptsIfAbsent: "",
+          promptsIfErrors: "Thought this patient needed to be intubated",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-rapid-sequence-intubation",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Rapid-sequence intubation",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["RSI is not in the paramedic's scope of practice in Pennsylvania. This patient's respiratory status can be stabilized with a BVM. There is no airway injury or lung injury and the patient's GCS is 12. More invasive airway support is unnecessary and dangerous."],
-          examine: true,
-          prompts: "Thought this patient needed to be intubated",
+          examineIfAbsent: false,
+          examineIfErrors: true,
+          promptsIfAbsent: "",
+          promptsIfErrors: "Thought this patient needed to be intubated",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-sedation-assisted-intubation",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Sedation-assisted intubation",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["This patient's respiratory status can be stabilized with a BVM. There is no airway injury or lung injury and the patient's GCS is 12. More invasive airway support is unnecessary and dangerous."],
-          examine: true,
-          prompts: "Thought this patient needed to be intubated",
+          examineIfAbsent: false,
+          examineIfErrors: true,
+          promptsIfAbsent: "",
+          promptsIfErrors: "Thought this patient needed to be intubated",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-needle-cricothyrotomy",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Needle cricothyrotomy",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["A cricothyrotomy is indicated when there is an upper airway obstruction that cannot be removed. This patient has a patent airway."],
-          examine: true,
-          prompts: "thought the patient had an upper airway obstruction",
+          examineIfAbsent: false,
+          examineIfErrors: true,
+          promptsIfAbsent: "",
+          promptsIfErrors: "thought the patient had an upper airway obstruction",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-surgical-cricothyrotomy",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Surgical cricothyrotomy",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["A cricothyrotomy is indicated when there is an upper airway obstruction that cannot be removed. This patient has a patent airway."],
-          examine: true,
-          prompts: "thought the patient had an upper airway obstruction",
+          examineIfAbsent: false,
+          examineIfErrors: true,
+          promptsIfAbsent: "",
+          promptsIfErrors: "thought the patient had an upper airway obstruction",
           subActionsList: false,
           subActions: []
         }]
@@ -8336,8 +9194,10 @@ const C5CA_PhaseIE = {
         feedbackAbsent: ["After assessing the patient's airway, assess their breathing by listening for breath sounds and observing their respiratory rate, rhythm, and effort.", "You would have found shallow and rapid breaths, but with clear and equal bilateral lungs sounds."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "breathing-checks-rate",
@@ -8346,8 +9206,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["A significantly elevated or depressed respiratory rate can suggest impending respiratory failure.", "This patient's tachypnea suggests the need for some respiratory support."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -8357,8 +9219,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["Although not found in this case, a patient who is breathing irregularly needs ventilatory support."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -8368,9 +9232,12 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["Sounds like stridor, crackles, or wheezing will help you diagnose and manage your patient's respiratory problems.", "This patient had rapid breathing but had clear lung sounds, suggesting that his lungs were likely uninjured."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
+          examineIfErrors: false,
           subActions: []
         }]
       }, {
@@ -8380,8 +9247,10 @@ const C5CA_PhaseIE = {
         feedbackAbsent: ["Despite not being able to detect an SpO2 when obtaining vitals, your primary survey would have revealed a patient in respiratory distress with rapid, shallow breaths. This patient requires help with both ventilation and oxygenation."],
         feedbackOutOfOrder: ["Problems with ventilation and oxygenation are life threatening and should be addressed before you move on to your secondary survey. Repeat your exam and check vitals to ensure your interventions have worked as you expected. If not, your patient may deteriorate as you continue on with your examination.", "Additionally, problems with ventilation and oxygenation are life threatening and should be addressed by oxygen administration and BVM ventilation before you move on to your secondary survey. Repeat your exam and check vitals to ensure your interventions have worked as you expected. If not, your patient may deteriorate as you continue on with your examination."],
         feedbackErrors: [""],
-        examine: true,
-        prompts: "Didn't realize that the patient's respiratory status was threatened; didn't know the best way to support this patient's breathing",
+        examineIfAbsent: true,
+        examineIfErrors: false,
+        promptsIfAbsent: "Didn't realize that the patient's respiratory status was threatened; didn't know the best way to support this patient's breathing",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "intv-manage-breathing-NPA-and-BVM",
@@ -8390,8 +9259,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["This patient requires respiratory support and responds by groaning in pain. This is a patient who may benefit from an NPA to help you best oxygenate and ventilate him. He has a gag reflex, so you would want to avoid an OPA.", "When you are assessing the patient's airway and breathing, you should have noticed that the patient's respiratory rate is fast and shallow, and his mental status is waning (GCS 12). This patient would benefit from ventilatory support, not just oxygenation. Further, this patient is in hemorrhagic shock. Remember that shock is the inadequate delivery of oxygen, so a key part of the management of shock includes administration of oxygen regardless of the patient's SpO2 or respiratory exam."],
           feedbackOutOfOrder: ["In the event of a potentially compromised airway (including patients who are unconscious), the patient needs to have an airway adjunct for airway support prior to the secondary survey.", "Additionally, problems with ventilation and oxygenation are life threatening and should be addressed by oxygen administration and BVM ventilation before you move on to your secondary survey. Repeat your exam and check vitals to ensure your interventions have worked as you expected. If not, your patient may deteriorate as you continue on with your examination."],
           feedbackErrors: ["This patient should be ventilated using a BVM hooked up to O2, turned up to 15LPM."],
-          examine: true,
-          prompts: "Didn't realize that the patient's respiratory status was threatened; thought this patient only needed oxygenation; didn't remember that oxygen was part of the management of shock",
+          examineIfAbsent: true,
+          examineIfErrors: false,
+          promptsIfAbsent: "Didn't realize that the patient's respiratory status was threatened; thought this patient only needed oxygenation; didn't remember that oxygen was part of the management of shock",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "intv-nasopharyngeal-airway",
@@ -8400,8 +9271,10 @@ const C5CA_PhaseIE = {
             feedbackAbsent: ["This patient requires respiratory support and responds by groaning in pain. This is a patient who may benefit from an NPA to help you best oxygenate and ventilate him. He has a gag reflex, so you would want to avoid an OPA."],
             feedbackOutOfOrder: ["In the event of a potentially compromised airway (including patients who are unconscious), the patient needs to have an airway adjunct for airway support prior to the secondary survey."],
             feedbackErrors: [""],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }, {
@@ -8411,8 +9284,10 @@ const C5CA_PhaseIE = {
             feedbackAbsent: ["When you are assessing the patient's airway and breathing, you should have noticed that the patient's respiratory rate is fast and shallow, and his mental status is waning (GCS 12). This patient would benefit from ventilatory support, not just oxygenation. Further, this patient is in hemorrhagic shock. Remember that shock is the inadequate delivery of oxygen, so a key part of the management of shock includes administration of oxygen regardless of the patient's SpO2 or respiratory exam."],
             feedbackOutOfOrder: ["Problems with ventilation and oxygenation are life threatening and should be addressed by oxygen administration and BVM ventilation before you move on to your secondary survey. Repeat your exam and check vitals to ensure your interventions have worked as you expected. If not, your patient may deteriorate as you continue on with your examination."],
             feedbackErrors: ["This patient should be ventilated using a BVM hooked up to O2, turned up to 15LPM."],
-            examine: true,
-            prompts: "Didn't realize that the patient's respiratory status was threatened; thought this patient only needed oxygenation; didn't remember that oxygen was part of the management of shock",
+            examineIfAbsent: true,
+            examineIfErrors: false,
+            promptsIfAbsent: "Didn't realize that the patient's respiratory status was threatened; thought this patient only needed oxygenation; didn't remember that oxygen was part of the management of shock",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }]
@@ -8420,21 +9295,25 @@ const C5CA_PhaseIE = {
           id: "reassess-AB",
           label: "Check that airway/breathing interventions are working by checking relevant vitals--in particular, SpO2",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-          feedbackAbsent: ["When you decide your patient needs a treatment, you must ensure your treatment had the intended outcomes. In this case, after performing a needle decompression, you will listen for a rush of air and look for improvement in the patient's exam: is he breathing more comfortably, do you hear breath sounds bilaterally? You will also assess his vitals: how do his HR, RR, and BP look? If your intervention does not yield the expected results, ask yourself: was my diagnosis correct? Was my intervention correct? What else should I consider?"],
+          feedbackAbsent: ["When you decide your patient needs a treatment, you must ensure your treatment had the intended outcomes. In this case, after starting bag-mask ventilation, you want to see if the patient's SpO2 is improved. If not, you will want to reflect on why you did not see the expected improvements? Did you select an incorrect intervention? Do you need to escalate your therapies? Are you performing the intervention correctly?"],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "request-vitals-Spo2",
             label: "check Spo2",
             type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-            feedbackAbsent: ["You should have checked Spo2"],
+            feedbackAbsent: ["When you decide your patient needs a treatment, you must ensure your treatment had the intended outcomes. In this case, after starting bag-mask ventilation, you want to see if the patient's SpO2 is improved. If not, you will want to reflect on why you did not see the expected improvements? Did you select an incorrect intervention? Do you need to escalate your therapies? Are you performing the intervention correctly?"],
             feedbackOutOfOrder: [""],
             feedbackErrors: [""],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }]
@@ -8445,10 +9324,12 @@ const C5CA_PhaseIE = {
           label: "Nasal cannula",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.OPT,
           feedbackAbsent: ["This patient was tachypneic and taking shallow breaths. Paired with your inability to capture his SpO2, this suggests that he needs assistance with both ventilation and oxygenation. While the use of nasal canula would help with oxygenation, it would have been more effective to move directly toward BVM ventilation."],
-          feedbackOutOfOrder: [""],
+          feedbackOutOfOrder: ["Oxygen administration should be performed during the primary survey as this intervention falls under 'Breathing' in the ABC's."],
           feedbackErrors: ["This patient was tachypneic and taking shallow breaths. Paired with your inability to capture his SpO2, this suggests that he needs assistance with both ventilation and oxygenation. While the use of nasal canula would help with oxygenation, it would have been more effective to move directly toward BVM ventilation."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -8458,36 +9339,27 @@ const C5CA_PhaseIE = {
           label: "Non-rebreather mask",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.OPT,
           feedbackAbsent: ["This patient was tachypneic and taking shallow breaths. Paired with your inability to capture his SpO2, this suggests that he needs assistance with both ventilation and oxygenation. While the use of a non-rebreather mask would help with oxygenation, it would have been more effective to move directly toward BVM ventilation."],
-          feedbackOutOfOrder: [""],
+          feedbackOutOfOrder: ["Oxygen administration should be performed during the primary survey as this intervention falls under 'Breathing' in the ABC's."],
           feedbackErrors: ["This patient was tachypneic and taking shallow breaths. Paired with your inability to capture his SpO2, this suggests that he needs assistance with both ventilation and oxygenation. While the use of a non-rebreather mask would help with oxygenation, it would have been more effective to move directly toward BVM ventilation."],
-          examine: false,
-          prompts: "",
-          subActionsList: false,
-          subActions: []
-        }, {
-          id: "intv-occlusive-dressing",
-
-          /* contraindicated intervention */
-          label: "Occlusive dressing",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
-          feedbackAbsent: [""],
-          feedbackOutOfOrder: [""],
-          feedbackErrors: ["The patient did not have a penetrating chest wound."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-pleural-decompression",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Needle decompression",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["The patient did not have a penetrating chest wound."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -8498,8 +9370,10 @@ const C5CA_PhaseIE = {
         feedbackAbsent: ["Evaluate the patient's pulse and skin to assess the patient for shock.  Be sure to also perform a gross blood sweep.", "You would have noticed that your patient had absent radial pulses and a rapid, weak central pulse, concerning for poor peripheral perfusion and shock."],
         feedbackOutOfOrder: ["All unconscious patients should have a pulse check before starting the ABCs. If the patient is pulseless, you will start high-quality CPR immediately."],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "pulse-checks",
@@ -8508,8 +9382,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["First check for a radial pulse. However, if you don't feel one, you want to check a carotid pulse.", "This patient's radial pulses were absent, but he did have a weak carotid pulse, which would prompt you to worry about shock.", "Checking this patient's pulse rate would have revealed that he was tachycardic. A significantly elevated or depressed pulse rate can suggest shock or respiratory failure.", "While this patient's heart had a regular rhythm, remember that an irregular rhythm can suggest impending cardiac arrest or arrhythmia.", "A patient in shock may have weak or absent pulses distally, such as this patient, suggestive of shock."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: true,
           subActions: [{
             id: "prompt-to-specify-pulse",
@@ -8517,9 +9393,11 @@ const C5CA_PhaseIE = {
             type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
             feedbackAbsent: ["First check for a radial pulse. However, if you don't feel one, you want to check a carotid pulse.", "This patient's radial pulses were absent, but he did have a weak carotid pulse, which would prompt you to worry about shock."],
             feedbackOutOfOrder: [""],
-            feedbackErrors: ["First check for a radial pulse. However, if you don't feel one, you want to check a carotid pulse.", "This patient's radial pulses were absent, but he did have a weak carotid pulse, which would prompt you to worry about shock."],
-            examine: false,
-            prompts: "",
+            feedbackErrors: ["If you cannot appreciate a distal pulse, you should check for a carotid pulse to determine if the patient is truly pulseless or if their distal perfusion is poor."],
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }, {
@@ -8529,8 +9407,10 @@ const C5CA_PhaseIE = {
             feedbackAbsent: ["Checking this patient's pulse rate would have revealed that he was tachycardic. A significantly elevated or depressed pulse rate can suggest shock or respiratory failure.", "While this patient's heart had a regular rhythm, remember that an irregular rhythm can suggest impending cardiac arrest or arrhythmia.", "A patient in shock may have weak or absent pulses distally, such as this patient, suggestive of shock."],
             feedbackOutOfOrder: [""],
             feedbackErrors: [""],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: [{
               id: "checks-pulse-rate",
@@ -8539,8 +9419,10 @@ const C5CA_PhaseIE = {
               feedbackAbsent: ["Checking this patient's pulse rate would have revealed that he was tachycardic. A significantly elevated or depressed pulse rate can suggest shock or respiratory failure."],
               feedbackOutOfOrder: [""],
               feedbackErrors: [""],
-              examine: false,
-              prompts: "",
+              examineIfAbsent: false,
+              examineIfErrors: false,
+              promptsIfAbsent: "",
+              promptsIfErrors: "",
               subActionsList: false,
               subActions: []
             }, {
@@ -8550,8 +9432,10 @@ const C5CA_PhaseIE = {
               feedbackAbsent: ["While this patient's heart had a regular rhythm, remember that an irregular rhythm can suggest impending cardiac arrest or arrhythmia."],
               feedbackOutOfOrder: [""],
               feedbackErrors: [""],
-              examine: false,
-              prompts: "",
+              examineIfAbsent: false,
+              examineIfErrors: false,
+              promptsIfAbsent: "",
+              promptsIfErrors: "",
               subActionsList: false,
               subActions: []
             }, {
@@ -8561,8 +9445,10 @@ const C5CA_PhaseIE = {
               feedbackAbsent: ["A patient in shock may have weak or absent pulses distally, such as this patient, suggestive of shock."],
               feedbackOutOfOrder: [""],
               feedbackErrors: [""],
-              examine: false,
-              prompts: "",
+              examineIfAbsent: false,
+              examineIfErrors: false,
+              promptsIfAbsent: "",
+              promptsIfErrors: "",
               subActionsList: false,
               subActions: []
             }]
@@ -8574,8 +9460,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["Pallor, which you would have noted on this patient, is a sign of inadequate oxygenation and may be caused by shock or respiratory failure. Additionally, this patient's cold skin suggests decompensated shock. Moreover, this patient had diaphoretic skin, which in this case is non-specific, but should prompt you to think about shock."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: true,
           subActions: [{
             id: "checks-skin-color",
@@ -8584,8 +9472,10 @@ const C5CA_PhaseIE = {
             feedbackAbsent: ["Pallor, which you would have noted on this patient, is a sign of inadequate oxygenation and may be caused by shock or respiratory failure."],
             feedbackOutOfOrder: [""],
             feedbackErrors: [""],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }, {
@@ -8595,8 +9485,10 @@ const C5CA_PhaseIE = {
             feedbackAbsent: ["This patient's cold skin suggests decompensated shock."],
             feedbackOutOfOrder: [""],
             feedbackErrors: [""],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }, {
@@ -8606,8 +9498,10 @@ const C5CA_PhaseIE = {
             feedbackAbsent: ["This patient had diaphoretic skin, which in this case is non-specific, but should prompt you to think about shock."],
             feedbackOutOfOrder: [""],
             feedbackErrors: [""],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }]
@@ -8618,8 +9512,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["A gross blood sweep, which was negative in this patient, will help you identify any life-threatening bleeding you may have missed earlier when forming your general impression.", "Beyond the life-threatening bleeding from his left leg, the patient also has minor bleeding from his left upper abdomen."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -8630,8 +9526,10 @@ const C5CA_PhaseIE = {
         feedbackAbsent: ["Your ABCs and evaluation for life threats and level of consciousness will dictate where you transfer your patient.", "Because of the patient's life-threatening bleeding, he should be quickly transferred to the level II trauma center for definitive management."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "decision-is-load-and-go",
@@ -8640,8 +9538,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["This patient is in hemorrhagic shock and needs to get to definitive management as soon as possible. You will not be able to fix him in the field."],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["This patient is in hemorrhagic shock and needs to get to definitive management as soon as possible. You will not be able to fix him in the field."],
-          examine: true,
-          prompts: "Didn't realize this was a critically ill patient; felt this patient should be further stabilized on site prior to transfer",
+          examineIfAbsent: true,
+          examineIfErrors: false,
+          promptsIfAbsent: "Didn't realize this was a critically ill patient; felt this patient should be further stabilized on site prior to transfer",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -8651,21 +9551,25 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["This patient should be evaluated at the level II trauma center that is 18 minutes away, where they can provide definitive care for his injuries. He should be taken by ambulance with lights and sirens."],
           feedbackOutOfOrder: ["Initial transport decisions should be made following the 'Primary Survey' (ABCs) because that is when the provider decides whether the patient can be further stabilized on scene or taken directly to a hospital in a 'load and go' scenario. The secondary assessment is only performed on scene if the situation is NOT a 'load and go.' Making transport decisions early is especially important if you are calling for an air ambulance to account for the time it takes for them to arrive."],
           feedbackErrors: ["This patient should be evaluated at the level II trauma center that is 18 minutes away, where they can provide definitive care for his injuries. He should be taken by ambulance with lights and sirens."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-call-for-air-ambulance",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Call for air ambulance",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["Air ambulance was not available."],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -8674,23 +9578,41 @@ const C5CA_PhaseIE = {
         label: "Trauma expose the patient",
         type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
         feedbackAbsent: ["Exposure is necessary to properly inspect the patient for injuries. Only the area being inspected should be uncovered and then recovered to prevent heat loss and hypothermia."],
-        feedbackOutOfOrder: ["It is important expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
+        feedbackOutOfOrder: ["It is important to expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
         subActionsList: false,
         subActions: [{
           id: "exposes-body-parts",
           label: "Exposed (and recovered) anatomical areas as necessary",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
           feedbackAbsent: ["Exposure is necessary to properly inspect the patient for injuries. Only the area being inspected should be uncovered and then recovered to prevent heat loss and hypothermia."],
-          feedbackOutOfOrder: ["It is important expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
+          feedbackOutOfOrder: ["It is important to expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
+      }, {
+        id: "intv-spinal-immobilization-technique-cervical-collar",
+
+        /* not indicated intervention */
+        label: "Apply an appropriately sized cervical collar",
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
+        feedbackAbsent: [""],
+        feedbackOutOfOrder: [""],
+        feedbackErrors: ["This patient has no evidence of neck injury. Placing a collar and/or CID will make your examination more difficult and should only be done if you suspect an injury to the neck, whether by history or exam."],
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
+        subActionsList: false,
+        subActions: []
       }]
     }, {
       id: "history-taking",
@@ -8699,8 +9621,10 @@ const C5CA_PhaseIE = {
       feedbackAbsent: ["Vital signs will help you decide how to manage your patient, as will a history. Even if you cannot obtain a history from the patient directly, you should still try to get as much information as you can (e.g., from a bystander)."],
       feedbackOutOfOrder: [""],
       feedbackErrors: [""],
-      examine: false,
-      prompts: "",
+      examineIfAbsent: false,
+      examineIfErrors: false,
+      promptsIfAbsent: "",
+      promptsIfErrors: "",
       subActionsList: true,
       subActions: [{
         id: "required-action-obtains-vitals",
@@ -8709,8 +9633,10 @@ const C5CA_PhaseIE = {
         feedbackAbsent: ["Baseline vitals are critical; they will help you assess, manage, and continue to monitor your patient.", "You would have found that this patient was tachycardic, tachypneic and hypotensive, prompting you to worry about shock, most likely hemorrhagic given the rapid bleeding from the leg."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -8720,8 +9646,10 @@ const C5CA_PhaseIE = {
         feedbackAbsent: ["Take an efficient but thorough history from the patient or the witnesses: symptoms, allergies, medications, past medical history, last oral intake, events preceding.", "You would have learned that the patient was shot in his abdomen and leg while arguing with a group of people."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -8731,8 +9659,10 @@ const C5CA_PhaseIE = {
         feedbackAbsent: ["In this case the patient is unable to tell you about his pain. Instead, you should ask bystanders for any information they have."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }]
@@ -8743,8 +9673,10 @@ const C5CA_PhaseIE = {
       feedbackAbsent: ["The Secondary Survey is a thorough exam of your patient to ensure you have a complete understanding of what is going on and how you need to manage your patient."],
       feedbackOutOfOrder: [""],
       feedbackErrors: [""],
-      examine: false,
-      prompts: "",
+      examineIfAbsent: false,
+      examineIfErrors: false,
+      promptsIfAbsent: "",
+      promptsIfErrors: "",
       subActionsList: true,
       subActions: [{
         id: "head",
@@ -8753,18 +9685,22 @@ const C5CA_PhaseIE = {
         feedbackAbsent: ["Inspecting the face for bruising and palpating for facial deformity may indicate facial fractures.", "Abnormal eye movement or pupils, which this patient fortunately did not have, suggest intracranial injury and should prompt you to rapidly transfer your patient to a trauma center. Additionally, bruising around the eyes may be caused by basilar skull fracture, though this aspect of the exam was normal in this patient.", "Although not found in this case, bleeding from the ear may be indicative of a basilar skull fracture and bruising behind the ear suggests a basilar skull fracture (Battle's sign).", "This patient had no drainage from the nose but consider CSF leak from a basilar skull fracture if you see clear drainage.", "If the patient had had secretions or blood in the mouth, you would have needed to apply suction to clear the airway. Additionally, any visualized foreign bodies in the mouth should be removed. A blind finger sweep is never indicated, as you could lodge a foreign body deeper into the airway. There were no obstructions in this patient’s mouth."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
-          id: "assessment-inspects-skull",
-          label: "Inspect and palpate the scalp and skull",
+          id: "assessment-head-injury",
+          label: "Check head for injury",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -8774,8 +9710,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["Inspecting the face for bruising and palpating for facial deformity may indicate facial fractures."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -8785,35 +9723,43 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["Abnormal eye movement or pupils, which this patient fortunately did not have, suggest intracranial injury and should prompt you to rapidly transfer your patient to a trauma center.", "Additionally, bruising around the eyes may be caused by basilar skull fracture, though this aspect of the exam was normal in this patient."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "inspects-eyes-PERRLA",
             feedbackAbsent: ["Abnormal eye movement or pupils, which this patient fortunately did not have, suggest intracranial injury and should prompt you to rapidly transfer your patient to a trauma center."],
+            subActionsList: false,
             subActions: []
           }, {
             id: "inspects-eyes-racoon",
             feedbackAbsent: ["This aspect of the exam was normal in this patient, but bruising around the eyes may be caused by basilar skull fracture."],
+            subActionsList: false,
             subActions: []
           }]
         }, {
           id: "inspects-ears",
           label: "Inspect the ears for blood, other fluids, and bruising (\"battle signs\")",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-          feedbackAbsent: ["Although not found in this case, bleeding from the ear may be indicative of a basilar skull fracture and bruising behind the ear suggests a basilar skull fracture (Battle's sign)."],
+          feedbackAbsent: ["Although not found in this case, bleeding from the ear or bruising behind the ear may be indicative of a basilar skull fracture (Battle's sign)."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "inspects-ears-blood",
             feedbackAbsent: ["Although not found in this case, bleeding from the ear may be indicative of a basilar skull fracture."],
+            subActionsList: false,
             subActions: []
           }, {
             id: "inspects-ears-bruising",
             feedbackAbsent: ["Although not found in this case, bruising behind the ear suggests a basilar skull fracture (Battle's sign)."],
+            subActionsList: false,
             subActions: []
           }]
         }, {
@@ -8823,8 +9769,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["This patient had no drainage from the nose but consider CSF leak from a basilar skull fracture if you see clear drainage."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -8834,8 +9782,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["If the patient had had secretions or blood in the mouth, you would have needed to apply suction to clear the airway.", "Additionally, any visualized foreign bodies in the mouth should be removed. A blind finger sweep is never indicated, as you could lodge a foreign body deeper into the airway. There were no obstructions in this patient’s mouth."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -8846,8 +9796,10 @@ const C5CA_PhaseIE = {
         feedbackAbsent: ["This patient's neck exam was normal, but remember, tracheal deviation suggests unequal intrathoracic pressure (for example, a pneumothorax). The trachea will be deviated away from the side with increased pressure."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "assessment-neck-injury",
@@ -8856,8 +9808,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -8867,8 +9821,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["This patient's neck exam was normal, but remember, tracheal deviation suggests unequal intrathoracic pressure (for example, a pneumothorax). The trachea will be deviated away from the side with increased pressure. Additionally, a palpable step-off suggests a fracture."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -8878,8 +9834,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["This patient's neck exam was normal, but remember, JVD suggests that the heart is not adequately pushing out blood. Consider obstructive processes like a tension pneumothorax or hemothorax."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -8889,8 +9847,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["This patient's neck exam was normal, but remember, a palpable step-off suggests a fracture."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -8901,8 +9861,10 @@ const C5CA_PhaseIE = {
         feedbackAbsent: ["The presence and quality of breath sounds can clue you into underlying problems (e.g., pneumothorax, asthma). This patient's breath sounds were normal and equal bilaterally.", "Inspecting the shoulders for discoloration symmetry or deformity may identify dislocation or fracture of the shoulder (clavicle, humerus and scapula).  This patient's shoulders were normal.", "The clavicles should be inspected for any evidence of fractures. Though rare, clavicle fractures can cause a pneumothorax. This patient’s clavicles were normal.", "If the patient had had anterior thorax and rib crepitation, you should suspect air outside of the lungs, which would raise your suspicion for a pneumothorax. The patient had symmetric movement of his chest. Recall that paradoxical chest wall motion suggests flail chest, where multiple rib fractures lead to an unstable portion of the chest wall."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "assessment-check-breath-sounds",
@@ -8911,8 +9873,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["The presence and quality of breath sounds can clue you into underlying problems (e.g., pneumothorax, asthma). This patient's breath sounds were normal and equal bilaterally."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -8922,8 +9886,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["Inspecting the shoulders for discoloration symmetry or deformity may identify dislocation or fracture of the shoulder (clavicle, humerus and scapula).  This patient's shoulders were normal."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -8933,8 +9899,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["The clavicles should be inspected for any evidence of fractures. Though rare, clavicle fractures can cause a pneumothorax. This patient’s clavicles were normal."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -8944,8 +9912,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["If the patient had had anterior thorax and rib crepitation, you should suspect air outside of the lungs, which would raise your suspicion for a pneumothorax.", "The patient had symmetric movement of his chest. Recall that paradoxical chest wall motion suggests flail chest, where multiple rib fractures lead to an unstable portion of the chest wall."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "inspects-chest-injury",
@@ -8968,8 +9938,10 @@ const C5CA_PhaseIE = {
         feedbackAbsent: ["You should have noticed two gunshot wounds with minimal external bleeding in the left upper quadrant. Despite minimal external bleeding, penetrating abdominal wounds can have significant internal bleeding.", "Additionally, on palpation, you should have noticed that the patient's abdomen was rigid, suggesting intra-abdominal blood, likely related to the gunshot wounds.", "Finally, a distended abdomen suggests trauma and internal bleeding. Fortunately, the patient's abdomen was non-distended."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "inspects-abdomen-injury",
@@ -8978,8 +9950,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["You should have noticed two gunshot wounds with minimal external bleeding in the left upper quadrant. Despite minimal external bleeding, penetrating abdominal wounds can have significant internal bleeding."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -8989,8 +9963,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["A distended abdomen suggests trauma and internal bleeding. Fortunately, the patient's abdomen was non-distended."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -9000,8 +9976,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["On palpation, you should have noticed that the patient's abdomen was rigid, suggesting intra-abdominal blood, likely related to the gunshot wounds."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -9012,8 +9990,10 @@ const C5CA_PhaseIE = {
         feedbackAbsent: ["Be sure to do a thorough exam of the pelvis as the pelvis can be a source of life-threatening bleeding. The presence of blood or other fluids may indicate urethral, vaginal or rectal injury. Fortunately, your exam of this patient’s pelvis and genitalia would have been normal."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "assessment-checks-pelvis",
@@ -9022,8 +10002,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["Be sure to do a thorough exam of the pelvis as the pelvis can be a source of life-threatening bleeding. Fortunately, the patient's pelvis exam was normal."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -9033,8 +10015,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["The presence of blood or other fluids may indicate urethral, vaginal or rectal injury.", "Your exam of this patient’s pelvis and genitalia would have been normal."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -9045,8 +10029,10 @@ const C5CA_PhaseIE = {
         feedbackAbsent: ["Because the patient was in shock, you would have been unable to appreciate any distal pulses.", "Diminished or absent mobility may suggest spinal cord or other nervous system injury. The patient was shot in the left leg. You may have noted an abnormal motor exam related to either pain or neurovascular injury.", "Diminished or absent sensation may suggest spinal cord or other nervous system injury. This patient's sensation was intact in his extremities."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "inspects-extremities-injury",
@@ -9055,8 +10041,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "inspects-right-arm-injury",
@@ -9082,8 +10070,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["Because the patient was in shock, you would have been unable to appreciate any distal pulses."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "inspects-right-arm-pulse",
@@ -9109,8 +10099,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["Diminished or absent mobility may suggest spinal cord or other nervous system injury. The patient was shot in the left leg. You may have noted an abnormal motor exam related to either pain or neurovascular injury."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "inspects-right-arm-motor-ability",
@@ -9136,8 +10128,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["Diminished or absent sensation may suggest spinal cord or other nervous system injury. This patient's sensation was intact in his extremities."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "inspects-right-arm-sensory-function",
@@ -9159,14 +10153,16 @@ const C5CA_PhaseIE = {
         }]
       }, {
         id: "posterior",
-        label: "You will need a partner to help you roll the patient safely in order to do a thorough exam of the posterior thorax, lumbar, and buttocks for injury and step-offs. A palpable step-off, which the patient did not have, would suggest a fracture.",
+        label: "inspect and palpate the posterior thorax, lumbar, and buttocks for injury and step-offs",
         type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-        feedbackAbsent: ["A palpable step-off, which the patient did not have, would suggest a fracture."],
+        feedbackAbsent: ["You will need a partner to help you roll the patient safely in order to do a thorough exam of the posterior thorax, lumbar, and buttocks for injury and step-offs. A palpable step-off, which the patient did not have, would suggest a fracture."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
-        subActionsList: true,
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
+        subActionsList: false,
         subActions: [{
           id: "inspects-posterior-other-injury",
           feedbackAbsent: [""],
@@ -9184,20 +10180,51 @@ const C5CA_PhaseIE = {
       feedbackAbsent: ["Full spinal immobilization on a longboard is contraindicated for a patient such as this, with a penetrating abdominal injury.  It would be best to transfer him with a scoop stretcher, or carefully strap him onto a longboard and then move him to the ambulance gurney.", "Even if you don't place a collar on this patient, he needs padding in place to protect his head and neck during transfer, and allow for release of manual c-spine stabilization.", "Even if you had no imminent plans to administer fluids, it is beneficial to preemptively place IVs in case your patient were to deteriorate. Keep in mind that if your patient is bleeding and becoming more and more hypotensive, inserting an IV will become increasingly difficult.", "This patient is in shock as evidenced by his lack of peripheral pulses, pale and diaphoretic skin exam, waning mental status, and hypotension. The mostly likely cause of this is the GSW to the leg. Stopping the bleeding and restoring his intravascular volume will help get him to definitive management: surgery."],
       feedbackOutOfOrder: [""],
       feedbackErrors: [""],
-      examine: false,
-      prompts: "",
+      examineIfAbsent: false,
+      examineIfErrors: false,
+      promptsIfAbsent: "",
+      promptsIfErrors: "",
       subActionsList: true,
       subActions: [{
-        id: "intv-place-on-immobilization-device",
+        id: "intv-place-on-immobilization-device-or-stretcher",
         label: "Place the patient on a scoop stretcher or other transfer/immobilization device and move him to the ambulance stretcher",
         type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
         feedbackAbsent: ["Full spinal immobilization on a longboard is contraindicated for a patient such as this, with a penetrating abdominal injury.  It would be best to transfer him with a scoop stretcher, or carefully strap him onto a longboard and then move him to the ambulance gurney."],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["Full spinal immobilization on a longboard is contraindicated for a patient such as this, with a penetrating abdominal injury.  It would be best to transfer him with a scoop stretcher, or carefully strap him onto a longboard and then move him to the ambulance gurney."],
-        examine: true,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
-        subActions: []
+        subActions: [{
+          id: "intv-place-on-immobilization-device",
+          label: "Place the patient on a scoop stretcher or other transfer/immobilization device and move him to the ambulance stretcher",
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
+          feedbackAbsent: ["Full spinal immobilization on a longboard is contraindicated for a patient such as this, with a penetrating abdominal injury.  It would be best to transfer him with a scoop stretcher, or carefully strap him onto a longboard and then move him to the ambulance gurney."],
+          feedbackOutOfOrder: [""],
+          feedbackErrors: ["Full spinal immobilization on a longboard is contraindicated for a patient such as this, with a penetrating abdominal injury.  It would be best to transfer him with a scoop stretcher, or carefully strap him onto a longboard and then move him to the ambulance gurney."],
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
+          subActionsList: false,
+          subActions: []
+        }, {
+          id: "intv-place-directly-on-stretcher",
+          label: "Place patient directly on stretcher",
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.ALT,
+          alternativeToIntv: "intv-place-on-immobilization-device",
+          feedbackAbsent: ["Since this patient has a penetrating chest wound, you need to be careful while strapping him onto a transfer or immobilization device, since doing so may cause further injury.  A scoop stretcher would be an appropriate way to safely transfer the patient.  If unavailable, a longboard or other device could be used (with straps carefully placed) and then removed once the patient is on the stretcher."],
+          feedbackOutOfOrder: [""],
+          feedbackErrors: ["Since this patient has a penetrating chest wound, you need to be careful while strapping him onto a transfer or immobilization device, since doing so may cause further injury.  A scoop stretcher would be an appropriate way to safely transfer the patient.  If unavailable, a longboard or other device could be used (with straps carefully placed) and then removed once the patient is on the stretcher.", "In addition, this patient should be kept in a supine position. Remember that shock occurs when the body is unable to adequately perfuse the body's vital organs and periphery. When a patient is kept upright while in shock, cerebral perfusion is further hindered by gravity. Lying the patient down takes gravity out of the equation."],
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
+          subActionsList: false,
+          subActions: []
+        }]
       }, {
         id: "intv-spinal-immobilization-technique-attach-cid",
         label: "apply padding (e.g., CID, towels) to keep head inline with spine",
@@ -9205,8 +10232,10 @@ const C5CA_PhaseIE = {
         feedbackAbsent: ["Even if you don't place a collar on this patient, he needs padding in place to protect his head and neck during transfer, and allow for release of manual c-spine stabilization."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -9216,8 +10245,10 @@ const C5CA_PhaseIE = {
         feedbackAbsent: ["Even if you had no imminent plans to administer fluids, it is beneficial to preemptively place IVs in case your patient were to deteriorate. Keep in mind that if your patient is bleeding and becoming more and more hypotensive, inserting an IV will become increasingly difficult."],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["Even if you had no imminent plans to administer fluids, it is beneficial to preemptively place IVs in case your patient were to deteriorate. Keep in mind that if your patient is bleeding and becoming more and more hypotensive, inserting an IV will become increasingly difficult."],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -9227,8 +10258,10 @@ const C5CA_PhaseIE = {
         feedbackAbsent: ["This patient is in shock as evidenced by his lack of peripheral pulses, pale and diaphoretic skin exam, waning mental status, and hypotension. The mostly likely cause of this is the GSW to the leg. Stopping the bleeding and restoring his intravascular volume will help get him to definitive management: surgery."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: true,
-        prompts: "didn't recognize hemorrhagic shock; didn't remember all the steps in the management of hemorrhagic shock",
+        examineIfAbsent: true,
+        examineIfErrors: false,
+        promptsIfAbsent: "didn't recognize hemorrhagic shock; didn't remember all the steps in the management of hemorrhagic shock",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "intv-control-shock-technique-administer-iv-boluses",
@@ -9236,78 +10269,121 @@ const C5CA_PhaseIE = {
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
           feedbackAbsent: ["This patient has been bleeding and requires intravascular support to restore and maintain his blood pressure. Administer an isotonic fluid as rapidly as possible (maximizing the size and number of IVs will help you with this) to a goal BP of 90 systolic."],
           feedbackOutOfOrder: [""],
-          feedbackErrors: ["You want to establish at least 2 IVs as soon as possible. As your patient deteriorates and his blood pressure drops further, IV placement becomes more difficult.", "You should use as large of an IV as possible; this will allow you to administer fluids rapidly. Remember that the pressure of the flow of a fluid is inversely proportional to the radius to the 4th power.", "Always use an isotonic fluid without dextrose for volume resuscitation. This can be either normal saline or Lactated Ringers.  Given this patient's weight, you could titrate 1360 mL of fluids.", "Your goal of fluid administration is to re-establish an adequate, if not normal BP to ensure adequate oxygenation to the patient's end-organs. If you give too much fluid, you risk creating new problems, such as pulmonary edema."],
-          examine: true,
-          prompts: "Didn't know how much fluid to give; didn't know what kind of fluid to give",
+          feedbackErrors: ["You want to establish at least 2 IVs as soon as possible. As your patient deteriorates and his blood pressure drops further, IV placement becomes more difficult.", "You should use as large of an IV (i.e., 14 or 16 gauge) as possible; this will allow you to administer fluids rapidly. Remember that the pressure of the flow of a fluid is inversely proportional to the radius to the 4th power.", "Always use an isotonic fluid without dextrose for volume resuscitation. This can be either normal saline or Lactated Ringers.  Given this patient's weight, you could titrate 1360 mL of fluids.", "Your goal of fluid administration is to re-establish an adequate, if not normal BP to ensure adequate oxygenation to the patient's end-organs. If you give too much fluid, you risk creating new problems, such as pulmonary edema."],
+          examineIfAbsent: true,
+          examineIfErrors: false,
+          promptsIfAbsent: "Didn't know how much fluid to give; didn't know what kind of fluid to give",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-control-shock-technique-keep-patient-warm",
-          label: "keeping the patient warm, using some of the following methods: a) applying heat packs to the patient's groin or armpits, b) covering the patient with blankets, c) turning the heat up in the ambulance.",
+          label: "keep the patient warm, using some of the following methods: a) applying heat packs to the patient's groin or armpits, b) covering the patient with blankets, c) turning the heat up in the ambulance.",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
           feedbackAbsent: ["It is important to keep this patient warm because hypothermia can cause additional problems or worsening of the patient's current problems, including hypotension, arrhythmias, or even cardiac arrest."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
-        }, {
-          id: "intv-control-shock-technique-place-patient-supine-position",
+        },
+        /*{
+          id: "intv-position-patient",
           label: "maintaining the patient in supine position",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
+          type: ACTION_TYPES.REQ,
           feedbackAbsent: ["When you keep a patient in a supine position, you make it easier for the heart to pump blood to the brain. A patient in shock is already not delivering adequate oxygen to the brain; fighting gravity will not make this any easier."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
-        }, {
+        },*/
+        {
           id: "reassess-shock",
           label: "Check that shock management interventions are working by checking relevant vitals--in particular, BP and P",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
           feedbackAbsent: ["When you decide your patient needs a treatment, you must ensure your treatment had the intended outcomes. In this case, after bolusing fluids, you should check to see if the patient's blood pressure and HR have improved. If not, you will want to reflect on why you did not see the expected improvements? Did you select an incorrect intervention? Do you need to escalate your therapies?"],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "request-vitals-BP",
             label: "vital BP",
             type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-            feedbackAbsent: ["You should have checked BP"],
+            feedbackAbsent: ["When you decide your patient needs a treatment, you must ensure your treatment had the intended outcomes. In this case, after bolusing fluids, you should check to see if the patient's blood pressure has improved. If not, you will want to reflect on why you did not see the expected improvements? Did you select an incorrect intervention? Do you need to escalate your therapies?"],
             feedbackOutOfOrder: [""],
             feedbackErrors: [""],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }, {
             id: "request-vitals-P",
             label: "check P",
             type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-            feedbackAbsent: ["You should have checked P"],
+            feedbackAbsent: ["When you decide your patient needs a treatment, you must ensure your treatment had the intended outcomes. In this case, after bolusing fluids, you should check to see if the patient's HR has improved. If not, you will want to reflect on why you did not see the expected improvements? Did you select an incorrect intervention? Do you need to escalate your therapies?"],
             feedbackOutOfOrder: [""],
             feedbackErrors: [""],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }]
         }]
       }, {
-        id: "intv-apply-sterile-dressings",
+        id: "intv-apply-dressing",
         label: "Manage non-life-threatening injuries--in particular apply sterile dressings to the gun shot wounds on the patient's abdomen",
         type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
         feedbackAbsent: ["This patient has GSWs to the LUQ of his abdomen, which should be dressed once the patient is stabilized."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
-        subActions: []
+        subActions: [{
+          id: "intv-apply-sterile-dressings",
+          label: "Manage non-life-threatening injuries--in particular apply sterile dressings to the gun shot wounds on the patient's abdomen",
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
+          feedbackAbsent: ["This patient has GSWs to the LUQ of his abdomen, which should be dressed once the patient is stabilized."],
+          feedbackOutOfOrder: [""],
+          feedbackErrors: [""],
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
+          subActionsList: false,
+          subActions: []
+        }, {
+          id: "intv-occlusive-dressing",
+          label: "Occlusive dressing",
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.ALT,
+          alternativeToIntv: "intv-apply-sterile-dressings",
+          feedbackAbsent: ["This patient has GSWs to the LUQ of his abdomen, which should be dressed once the patient is stabilized."],
+          feedbackOutOfOrder: [""],
+          feedbackErrors: [""],
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
+          subActionsList: false,
+          subActions: []
+        }]
       }, {
         id: "Reassess the patient",
         label: "Reassess the patient",
@@ -9315,8 +10391,10 @@ const C5CA_PhaseIE = {
         feedbackAbsent: ["It is important to reassess your patient after every intervention and every clinical change. This includes repeating the primary survey, secondary survey, and vital signs. A critically ill patient should be reassessed more frequently to ensure he or she is still stable--approximately every 5 minutes."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "reassess-vitals-plus-frequency",
@@ -9325,8 +10403,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["Vitals should be reassessed after every intervention and every clinical change, and a critically ill patient should be reassessed every 5 minutes since their condition could deteriorate rapidly."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "reassess-vital-signs",
@@ -9335,8 +10415,10 @@ const C5CA_PhaseIE = {
             feedbackAbsent: ["Vitals should be reassessed after every intervention and every clinical change, and a critically ill patient should be reassessed more frequently to ensure he or she is still stable."],
             feedbackOutOfOrder: [""],
             feedbackErrors: [""],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }, {
@@ -9346,8 +10428,10 @@ const C5CA_PhaseIE = {
             feedbackAbsent: ["Critical patients' vital signs should be reassessed every 5 minutes, since their condition could deteriorate rapidly."],
             feedbackOutOfOrder: [""],
             feedbackErrors: ["Critical patients' vital signs should be reassessed every 5 minutes, since their condition could deteriorate rapidly."],
-            examine: false,
-            prompts: "",
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }]
@@ -9358,8 +10442,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["It is important to reassess your patient after every intervention and every clinical change, which includes the primary survey. For example, a patient with a neck injury whose breathing was initially non-labored may develop stridor as the airway becomes swollen."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -9369,8 +10455,10 @@ const C5CA_PhaseIE = {
           feedbackAbsent: ["It is important to reassess your patient after every intervention and every clinical change, which includes your secondary survey. For example, a patient may lose their pulses if you initially failed to notice and treat a source of hemorrhage."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
-          examine: false,
-          prompts: "",
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -9381,58 +10469,85 @@ const C5CA_PhaseIE = {
         feedbackAbsent: ["The hospital requires notification for all incoming patients 5 -15 prior to arrival, which is especially important for critical patients as the receiving team needs time to prepare equipment and space."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-splint-fracture",
 
-        /* contraindicated intervention */
+        /* not indicated intervention */
         label: "Splint fractures",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["The patient did not have any fractures."],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-sling",
 
-        /* contraindicated intervention */
+        /* not indicated intervention */
         label: "Apply sling",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["The patient did not have any injuries requiring a sling."],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
+        subActionsList: false,
+        subActions: []
+      }, {
+        id: "intv-bulky-dressing ",
+
+        /* not indicated intervention */
+        label: "Bulky dressing",
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
+        feedbackAbsent: [""],
+        feedbackOutOfOrder: [""],
+        feedbackErrors: ["This patient did not have any injuries that needed to be stabilized by a bulky dressing."],
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-prepare-amputated-part",
 
-        /* contraindicated intervention */
+        /* not indicated intervention */
         label: "Prepare amputated part for transport",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["The patient did not have an amputation."],
-        examine: false,
-        prompts: "",
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-prepare-and-administer-pain-nausea-vomiting-medications",
 
-        /* contraindicated intervention */
+        /* not indicated intervention */
         label: "Prepare and administer medications",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["You are unable to assess pain or nausea in this patient so he should not be given any medicines. Instead, you should focus on stabilizing the patient."],
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -9444,6 +10559,26 @@ const C5CA_PhaseIE = {
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
+        subActionsList: false,
+        subActions: []
+      }, {
+        id: "intv-walk-patient-to-ambulance",
+
+        /* not indicated intervention */
+        label: "Walk patient to ambulance",
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
+        feedbackAbsent: [""],
+        feedbackOutOfOrder: [""],
+        feedbackErrors: ["This patient cannot be walked to the ambulance.  He suffered severe bleeding from a gunshot wound to his left thigh and is hemodynamically unstable."],
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
+        subActionsList: false,
         subActions: []
       }]
     }]
@@ -9452,7 +10587,7 @@ const C5CA_PhaseIE = {
 
 /***/ }),
 
-/***/ 91412:
+/***/ 14726:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -9460,7 +10595,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "SC8CP_PhaseDEBRF": () => (/* binding */ SC8CP_PhaseDEBRF)
 /* harmony export */ });
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(54354);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2294);
 // type Phase_D = {
 //     step:  string;
 //     title: string;
@@ -9596,13 +10731,9 @@ const SC8CP_PhaseDEBRF = [{
 }, {
   step: "R",
   slides: [{
-    paragraphs: [(0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("In an idealized scenario, you arrive on scene and find a 4-year-old boy lying supine beside a pool in the backyard of a suburban house. Other EMS responders have arrived on site to assist you.  Your initial assessment reveals that the boy is unconscious and cyanotic.  A quick pulse check shows that it is slow and weak. Given that the patient is in"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("critical condition,", "This patient is unresponsive and is therefore considered a critical patient."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("you direct a responder to call for air transport to the"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("nearest pediatric trauma center.", "Because this patient is under 14 years of age, he should be transported to the nearest level 1 or 2 pediatric trauma center that is less than 45 minutes away."))]
+    paragraphs: [(0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("In an idealized scenario, you arrive on scene and find a 4-year-old boy lying supine beside a pool in the backyard of a suburban house. Other EMS responders have arrived on site to assist you.  Your initial assessment reveals that the boy is unconscious and cyanotic.  A quick pulse check shows that it is slow and weak. Given that the patient is in"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("critical condition,", "This patient is unresponsive and is therefore considered a critical patient."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("you direct a responder to call for air transport to the"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("nearest pediatric trauma center.", "Because this patient is under 14 years of age, he should be transported to the nearest level 1 or 2 pediatric trauma center that is less than 45 minutes away.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You direct another partner to take"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("manual c-spine precautions", "Any near-drowning or drowning, especially if unwitnessed, should be considered a risk for possible cervical and spinal injury as the patient may have been involved in a diving accident."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and apply a cervical collar. You open the patient’s airway, using a jaw thrust maneuver.  Finding a substantial amount of water and vomit in the boy’s mouth, you apply suction. After the patient’s airway is cleared, you assess breathing and find it to be slow with gurgling sounds. You direct your partner to insert an OPA and ventilate the patient with 100% oxygen delivered through a"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("bag-valve mask", "This patient was not adequately ventilating (slow, gurgling breaths) or oxygenating (low SpO2) so O2 delivered via nasal cannula or non-rebreather mask would not have been adequate."))]
   }, {
-    paragraphs: [(0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You direct another partner to take"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("manual c-spine precautions", "Any near-drowning or drowning, especially if unwitnessed, should be considered a risk for possible cervical and spinal injury as the patient may have been involved in a diving accident."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and apply a cervical collar. You open the patient’s airway, using a jaw thrust maneuver.  Finding a substantial amount of water and vomit in the boy’s mouth, you apply suction. After the patient’s airway is cleared, you assess breathing and find it to be slow with gurgling sounds. You direct your partner to insert an OPA and ventilate the patient with 100% oxygen delivered through a"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("bag-valve mask", "This patient was not adequately ventilating (slow, gurgling breaths) or oxygenating (low SpO2) so O2 delivered via nasal cannula or non-rebreather mask would not have been adequate."))]
-  }, {
-    paragraphs: [(0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You then"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("intubate the patient", "The patient was unresponsive with a GCS of 3 so should be intubated to safely get the patient to the pediatric trauma center (remember, generally with a GCS <8, you should intubate)."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and direct your partner to resume BVM ventilation all while maintaining c-spine precautions. You have another responder obtain a set of baseline vitals and obtain a SAMPLE and OPQRST history from the babysitter while you perform a rapid head-to-toe assessment.  On completion of your secondary survey, you secure him onto a long back board."))]
-  }, {
-    paragraphs: [(0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You and your partners then place the patient on a stretcher and transfer him to the helicopter as soon as it arrives.  You cover him with blankets and ask the pilot to turn up the heat. While en route to the pediatric trauma center, you contact the facility to alert them to the patient’s condition and your ETA.  You establish two large bore IVs, reassess the patient"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("every five minutes,", "Critically ill patients should be reassessed every 5 minutes."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and confirm that all interventions are working properly, modifying any as necessary."))]
+    paragraphs: [(0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You then"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("intubate the patient", "The patient was unresponsive with a GCS of 3 so should be intubated to safely get the patient to the pediatric trauma center (remember, generally with a GCS <8, you should intubate)."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and direct your partner to resume BVM ventilation all while maintaining c-spine precautions. You have another responder obtain a set of baseline vitals and obtain a SAMPLE and OPQRST history from the babysitter while you perform a rapid head-to-toe assessment.  On completion of your secondary survey, you secure him onto a long back board.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You and your partners then place the patient on a stretcher and transfer him to the helicopter as soon as it arrives.  You cover him with blankets and ask the pilot to turn up the heat. While en route to the pediatric trauma center, you contact the facility to alert them to the patient’s condition and your ETA.  You establish two large bore IVs, reassess the patient"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("every five minutes,", "Critically ill patients should be reassessed every 5 minutes."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and confirm that all interventions are working properly, modifying any as necessary."))]
   }]
 }, {
   step: "F",
@@ -9613,7 +10744,7 @@ const SC8CP_PhaseDEBRF = [{
 
 /***/ }),
 
-/***/ 67884:
+/***/ 96258:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -9621,7 +10752,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "SC8CP_PhaseIE": () => (/* binding */ SC8CP_PhaseIE)
 /* harmony export */ });
-/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(20573);
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(39384);
 /* Data for scenario SC8CP phase IE 
 This data structure holds all the information to create the slides to present during the IE phase.
 It mirrors the tree structure that is presented in the Excel file. All nodes in the tree are called actions whether 
@@ -9629,24 +10760,32 @@ they are assessments or interventions. Subactions are the children of the action
 Fields:
 id: identifies the action-node in the tree. It is a string since it is unique.
 label: text for the action as it will appear on the slide
-type: indicates whether the action is Required, Contraindicated, Unnecessary or Irrelevant.
-    Required, it will be listed in the left side of the slide so that students are asked if they performed it.
-    Contraindicated: it will be listed on the right side under a list of contraindicated actions that the student performed
-    accompanied by the feedback on the feedbackErrors field.
-    Unnecessary: it will be listed on the right side under a list of unnecessary actions that the student performed
-    accompanied by the feedback on the feedbackErrors field.
-    Irrelevent: it will be listed on the right side under a list of irrelevant actions that the student performed
-    accompanied by the feedback on the feedbackErrors field.
+type: indicates whether the action is Required, Not indicated, Optional, Alternative.
+    Required: students are asked if they performed it.
+    Not indicated: it will be listed on a list of not indicated actions that the student performed accompanied by 
+    the feedback on the feedbackErrors field.
+    Optional: it will be accepted as correct if performed.
     Alternative: will be used for those interventions that can be performed as alternative to required ones.
+    [
+    Not used for the pilot study but was used for trial 1:
+    Contraindicated: it will be listed under a list of contraindicated actions that the student performed
+    accompanied by the feedback on the feedbackErrors field.
+    Unnecessary: it will be listed under a list of unnecessary actions that the student performed
+    accompanied by the feedback on the feedbackErrors field.
+    Irrelevent: it will be listed under a list of irrelevant actions that the student performed
+    accompanied by the feedback on the feedbackErrors field.
+    ]
 alternativeToIntv: indicates the intervention for which the current one is an alternative. It will only have a value if
 the type is Alternative.
-feedbackAbsent: feedback given if the action was no performed
+feedbackAbsent: feedback given if the action was no performed. Each element in the array corresponds to a paragraph.
 feedbackOutOfOrder: feedback given if the action was done late (e.g., if the action is Scene size-up and it was done 
-    after Primary Survey)
-feedbackErrors: feedback if the action was performed incorrectly (e.g., wrong ventilation rate)
+    after Primary Survey). Each element in the array corresponds to a paragraph.
+feedbackErrors: feedback if the action was performed incorrectly (e.g., wrong ventilation rate). Each element in the array
+ corresponds to a paragraph.
 examineIfAbsent: boolean to indicate if this Action needs to be examined when it is Absent (phase E)
 examineIfErrors: boolean to indicate if this Action needs to be examined when there are performance errors (phase E)
-prompts: prompts to be included in question headers in phase E, to hint on how to reflect
+promptsIfAbsent: prompts to be included in question headers in phase E, to hint on how to reflect when Action was Absent
+promptsIfErrors: prompts to be included in question headers in phase E, to hint on how to reflect when Action was performed incorrectly
 subActionsList: boolean that indicates whether the subActions need to be listed as bullet points on the slide. If they
     don't need to be listed it is usually because they have been grouped however, the subActions still need to be 
     included in the subActions field because they are used by the analysis to give a summary of their status.
@@ -9678,9 +10817,10 @@ const SC8CP_PhaseIE = {
     examineIfErrors: false,
 
     /* boolean to indicate if this Action needs to be examined when there are performance errors */
-    prompts: "",
+    promptsIfAbsent: "",
 
     /* prompts to the included in question in phase E to hint on how to reflect */
+    promptsIfErrors: "",
     subActionsList: true,
 
     /* boolean that indicates if subActions need to be listed as bullet points on slide */
@@ -9695,7 +10835,8 @@ const SC8CP_PhaseIE = {
       feedbackErrors: [""],
       examineIfAbsent: false,
       examineIfErrors: false,
-      prompts: "",
+      promptsIfAbsent: "",
+      promptsIfErrors: "",
       subActionsList: true,
       subActions: [{
         id: "required-action-BSI",
@@ -9706,7 +10847,8 @@ const SC8CP_PhaseIE = {
         feedbackErrors: [""],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -9718,7 +10860,8 @@ const SC8CP_PhaseIE = {
         feedbackErrors: [""],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -9730,7 +10873,8 @@ const SC8CP_PhaseIE = {
         feedbackErrors: [""],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -9742,7 +10886,8 @@ const SC8CP_PhaseIE = {
         feedbackErrors: [""],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -9754,7 +10899,8 @@ const SC8CP_PhaseIE = {
         feedbackErrors: [""],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -9766,7 +10912,8 @@ const SC8CP_PhaseIE = {
         feedbackErrors: [""],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }]
@@ -9779,7 +10926,8 @@ const SC8CP_PhaseIE = {
       feedbackErrors: [""],
       examineIfAbsent: false,
       examineIfErrors: false,
-      prompts: "",
+      promptsIfAbsent: "",
+      promptsIfErrors: "",
       subActionsList: true,
       subActions: [{
         id: "general-impression",
@@ -9790,7 +10938,8 @@ const SC8CP_PhaseIE = {
         feedbackErrors: [""],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "assess-patient-condition",
@@ -9801,7 +10950,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -9813,7 +10963,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -9825,20 +10976,22 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
       }, {
         id: "circulation",
-        label: "follow a 'CAB' protocol, givent that this patient is unconscious, and first assess the patient's pulse, followed by other aspects of circulation",
+        label: "follow a 'CAB' protocol, given that this patient is unconscious, and first assess the patient's pulse, followed by other aspects of circulation",
         type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
         feedbackAbsent: ["Since this patient is unconscious, be sure to check the carotid pulse first, or simultaneously with the radial pulse, to determine if CPR is needed.  Also assess the skin to check for shock and be sure to perform a gross blood sweep.", "You would have noticed that your patient had weak slow pulses and dry cyanotic skin, indicating impending respiratory failure."],
-        feedbackOutOfOrder: ["All unconscious patients should have a pulse check before starting the ABCs. However, paramedics often check breathing while doing a pulse check.  If the patient is pulseless, you will start high-quality CPR immediately.", "An acronym used by some providers for unconscious patients is CABC, which refers to a pulse check (while simultaneously feeling for breathing) before the assessment of the rest of the ABCs.)"],
+        feedbackOutOfOrder: [""],
         feedbackErrors: [""],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "pulse-checks",
@@ -9849,18 +11002,20 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: true,
           subActions: [{
             id: "prompt-to-specify-pulse",
             label: "check the appropriate pulse(s)",
             type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
             feedbackAbsent: ["First check for a radial pulse. However, if you don't feel one, you want to check a carotid pulse.", "This patient's radial pulses were absent, but he did have a weak carotid pulse, which would prompt you to worry about shock."],
-            feedbackOutOfOrder: ["First check for a radial pulse. However, if you don't feel one, you want to check a carotid pulse.", "This patient's radial pulses were absent, but he did have a weak carotid pulse, which would prompt you to worry about shock."],
-            feedbackErrors: [""],
+            feedbackOutOfOrder: ["All unconscious patients should have a pulse check before starting the ABCs. However, paramedics often check breathing while doing a pulse check.  If the patient is pulseless, you will start high-quality CPR immediately.", "An acronym used by some providers for unconscious patients is CABC, which refers to a pulse check (while simultaneously feeling for breathing) before the assessment of the rest of the ABCs.)"],
+            feedbackErrors: ["When you have an unconscious patient, the first thing you will do (before checking the airway) is to check a carotid pulse. Checking for a radial pulse is not the best use of time because a patient who is hypo-perfused may have absent distal pulses but intact central pulses; this patient would not require CPR."],
             examineIfAbsent: false,
             examineIfErrors: false,
-            prompts: "",
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }, {
@@ -9868,22 +11023,24 @@ const SC8CP_PhaseIE = {
             label: "check pulse rate, rhythm, and quality",
             type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
             feedbackAbsent: ["Checking this patient's pulse rate would have revealed that he was tachycardic. A significantly elevated or depressed pulse rate can suggest shock or respiratory failure.", "While this patient's heart had a regular rhythm, remember that an irregular rhythm can suggest impending cardiac arrest or arrhythmia.", "A patient in shock may have weak or absent pulses distally, such as this patient, suggestive of shock."],
-            feedbackOutOfOrder: [""],
+            feedbackOutOfOrder: ["All unconscious patients should have a pulse check before starting the ABCs. However, paramedics often check breathing while doing a pulse check.  If the patient is pulseless, you will start high-quality CPR immediately.", "An acronym used by some providers for unconscious patients is CABC, which refers to a pulse check (while simultaneously feeling for breathing) before the assessment of the rest of the ABCs.)"],
             feedbackErrors: [""],
             examineIfAbsent: false,
             examineIfErrors: false,
-            prompts: "",
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: [{
               id: "checks-pulse-rate",
               label: "rate",
               type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
               feedbackAbsent: ["Checking this patient's pulse rate would have revealed that he was tachycardic. A significantly elevated or depressed pulse rate can suggest shock or respiratory failure."],
-              feedbackOutOfOrder: [""],
+              feedbackOutOfOrder: ["All unconscious patients should have a pulse check before starting the ABCs. However, paramedics often check breathing while doing a pulse check.  If the patient is pulseless, you will start high-quality CPR immediately.", "An acronym used by some providers for unconscious patients is CABC, which refers to a pulse check (while simultaneously feeling for breathing) before the assessment of the rest of the ABCs.)"],
               feedbackErrors: [""],
               examineIfAbsent: false,
               examineIfErrors: false,
-              prompts: "",
+              promptsIfAbsent: "",
+              promptsIfErrors: "",
               subActionsList: false,
               subActions: []
             }, {
@@ -9895,7 +11052,8 @@ const SC8CP_PhaseIE = {
               feedbackErrors: [""],
               examineIfAbsent: false,
               examineIfErrors: false,
-              prompts: "",
+              promptsIfAbsent: "",
+              promptsIfErrors: "",
               subActionsList: false,
               subActions: []
             }, {
@@ -9907,7 +11065,8 @@ const SC8CP_PhaseIE = {
               feedbackErrors: [""],
               examineIfAbsent: false,
               examineIfErrors: false,
-              prompts: "",
+              promptsIfAbsent: "",
+              promptsIfErrors: "",
               subActionsList: false,
               subActions: []
             }]
@@ -9916,12 +11075,13 @@ const SC8CP_PhaseIE = {
           id: "checks-skin",
           label: "check skin",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-          feedbackAbsent: [""],
+          feedbackAbsent: ["In this case, the patient had been pulled from a pool, making a skin exam challenging, but remember that clammy, diaphoretic skin suggests shock. Also, by checking this patient's skin color, you would have noticed he had dry, cyanotic skin. Pallor and cyanosis are signs of inadequate oxygenation and may be caused by respiratory failure or shock.", "Finally, by checking skin temperature, you would have noticed cold skin, which could be because of inadequate perfusion (decompensated shock) or environmental factors."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: true,
           subActions: [{
             id: "checks-skin-color",
@@ -9932,7 +11092,8 @@ const SC8CP_PhaseIE = {
             feedbackErrors: [""],
             examineIfAbsent: false,
             examineIfErrors: false,
-            prompts: "",
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }, {
@@ -9944,7 +11105,8 @@ const SC8CP_PhaseIE = {
             feedbackErrors: [""],
             examineIfAbsent: false,
             examineIfErrors: false,
-            prompts: "",
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }, {
@@ -9956,7 +11118,8 @@ const SC8CP_PhaseIE = {
             feedbackErrors: [""],
             examineIfAbsent: false,
             examineIfErrors: false,
-            prompts: "",
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }]
@@ -9969,7 +11132,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -9982,7 +11146,8 @@ const SC8CP_PhaseIE = {
         feedbackErrors: [""],
         examineIfAbsent: true,
         examineIfErrors: false,
-        prompts: "didn't recall that spinal injury should be considered in every near drowning incident; did not consider risk for cervical spine injury based on provided information",
+        promptsIfAbsent: "didn't recall that spinal injury should be considered in every near drowning incident; did not consider risk for cervical spine injury based on provided information",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "intv-spinal-immobilization-technique-manual-c-spine",
@@ -9993,7 +11158,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -10005,7 +11171,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -10018,7 +11185,8 @@ const SC8CP_PhaseIE = {
         feedbackErrors: [""],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "airway-is-open",
@@ -10029,7 +11197,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -10041,7 +11210,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -10054,30 +11224,48 @@ const SC8CP_PhaseIE = {
         feedbackErrors: [""],
         examineIfAbsent: true,
         examineIfErrors: false,
-        prompts: "didn't recognize that being unconscious was an indication for intubation; didn't recognize that the patient's airway was obstructed and needed suctioning",
+        promptsIfAbsent: "didn't recognize that being unconscious was an indication for intubation; didn't recognize that the patient's airway was obstructed and needed suctioning",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "intv-open-airway-method-modified-jaw-thrust",
           label: "Open the patient's airway with a jaw thrust maneuver",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-          feedbackAbsent: ["Opening the airway is a necessary precursor to inserting a basic adjunct.  The patient is at risk for a cervical spine injury, so opening the airway via head tilt can compromise spinal stability. Instead, you use the jaw-thrust technique to open the airway while maintaining the cervical spine."],
-          feedbackOutOfOrder: [""],
+          feedbackAbsent: ["Opening the airway is a necessary precursor to inserting a basic adjunct.  The patient is at risk for a cervical spine injury, so opening the airway via head tilt can compromise spinal stability. Instead, you should use the jaw-thrust technique to open the airway while maintaining the cervical spine."],
+          feedbackOutOfOrder: ["You should have performed a jaw thrust maneuver before starting the secondary survey because all life-threatening conditions should be managed before starting the secondary survey."],
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-airway-patency-technique-suction-airway",
-          label: "Suction the patient's mouth using a Yankauer (rigid)  or Long multi-use catheter",
+          label: "Suction the patient's mouth using a Yankauer (rigid) or Long multi-use catheter",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
           feedbackAbsent: ["This patient had water and vomit in his airway, which should have been suctioned to establish a patent airway and allow you to insert a basic airway and, ultimately, to intubate this patient."],
           feedbackOutOfOrder: ["Suctioning falls under 'A' in the ABCs. Airway obstructions are a potentially life threatening condition and require immediate intervention. Thus, debris in the airway or obstructions need to be identified and fixed during the primary assessment.", "In critical patients (especially those that are unconscious), the airway requires frequent reassessment. Be even more cautious when the patient has vomited recently or may lose consciousness very quickly.", "The patient's own tongue can be an obstruction, as well (when unconscious)."],
           feedbackErrors: ["Both Yankauer (rigid) and Long multi-use catheters are appropriate for oral suctioning; however, Yankauer would be more effective for suctioning large volumes of blood, vomit, etc.  A soft tip suction catheter should be used for deep suctioning with the ET tube."],
           examineIfAbsent: true,
           examineIfErrors: false,
-          prompts: "didn't ensure the airway was clear; did not think the vomit or water needed to be suctioned prior to intubation",
+          promptsIfAbsent: "didn't ensure the airway was clear; did not think the vomit or water needed to be suctioned prior to intubation",
+          promptsIfErrors: "",
+          subActionsList: false,
+          subActions: []
+        }, {
+          id: "intv-position-patient",
+
+          /* optional intervention */
+          label: "Position the patient",
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.OPT,
+          feedbackAbsent: [""],
+          feedbackOutOfOrder: ["You should have placed the patient in supine position before starting the secondary survey because all life-threatening conditions should be managed before starting the secondary survey."],
+          feedbackErrors: ["Placing the child on his left side would help to maintain his airway"],
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -10089,7 +11277,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -10101,7 +11290,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "intv-oropharyngeal-airway",
@@ -10109,6 +11299,10 @@ const SC8CP_PhaseIE = {
             type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
             feedbackAbsent: ["Remember: 'basic before advanced'. This patient is unconscious and therefore unable to maintain his airway (e.g. without an OPA, the tongue could obstruct the airway.)  Insert a basic airway adjunct to maintain airway patency and allow you to pre-oxygenate the patient prior to intubation."],
             feedbackOutOfOrder: ["In the event of a potentially compromised airway (including patients who are unconscious), the patient needs to have an airway adjunct for airway support prior to the secondary survey."],
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }, {
@@ -10118,6 +11312,10 @@ const SC8CP_PhaseIE = {
             alternativeToIntv: "intv-oropharyngeal-airway",
             feedbackAbsent: ["Remember: 'basic before advanced'. This patient is unconscious and therefore unable to maintain his airway (e.g. without an OPA, the tongue could obstruct the airway.)  Insert a basic airway adjunct to maintain airway patency and allow you to pre-oxygenate the patient prior to intubation."],
             feedbackOutOfOrder: ["In the event of a potentially compromised airway (including patients who are unconscious), the patient needs to have an airway adjunct for airway support prior to the secondary survey."],
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }]
@@ -10125,19 +11323,24 @@ const SC8CP_PhaseIE = {
           id: "request-intv-status-NPA-or-OPA",
           label: "Confirm that the patient accepted the airway adjunct",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-          feedbackAbsent: ["Remember: 'basic before advanced'. This patient is unconscious and therefore unable to maintain his airway (e.g. without an OPA, the tongue could obstruct the airway.)  Insert a basic airway adjunct to maintain airway patency and allow you to pre-oxygenate the patient prior to intubation."],
+          feedbackAbsent: ["Remember to confirm that the patient accepted the airway adjunct"],
           feedbackOutOfOrder: ["In the event of a potentially compromised airway (including patients who are unconscious), the patient needs to have an airway adjunct for airway support prior to the secondary survey."],
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "request-intervention-status-intv-nasopharyngeal-airway",
             label: "Confirm that the patient accepted the NPA",
             type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-            feedbackAbsent: ["Remember: 'basic before advanced'. This patient is unconscious and therefore unable to maintain his airway (e.g. without an OPA, the tongue could obstruct the airway.)  Insert a basic airway adjunct to maintain airway patency and allow you to pre-oxygenate the patient prior to intubation."],
+            feedbackAbsent: ["Remember to confirm that the patient accepted the NPA"],
             feedbackOutOfOrder: ["In the event of a potentially compromised airway (including patients who are unconscious), the patient needs to have an airway adjunct for airway support prior to the secondary survey."],
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }, {
@@ -10145,8 +11348,12 @@ const SC8CP_PhaseIE = {
             label: "Confirm that the patient accepted the OPA",
             type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.ALT,
             alternativeToIntv: "request-intervention-status-intv-nasopharyngeal-airway",
-            feedbackAbsent: ["Remember: 'basic before advanced'. This patient is unconscious and therefore unable to maintain his airway (e.g. without an OPA, the tongue could obstruct the airway.)  Insert a basic airway adjunct to maintain airway patency and allow you to pre-oxygenate the patient prior to intubation."],
+            feedbackAbsent: ["Remember to confirm that the patient accepted the OPA"],
             feedbackOutOfOrder: ["In the event of a potentially compromised airway (including patients who are unconscious), the patient needs to have an airway adjunct for airway support prior to the secondary survey."],
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }]
@@ -10165,7 +11372,8 @@ const SC8CP_PhaseIE = {
           /* feedback taken from intv-oro-intubation-or-advanced-airway */
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: true,
           subActions: [{
             id: "intv-preoxygenation",
@@ -10176,7 +11384,8 @@ const SC8CP_PhaseIE = {
             feedbackErrors: ["Use a bag-valve mask or NRM attached to 15LPM O2 or greater to preoxygenate the patient prior to intubation. Alternatively, 25 LPM of O2 via nasal cannula while simultaneously performing BVM ventilations with high-flow oxygen could be used for pre-oxygenation."],
             examineIfAbsent: true,
             examineIfErrors: false,
-            prompts: "Didn't realize the patient needed ventilatory support; Didn't think the patient needed bagging before intubation",
+            promptsIfAbsent: "Didn't realize the patient needed ventilatory support; Didn't think the patient needed bagging before intubation",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: [{
               id: "intv-supplemental-oxygen-device-non-rebreather-mask",
@@ -10187,7 +11396,8 @@ const SC8CP_PhaseIE = {
               feedbackErrors: ["Use a bag-valve mask or NRM attached to 15LPM O2 or greater to preoxygenate the patient prior to intubation. Alternatively, 25 LPM of O2 via nasal cannula while simultaneously performing BVM ventilations with high-flow oxygen could be used for pre-oxygenation."],
               examineIfAbsent: false,
               examineIfErrors: false,
-              prompts: "",
+              promptsIfAbsent: "",
+              promptsIfErrors: "",
               subActionsList: false,
               subActions: []
             }, {
@@ -10200,7 +11410,8 @@ const SC8CP_PhaseIE = {
               feedbackErrors: ["Use a bag-valve mask or NRM attached to 15LPM O2 or greater to preoxygenate the patient prior to intubation. Alternatively, 25 LPM of O2 via nasal cannula while simultaneously performing BVM ventilations with high-flow oxygen could be used for pre-oxygenation."],
               examineIfAbsent: false,
               examineIfErrors: false,
-              prompts: "",
+              promptsIfAbsent: "",
+              promptsIfErrors: "",
               subActionsList: false,
               subActions: []
             }, {
@@ -10213,7 +11424,8 @@ const SC8CP_PhaseIE = {
               feedbackErrors: ["Use a bag-valve mask or NRM attached to 15LPM O2 or greater to preoxygenate the patient prior to intubation. Alternatively, 25 LPM of O2 via nasal cannula while simultaneously performing BVM ventilations with high-flow oxygen could be used for pre-oxygenation."],
               examineIfAbsent: false,
               examineIfErrors: false,
-              prompts: "",
+              promptsIfAbsent: "",
+              promptsIfErrors: "",
               subActionsList: false,
               subActions: [{
                 id: "intv-ventilation-technique-bag-valve-mask",
@@ -10224,7 +11436,8 @@ const SC8CP_PhaseIE = {
                 feedbackErrors: ["Use a bag-valve mask attached to 15LPM O2 or greater to preoxygenate the patient prior to intubation. Alternatively, 25 LPM of O2 via nasal cannula while simultaneously performing BVM ventilations with high-flow oxygen could be used for pre-oxygenation."],
                 examineIfAbsent: false,
                 examineIfErrors: false,
-                prompts: "",
+                promptsIfAbsent: "",
+                promptsIfErrors: "",
                 subActionsList: false,
                 subActions: []
               }, {
@@ -10232,11 +11445,12 @@ const SC8CP_PhaseIE = {
                 label: "Nasal cannula",
                 type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
                 feedbackAbsent: ["This patient has inadequate respirations and requires ventilatory support. Even if you identify immediately that you want to intubate this patient, he would benefit from starting with a bag-valve mask attached to 15LPM O2 to preoxygenate him prior to intubation. Alternatively, oxygenation with a nasal cannula could be coupled with BVM ventilation."],
-                feedbackOutOfOrder: [""],
+                feedbackOutOfOrder: ["Problems with ventilation and oxygenation are life threatening and should be addressed by oxygen administration and BVM ventilation before you move on to your secondary survey. Repeat your exam and check vitals to ensure your interventions have worked as you expected. If not, your patient may deteriorate as you continue on with your examination."],
                 feedbackErrors: ["Use a bag-valve mask attached to 15LPM O2 or greater to preoxygenate the patient prior to intubation. Alternatively, 25 LPM of O2 via nasal cannula while simultaneously performing BVM ventilations with high-flow oxygen could be used for pre-oxygenation."],
                 examineIfAbsent: false,
                 examineIfErrors: false,
-                prompts: "",
+                promptsIfAbsent: "",
+                promptsIfErrors: "",
                 subActionsList: false,
                 subActions: []
               }]
@@ -10246,35 +11460,52 @@ const SC8CP_PhaseIE = {
             label: "Intubate the patient by placing an appropriately sized endotracheal tube or alternative/rescue airway",
             type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
             feedbackAbsent: ["Ultimately, this patient should be intubated. This patient has a GCS score of 3; remember, GCS <8, intubate. Since he is unconscious, you need a reliable way to oxygenate and ventilate this patient. While BVM ventilation with an adjunct may be appropriate for a short transport, this near-drowning patient is at increased risk for aspiration, so securing an airway is the best course of action. Orotracheal intubation would be most appropriate because he lacks a gag reflex."],
-            feedbackOutOfOrder: [""],
+            feedbackOutOfOrder: ["You should have performed orotracheal intubation or inserted an alternative/rescue airway before starting the secondary survey because all life-threatening conditions should be managed before starting the secondary survey."],
             feedbackErrors: ["Inserting an appropriately sized endotracheal tube (ETT) is the most appropriate method of securing this patient's airway, since he lacks a gag reflex.  An advanced airway would be indicated if the airway cannot be secured with an ET tube due to difficulty intubating the patient.", "Calculate the appropriate size ET tube for a child with the equation age/4 +1. This is the correct size for an uncuffed tube; go down by .5 for a cuffed tube. This child needed a 4.5 cuffed or 5.0 uncuffed tube.  The insertion depth for children is 3cm * (tube size), so about 15cm.", "If using an advanced/rescue airway, reference the Broslow Tape for the acceptable size, but remember that Combitubes are not sized for children."],
             examineIfAbsent: false,
             examineIfErrors: true,
-            prompts: "Didn't recall how to calculate the size of an ET tube for a child; Didn't recall how to calculate the depth of an ET tube for a child",
+            promptsIfAbsent: "",
+            promptsIfErrors: "Didn't recall how to calculate the size of an ET tube for a child; Didn't recall how to calculate the depth of an ET tube for a child",
             subActionsList: false,
             subActions: [{
               id: "intv-orotracheal-intubation",
-              label: "",
+              label: "perform orotracheal intubation",
               type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
               feedbackAbsent: ["Ultimately, this patient should be intubated. This patient has a GCS score of 3; remember, GCS <8, intubate. Since he is unconscious, you need a reliable way to oxygenate and ventilate this patient. While BVM ventilation with an adjunct may be appropriate for a short transport, this near-drowning patient is at increased risk for aspiration, so securing an airway is the best course of action. Orotracheal intubation would be most appropriate because he lacks a gag reflex."],
-              feedbackOutOfOrder: [""],
+              feedbackOutOfOrder: ["You should have performed orotracheal intubation before starting the secondary survey because all life-threatening conditions should be managed before starting the secondary survey."],
               feedbackErrors: ["Inserting an appropriately sized endotracheal tube (ETT) is the most appropriate method of securing this patient's airway, since he lacks a gag reflex.  An advanced airway would be indicated if the airway cannot be secured with an ET tube due to difficulty intubating the patient.", "Calculate the appropriate size ET tube for a child with the equation age/4 +1. This is the correct size for an uncuffed tube; go down by .5 for a cuffed tube. This child needed a 4.5 cuffed or 5.0 uncuffed tube.  The insertion depth for children is 3cm * (tube size), so about 15cm.", "If using an advanced/rescue airway, reference the Broslow Tape for the acceptable size, but remember that Combitubes are not sized for children."],
               examineIfAbsent: false,
               examineIfErrors: false,
-              prompts: "",
+              promptsIfAbsent: "",
+              promptsIfErrors: "",
               subActionsList: false,
               subActions: []
             }, {
               id: "intv-insert-advanced-airway",
-              label: "",
+              label: "insert advanced airway",
               type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.ALT,
               alternativeToIntv: "intv-orotracheal-intubation",
               feedbackAbsent: ["Ultimately, this patient should be intubated. This patient has a GCS score of 3; remember, GCS <8, intubate. Since he is unconscious, you need a reliable way to oxygenate and ventilate this patient. While BVM ventilation with an adjunct may be appropriate for a short transport, this near-drowning patient is at increased risk for aspiration, so securing an airway is the best course of action. Orotracheal intubation would be most appropriate because he lacks a gag reflex."],
-              feedbackOutOfOrder: [""],
+              feedbackOutOfOrder: ["You should have inserted an advanced airway before starting the secondary survey because all life-threatening conditions should be managed before starting the secondary survey."],
               feedbackErrors: ["Inserting an appropriately sized endotracheal tube (ETT) is the most appropriate method of securing this patient's airway, since he lacks a gag reflex.  An advanced airway would be indicated if the airway cannot be secured with an ET tube due to difficulty intubating the patient.", "Calculate the appropriate size ET tube for a child with the equation age/4 +1. This is the correct size for an uncuffed tube; go down by .5 for a cuffed tube. This child needed a 4.5 cuffed or 5.0 uncuffed tube.  The insertion depth for children is 3cm * (tube size), so about 15cm.", "If using an advanced/rescue airway, reference the Broslow Tape for the acceptable size, but remember that Combitubes are not sized for children."],
               examineIfAbsent: false,
               examineIfErrors: false,
-              prompts: "",
+              promptsIfAbsent: "",
+              promptsIfErrors: "",
+              subActionsList: false,
+              subActions: []
+            }, {
+              id: "intv-nasotracheal-intubation",
+              label: "nasotracheal intubation",
+              type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.ALT,
+              alternativeToIntv: "intv-nasotracheal-intubation",
+              feedbackAbsent: ["Ultimately, this patient should be intubated. This patient has a GCS score of 3; remember, GCS <8, intubate. Since he is unconscious, you need a reliable way to oxygenate and ventilate this patient. While BVM ventilation with an adjunct may be appropriate for a short transport, this near-drowning patient is at increased risk for aspiration, so securing an airway is the best course of action. Orotracheal intubation would be most appropriate because he lacks a gag reflex."],
+              feedbackOutOfOrder: ["You should have performed nasotracheal intubation before starting the secondary survey because all life-threatening conditions should be managed before starting the secondary survey."],
+              feedbackErrors: ["Inserting an appropriately sized endotracheal tube (ETT) is the most appropriate method of securing this patient's airway, since he lacks a gag reflex.  An advanced airway would be indicated if the airway cannot be secured with an ET tube due to difficulty intubating the patient.", "Calculate the appropriate size ET tube for a child with the equation age/4 +1. This is the correct size for an uncuffed tube; go down by .5 for a cuffed tube. This child needed a 4.5 cuffed or 5.0 uncuffed tube.  The insertion depth for children is 3cm * (tube size), so about 15cm.", "If using an advanced/rescue airway, reference the Broslow Tape for the acceptable size, but remember that Combitubes are not sized for children."],
+              examineIfAbsent: false,
+              examineIfErrors: false,
+              promptsIfAbsent: "",
+              promptsIfErrors: "",
               subActionsList: false,
               subActions: []
             }]
@@ -10288,147 +11519,173 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
+          subActionsList: false,
+          subActions: []
+        }, {
+          id: "intv-contact-medical-command",
+
+          /*optional intervention */
+          label: "contact medical command",
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.OPT,
+          feedbackAbsent: [""],
+          feedbackOutOfOrder: [""],
+          feedbackErrors: [""],
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-open-airway-method-head-tilt",
 
-          /*contraindicated intervention */
+          /*not indicated intervention */
           label: "Head tilt chin lift",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["A head-tilt chin lift is contraindicated for a patient with suspected c-spine injury as tilting the head could cause further damage to the neck. You should have used a modified jaw thrust to check this patient's airway."],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-manual-finger-sweep",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Manual (finger sweep)",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["If there is a visible foreign body in the mouth, it should be removed. However, a blind finger sweep is contraindicated as it could lodge a foreign body deeper into the airway."],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-magill-forceps-assisted",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Magill forceps assisted removal",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["If there is a visible foreign body in the mouth, it should be removed. However, there is no evidence of a foreign body in this patient's mouth."],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-heimlich-maneuver",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Heimlich Maneuver",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["You have no evidence the patient is choking on an object, so the Heimlich maneuver is not appropriate at this time."],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-back-blows-and-chest-thrusts",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Back blows and chest thrusts",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["You have no evidence the patient is choking on an object, so the Heimlich maneuver is not appropriate at this time."],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
-        }, {
-          id: "intv-nasotracheal-intubation",
-
-          /* contraindicated intervention */
+        },
+        /*{
+          id: "intv-nasotracheal-intubation", /* not indicated intervention 
           label: "Nasotracheal intubation",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["Nasotracheal intubation is only indicated for specific scenarios where access via the mouth is limited, such as profuse angioedema or trismus. It is a blind procedure and much more difficult than orotracheal intubation so in this patient who has a patent and intact oral airway, orotracheal intubation is preferred."],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
-          subActions: []
-        }, {
+          subActions: [],
+        },*/
+        {
           id: "intv-rapid-sequence-intubation",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Rapid-sequence intubation",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["RSI is not in the paramedic's scope of practice in Pennsylvania"],
           examineIfAbsent: false,
           examineIfErrors: true,
-          prompts: "didn't know what type of intubation can be performed in pediatric patients in PA.",
+          promptsIfAbsent: "",
+          promptsIfErrors: "didn't know what type of intubation can be performed in pediatric patients in PA.",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-sedation-assisted-intubation",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Sedation-assisted intubation",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["Sedation assisted intubation is contraindicated for pediatric patients in PA.  Since this patient is unconscious, orotracheal intubation would be the best option for securing the patient's airway."],
           examineIfAbsent: false,
           examineIfErrors: true,
-          prompts: "didn't know what type of intubation can be performed in pediatric patients in PA.",
+          promptsIfAbsent: "",
+          promptsIfErrors: "didn't know what type of intubation can be performed in pediatric patients in PA.",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-needle-cricothyrotomy",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Needle cricothyrotomy",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["A cricothyrotomy is indicated when there is an upper airway obstruction that cannot be removed. This patient has a patent airway."],
           examineIfAbsent: false,
           examineIfErrors: true,
-          prompts: "thought the patient had an upper airway obstruction",
+          promptsIfAbsent: "",
+          promptsIfErrors: "thought the patient had an upper airway obstruction",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-surgical-cricothyrotomy",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Surgical cricothyrotomy",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["A cricothyrotomy is indicated when there is an upper airway obstruction that cannot be removed. This patient has a patent airway."],
           examineIfAbsent: false,
           examineIfErrors: true,
-          prompts: "thought the patient had an upper airway obstruction",
+          promptsIfAbsent: "",
+          promptsIfErrors: "thought the patient had an upper airway obstruction",
           subActionsList: false,
           subActions: []
         }]
@@ -10441,7 +11698,8 @@ const SC8CP_PhaseIE = {
         feedbackErrors: [""],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "breathing-checks-rate",
@@ -10452,7 +11710,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -10464,7 +11723,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -10476,7 +11736,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -10489,18 +11750,20 @@ const SC8CP_PhaseIE = {
         feedbackErrors: [""],
         examineIfAbsent: true,
         examineIfErrors: false,
-        prompts: "didn't realize that the patient's respiratory status was threatened ",
+        promptsIfAbsent: "didn't realize that the patient's respiratory status was threatened ",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "intv-ventilation-technique-bag-valve-mask",
           label: "ventilating the patient at a rate of 20 BPM, while titrating oxygen at a flow rate of 15 L/min to a target SpO2 >= 90%",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
           feedbackAbsent: ["The patient's respiratory rate is 6 with rhonchi appreciable on exam and no SpO2 capture. This patient needs both oxygen and ventilatory support, so O2 via nasal canula or Ventimask would be inadequate."],
-          feedbackOutOfOrder: [""],
+          feedbackOutOfOrder: ["Problems with ventilation and oxygenation are life threatening and should be addressed before you move on to your secondary survey. Repeat your exam and check vitals to ensure your interventions have worked as you expected. If not, your patient may deteriorate as you continue on with your examination."],
           feedbackErrors: ["This patient should have been ventilated at a rate of 20 breaths per minute, which is the recommended rate for a child aged 2-12. When performing BVM ventilation, you use 15LPM O2 in order to both oxygenate and ventilate the patient to a target SpO2 >90%."],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -10512,7 +11775,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "request-vitals-BP",
@@ -10523,7 +11787,8 @@ const SC8CP_PhaseIE = {
             feedbackErrors: [""],
             examineIfAbsent: false,
             examineIfErrors: false,
-            prompts: "",
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }, {
@@ -10535,7 +11800,8 @@ const SC8CP_PhaseIE = {
             feedbackErrors: [""],
             examineIfAbsent: false,
             examineIfErrors: false,
-            prompts: "",
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }, {
@@ -10547,13 +11813,14 @@ const SC8CP_PhaseIE = {
             feedbackErrors: [""],
             examineIfAbsent: false,
             examineIfErrors: false,
-            prompts: "",
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }]
         },
         /*{
-          id: "intv-supplemental-oxygen-device-non-rebreather-mask", // contraindicated intervention
+          id: "intv-supplemental-oxygen-device-non-rebreather-mask", // not indicated intervention
           label: "Non-rebreather mask",
           type: ACTION_TYPE.CONTRA,
           feedbackAbsent: [""],
@@ -10561,121 +11828,115 @@ const SC8CP_PhaseIE = {
           feedbackErrors: ["This patient was unresponsive with slow, gurgling breaths, indicating need for ventilation, not just oxygenation. O2 delivery via a non-rebreather mask would not be adequate in this case, as it assists with oxygenation but does not assist with ventilation."],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [],
         },*/
         {
           id: "intv-occlusive-dressing",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Occlusive dressing",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["The patient did not have a penetrating chest wound."],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-pleural-decompression",
 
-          /* contraindicated intervention */
+          /* not indicated intervention */
           label: "Needle decompression",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["The patient did not have a tension pneumothorax. Notice that the patient had equal lung sounds bilaterally and improved after intubation."],
           examineIfAbsent: false,
           examineIfErrors: true,
-          prompts: "thought the child had a tension pneumothorax",
+          promptsIfAbsent: "",
+          promptsIfErrors: "thought the child had a tension pneumothorax",
           subActionsList: false,
           subActions: []
         }]
       }, {
         id: "intv-control-severe-bleeding-technique-direct-pressure",
 
-        /* contraindicated intervention */
+        /* not indicated intervention */
         label: "Direct pressure",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["The patient did not have significant bleeding."],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-control-severe-bleeding-technique-tourniquet",
 
-        /* contraindicated intervention */
+        /* not indicated intervention */
         label: "Tourniquet",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["The patient did not have significant bleeding."],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-control-severe-bleeding-technique-2nd-tourniquet",
 
-        /* contraindicated intervention */
+        /* not indicated intervention */
         label: "Second tourniquet",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["The patient did not have significant bleeding."],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-control-severe-bleeding-technique-pack-wound-with-gauze",
 
-        /* contraindicated intervention */
+        /* not indicated intervention */
         label: "Pack wound with gauze or hemostatic gauze",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["The patient did not have significant bleeding."],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-control-severe-bleeding-technique-pressure-bandage",
 
-        /* contraindicated intervention */
+        /* not indicated intervention */
         label: "Pressure dressing",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["The patient did not have significant bleeding."],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
-        subActionsList: false,
-        subActions: []
-      }, {
-        id: "intv-control-severe-bleeding-technique-load-and-go",
-
-        /* contraindicated intervention */
-        label: "Load and go due to uncontrolled bleeding.",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
-        feedbackAbsent: [""],
-        feedbackOutOfOrder: [""],
-        feedbackErrors: ["The patient did not have significant bleeding."],
-        examineIfAbsent: false,
-        examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -10687,7 +11948,8 @@ const SC8CP_PhaseIE = {
         feedbackErrors: [""],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "decision-is-load-and-go",
@@ -10698,31 +11960,47 @@ const SC8CP_PhaseIE = {
           feedbackErrors: ["This patient is unconscious and needs ventilatory support. This patient should be considered critical."],
           examineIfAbsent: true,
           examineIfErrors: false,
-          prompts: "didn't realize this was a critically ill patient; felt this patient should be further stabilized on site prior to transfer",
+          promptsIfAbsent: "didn't realize this was a critically ill patient; felt this patient should be further stabilized on site prior to transfer",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-transport",
           label: "Decide to transport this patient to a Level 1 pediatric trauma center by air ambulance",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-          feedbackAbsent: ["This patient requires a pediatric trauma center because of age and physiological criteria. The physiological criteria indicating that the patient requires this type of facility are respiratory rate of less than 10 and GCS <5 (not following commands)"],
+          feedbackAbsent: ["This patient requires a pediatric trauma center because of age and physiological criteria. The physiological criteria indicating that the patient requires this type of facility are respiratory rate of less than 10 and GCS <5 (not following commands)", "The level 1 pediatric trauma center is 16 minutes away by air in this scenario; transport to this facility would only be contraindicated by a transport time > 45 minutes."],
           feedbackOutOfOrder: ["Initial transport decisions should be made following the 'Primary Survey' (ABCs) because that is when the provider decides whether the patient can be further stabilized on scene or taken directly to a hospital in a 'load and go' scenario. The secondary assessment is only performed on scene if the situation is NOT a 'load and go.' Making transport decisions early is especially important if you are calling for an air ambulance to account for the time it takes for them to arrive."],
-          feedbackErrors: ["This patient requires a pediatric trauma center because of age and physiological criteria. The physiological criteria indicating that the patient requires this type of facility are respiratory rate of less than 10 and GCS <5 (not following commands)"],
+          feedbackErrors: ["This patient requires a pediatric trauma center because of age and physiological criteria. The physiological criteria indicating that the patient requires this type of facility are respiratory rate of less than 10 and GCS <5 (not following commands)", "The level 1 pediatric trauma center is 16 minutes away by air in this scenario; transport to this facility would only be contraindicated by a transport time > 45 minutes."],
           examineIfAbsent: false,
           examineIfErrors: true,
-          prompts: "did not realize patient requires higher level of service than level II adult facility",
+          promptsIfAbsent: "",
+          promptsIfErrors: "did not realize patient requires higher level of service than level II adult facility",
           subActionsList: false,
           subActions: []
         }, {
           id: "intv-call-for-air-ambulance",
           label: "Call for an air ambulance",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-          feedbackAbsent: ["Given the time required for an air ambulance to arrive, you should call for one as soon after you decide to transport the patient by helicopter as possible, after completing your Primary Survey."],
+          feedbackAbsent: ["This patient requires a pediatric trauma center, due to physiological criteria. Given the time required for an air ambulance to arrive, you should call for one as soon after you decide to transport the patient by helicopter as possible, after completing your Primary Survey."],
           feedbackOutOfOrder: ["Call for an air ambulance before beginning your secondary survey to account for the time it takes for them to arrive."],
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
+          subActionsList: false,
+          subActions: []
+        }, {
+          id: "intv-walk-patient-to-ambulance",
+          label: "walked the patient to the stretcher",
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
+          feedbackAbsent: [""],
+          feedbackOutOfOrder: [""],
+          feedbackErrors: ["This patient is unconscious"],
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -10731,22 +12009,24 @@ const SC8CP_PhaseIE = {
         label: "Trauma expose the patient",
         type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
         feedbackAbsent: ["Exposure is necessary to properly inspect the patient for injuries. Only the area being inspected should be uncovered and then recovered to prevent heat loss and hypothermia."],
-        feedbackOutOfOrder: ["It is important expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
+        feedbackOutOfOrder: ["It is important to expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
         feedbackErrors: [""],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: [{
           id: "exposes-body-parts",
           label: "Exposed (and recovered) anatomical areas as necessary",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
           feedbackAbsent: ["Exposure is necessary to properly inspect the patient for injuries. Only the area being inspected should be uncovered and then recovered to prevent heat loss and hypothermia."],
-          feedbackOutOfOrder: ["It is important expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
+          feedbackOutOfOrder: ["It is important to expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -10760,30 +12040,33 @@ const SC8CP_PhaseIE = {
       feedbackErrors: [""],
       examineIfAbsent: false,
       examineIfErrors: false,
-      prompts: "",
+      promptsIfAbsent: "",
+      promptsIfErrors: "",
       subActionsList: true,
       subActions: [{
         id: "required-action-obtains-vitals",
         label: "Baseline vital signs",
         type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-        feedbackAbsent: ["Baseline vitals are critical; they will help you assess, manage, and continue to monitor your patient.", "You would have found that this patient was bradycardic, bradypnic, hypoxic, and hypotensive, alerting you to a critical patient who needed prompt intervention."],
+        feedbackAbsent: ["Baseline vitals are critical; they will help you assess, manage, and continue to monitor your patient.", "In this scenario, you would have found that this patient was bradycardic, bradypnic, hypoxic, and hypotensive, alerting you to a critical patient who needed prompt intervention."],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "required-action-attempt-obtain-sample",
         label: "SAMPLE (if possible)",
         type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-        feedbackAbsent: ["Take an efficient but thorough history from the baby sitter: symptoms, allergies, medications, past medical history, last oral intake, events preceding.", "You would have learned that the child was left unattended on a floating mattress in the pool for 5 minutes, found underwater, and then pulled out of the pool."],
+        feedbackAbsent: ["You should have taken an efficient but thorough SAMPLE history from the baby sitter: Symptoms, Allergies, Medications, Past medical history, Last oral intake, and preceding Events. You would have learned that the child was left unattended on a floating mattress in the pool for 5 minutes, found underwater, and then pulled out of the pool"],
         feedbackOutOfOrder: [""],
         feedbackErrors: [""],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -10795,7 +12078,8 @@ const SC8CP_PhaseIE = {
         feedbackErrors: [""],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }]
@@ -10808,7 +12092,8 @@ const SC8CP_PhaseIE = {
       feedbackErrors: [""],
       examineIfAbsent: false,
       examineIfErrors: false,
-      prompts: "",
+      promptsIfAbsent: "",
+      promptsIfErrors: "",
       subActionsList: true,
       subActions: [{
         id: "head",
@@ -10819,18 +12104,20 @@ const SC8CP_PhaseIE = {
         feedbackErrors: [""],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
-          id: "assessment-inspects-skull",
-          label: "Inspect and palpate the scalp and skull",
+          id: "assessment-head-injury",
+          label: "Check head for injury",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -10842,7 +12129,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -10854,37 +12142,67 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: true,
           subActions: [{
             id: "inspects-eyes-PERRLA",
             label: "for PERRLA",
             feedbackAbsent: ["Checking for PERRLA would have revealed that the patient's pupils were equal but sluggish, suggesting possible intracranial injury and a critically ill patient who needed rapid transfer to a trauma center."],
+            feedbackOutOfOrder: [""],
+            feedbackErrors: [""],
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
+            subActionsList: false,
             subActions: []
           }, {
             id: "inspects-eyes-racoon",
             label: "for bruising ('raccoon eyes')",
             feedbackAbsent: ["This aspect of the exam was normal in this patient but bruising around the eyes may be caused by basilar skull fracture."],
+            feedbackOutOfOrder: [""],
+            feedbackErrors: [""],
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
+            subActionsList: false,
             subActions: []
           }]
         }, {
           id: "inspects-ears",
           label: "Inspect the ears for blood, other fluids, and bruising (\"battle signs\")",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-          feedbackAbsent: ["Although not found in this case, bleeding or CF from the ear may be indicative of a basilar skull fracture. Bruising behind the ear suggests a basilar skull fracture (Battle's sign)."],
+          feedbackAbsent: ["Although not found in this case, bleeding or CF from the ear or bruising behind the ear may be indicative of a basilar skull fracture (Battle's sign)."],
           feedbackOutOfOrder: [""],
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "inspects-ears-blood",
             feedbackAbsent: ["Although not found in this case, bleeding or CF from the ear may be indicative of a basilar skull fracture."],
+            feedbackOutOfOrder: [""],
+            feedbackErrors: [""],
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
+            subActionsList: false,
             subActions: []
           }, {
             id: "inspects-ears-bruising",
             feedbackAbsent: ["Although not found in this case, bruising behind the ear suggests a basilar skull fracture (Battle's sign)."],
+            feedbackOutOfOrder: [""],
+            feedbackErrors: [""],
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
+            subActionsList: false,
             subActions: []
           }]
         }, {
@@ -10896,7 +12214,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -10908,7 +12227,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -10921,7 +12241,8 @@ const SC8CP_PhaseIE = {
         feedbackErrors: [""],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "assessment-neck-injury",
@@ -10932,7 +12253,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -10944,7 +12266,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -10956,7 +12279,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -10968,7 +12292,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -10981,7 +12306,8 @@ const SC8CP_PhaseIE = {
         feedbackErrors: [""],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "assessment-check-breath-sounds",
@@ -10992,7 +12318,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -11004,7 +12331,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -11016,7 +12344,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -11028,21 +12357,43 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "inspects-chest-injury",
             feedbackAbsent: [""],
 
             /* no feedback on excel sheet */
+            feedbackOutOfOrder: [""],
+            feedbackErrors: [""],
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
+            subActionsList: false,
             subActions: []
           }, {
             id: "inspects-palpates-anterior-thorax-crepitation",
             feedbackAbsent: ["If the patient had had anterior thorax and rib crepitation, you should suspect air outside of the lungs, which would raise your suspicion for a pneumothorax."],
+            feedbackOutOfOrder: [""],
+            feedbackErrors: [""],
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
+            subActionsList: false,
             subActions: []
           }, {
             id: "inspects-anterior-thorax-paradoxical-motion",
             feedbackAbsent: ["The patient had symmetric movement of his chest. Recall that paradoxical chest wall motion suggests flail chest, where multiple rib fractures lead to an unstable portion of the chest wall."],
+            feedbackOutOfOrder: [""],
+            feedbackErrors: [""],
+            examineIfAbsent: false,
+            examineIfErrors: false,
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
+            subActionsList: false,
             subActions: []
           }]
         }]
@@ -11055,7 +12406,8 @@ const SC8CP_PhaseIE = {
         feedbackErrors: [""],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "inspects-abdomen-injury",
@@ -11068,7 +12420,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -11080,7 +12433,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -11092,7 +12446,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -11105,7 +12460,8 @@ const SC8CP_PhaseIE = {
         feedbackErrors: [""],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "assessment-checks-pelvis",
@@ -11116,7 +12472,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -11128,7 +12485,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -11141,7 +12499,8 @@ const SC8CP_PhaseIE = {
         feedbackErrors: [""],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "inspects-extremities-injury",
@@ -11154,7 +12513,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "inspects-right-arm-injury",
@@ -11178,7 +12538,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "inspects-right-arm-pulse",
@@ -11206,7 +12567,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "inspects-right-arm-motor-ability",
@@ -11234,7 +12596,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "inspects-right-arm-sensory-function",
@@ -11263,17 +12626,32 @@ const SC8CP_PhaseIE = {
         feedbackErrors: [""],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "inspects-posterior-other-injury",
           feedbackAbsent: [""],
 
           /* no feedback in excel sheet */
+          feedbackOutOfOrder: [""],
+          feedbackErrors: [""],
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
+          subActionsList: false,
           subActions: []
         }, {
           id: "inspects-posterior-step-offs",
           feedbackAbsent: ["A palpable step-off, which the patient did not have, would suggest a fracture."],
+          feedbackOutOfOrder: [""],
+          feedbackErrors: [""],
+          examineIfAbsent: false,
+          examineIfErrors: false,
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
+          subActionsList: false,
           subActions: []
         }]
       }]
@@ -11286,7 +12664,8 @@ const SC8CP_PhaseIE = {
       feedbackErrors: ["How to transfer your patient to the stretcher depends on your level of concern for spinal injury but you should do so with minimal movement to the spine", "Given the low concern for further spinal injury (i.e. the patient was unlikely to have been diving), you could carefully place him directly on the stretcher, with manual c-spine stabilization and a c-collar in place. Alternately, you could use a backboard, scoop stretcher, vacuum mattress, or other device which could be removed after placing the patient on the stretcher.", "Supine position will be required for this patient as he is intubated and in order to properly position the airway."],
       examineIfAbsent: false,
       examineIfErrors: false,
-      prompts: "",
+      promptsIfAbsent: "",
+      promptsIfErrors: "",
       subActionsList: true,
       subActions: [{
         id: "intv-place-on-stretcher-OR-immob-device",
@@ -11297,18 +12676,20 @@ const SC8CP_PhaseIE = {
         feedbackErrors: ["How to transfer your patient to the stretcher depends on your level of concern for spinal injury but you should do so with minimal movement to the spine", "Given the low concern for further spinal injury (i.e. the patient was unlikely to have been diving), you could carefully place him directly on the stretcher, with manual c-spine stabilization and a c-collar in place. Alternately, you could use a backboard, scoop stretcher, vacuum mattress, or other device which could be removed after placing the patient on the stretcher.", "Supine position will be required for this patient as he is intubated and in order to properly position the airway."],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: [{
           id: "intv-place-directly-on-stretcher",
           label: "Transfer the patient directly to a stretcher",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-          feedbackAbsent: [""],
+          feedbackAbsent: ["How to transfer your patient to the stretcher depends on your level of concern for spinal injury but you should do so with minimal movement to the spine", "Given the low concern for further spinal injury (i.e. the patient was unlikely to have been diving), you could carefully place him directly on the stretcher, with manual c-spine stabilization and a c-collar in place. Alternately, you could use a backboard, scoop stretcher, vacuum mattress, or other device which could be removed after placing the patient on the stretcher.", "Supine position will be required for this patient as he is intubated and in order to properly position the airway."],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["How to transfer your patient to the stretcher depends on your level of concern for spinal injury but you should do so with minimal movement to the spine", "Given the low concern for further spinal injury (i.e. the patient was unlikely to have been diving), you could carefully place him directly on the stretcher, with manual c-spine stabilization and a c-collar in place. Alternately, you could use a backboard, scoop stretcher, vacuum mattress, or other device which could be removed after placing the patient on the stretcher.", "Supine position will be required for this patient as he is intubated and in order to properly position the airway."],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -11316,41 +12697,42 @@ const SC8CP_PhaseIE = {
           label: "Transfer patient by first placing him on immobilization device",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.ALT,
           alternativeToIntv: "intv-place-directly-on-stretcher",
-          feedbackAbsent: [""],
+          feedbackAbsent: ["How to transfer your patient to the stretcher depends on your level of concern for spinal injury but you should do so with minimal movement to the spine", "Given the low concern for further spinal injury (i.e. the patient was unlikely to have been diving), you could carefully place him directly on the stretcher, with manual c-spine stabilization and a c-collar in place. Alternately, you could use a backboard, scoop stretcher, vacuum mattress, or other device which could be removed after placing the patient on the stretcher.", "Supine position will be required for this patient as he is intubated and in order to properly position the airway."],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["How to transfer your patient to the stretcher depends on your level of concern for spinal injury but you should do so with minimal movement to the spine", "Given the low concern for further spinal injury (i.e. the patient was unlikely to have been diving), you could carefully place him directly on the stretcher, with manual c-spine stabilization and a c-collar in place. Alternately, you could use a backboard, scoop stretcher, vacuum mattress, or other device which could be removed after placing the patient on the stretcher.", "Supine position will be required for this patient as he is intubated and in order to properly position the airway."],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
       }, {
-        id: "intv-spinal-immobilization-technique-transfer-to-device",
-
-        /* unnecessary intervention */
-        label: "Transfer patient to immobilization device",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.UNNEC,
-        feedbackAbsent: [""],
+        id: "intv-spinal-immobilization-technique-attach-cid",
+        label: "Attach cervical immobilization device (CID)",
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
+        feedbackAbsent: ["Since you should have placed a collar on this patient due to potential head or spinal injury, you should have applied padding (e.g., CID blocks) to maintain stabilization during extrication and transport to the trauma center."],
         feedbackOutOfOrder: [""],
-        feedbackErrors: ["This near-drowning patient who had an unwitnessed event needs cervical spine stabilization and a cervical collar. However, further spinal immobilization is optional, given the low concern for further spinal injury (i.e. the patient was unlikely to have been diving)."],
+        feedbackErrors: [""],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
-        id: "intv-spinal-immobilization-technique-attach-cid",
+        id: "intv-spinal-immobilization-technique-transfer-to-device",
 
-        /* unnecessary intervention */
-        label: "Attach cervical immobilization device (CID)",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.UNNEC,
+        /* optional intervention */
+        label: "Transfer patient to immobilization device",
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.OPT,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["This near-drowning patient who had an unwitnessed event needs cervical spine stabilization and a cervical collar. However, further spinal immobilization is optional, given the low concern for further spinal injury (i.e. the patient was unlikely to have been diving)."],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -11362,7 +12744,8 @@ const SC8CP_PhaseIE = {
         feedbackErrors: [""],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
           id: "reassess-vitals-plus-frequency",
@@ -11373,7 +12756,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: [{
             id: "reassess-vital-signs",
@@ -11384,7 +12768,8 @@ const SC8CP_PhaseIE = {
             feedbackErrors: [""],
             examineIfAbsent: false,
             examineIfErrors: false,
-            prompts: "",
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }, {
@@ -11396,7 +12781,8 @@ const SC8CP_PhaseIE = {
             feedbackErrors: ["Vitals should be reassessed after every intervention and every clinical change, and a critically ill patient should be reassessed every 5 minutes since their condition could deteriorate rapidly."],
             examineIfAbsent: false,
             examineIfErrors: false,
-            prompts: "",
+            promptsIfAbsent: "",
+            promptsIfErrors: "",
             subActionsList: false,
             subActions: []
           }]
@@ -11409,7 +12795,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }, {
@@ -11421,7 +12808,8 @@ const SC8CP_PhaseIE = {
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
-          prompts: "",
+          promptsIfAbsent: "",
+          promptsIfErrors: "",
           subActionsList: false,
           subActions: []
         }]
@@ -11436,7 +12824,8 @@ const SC8CP_PhaseIE = {
         feedbackErrors: ["You could keep the patient warm by removing his wet swimsuit, applying blankets, applying heat packs to his armpits or groin, and turning up the heat in the air ambulance."],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
@@ -11448,117 +12837,141 @@ const SC8CP_PhaseIE = {
         feedbackErrors: [""],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-establish-iv",
         label: "Establish at least one large bore IV en route",
         type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
-        feedbackAbsent: ["All trauma patients should have at least one, ideally two, large-bore IVs placed, even if they do not require fluid resuscitation."],
+        feedbackAbsent: ["All trauma patients should have at least one, ideally two, large bore IVs placed, even if they do not require fluid resuscitation. With pediatric patients, this will likely be 18-, 20-, or 22- gauge IVs."],
         feedbackOutOfOrder: [""],
-        feedbackErrors: ["With a critical patient, you should ideally establish two large bore IV's while en route to the receiving facility, so as not to delay transfer to definitive care.  Establish as large an IV as possible. With pediatric patients, this will likely be 18-, 20-, or 22- gauge IVs."],
+        feedbackErrors: ["With a critical patient, you should ideally establish two large bore IVs while en route to the receiving facility, so as not to delay transfer to definitive care.  With pediatric patients, this will likely be 18-, 20-, or 22- gauge IVs."],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-control-shock-technique-administer-iv-boluses",
 
-        /* unnecessary intervention */
+        /* not indicated intervention */
         label: "IV fluid resuscitation",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.UNNEC,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["While it is true the patient was hypotensive, the reason for his hypotension was his respiratory failure, not hypovolemia. Appropriate management of the patient's airway and breathing would have improved his hypotension without the need for IV fluids. In fact, you should be conservative about fluid resuscitation in a near drowning patient because pulmonary edema would further hinder the patient's respiratory status. In general, when administering fluids to children, you should bolus 20ml/kg at a time to guard against fluid overload."],
         examineIfAbsent: false,
         examineIfErrors: true,
-        prompts: "thought that hypotension should be treated with fluid boluses regardless of etiology",
+        promptsIfAbsent: "",
+        promptsIfErrors: "thought that hypotension should be treated with fluid boluses regardless of etiology",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-apply-sterile-dressings",
 
-        /* contraindicated intervention */
+        /* not indicated intervention */
         label: "Apply sterile dressings",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["The patient did not have any signifcant injuries to the skin."],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-occlusive-dressing",
 
-        /* contraindicated intervention */
+        /* not indicated intervention */
         label: "Occlusive dressing",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["The patient did not have any penetrating injuries."],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
+        subActionsList: false,
+        subActions: []
+      }, {
+        id: "intv-bulky-dressing ",
+
+        /* not indicated intervention */
+        label: "Bulky dressing",
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
+        feedbackAbsent: [""],
+        feedbackOutOfOrder: [""],
+        feedbackErrors: ["This patient did not have any injuries that needed to be stabilized by a bulky dressing."],
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-splint-fracture",
 
-        /* contraindicated intervention */
+        /* not indicated intervention */
         label: "Splint fractures",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["The patient did not have any fractures."],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-sling",
 
-        /* contraindicated intervention */
+        /* not indicated intervention */
         label: "Apply sling",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["The patient did not have any injuries of the upper extremities."],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-prepare-amputated-part",
 
-        /* contraindicated intervention */
+        /* not indicated intervention */
         label: "Prepare amputated part for transport",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["The patient did not have an amputation."],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }, {
         id: "intv-prepare-and-administer-pain-nausea-vomiting-medications",
 
-        /* contraindicated intervention */
+        /* not indicated intervention */
         label: "Prepare and administer medications",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.NOTIND,
         feedbackAbsent: [""],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["This patient is unconscious. Management of life-threatening problems takes precedence, and you should not delay addressing these to manage pain, nausea, vomiting, etc."],
         examineIfAbsent: false,
         examineIfErrors: false,
-        prompts: "",
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
         subActionsList: false,
         subActions: []
       }]
@@ -11568,12 +12981,13 @@ const SC8CP_PhaseIE = {
 
 /***/ }),
 
-/***/ 7686:
+/***/ 7696:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "aggregateLabels": () => (/* binding */ aggregateLabels),
 /* harmony export */   "airAmbulance": () => (/* binding */ airAmbulance),
 /* harmony export */   "airwayAdjunct": () => (/* binding */ airwayAdjunct),
 /* harmony export */   "airwayOpen": () => (/* binding */ airwayOpen),
@@ -11587,6 +13001,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "cSpineCollar": () => (/* binding */ cSpineCollar),
 /* harmony export */   "circulationPressure": () => (/* binding */ circulationPressure),
 /* harmony export */   "circulationTourniquet": () => (/* binding */ circulationTourniquet),
+/* harmony export */   "comprises": () => (/* binding */ comprises),
 /* harmony export */   "conditionalConstraints": () => (/* binding */ conditionalConstraints),
 /* harmony export */   "criticalInterventions": () => (/* binding */ criticalInterventions),
 /* harmony export */   "decompression": () => (/* binding */ decompression),
@@ -11610,20 +13025,61 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "neutral": () => (/* binding */ neutral),
 /* harmony export */   "notAllowed": () => (/* binding */ notAllowed),
 /* harmony export */   "onStretcher": () => (/* binding */ onStretcher),
+/* harmony export */   "opqrstToStep": () => (/* binding */ opqrstToStep),
 /* harmony export */   "oxygenated": () => (/* binding */ oxygenated),
 /* harmony export */   "patientPositionPlacement": () => (/* binding */ patientPositionPlacement),
 /* harmony export */   "receivingFacilityReply": () => (/* binding */ receivingFacilityReply),
+/* harmony export */   "sampleToStep": () => (/* binding */ sampleToStep),
 /* harmony export */   "scenarioConstraintIDs": () => (/* binding */ scenarioConstraintIDs),
 /* harmony export */   "shockWarming": () => (/* binding */ shockWarming),
 /* harmony export */   "spineStable": () => (/* binding */ spineStable),
 /* harmony export */   "vitalChecks": () => (/* binding */ vitalChecks),
 /* harmony export */   "vitalsCheckFeedbackID": () => (/* binding */ vitalsCheckFeedbackID),
 /* harmony export */   "vitalsCheckFeedbackLabel": () => (/* binding */ vitalsCheckFeedbackLabel),
-/* harmony export */   "vitalsTakenDueToAssessmentSteps": () => (/* binding */ vitalsTakenDueToAssessmentSteps),
+/* harmony export */   "vitalsFeedback": () => (/* binding */ vitalsFeedback),
+/* harmony export */   "vitalsToStep": () => (/* binding */ vitalsToStep),
 /* harmony export */   "woundState": () => (/* binding */ woundState)
 /* harmony export */ });
-// defines which assessment steps are not required per scenario.  Provides feedback on
+// define KR aggregates: if any in array exist as 2nd args can remove the individuals and call them by the aggregate label
+// only one entry so far because the section definitions suffice for the rest
+const aggregateLabels = {
+  "the primary survey": ["primary-survey"],
+  "the ABCs": ["airway", "breathing", "circulation"],
+  "the secondary survey": ["secondary-assessment", "head", "neck", "chest", "abdomen-pelvis", "assess-pelvis", "extremities", "posterior"]
+}; // defines what set of assessments can comprise an assessment step.  The key is the assessement step and the
+// value is an array of the assessments that can comprise it.  Use this to infer if we can infer the step 
+// should be counted as completed
+// set up with a list of alternative contexts that could occur, any of which would count as allowing the inference
+
+const comprises = {
+  "required-action-obtains-vitals": {
+    type: "initial vitals",
+    prepend: "request-vitals",
+    op: "and",
+    args: ["P", "R", "BP", "SpO2"]
+  },
+  "required-action-attempt-obtain-sample": {
+    type: "sample",
+    prepend: "request-sample",
+    op: "or",
+    args: ["S", "A", "M", "P", "L", "E"]
+  },
+  "required-action-obtain-OPQRST": {
+    type: "opqrst",
+    prepend: "request-opqrst",
+    op: "or",
+    args: ["O", "P", "Q", "R", "S", "T"]
+  },
+  "reassess-vital-signs": {
+    type: "reassessment vitals",
+    prepend: "request-vitals",
+    op: "and",
+    args: []
+  } //args for reassessment vitals are scenario specific and will be supplied at runtime
+
+}; // defines which assessment steps are not required per scenario.  Provides feedback on
 // why the step is not required.
+
 const exceptionDefs = [{
   scenarioName: "M2CA",
   exceptions: [//there is a bystander but wouldn't know about any earlier pain before accident
@@ -11672,6 +13128,7 @@ const globalConstraints = {
   // be combined in the list below, there is an issue with adding in scenario specific conditional constraints
   // that are expressed in a different structure.
   //"": {id: "T", before: [""], beforeOp: "", after: [], afterOp: "", type: "policy"},
+  //just added beforeLabel field and not yet using in the analysis 1/8/23 - PWJ
   // T1
   "scene-size-up": {
     id: "T1",
@@ -11682,220 +13139,79 @@ const globalConstraints = {
     type: "nonLeaf"
   },
   // T2
-  "primary-survey": {
-    id: "T2a",
-    before: ["secondary-assessment"],
+  "abdomen-pelvis": {
+    id: "T2",
+    before: [],
     beforeOp: "",
-    after: [],
-    afterOp: "",
+    after: ["primary-survey", "intv-open-airway-method-head-tilt", "intv-open-airway-method-modified-jaw-thrust", "intv-manual-finger-sweep", "intv-magill-forceps-assisted", "intv-heimlich-maneuver", "intv-back-blows-and-chest-thrusts", "intv-needle-cricothyrotomy", "intv-surgical-cricothyrotomy", "intv-control-severe-bleeding-technique-pack-wound-with-gauze", "intv-position-patient", "intv-control-severe-bleeding-technique-direct-pressure", "intv-control-severe-bleeding-technique-2nd-tourniquet", "intv-control-severe-bleeding-technique-tourniquet", "intv-control-severe-bleeding-technique-pressure-bandage", "intv-insert-advanced-airway", "intv-sedation-assisted-intubation", "intv-nasotracheal-intubation", "intv-orotracheal-intubation"],
+    afterOp: "and",
     type: "nonLeaf"
   },
-  //listing the below any intervention that I think are always going to address a life threat
-  "intv-open-airway-method-head-tilt": {
-    id: "T2.1",
-    before: ["secondary-assessment"],
+  "assess-pelvis": {
+    id: "T2",
+    before: [],
     beforeOp: "",
-    after: [],
-    afterOp: "",
-    type: "leafI"
+    after: ["primary-survey", "intv-open-airway-method-head-tilt", "intv-open-airway-method-modified-jaw-thrust", "intv-manual-finger-sweep", "intv-magill-forceps-assisted", "intv-heimlich-maneuver", "intv-back-blows-and-chest-thrusts", "intv-needle-cricothyrotomy", "intv-surgical-cricothyrotomy", "intv-control-severe-bleeding-technique-pack-wound-with-gauze", "intv-position-patient", "intv-control-severe-bleeding-technique-direct-pressure", "intv-control-severe-bleeding-technique-2nd-tourniquet", "intv-control-severe-bleeding-technique-tourniquet", "intv-control-severe-bleeding-technique-pressure-bandage", "intv-insert-advanced-airway", "intv-sedation-assisted-intubation", "intv-nasotracheal-intubation", "intv-orotracheal-intubation"],
+    afterOp: "and",
+    type: "nonLeaf"
   },
-  "intv-open-airway-method-modified-jaw-thrust": {
-    id: "T2.2",
-    before: ["secondary-assessment"],
+  "extremities": {
+    id: "T2",
+    before: [],
     beforeOp: "",
-    after: [],
-    afterOp: "",
-    type: "leafI"
+    after: ["primary-survey", "intv-open-airway-method-head-tilt", "intv-open-airway-method-modified-jaw-thrust", "intv-manual-finger-sweep", "intv-magill-forceps-assisted", "intv-heimlich-maneuver", "intv-back-blows-and-chest-thrusts", "intv-needle-cricothyrotomy", "intv-surgical-cricothyrotomy", "intv-control-severe-bleeding-technique-pack-wound-with-gauze", "intv-position-patient", "intv-control-severe-bleeding-technique-direct-pressure", "intv-control-severe-bleeding-technique-2nd-tourniquet", "intv-control-severe-bleeding-technique-tourniquet", "intv-control-severe-bleeding-technique-pressure-bandage", "intv-insert-advanced-airway", "intv-sedation-assisted-intubation", "intv-nasotracheal-intubation", "intv-orotracheal-intubation"],
+    afterOp: "and",
+    type: "nonLeaf"
   },
-  // T2.3 see T13 
-  "intv-manual-finger-sweep": {
-    id: "T2.4",
-    before: ["secondary-assessment"],
+  "posterior": {
+    id: "T2",
+    before: [],
     beforeOp: "",
-    after: [],
-    afterOp: "",
-    type: "leafI"
-  },
-  "intv-magill-forceps-assisted": {
-    id: "T2.5",
-    before: ["secondary-assessment"],
-    beforeOp: "",
-    after: [],
-    afterOp: "",
-    type: "leafI"
-  },
-  "intv-heimlich-maneuver": {
-    id: "T2.6",
-    before: ["secondary-assessment"],
-    beforeOp: "",
-    after: [],
-    afterOp: "",
-    type: "leafI"
-  },
-  "intv-back-blows-and-chest-thrusts": {
-    id: "T2.7",
-    before: ["secondary-assessment"],
-    beforeOp: "",
-    after: [],
-    afterOp: "",
-    type: "leafI"
-  },
-  // T2.8 see T28.a
-  // T2.9 see T28.b
-  "intv-needle-cricothyrotomy": {
-    id: "T2.10",
-    before: ["secondary-assessment"],
-    beforeOp: "",
-    after: [],
-    afterOp: "",
-    type: "leafI"
-  },
-  "intv-surgical-cricothyrotomy": {
-    id: "T2.11",
-    before: ["secondary-assessment"],
-    beforeOp: "",
-    after: [],
-    afterOp: "",
-    type: "leafI"
-  },
-  // T2.12 see T29 
-  // T2.13 see T30
-  // T2.14 see T17
-  "intv-control-severe-bleeding-technique-pack-wound-with-gauze": {
-    id: "T2.15",
-    before: ["secondary-assessment"],
-    beforeOp: "",
-    after: [],
-    afterOp: "",
-    type: "leafI"
-  },
-  "intv-control-severe-bleeding-technique-load-and-go": {
-    id: "T2.16",
-    before: ["secondary-assessment"],
-    beforeOp: "",
-    after: [],
-    afterOp: "",
-    type: "leafI"
-  },
-  "intv-control-shock-technique-place-patient-supine-position": {
-    id: "T2.17",
-    before: ["secondary-assessment"],
-    beforeOp: "",
-    after: [],
-    afterOp: "",
-    type: "leafI"
-  },
-  "intv-occlusive-dressing": {
-    id: "T2.18",
-    before: ["secondary-assessment"],
-    beforeOp: "",
-    after: [],
-    afterOp: "",
-    type: "leafI"
-  },
-  // T2.19 see T34
-  // T2.20 see T10
-  "intv-control-severe-bleeding-technique-direct-pressure": {
-    id: "T2.21",
-    before: ["secondary-assessment"],
-    beforeOp: "",
-    after: [],
-    afterOp: "",
-    type: "leafI"
-  },
-  "intv-control-severe-bleeding-technique-2nd-tourniquet": {
-    id: "T2.22",
-    before: ["secondary-assessment"],
-    beforeOp: "",
-    after: [],
-    afterOp: "",
-    type: "leafI"
-  },
-  "intv-control-severe-bleeding-technique-tourniquet": {
-    id: "T2.23",
-    before: ["secondary-assessment"],
-    beforeOp: "",
-    after: [],
-    afterOp: "",
-    type: "leafI"
-  },
-  "intv-control-severe-bleeding-technique-pressure-bandage": {
-    id: "T2.24",
-    before: ["secondary-assessment"],
-    beforeOp: "",
-    after: [],
-    afterOp: "",
-    type: "leafI"
-  },
-  "intv-insert-advanced-airway": {
-    id: "T2.25",
-    before: ["secondary-assessment"],
-    beforeOp: "",
-    after: [],
-    afterOp: "",
-    type: "leafI"
-  },
-  "intv-sedation-assisted-intubation": {
-    id: "T2.26",
-    before: ["secondary-assessment"],
-    beforeOp: "",
-    after: [],
-    afterOp: "",
-    type: "leafI"
-  },
-  "intv-nasotracheal-intubation": {
-    id: "T2.27",
-    before: ["secondary-assessment"],
-    beforeOp: "",
-    after: [],
-    afterOp: "",
-    type: "leafI"
-  },
-  "intv-orotracheal-intubation": {
-    id: "T2.28",
-    before: ["secondary-assessment"],
-    beforeOp: "",
-    after: [],
-    afterOp: "",
-    type: "leafI"
+    after: ["primary-survey", "intv-open-airway-method-head-tilt", "intv-open-airway-method-modified-jaw-thrust", "intv-manual-finger-sweep", "intv-magill-forceps-assisted", "intv-heimlich-maneuver", "intv-back-blows-and-chest-thrusts", "intv-needle-cricothyrotomy", "intv-surgical-cricothyrotomy", "intv-control-severe-bleeding-technique-pack-wound-with-gauze", "intv-position-patient", "intv-control-severe-bleeding-technique-direct-pressure", "intv-control-severe-bleeding-technique-2nd-tourniquet", "intv-control-severe-bleeding-technique-tourniquet", "intv-control-severe-bleeding-technique-pressure-bandage", "intv-insert-advanced-airway", "intv-sedation-assisted-intubation", "intv-nasotracheal-intubation", "intv-orotracheal-intubation"],
+    afterOp: "and",
+    type: "nonLeaf"
   },
   // T3
   "ints-call-for-helicopter": {
-    id: "T3.1",
-    before: ["secondary-assessment"],
-    beforeOp: "",
+    id: "T3",
+    before: ["abdomen-pelvis", "assess-pelvis", "extremities", "posterior"],
+    beforeLabel: "secondary assessment",
+    beforeOp: "and",
     after: [],
     afterOp: "",
     type: "leafI"
   },
   "intv-call-for-air-ambulance": {
-    id: "T3.2",
-    before: ["secondary-assessment"],
-    beforeOp: "",
+    id: "T3",
+    before: ["abdomen-pelvis", "assess-pelvis", "extremities", "posterior"],
+    beforeLabel: "secondary assessment",
+    beforeOp: "and",
     after: [],
     afterOp: "",
     type: "leafI"
   },
   // T4
-  //"required-action-obtains-vitals": {id: "T4", before: ["secondary-assessment"], beforeOp: "", after: [], afterOp: "", type: "leafA"},
+  //"required-action-obtains-vitals": {id: "T4", before: ["abdomen-pelvis","assess-pelvis","extremities","posterior"], beforeLabel: "secondary assessment", beforeOp: "and", after: [], afterOp: "", type: "leafA"},
   // T5
-  //"required-action-attempt-obtain-sample": {id: "T5", before: ["secondary-assessment"], beforeOp: "", after: [], afterOp: "", type: "leafA"},
+  //"required-action-attempt-obtain-sample": {id: "T5", before: ["abdomen-pelvis","assess-pelvis","extremities","posterior"], beforeLabel: "secondary assessment", beforeOp: "and", after: [], afterOp: "", type: "leafA"},
   // T6 
-  //"required-action-obtain-OPQRST": {id: "T6", before: ["secondary-assessment"], beforeOp: "", after: [], afterOp: "", type: "leafA"},
+  //"required-action-obtain-OPQRST": {id: "T6", before: ["abdomen-pelvis","assess-pelvis","extremities","posterior"], beforeLabel: "secondary assessment", beforeOp: "and", after: [], afterOp: "", type: "leafA"},
   // T7
   "intv-transport": {
     id: "T7",
-    before: ["secondary-assessment"],
-    beforeOp: "",
+    before: ["abdomen-pelvis", "assess-pelvis", "extremities", "posterior"],
+    beforeLabel: "secondary assessment",
+    beforeOp: "and",
     after: ["airway", "breathing", "circulation"],
-    afterOp: "",
+    afterOp: "and",
     type: "leafI"
   },
   // T8
-  "trauma-expose": {
+  "exposes-body-parts": {
     id: "T8",
-    before: ["secondary-assessment"],
-    beforeOp: "",
+    before: ["abdomen-pelvis", "assess-pelvis", "extremities", "posterior"],
+    beforeLabel: "secondary assessment",
+    beforeOp: "and",
     after: [],
     afterOp: "",
     type: "leafA"
@@ -11913,6 +13229,7 @@ const globalConstraints = {
   "intv-spinal-immobilization-technique-manual-c-spine": {
     id: "T10-T27",
     before: ["airway", "breathing", "circulation", "intv-spinal-immobilization-technique-cervical-collar"],
+    beforeLabel: "",
     beforeOp: "and",
     after: [],
     afterOp: "",
@@ -11923,27 +13240,29 @@ const globalConstraints = {
   // T13 
   "intv-airway-patency-technique-suction-airway": {
     id: "T13",
-    before: ["secondary-assessment"],
-    beforeOp: "",
+    before: ["abdomen-pelvis", "assess-pelvis", "extremities", "posterior"],
+    beforeLabel: "secondary assessment",
+    beforeOp: "and",
     after: [],
     afterOp: "",
     type: "leafI"
   },
   // T14  deleted
-  //"intv-airway-patency-technique-suction-airway": {id: "14", before: ["intv-oropharyngeal-airway", "intv-nasopharyngeal-airway"], beforeOp: "", after: ["airway"], afterOp: "", type: "leafI"},
+  //"intv-airway-patency-technique-suction-airway": {id: "14", before: ["intv-oropharyngeal-airway", "intv-nasopharyngeal-airway"], beforeLabel: "", beforeOp: "and", after: ["airway"], afterOp: "", type: "leafI"},
   // T15  deleted
 
-  /* "intv-oropharyngeal-airway": {id: "T15a", before: ["intv-nasotracheal-intubation", "intv-orotracheal-intubation", "intv-sedation-assisted-intubation", 
+  /* "intv-oropharyngeal-airway": {id: "T15", before: ["intv-nasotracheal-intubation", "intv-orotracheal-intubation", "intv-sedation-assisted-intubation", 
                                 "intv-rapid-sequence-intubation"], beforeOp: "or", after: [], afterOp: "", type: "leafI"},
-  "intv-nasopharyngeal-airway": {id: "T15b", before: ["intv-nasotracheal-intubation", "intv-orotracheal-intubation", "intv-sedation-assisted-intubation", 
+  "intv-nasopharyngeal-airway": {id: "T15", before: ["intv-nasotracheal-intubation", "intv-orotracheal-intubation", "intv-sedation-assisted-intubation", 
                                 "intv-rapid-sequence-intubation"], beforeOp: "or", after: [], afterOp: "", type: "leafI"},
   */
   // T16 awaiting observer interface implementation decisions on how contacting medical command will be recorded
   // T17
   "intv-ventilation-technique-bag-valve-mask": {
     id: "T17",
-    before: ["secondary-assessment"],
-    beforeOp: "",
+    before: ["abdomen-pelvis", "assess-pelvis", "extremities", "posterior"],
+    beforeLabel: "secondary assessment",
+    beforeOp: "and",
     after: [],
     afterOp: "",
     type: "leafI"
@@ -11953,17 +13272,19 @@ const globalConstraints = {
   // T27 see T10
   // T28
   "intv-oropharyngeal-airway": {
-    id: "T28.1",
-    before: ["secondary-assessment"],
-    beforeOp: "",
+    id: "T28",
+    before: ["abdomen-pelvis", "assess-pelvis", "extremities", "posterior"],
+    beforeLabel: "secondary assessment",
+    beforeOp: "and",
     after: [],
     afterOp: "",
     type: "leafI"
   },
   "intv-nasopharyngeal-airway": {
-    id: "T28.2",
-    before: ["secondary-assessment"],
-    beforeOp: "",
+    id: "T28",
+    before: ["abdomen-pelvis", "assess-pelvis", "extremities", "posterior"],
+    beforeLabel: "secondary assessment",
+    beforeOp: "and",
     after: [],
     afterOp: "",
     type: "leafI"
@@ -11971,8 +13292,9 @@ const globalConstraints = {
   // T29
   "intv-supplemental-oxygen-device-nasal-cannula": {
     id: "T29",
-    before: ["secondary-assessment"],
-    beforeOp: "",
+    before: ["abdomen-pelvis", "assess-pelvis", "extremities", "posterior"],
+    beforeLabel: "secondary assessment",
+    beforeOp: "and",
     after: [],
     afterOp: "",
     type: "leafI"
@@ -11980,8 +13302,9 @@ const globalConstraints = {
   // T30
   "intv-supplemental-oxygen-device-non-rebreather-mask": {
     id: "T30",
-    before: ["secondary-assessment"],
-    beforeOp: "",
+    before: ["abdomen-pelvis", "assess-pelvis", "extremities", "posterior"],
+    beforeLabel: "secondary assessment",
+    beforeOp: "and",
     after: [],
     afterOp: "",
     type: "leafI"
@@ -11989,19 +13312,13 @@ const globalConstraints = {
   // T34
   "intv-pleural-decompression": {
     id: "T34",
-    before: ["secondary-assessment"],
-    beforeOp: "",
+    before: ["abdomen-pelvis", "assess-pelvis", "extremities", "posterior"],
+    beforeLabel: "secondary assessment",
+    beforeOp: "and",
     after: [],
     afterOp: "",
     type: "leafI"
-  } //used during testing
-  //state that ongoing management plan should go after the entirety of everything listed in after
-  //"ongoing-mgmt-plan": {id: "c2", before: [ ], beforeOp: "", after: ["bsi", "scene-size-up", "primary-survey", "history-taking","secondary-assessment"], afterOp: "and", type: "commonSense"},
-  // have two second args in below because some of Observer logs have one of these ids and some have the other
-  //"assess-injury-mechanism": {id: "c7", before: ["required-action-consider-stabilization-of-spine", "required-action-considers-stabilize-spine"], beforeOp: "or", after: [], afterOp: "", type: "commonSense"},
-  //"intv-control-severe-bleeding-technique-direct-pressure": {id: "c8", before: ["intv-control-severe-bleeding-technique-tourniquet"], beforeOp: "", after: [], afterOp: "", type: "both"},
-  //"intv-control-severe-bleeding-technique-tourniquet": {id: "c9", before: ["intv-control-severe-bleeding-technique-2nd-tourniquet"], beforeOp: "", after: [], afterOp: "", type: "both"},
-
+  }
 }; //constraints that depend on whether certain conditions hold within a scenario
 //based on the scenario and the constraint ids listed under the scenario in
 //scenarioConstraintIDs, the constaints defined here with the ids for the current
@@ -12034,9 +13351,7 @@ const conditionalConstraints = {
     afterOp: "",
     type: "leafA"
   }
-}; //pre-post test problems: M2CA, B7CA, B1CA, M1CA  (need data filled out in order to grade but don't need at time of running experiments w/ students)
-//training problems: B4CA, B5CA, C5CA, SC8CP
-// used to simulate conditional constraints, i.e. we hardcode which conditional constraint ids as
+}; // used to simulate conditional constraints, i.e. we hardcode which conditional constraint ids as
 // defined under conditionalConstraints (above) are relevant to each scenario
 // although one could put global constraint ids under scenarios here, it would be redundant and may cause software
 // issues
@@ -12051,9 +13366,7 @@ const scenarioConstraintIDs = {
   "B1CA": [],
   "M1CA": [],
   "M2CA": ["T12-c1"],
-  "B7CA": [] //"": [],
-  //"": []
-
+  "B7CA": []
 }; //below are examples of interventions in which status should be checked.  The key intvStatusNeeded
 //is true or false.  If true it means should have requested status of this intervention.  If vitals key is
 //not empty then should have checked all of these vitals as well.  Will only check entries after an intervention
@@ -12063,11 +13376,11 @@ const scenarioConstraintIDs = {
 
 const intvChecks = {
   "intv-open-airway-method-head-tilt": {
-    intvStatusNeeded: true,
+    intvStatusNeeded: false,
     vitalsNeeded: []
   },
   "intv-open-airway-method-modified-jaw-thrust": {
-    intvStatusNeeded: true,
+    intvStatusNeeded: false,
     vitalsNeeded: []
   },
   "intv-airway-patency-technique-suction-airway": {
@@ -12212,7 +13525,7 @@ const globalReassessmentKn = {
     vitalLabels: ["BP", "P", "R", "SpO2"],
     requiredVitals: "BP, P, R, and SpO2",
     systems: "breathing",
-    criticalInterventions: "high flow O2 with NRM or assisted BVM ventilation, needle decompression and an occlusive dressing"
+    criticalInterventions: "high flow O2 with NRM or nasal cannula, needle decompression and an occlusive dressing"
   },
   "C5CA": {
     vitalLabels: ["BP", "P", "R", "SpO2"],
@@ -12231,40 +13544,46 @@ const globalReassessmentKn = {
     vitalLabels: ["BP", "P", "R", "SpO2"],
     requiredVitals: "BP, P, R, and SpO2",
     systems: "breathing",
-    criticalInterventions: "NPA, BVM ventilation with high flow O2, tension pneumothorax, and needle decompression"
+    criticalInterventions: "NPA, BVM ventilation with high flow O2, and needle decompression with an occlusive dressing"
   },
   "M1CA": {
     vitalLabels: ["BP", "P", "R", "SpO2", "ETCO2"],
     requiredVitals: "BP, P, R, SpO2 and ETCO2",
     systems: "airway and circulation",
-    criticalInterventions: "occlusive dressing on neck wound, basic airway maneuver, an NPA, intubation, and BVM ventilation with high flow O2"
+    criticalInterventions: "occlusive dressing on neck wound, basic airway maneuver, an NPA, BVM ventilation with high flow O2 and IV fluids en route"
   },
   "M2CA": {
     vitalLabels: ["BP", "P", "R", "SpO2", "ETCO2"],
     requiredVitals: "BP, P, R, SpO2 and ETCO2",
     systems: "airway, breathing and circulation",
-    criticalInterventions: "direct pressure, a tourniquet, basic airway maneuver, intubation, an NPA, BVM ventilation with high flow O2, a large bore IV and IV fluids en route to maintain SBP >= 90"
+    criticalInterventions: "direct pressure, a tourniquet, basic airway maneuver, intubation, an NPA or OPA, BVM ventilation with high flow O2, a large bore IV and IV fluids en route to maintain SBP >= 90"
   },
   "B7CA": {
     vitalLabels: ["BP", "P", "R", "SpO2"],
     requiredVitals: "BP, P, R, and SpO2",
-    systems: "breathingd",
-    criticalInterventions: "supplemental O2 via NRM, pleural decompression and an occlusive dressing to the entrance wound "
+    systems: "breathing",
+    criticalInterventions: "supplemental O2 via NRM or nasal cannula, pleural decompression and an occlusive dressing to the entrance wound "
   }
 };
 const globalReassessmentFeedback = {
-  good: "This patient had several abnormal baseline vitals—most notably @requiredVitals +bos  The patient needed @criticalInterventions +bos You correctly checked for improvement in these vitals to ensure that the patient's @systems was adequately managed +eos",
-  errors: "This patient had several abnormal baseline vitals—most notably @requiredVitals +bos  The patient needed @criticalInterventions +bos You should have checked for improvement in all of these vitals to ensure that the patient's @systems was adequately managed +bos You missed checking @notDone +eos",
-  absent: "This patient had several abnormal baseline vitals—most notably @requiredVitals +bos  The patient needed @criticalInterventions +bos You should have checked for improvement in these vitals to ensure that the patient's @systems was adequately managed +eos"
+  good: "This patient had several abnormal baseline vitals-most notably @requiredVitals +bos The patient needed @criticalInterventions +bos You correctly checked an initial set of these vitals and then checked that they improved to ensure that the patient's @systems was adequately managed +eos",
+  errors: "This patient had several abnormal baseline vitals-most notably @requiredVitals +bos The patient needed @criticalInterventions +bos You should have taken an initial set of these vitals and then checked that they improved to ensure that the patients @systems was adequately managed +bos You missed fully checking @notDone +eos",
+  absent: "This patient had several abnormal baseline vitals-most notably @requiredVitals +bos The patient needed @criticalInterventions +bos You should have taken an initial set of these vitals and then checked that they improved to ensure that the patients @systems was adequately managed +eos"
+};
+const vitalsFeedback = {
+  good: "You correctly obtained an initial reading for the vital(s) @done +eos",
+  errors: "You correctly obtained an initial reading for the vital(s) @done but you should have also done so for the vital(s) @notDone +eos",
+  absent: "You should always obtain an initial reading for the vitals @notDone +eos"
 }; //vitals that can be inferred to have been taken due to an
 //assessment step.  However, for assessment steps the findings
 //are not actual taking of vitals but a quick subjective impression
+//so this is no longer in use.
 //at top level [] read as an "or"
 //at next level [] read as an "and"
 // no longer fully in use.  Only indicates which id relates to which vital
 // at this point
 
-const vitalsTakenDueToAssessmentSteps = {
+const vitalsToStep = {
   "GCS": [//["assess-loc"], ["required-action-obtains-vitals"],
   ["request-vitals-GCS"]],
   "Pain": [//["assess-loc"], ["required-action-obtains-vitals"], 
@@ -12282,9 +13601,26 @@ const vitalsTakenDueToAssessmentSteps = {
   "ETCO2": [//["required-action-obtains-vitals"], 
   ["request-vitals-ETCO2"]],
   "SpO2": [//["required-action-obtains-vitals"], 
-  ["request-vitals-Spo2"]],
+  ["request-vitals-SpO2"], ["request-vitals-Spo2"]],
+  //in some places I saw SpO2 and some Spo2 so putting in both
   "Temp": [//["required-action-obtains-vitals"], 
   ["request-vitals-Temp"]]
+};
+const sampleToStep = {
+  "S": [["request-sample-S"]],
+  "A": [["request-sample-A"]],
+  "M": [["request-sample-M"]],
+  "P": [["request-sample-P"]],
+  "L": [["request-sample-L"]],
+  "E": [["request-sample-E"]]
+};
+const opqrstToStep = {
+  "O": [["request-opqrst-O"]],
+  "P": [["request-opqrst-P"]],
+  "Q": [["request-opqrst-Q"]],
+  "R": [["request-opqrst-R"]],
+  "S": [["request-opqrst-S"]],
+  "T": [["request-opqrst-T"]]
 }; //per scenario sets of interventions that satisfy completion of critical actions for that scenario
 // to update vitals wholesale
 
@@ -12293,14 +13629,14 @@ const criticalInterventions = {
   "B3NA (practice)": [],
   //training scenarios
   B4CA: [["intv-supplemental-oxygen-device-nasal-cannula"], ["intv-supplemental-oxygen-device-non-rebreather-mask"]],
-  B5CA: [["intv-supplemental-oxygen-device-non-rebreather-mask", "intv-occlusive-dressing", "intv-pleural-decompression"]],
+  B5CA: [["intv-supplemental-oxygen-device-nasal-cannula", "intv-occlusive-dressing", "intv-pleural-decompression"], ["intv-supplemental-oxygen-device-non-rebreather-mask", "intv-occlusive-dressing", "intv-pleural-decompression"]],
   C5CA: [["intv-control-severe-bleeding-technique-direct-pressure", "intv-control-severe-bleeding-technique-tourniquet", "intv-nasopharyngeal-airway", "intv-ventilation-technique-bag-valve-mask", "intv-control-shock-technique-administer-iv-boluses"]],
-  SC8CP: [["intv-open-airway-method-modified-jaw-thrust", "intv-airway-patency-technique-suction-airway", "intv-oropharyngeal-airway", "intv-orotracheal-intubation", "intv-ventilation-technique-bag-valve-mask"], ["intv-open-airway-method-modified-jaw-thrust", "intv-airway-patency-technique-suction-airway", "intv-nasopharyngeal-airway", "intv-orotracheal-intubation", "intv-ventilation-technique-bag-valve-mask"]],
+  SC8CP: [["intv-airway-patency-technique-suction-airway", "intv-oropharyngeal-airway", "intv-orotracheal-intubation", "intv-ventilation-technique-bag-valve-mask"], ["intv-airway-patency-technique-suction-airway", "intv-oropharyngeal-airway", "intv-nasotracheal-intubation", "intv-ventilation-technique-bag-valve-mask"], ["intv-airway-patency-technique-suction-airway", "intv-oropharyngeal-airway", "intv-insert-advanced-airway", "intv-ventilation-technique-bag-valve-mask"], ["intv-airway-patency-technique-suction-airway", "intv-nasopharyngeal-airway", "intv-orotracheal-intubation", "intv-ventilation-technique-bag-valve-mask"], ["intv-airway-patency-technique-suction-airway", "intv-nasopharyngeal-airway", "intv-nasotracheal-intubation", "intv-ventilation-technique-bag-valve-mask"], ["intv-airway-patency-technique-suction-airway", "intv-nasopharyngeal-airway", "intv-insert-advanced-airway", "intv-ventilation-technique-bag-valve-mask"]],
   //test scenarios
-  B1CA: [["intv-nasopharyngeal-airway", "intv-ventilation-technique-bag-valve-mask", "intv-pleural-decompression"]],
-  M1CA: [["intv-occlusive-dressing", "intv-control-shock-technique-administer-iv-boluses", "intv-orotracheal-intubation", "intv-ventilation-technique-bag-valve-mask"], ["intv-occlusive-dressing", "intv-control-shock-technique-administer-iv-boluses", "intv-sedated-intubation", "intv-ventilation-technique-bag-valve-mask"]],
-  M2CA: [["intv-control-severe-bleeding-technique-direct-pressure", "intv-control-severe-bleeding-technique-tourniquet", "intv-open-airway-method-modified-jaw-thrust", "intv-orotracheal-intubation", "intv-ventilation-technique-bag-valve-mask", "intv-control-shock-technique-administer-iv-boluses"], ["intv-control-severe-bleeding-technique-direct-pressure", "intv-control-severe-bleeding-technique-tourniquet", "intv-open-airway-method-modified-jaw-thrust", "intv-sedated-intubation", "intv-ventilation-technique-bag-valve-mask", "intv-control-shock-technique-administer-iv-boluses"]],
-  B7CA: [["intv-supplemental-oxygen-device-non-rebreather-mask", "intv-pleural-decompression", "intv-occlusive-dressing"]]
+  B1CA: [["intv-nasopharyngeal-airway", "intv-ventilation-technique-bag-valve-mask", "intv-pleural-decompression", "intv-occlusive-dressing"]],
+  M1CA: [["intv-occlusive-dressing", "intv-nasopharyngeal-airway", "intv-control-shock-technique-administer-iv-boluses", "intv-ventilation-technique-bag-valve-mask"]],
+  M2CA: [["intv-control-severe-bleeding-technique-direct-pressure", "intv-control-severe-bleeding-technique-tourniquet", "intv-nasopharyngeal-airway", "intv-orotracheal-intubation", "intv-ventilation-technique-bag-valve-mask", "intv-control-shock-technique-administer-iv-boluses"], ["intv-control-severe-bleeding-technique-direct-pressure", "intv-control-severe-bleeding-technique-tourniquet", "intv-nasopharyngeal-airway", "intv-nasotracheal-intubation", "intv-ventilation-technique-bag-valve-mask", "intv-control-shock-technique-administer-iv-boluses"], ["intv-control-severe-bleeding-technique-direct-pressure", "intv-control-severe-bleeding-technique-tourniquet", "intv-nasopharyngeal-airway", "intv-insert-advanced-airway", "intv-ventilation-technique-bag-valve-mask", "intv-control-shock-technique-administer-iv-boluses"], ["intv-control-severe-bleeding-technique-direct-pressure", "intv-control-severe-bleeding-technique-tourniquet", "intv-oropharyngeal-airway", "intv-orotracheal-intubation", "intv-ventilation-technique-bag-valve-mask", "intv-control-shock-technique-administer-iv-boluses"], ["intv-control-severe-bleeding-technique-direct-pressure", "intv-control-severe-bleeding-technique-tourniquet", "intv-oropharyngeal-airway", "intv-nasotracheal-intubation", "intv-ventilation-technique-bag-valve-mask", "intv-control-shock-technique-administer-iv-boluses"], ["intv-control-severe-bleeding-technique-direct-pressure", "intv-control-severe-bleeding-technique-tourniquet", "intv-oropharyngeal-airway", "intv-insert-advanced-airway", "intv-ventilation-technique-bag-valve-mask", "intv-control-shock-technique-administer-iv-boluses"]],
+  B7CA: [["intv-supplemental-oxygen-device-non-rebreather-mask", "intv-pleural-decompression", "intv-occlusive-dressing"], ["intv-supplemental-oxygen-device-nasal-cannula", "intv-pleural-decompression", "intv-occlusive-dressing"]]
 }; //could create a set of default good values but sounds like will
 //want to customize the descriptive text per scenario (and may not
 //always want the completely good value as an effect)
@@ -12319,7 +13655,7 @@ const criticalInterventions = {
 ], 
 */
 //what assessment findings to update due to interventions
-//rules per table in document Updating.Assessment.Values.in.Response.to.Interventions-9-24
+//rules per table in document Updating.callouts.after.interventions-v4 
 
 const intvStatusRules = {
   //pretrainting scenario
@@ -13311,6 +14647,18 @@ const intvResults = Object.freeze({
     M2CA: good,
     B7CA: good
   },
+  "intv-position-patient": {
+    type: patientPositionPlacement,
+    "B3NA (practice)": good,
+    B4CA: good,
+    B5CA: good,
+    C5CA: good,
+    SC8CP: good,
+    B1CA: good,
+    M1CA: good,
+    M2CA: good,
+    B7CA: good
+  },
   "intv-control-shock-technique-place-patient-supine-position": {
     type: patientPositionPlacement,
     "B3NA (practice)": good,
@@ -13576,11 +14924,12 @@ const intvResults = Object.freeze({
     B7CA: neutral
   }
 }); //all below is just for my editing purposes in the above structures
-//commented out ones that I don't impact assessment/status findings
+//commented out ones that don't impact assessment/status findings
 
 const interventions = ["intv-open-airway-method-head-tilt", "intv-open-airway-method-modified-jaw-thrust", "intv-airway-patency-technique-suction-airway", "intv-manual-finger-sweep", "intv-magill-forceps-assisted", "intv-heimlich-maneuver", "intv-back-blows-and-chest-thrusts", "intv-oropharyngeal-airway", "intv-nasopharyngeal-airway", "intv-orotracheal-intubation", "intv-nasotracheal-intubation", //"intv-rapid-sequence-intubation",
 "intv-sedation-assisted-intubation", "intv-needle-cricothyrotomy", "intv-surgical-cricothyrotomy", "intv-supplemental-oxygen-device-nasal-cannula", "intv-supplemental-oxygen-device-non-rebreather-mask", "intv-ventilation-technique-bag-valve-mask", "intv-control-severe-bleeding-technique-direct-pressure", "intv-control-severe-bleeding-technique-tourniquet", "intv-control-severe-bleeding-technique-2nd-tourniquet", "intv-control-severe-bleeding-technique-pack-wound-with-gauze", "intv-control-severe-bleeding-technique-pressure-bandage", //"intv-control-severe-bleeding-technique-load-and-go",
-"intv-control-shock-technique-keep-patient-warm", "intv-control-shock-technique-place-patient-supine-position", "intv-control-shock-technique-administer-iv-boluses", "intv-occlusive-dressing", "intv-pleural-decompression", //"intv-spinal-immobilization-technique-manual-c-spine",
+"intv-control-shock-technique-keep-patient-warm", //"intv-control-shock-technique-place-patient-supine-position",
+"intv-position-patient", "intv-control-shock-technique-administer-iv-boluses", "intv-occlusive-dressing", "intv-pleural-decompression", //"intv-spinal-immobilization-technique-manual-c-spine",
 //"intv-spinal-immobilization-technique-cervical-collar",
 //"intv-spinal-immobilization-technique-attach-cid",
 //"intv-transport",
@@ -13599,7 +14948,7 @@ const interventions = ["intv-open-airway-method-head-tilt", "intv-open-airway-me
 
 /***/ }),
 
-/***/ 98680:
+/***/ 50850:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -13613,13 +14962,15 @@ const colorTypes = {
   "Good": "text-success",
   "Caution": "text-warning",
   "Problem": "text-danger",
-  "Not implemented": "text-muted"
+  "Not implemented": "text-muted",
+  "Temporal": "text-danger"
 };
 const iconTypes = {
   "Good": "sentiment_satisfied",
   "Caution": "report_problem",
   "Problem": "highlight_off",
-  "Not implemented": "sentiment_neutral"
+  "Not implemented": "sentiment_neutral",
+  "Temporal": "alarm"
 }; //Feedback substitute commands for feedback template
 //@ means substitute this entry field into the feedback template and if no value in field say this in feedback, 
 //? means substitute this entry field into the feedback template if the value exists,
@@ -13629,9 +14980,7 @@ const iconTypes = {
 
 const fbTemplatesDef = {
   // state: [categorization for feedback, feedback template for condition 1]
-  "contraindicated": ["Problem", "+bec Contraindicated intervention +eec +bos ?why +eos"],
-  "irrelevant": ["Problem", "+bec Irrelevant intervention +eec +bos ?why +eos"],
-  "unnecessary": ["Problem", "+bec Unnecessary intervention +eec +bos ?why +eos"],
+  "not indicated": ["Problem", "+bec Intervention not indicated +eec +bos ?why +eos"],
   "redundant": ["Problem", "+bec Redundant intervention +eec +bos You already did an alternative to this: @redundantToFB +eos"],
   "missingMinimal": ["Problem", "+bec Missing intervention +eec +bos ?why +eos"],
   //"missingOptional": ["Caution", "Missing intervention +bos but it was optional in this case +bos ?why +eos"],
@@ -13648,25 +14997,29 @@ const fbTemplatesDef = {
   "required-action": ["Good", ""],
   "optional": ["Good", "?intvStatusFB +eos"],
   "goodIntv": ["Good", "?intvStatusFB +eos"],
-  "misOrdered-assessment": ["Problem", "+bec Mistimed assessment step +eec +bos @orderingFB +eos"],
-  "misOrdered-assessment-option": ["Problem", "+bec Mistimed assessment step +eec +bos @orderingFB +eos"],
-  "misOrdered-decision-option": ["Problem", "+bec Mistimed assessment step +eec +bos @orderingFB"],
-  "misOrdered-required-action": ["Problem", "+bec Mistimed assessment step +eec +bos @orderingFB"],
-  "misOrdered-optional": ["Problem", "+bec Mistimed intervention +eec +bos @orderingFB"],
-  "misOrdered-redundant": ["Problem", "+bec Redundant intervention +eec +bos You already did an alternative to this: @redundantToFB +eos"],
+  "inferred-allDone": ["Good", "?vitalsFB ?minVitalsFB +eos"],
+  //only for assessments
+  "inferred-someDone": ["Problem", "+bec Missing @vitalsStageCoverage @vitalsStage +eec +bos ?vitalsFB ?minVitalsFB +eos"],
+  "inferred-notDone": ["Problem", "+bec Missing @vitalsStageCoverage @vitalsStage +eec +bos ?vitalsFB ?minVitalsFB +eos"],
+  "misOrdered-assessment": ["Temporal", "+bec Mistimed assessment step +eec +bos @orderingFB +eos"],
+  "misOrdered-assessment-option": ["Temporal", "+bec Mistimed assessment step +eec +bos @orderingFB +eos"],
+  "misOrdered-decision-option": ["Temporal", "+bec Mistimed assessment step +eec +bos @orderingFB +eos"],
+  "misOrdered-required-action": ["Temporal", "+bec Mistimed assessment step +eec +bos @orderingFB +eos"],
+  "misOrdered-optional": ["Temporal", "+bec Mistimed intervention +eec +bos @orderingFB +eos"],
+  "misOrdered-redundant": ["Temporal", "+bec Redundant intervention +eec +bos You already did an alternative to this: @redundantToFB +eos"],
   //don't give additional feedback on redudant intervention
-  "misOrdered-goodIntv": ["Problem", "+bec Mistimed intervention +eec +bos @orderingFB"],
-  "not-graded": ["Caution", "+bec Not reported by observer +eec +bos You would have been told that the finding for @label was @finding +eos"],
+  "misOrdered-goodIntv": ["Temporal", "+bec Mistimed intervention +eec +bos @orderingFB +eos"],
+  "not-graded": ["Caution", "+bec Not reported to you +eec +bos You would have been told that the finding for @label was @finding +eos"],
   //once software re-written to optimaize all design changes, this section should be condensed to just
   //"misOrdered-phase": ["Problem", "Section not completed before starting another +bos @orderingFB +eos"]
   //since we are no longer placing the phase feedback in the first item of a phase
-  "misOrdered-phase-assessment": ["Problem", "+bec Section not completed before starting another +eec +bos @orderingFB +eos"],
-  "misOrdered-phase-assessment-option": ["Problem", "+bec Section not completed before starting another +eec +bos @orderingFB +eos"],
-  "misOrdered-phase-decision-option": ["Problem", "+bec Section not completed before starting another +eec +bos @orderingFB"],
-  "misOrdered-phase-required-action": ["Problem", "+bec Section not completed before starting another +eec +bos @orderingFB"],
-  "misOrdered-phase-redundant": ["Problem", "+bec Section not completed before starting another +eec +bos @orderingFB"],
-  "misOrdered-phase-goodIntv": ["Problem", "+bec Section not completed before starting another +eec +bos @orderingFB"],
-  "misOrdered-phase-optional": ["Problem", "+bec Section not completed before starting another +eec +bos @orderingFB"],
+  "misOrdered-phase-assessment": ["Temporal", "+bec Mistimed section +eec +bos @orderingFB +eos"],
+  "misOrdered-phase-assessment-option": ["Temporal", "+bec Mistimed section +eec +bos @orderingFB +eos"],
+  "misOrdered-phase-decision-option": ["Temporal", "+bec Mistimed section +eec +bos @orderingFB +eos"],
+  "misOrdered-phase-required-action": ["Temporal", "+bec Mistimed section +eec +bos @orderingFB +eos"],
+  "misOrdered-phase-redundant": ["Temporal", "+bec Mistimed section +eec +bos @orderingFB +eos"],
+  "misOrdered-phase-goodIntv": ["Temporal", "+bec Mistimed section +eec +bos @orderingFB +eos"],
+  "misOrdered-phase-optional": ["Temporal", "+bec Mistimed section +eec +bos @orderingFB +eos"],
   //assuming status checks can't be misordered
   //design of intervention & vitals status checks still in flux but current design still uses this
   "intvCheckWNoIntvFound": ["Caution", "You didn't do this intervention so it doesn't make sense to check the status of it at this point."],
@@ -13691,7 +15044,7 @@ const fbTemplatesDef = {
   "misOrdered-redundant-incorrect-answers": ["Problem", "+bec Incorrectly administered, redundant intervention +eec +bos You already did an alternative to this: @redundantToFB +eos"],
   //minimal is no longer guaranteed to work so could remove these once verified during optimization of all design changes
   "misOrdered-minimal-incorrect-answers": ["Problem", "+bec Incorrectly administered, mistimed intervention +eec +bos @orderingFB +bos @minimalWhy +bos @incorrectAnswersFB +bos ?intvStatusFB +eos"],
-  "misOrdered-minimal": ["Problem", "+bec Incorrectly administered, mistimed intervention +eec +bos @orderingFB +bos @minimalWhy +bos ?intvStatusFB +eos"],
+  "misOrdered-minimal": ["Temporal", "+bec Mistimed intervention +eec +bos @orderingFB +bos @minimalWhy +bos ?intvStatusFB +eos"],
   //once analysis software re-written to optimaize all design changes, this section can be eliminated
   //since we are no longer placing the phase feedback in the first item of a phase
   "misOrdered-phase-assessment-option-incorrect": ["Problem", "+bec Incorrect, mistimed assessment step +eec +bos @incorrectAnswersFB +bos @orderingFB +eos "],
@@ -13700,7 +15053,7 @@ const fbTemplatesDef = {
   "misOrdered-phase-optional-incorrect-answers": ["Problem", "+bec Incorrectly administered, mistimed intervention +eec +bos ?why +bos @incorrectAnswersFB +bos @orderingFB +bos ?intvStatusFB +eos"],
   "misOrdered-phase-redundant-incorrect-answers": ["Problem", "+bec Redundant, mistimed intervention +eec +bos You already did an alternative to this: @redundantToFB +bos @orderingFB +eos"],
   "misOrdered-phase-minimal-incorrect-answers": ["Problem", "+bec Incorrectly administered, mistimed intervention +eec +bos @orderingFB +bos ?minimalWhy +bos @incorrectAnswersFB +bos ?intvStatusFB +eos"],
-  "misOrdered-phase-minimal": ["Problem", "+bec Misordered +eec +bos @orderingFB +bos ?minimalWhy +bos ?intvStatusFB +eos"],
+  "misOrdered-phase-minimal": ["Temporal", "+bec Mistimed section +eec +bos @orderingFB +bos ?minimalWhy +bos ?intvStatusFB +eos"],
   "green": ["Good", ""],
   //just for headers
   "red": ["Problem", ""],
@@ -13714,7 +15067,7 @@ const fbTemplatesDef = {
 
 /***/ }),
 
-/***/ 21488:
+/***/ 18850:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -13724,30 +15077,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "phaseStatusList": () => (/* binding */ phaseStatusList)
 /* harmony export */ });
 const phaseStatusList = {
-  absent: ["absent", "missingMinimal", "missingRequired", "missingRequiredAssessment"],
-  errors: ["redundant", "misOrdered-redundant", "redundant-incorrect-answers", "misOrdered-redundant-incorrect-answers", "misOrdered-assessment", "misOrdered-assessment-option", "misOrdered-decision-option", "misOrdered-required-action", "misOrdered-goodIntv", "assessment-option-incorrect", "decision-option-incorrect", "incorrect-answers", "minimal-incorrect-answers", //"minimal", 
-  "misOrdered-assessment-option-incorrect", "misOrdered-decision-option-incorrect", "misOrdered-incorrect-answers", "misOrdered-minimal-incorrect-answers", "misOrdered-minimal", "irrelevant", "unnecessary", "contraindicated", "errors", "misOrdered-irrelevant", "misOrdered-alternative", "misOrdered-unnecessary", "midOrdered-contraindicated", "error", "misordered", "misordered-error", "misOrdered-phase-assessment-option-incorrect", "misOrdered-phase-decision-option-incorrect", "misOrdered-phase-incorrect-answers", "misOrdered-phase-minimal-incorrect-answers"],
-  good: ["good", "assessment", "assessment-option", "decision-option", "required-action", "goodIntv", "optional", //condition 2 does not address these so put them in the good category
+  absent: ["absent", "missingMinimal", "missingRequired", "missingRequiredAssessment", "inferred-notDone"],
+  errors: ["redundant-incorrect-answers", "assessment-option-incorrect", "decision-option-incorrect", "inferred-someDone", "incorrect-answers", "minimal-incorrect-answers", "not indicated", "errors", "error"],
+  misordered: ["misordered", "misOrdered", "misOrdered-redundant", "misOrdered-minimal", "misOrdered-alternative", "misOrdered-assessment", "misOrdered-assessment-option", "misOrdered-decision-option", "misOrdered-required-action", "misOrdered-goodIntv", "misOrdered-phase-minimal", "misOrdered-phase-assessment", "misOrdered-phase-assessment-option", "misOrdered-phase-decision-option", "misOrdered-phase-required-action", "misOrdered-phase-goodIntv"],
+  misorderedErrors: ["misorderedErrors", "misorderedError", "misOrderedError", "midOrdered-not indicated", "misordered-error", "misOrdered-unnecessary", "misOrdered-redundant-incorrect-answers", "misOrdered-assessment-option-incorrect", "misOrdered-decision-option-incorrect", "misOrdered-incorrect-answers", "misOrdered-minimal-incorrect-answers", "misOrdered-irrelevant", "misOrdered-phase-assessment-option-incorrect", "misOrdered-phase-decision-option-incorrect", "misOrdered-phase-incorrect-answers", "misOrdered-phase-minimal-incorrect-answers"],
+  good: ["good", "assessment", "assessment-option", "decision-option", "required-action", "goodIntv", "optional", "inferred-allDone", //condition 2 does not address these so put them in the good category
   "patientIntvCheck", "patientVitalCheck", "notNecessary", "notFound", "intvCheckWNoIntvFound", "unexpectedPatientIntvCheck", "default", "not-graded", //condition 2 does not need to address minimal as an error nor misordered-phase as that error appears as misordered at the phase or subphase level
-  //condition 1 uses misOrdered-Phase as that error feedback goes on the first line in the phase/subphase
-  //so without misOrdered-phase and/or minimal, these are good status values
-  "minimal", "misOrdered-phase-minimal", "misOrdered-phase-assessment", "misOrdered-phase-assessment-option", "misOrdered-phase-decision-option", "misOrdered-phase-required-action", "misOrdered-phase-goodIntv"]
+  //condition 1 uses misOrdered-Phase as that error feedback goes on the first line in the phase/subphase 
+  "minimal", "redundant"]
 };
 const leafStatusList = {
-  absent: ["missingMinimal", "missingRequired", "missingRequiredAssessment", "absent"],
-  misordered: ["misOrdered-assessment", "misOrdered-assessment-option", "misOrdered-decision-option", "misOrdered-required-action", "misOrdered-goodIntv", "misOrdered-minimal"],
-  misorderedError: ["misOrdered-assessment-option-incorrect", "misOrdered-decision-option-incorrect", "misOrdered-incorrect-answers", "misOrdered-minimal-incorrect-answers", "misOrdered-phase-assessment-option-incorrect", "misOrdered-phase-decision-option-incorrect", "misOrdered-phase-incorrect-answers", "misOrdered-phase-minimal-incorrect-answers"],
-  error: ["assessment-option-incorrect", "decision-option-incorrect", "incorrect-answers", "minimal-incorrect-answers", "contraindicated", "irrelevant", "unnecessary", "redundant", "redundant-incorrect-answers", "misOrdered-redundant", "misOrdered-redundant-incorrect-answers"],
-  good: ["assessment", "assessment-option", "decision-option", "required-action", "goodIntv", "optional", "patientVitalCheck", "patientIntvCheck", //condition 2 does not address these so put them in the good category
-  "notNecessary", "not-graded", "intvCheckWNoIntvFound", "unexpectedPatientIntvCheck", "default", //condition 2 does not need to address minimal as an error nor misordered-phase as that error appears as misordered at the phase or subphase level
-  //condition 1 uses misOrdered-Phase as that error feedback goes on the first line in the phase/subphase
-  //so without misOrdered-phase and/or minimal, these are good status values
-  "minimal", "misOrdered-phase-minimal", "misOrdered-phase-assessment", "misOrdered-phase-assessment-option", "misOrdered-phase-decision-option", "misOrdered-phase-required-action", "misOrdered-phase-goodIntv"]
+  absent: ["missingMinimal", "missingRequired", "missingRequiredAssessment", "absent", "inferred-notDone"],
+  misordered: ["misOrdered-assessment", "misOrdered", "misordered", "misOrdered-assessment-option", "misOrdered-decision-option", "misOrdered-required-action", "misOrdered-goodIntv", "misOrdered-minimal", "misOrdered-redundant", "misOrdered-phase-minimal", "misOrdered-phase-assessment", "misOrdered-phase-assessment-option", "misOrdered-phase-decision-option", "misOrdered-phase-required-action", "misOrdered-phase-goodIntv"],
+  misorderedError: ["misorderedError", "misOrderedError", "misOrdered-assessment-option-incorrect", "misOrdered-decision-option-incorrect", "misOrdered-incorrect-answers", "misOrdered-minimal-incorrect-answers", "misOrdered-redundant-incorrect-answers", "misOrdered-phase-assessment-option-incorrect", "misOrdered-phase-decision-option-incorrect", "misOrdered-phase-incorrect-answers", "misOrdered-phase-minimal-incorrect-answers"],
+  error: ["assessment-option-incorrect", "decision-option-incorrect", "incorrect-answers", "minimal-incorrect-answers", "not indicated", "redundant-incorrect-answers", "inferred-someDone"],
+  good: ["assessment", "assessment-option", "decision-option", "required-action", "goodIntv", "optional", "patientVitalCheck", "patientIntvCheck", "inferred-allDone", //condition 2 does not address these so put them in the good category
+  "notNecessary", "not-graded", "minimal", "intvCheckWNoIntvFound", "unexpectedPatientIntvCheck", "default", "alternative", "redundant"]
 };
 
 /***/ }),
 
-/***/ 20573:
+/***/ 39384:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -13762,11 +15112,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 const ACTION_TYPES = Object.freeze({
   REQ: "required",
-  CONTRA: "contraindicated",
-  UNNEC: "unnecessary",
-  IRR: "irrelevent",
+  NOTIND: "not indicated",
   OPT: "optional",
-  ALT: "alternative"
+  ALT: "alternative",
+  CONTRA: "contraindicated",
+
+  /* not used for pilot study */
+  UNNEC: "unnecessary",
+
+  /* not used for pilot study */
+  IRR: "irrelevent"
+  /* not used for pilot study */
+
 });
 const WAIT_TIFF = "WAITING FOR FEEDBACK FROM TIFFANY";
 const WAIT_SANDY = "PLACEHOLDER";
@@ -13777,7 +15134,7 @@ const SUM_NODE_FBCK_CHILDREN = "SUMMARY NODE. NO FEEDBACK BECAUSE CHILDREN ARE S
 
 /***/ }),
 
-/***/ 9205:
+/***/ 72536:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -13788,6 +15145,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "C5CA_PhaseIE": () => (/* reexport safe */ _C5CA_data_PhaseIE__WEBPACK_IMPORTED_MODULE_7__.C5CA_PhaseIE),
 /* harmony export */   "M2CA_PhaseIE": () => (/* reexport safe */ _Bogus_data_for_testingA__WEBPACK_IMPORTED_MODULE_8__.M2CA_PhaseIE),
 /* harmony export */   "SC8CP_PhaseIE": () => (/* reexport safe */ _SC8CP_data_PhaseIE__WEBPACK_IMPORTED_MODULE_4__.SC8CP_PhaseIE),
+/* harmony export */   "aggregateLabels": () => (/* reexport safe */ _analysisData__WEBPACK_IMPORTED_MODULE_3__.aggregateLabels),
 /* harmony export */   "colorTypes": () => (/* reexport safe */ _c1Data__WEBPACK_IMPORTED_MODULE_1__.colorTypes),
 /* harmony export */   "conditionalConstraints": () => (/* reexport safe */ _analysisData__WEBPACK_IMPORTED_MODULE_3__.conditionalConstraints),
 /* harmony export */   "exceptionDefs": () => (/* reexport safe */ _analysisData__WEBPACK_IMPORTED_MODULE_3__.exceptionDefs),
@@ -13802,15 +15160,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "vitalsCheckFeedbackID": () => (/* reexport safe */ _analysisData__WEBPACK_IMPORTED_MODULE_3__.vitalsCheckFeedbackID),
 /* harmony export */   "vitalsCheckFeedbackLabel": () => (/* reexport safe */ _analysisData__WEBPACK_IMPORTED_MODULE_3__.vitalsCheckFeedbackLabel)
 /* harmony export */ });
-/* harmony import */ var _mergeDataFiles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(24290);
-/* harmony import */ var _c1Data__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(98680);
-/* harmony import */ var _c2Data__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(21488);
-/* harmony import */ var _analysisData__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7686);
-/* harmony import */ var _SC8CP_data_PhaseIE__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(67884);
-/* harmony import */ var _B4CA_data_PhaseIE__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(60827);
-/* harmony import */ var _B5CA_data_PhaseIE__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(6220);
-/* harmony import */ var _C5CA_data_PhaseIE__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(98547);
-/* harmony import */ var _Bogus_data_for_testingA__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(19628);
+/* harmony import */ var _mergeDataFiles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(70186);
+/* harmony import */ var _c1Data__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(50850);
+/* harmony import */ var _c2Data__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(18850);
+/* harmony import */ var _analysisData__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7696);
+/* harmony import */ var _SC8CP_data_PhaseIE__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(96258);
+/* harmony import */ var _B4CA_data_PhaseIE__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(51440);
+/* harmony import */ var _B5CA_data_PhaseIE__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(76664);
+/* harmony import */ var _C5CA_data_PhaseIE__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(56582);
+/* harmony import */ var _Bogus_data_for_testingA__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(73935);
 //import if needed
 //export if needed
 //put accessors here or import them from another file
@@ -13826,7 +15184,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 24290:
+/***/ 70186:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -13834,14 +15192,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "getScenarioFeedback": () => (/* binding */ getScenarioFeedback)
 /* harmony export */ });
-/* harmony import */ var _B4CA_data_PhaseDEBRF__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(78586);
-/* harmony import */ var _B4CA_data_PhaseIE__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(60827);
-/* harmony import */ var _B5CA_data_PhaseDEBRF__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(40351);
-/* harmony import */ var _B5CA_data_PhaseIE__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6220);
-/* harmony import */ var _C5CA_data_PhaseDEBRF__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(34077);
-/* harmony import */ var _C5CA_data_PhaseIE__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(98547);
-/* harmony import */ var _SC8CP_DEBR_Data__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(91412);
-/* harmony import */ var _SC8CP_data_PhaseIE__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(67884);
+/* harmony import */ var _B4CA_data_PhaseDEBRF__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74898);
+/* harmony import */ var _B4CA_data_PhaseIE__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(51440);
+/* harmony import */ var _B5CA_data_PhaseDEBRF__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(72591);
+/* harmony import */ var _B5CA_data_PhaseIE__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(76664);
+/* harmony import */ var _C5CA_data_PhaseDEBRF__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(77239);
+/* harmony import */ var _C5CA_data_PhaseIE__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(56582);
+/* harmony import */ var _SC8CP_DEBR_Data__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(14726);
+/* harmony import */ var _SC8CP_data_PhaseIE__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(96258);
 
 
 
@@ -13856,7 +15214,7 @@ const GENERIC_STEP_D = {
 };
 const GENERIC_STEP_F = {
   title: "Formalize learning",
-  heading: "Please take a few minutes to think and reply to these questions",
+  heading: "Please take a few minutes to reply to these questions",
   questions: "What are your key take-home points from this scenario? What is something you want to continue working on or do differently in the future?"
 };
 
@@ -13900,7 +15258,7 @@ function getScenarioFeedback(scenName) {
 
 /***/ }),
 
-/***/ 54354:
+/***/ 2294:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -13928,7 +15286,7 @@ function para(...spans) {
 
 /***/ }),
 
-/***/ 36011:
+/***/ 97650:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -13940,10 +15298,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "PrivateRoute": () => (/* reexport safe */ _lib_routes_PrivateRoute__WEBPACK_IMPORTED_MODULE_2__["default"]),
 /* harmony export */   "StaffRoute": () => (/* reexport safe */ _lib_routes_StaffRoute__WEBPACK_IMPORTED_MODULE_3__["default"])
 /* harmony export */ });
-/* harmony import */ var _lib_contexts_Auth__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(25600);
-/* harmony import */ var _lib_components_AuthFlow__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2956);
-/* harmony import */ var _lib_routes_PrivateRoute__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(39585);
-/* harmony import */ var _lib_routes_StaffRoute__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(90609);
+/* harmony import */ var _lib_contexts_Auth__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4532);
+/* harmony import */ var _lib_components_AuthFlow__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(23302);
+/* harmony import */ var _lib_routes_PrivateRoute__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(10532);
+/* harmony import */ var _lib_routes_StaffRoute__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(78669);
 
 
 
@@ -13952,7 +15310,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 2956:
+/***/ 23302:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -13962,11 +15320,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _contexts_Auth__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(25600);
-/* harmony import */ var _LoginForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(59907);
-/* harmony import */ var _RegistrationForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(75032);
-/* harmony import */ var _ForgotPasswordForm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(44516);
-/* harmony import */ var _EmailVerification__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(57650);
+/* harmony import */ var _contexts_Auth__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4532);
+/* harmony import */ var _LoginForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(72581);
+/* harmony import */ var _RegistrationForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49499);
+/* harmony import */ var _ForgotPasswordForm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(96548);
+/* harmony import */ var _EmailVerification__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(23142);
 /* harmony import */ var _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(94292);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/mdb-auth/src/lib/components/AuthFlow.js";
@@ -14039,7 +15397,7 @@ const AuthFlow = ({
 
 /***/ }),
 
-/***/ 57650:
+/***/ 23142:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -14051,7 +15409,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(77122);
 /* harmony import */ var _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(94292);
-/* harmony import */ var _contexts_Auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(25600);
+/* harmony import */ var _contexts_Auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4532);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/mdb-auth/src/lib/components/EmailVerification.js";
  // useCallback, 
@@ -14243,7 +15601,7 @@ const EmailVerification = () => {
 
 /***/ }),
 
-/***/ 44516:
+/***/ 96548:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -14255,7 +15613,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(72779);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _contexts_Auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(25600);
+/* harmony import */ var _contexts_Auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4532);
 /* harmony import */ var _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(94292);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/mdb-auth/src/lib/components/ForgotPasswordForm.js";
@@ -14404,7 +15762,7 @@ const ForgotPasswordForm = () => {
 
 /***/ }),
 
-/***/ 59907:
+/***/ 72581:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -14420,9 +15778,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(72779);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _contexts_Auth__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(25600);
+/* harmony import */ var _contexts_Auth__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(4532);
 /* harmony import */ var _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(94292);
-/* harmony import */ var _icons_PasswordVisibilityIcon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(93391);
+/* harmony import */ var _icons_PasswordVisibilityIcon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(37450);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/mdb-auth/src/lib/components/LoginForm.js";
 
@@ -14630,7 +15988,7 @@ const LoginForm = () => {
 
 /***/ }),
 
-/***/ 75032:
+/***/ 49499:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -14642,14 +16000,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6886);
 /* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2784);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(72779);
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(94292);
-/* harmony import */ var _contexts_Auth__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(25600);
-/* harmony import */ var _icons_PasswordVisibilityIcon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(93391);
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(49663);
+/* harmony import */ var core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(73439);
+/* harmony import */ var core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(39529);
+/* harmony import */ var core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var core_js_modules_es_string_includes_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(31235);
+/* harmony import */ var core_js_modules_es_string_includes_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_includes_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(72779);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(94292);
+/* harmony import */ var _contexts_Auth__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(4532);
+/* harmony import */ var _icons_PasswordVisibilityIcon__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(37450);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/mdb-auth/src/lib/components/RegistrationForm.js";
 
 
@@ -14660,100 +16024,137 @@ var _jsxFileName = "/Users/user/Projects/monorepo/libs/mdb-auth/src/lib/componen
 
 
 
+
+
+
 const RegistrationForm = () => {
-  const [passwordVisible, setPasswordVisible] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false);
-  const [confirmPasswordVisible, setConfirmPasswordVisible] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false);
+  const [passwordVisible, setPasswordVisible] = (0,react__WEBPACK_IMPORTED_MODULE_5__.useState)(false);
+  const [confirmPasswordVisible, setConfirmPasswordVisible] = (0,react__WEBPACK_IMPORTED_MODULE_5__.useState)(false);
+  const [validClassCode, setIsValidClassCode] = (0,react__WEBPACK_IMPORTED_MODULE_5__.useState)(true);
 
   const togglePasswordVisibility = () => setPasswordVisible(!passwordVisible);
 
   const toggleConfirmPasswordVisibility = () => setConfirmPasswordVisible(!confirmPasswordVisible);
 
   const {
+    getClassCodes,
     setCurrAuthComponent,
     registerErrorMsg,
     registerUserWithEmailAndPassword
-  } = (0,react__WEBPACK_IMPORTED_MODULE_2__.useContext)(_contexts_Auth__WEBPACK_IMPORTED_MODULE_5__.AuthContext);
+  } = (0,react__WEBPACK_IMPORTED_MODULE_5__.useContext)(_contexts_Auth__WEBPACK_IMPORTED_MODULE_8__.AuthContext);
 
   const alreadyHaveAccount = event => {
     event.preventDefault();
-    setCurrAuthComponent(_contexts_Auth__WEBPACK_IMPORTED_MODULE_5__.AUTH_FLOW_COMPONENTS.LOGIN); // console.log("I already have an account")
+    setCurrAuthComponent(_contexts_Auth__WEBPACK_IMPORTED_MODULE_8__.AUTH_FLOW_COMPONENTS.LOGIN); // console.log("I already have an account")
   };
 
-  const handleSignUp = event => {
+  const handleSignUp = async event => {
     event.preventDefault();
+    const validClassCodes = await getClassCodes();
     const {
       classCode,
       email,
       password
     } = event.target.elements;
-    registerUserWithEmailAndPassword(email.value, password.value, classCode.value);
+
+    if (validClassCodes.includes(classCode.value)) {
+      registerUserWithEmailAndPassword(email.value, password.value, classCode.value);
+    } else {
+      setIsValidClassCode(false);
+    }
   };
 
-  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("div", {
-    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("form", {
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
+    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("form", {
       onSubmit: handleSignUp,
-      children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("div", {
-        className: _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].container,
-        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("div", {
-          className: _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].row,
-          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("h3", {
+      children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
+        className: _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"].container,
+        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
+          className: _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"].row,
+          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("h3", {
             children: "Sign up for MedDBriefer"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 42,
+            lineNumber: 48,
             columnNumber: 25
           }, undefined)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 41,
+          lineNumber: 47,
           columnNumber: 21
-        }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("div", {
-          className: _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].row,
-          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("label", {
+        }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
+          className: _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"].row,
+          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("label", {
             htmlFor: "classCode",
-            className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"]["col-sm-3"], _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"]["col-form-label"]),
+            className: classnames__WEBPACK_IMPORTED_MODULE_6___default()(_styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"]["col-sm-3"], _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"]["col-form-label"]),
             children: "Class Code"
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 45,
-            columnNumber: 25
-          }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("div", {
-            className: _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"]["col-sm-9"],
-            children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("input", {
-              className: _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"]["form-control"],
-              id: "classCode",
-              name: "classCode",
-              type: "text",
-              placeholder: "example: demo",
-              required: true
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 52,
-              columnNumber: 29
-            }, undefined)
           }, void 0, false, {
             fileName: _jsxFileName,
             lineNumber: 51,
             columnNumber: 25
+          }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
+            className: _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"]["col-sm-9"],
+            children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("input", {
+              className: _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"]["form-control"],
+              id: "classCode",
+              name: "classCode",
+              type: "text",
+              placeholder: "example: demo",
+              autoComplete: "off",
+              onInput: () => setIsValidClassCode(true),
+              required: true
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 58,
+              columnNumber: 29
+            }, undefined)
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 57,
+            columnNumber: 25
           }, undefined)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 44,
+          lineNumber: 50,
           columnNumber: 21
-        }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("div", {
-          className: _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].row,
-          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("label", {
+        }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
+          className: _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"].row,
+          style: {
+            display: validClassCode ? "none" : "block"
+          },
+          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
+            className: _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"]["col-sm-12"],
+            children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("span", {
+              className: _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"]["text-danger"],
+              children: "Invalid class code, if you are here for an experiment, type 'trial1', otherwise enter 'demo'"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 72,
+              columnNumber: 29
+            }, undefined)
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 71,
+            columnNumber: 25
+          }, undefined)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 70,
+          columnNumber: 21
+        }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
+          className: classnames__WEBPACK_IMPORTED_MODULE_6___default()(_styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"].row),
+          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("label", {
             htmlFor: "emailAddress",
-            className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"]["col-sm-3"], _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"]["col-form-label"]),
+            className: classnames__WEBPACK_IMPORTED_MODULE_6___default()(_styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"]["col-sm-3"], _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"]["col-form-label"]),
             children: "Email"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 63,
+            lineNumber: 78,
             columnNumber: 25
-          }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("div", {
-            className: _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"]["col-sm-9"],
-            children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("input", {
-              className: _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"]["form-control"],
+          }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
+            className: _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"]["col-sm-9"],
+            children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("input", {
+              className: _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"]["form-control"],
               id: "emailAddress",
               name: "email",
               type: "email",
@@ -14761,72 +16162,72 @@ const RegistrationForm = () => {
               required: true
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 70,
+              lineNumber: 85,
               columnNumber: 29
             }, undefined)
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 69,
+            lineNumber: 84,
             columnNumber: 25
           }, undefined)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 62,
+          lineNumber: 77,
           columnNumber: 21
-        }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("div", {
-          className: _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].row,
-          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("label", {
+        }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
+          className: _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"].row,
+          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("label", {
             htmlFor: "password",
-            className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"]["col-sm-3"], _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"]["col-form-label"]),
+            className: classnames__WEBPACK_IMPORTED_MODULE_6___default()(_styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"]["col-sm-3"], _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"]["col-form-label"]),
             children: "Password"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 81,
+            lineNumber: 96,
             columnNumber: 25
-          }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("div", {
-            className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"]["col-sm-9"], _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"]["input-group"]),
-            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("input", {
+          }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
+            className: classnames__WEBPACK_IMPORTED_MODULE_6___default()(_styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"]["col-sm-9"], _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"]["input-group"]),
+            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("input", {
               id: "password",
               name: "password",
               type: passwordVisible ? "text" : "password",
-              className: _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"]["form-control"],
+              className: _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"]["form-control"],
               placeholder: "Enter password",
               required: true
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 88,
+              lineNumber: 103,
               columnNumber: 29
-            }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(_icons_PasswordVisibilityIcon__WEBPACK_IMPORTED_MODULE_6__["default"], {
+            }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)(_icons_PasswordVisibilityIcon__WEBPACK_IMPORTED_MODULE_9__["default"], {
               visible: passwordVisible,
               stateToggler: togglePasswordVisibility
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 96,
+              lineNumber: 111,
               columnNumber: 29
             }, undefined)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 87,
+            lineNumber: 102,
             columnNumber: 25
           }, undefined)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 80,
+          lineNumber: 95,
           columnNumber: 21
-        }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("div", {
-          className: _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].row,
-          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("label", {
+        }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
+          className: _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"].row,
+          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("label", {
             htmlFor: "confirmPassword",
-            className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"]["col-sm-3"], _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"]["col-form-label"]),
+            className: classnames__WEBPACK_IMPORTED_MODULE_6___default()(_styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"]["col-sm-3"], _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"]["col-form-label"]),
             children: "Confirm Password"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 103,
+            lineNumber: 118,
             columnNumber: 25
-          }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("div", {
-            className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"]["col-sm-9"], _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"]["input-group"]),
-            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("input", {
-              className: _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"]["form-control"],
+          }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
+            className: classnames__WEBPACK_IMPORTED_MODULE_6___default()(_styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"]["col-sm-9"], _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"]["input-group"]),
+            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("input", {
+              className: _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"]["form-control"],
               id: "confirmPassword",
               name: "confirmPassword",
               type: confirmPasswordVisible ? "text" : "password",
@@ -14834,70 +16235,70 @@ const RegistrationForm = () => {
               required: true
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 110,
+              lineNumber: 125,
               columnNumber: 29
-            }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(_icons_PasswordVisibilityIcon__WEBPACK_IMPORTED_MODULE_6__["default"], {
+            }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)(_icons_PasswordVisibilityIcon__WEBPACK_IMPORTED_MODULE_9__["default"], {
               visible: confirmPasswordVisible,
               stateToggler: toggleConfirmPasswordVisibility
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 118,
+              lineNumber: 133,
               columnNumber: 29
             }, undefined)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 109,
+            lineNumber: 124,
             columnNumber: 25
           }, undefined)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 102,
+          lineNumber: 117,
           columnNumber: 21
-        }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("div", {
-          className: _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].row,
-          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("p", {
-            className: _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"]["text-danger"],
+        }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
+          className: _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"].row,
+          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("p", {
+            className: _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"]["text-danger"],
             children: registerErrorMsg
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 125,
+            lineNumber: 140,
             columnNumber: 25
           }, undefined)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 124,
+          lineNumber: 139,
           columnNumber: 21
-        }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("button", {
+        }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("button", {
           type: "submit",
-          className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].btn, _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"]["btn-primary"]),
+          className: classnames__WEBPACK_IMPORTED_MODULE_6___default()(_styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"].btn, _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"]["btn-primary"]),
           children: "Sign Up"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 130,
+          lineNumber: 145,
           columnNumber: 21
-        }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("button", {
+        }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("button", {
           type: "button",
-          className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].btn, _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"]["btn-link"]),
+          className: classnames__WEBPACK_IMPORTED_MODULE_6___default()(_styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"].btn, _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"]["btn-link"]),
           onClick: alreadyHaveAccount,
           children: "I already have an account."
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 136,
+          lineNumber: 151,
           columnNumber: 21
         }, undefined)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 40,
+        lineNumber: 46,
         columnNumber: 17
       }, undefined)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 39,
+      lineNumber: 45,
       columnNumber: 13
     }, undefined)
   }, void 0, false, {
     fileName: _jsxFileName,
-    lineNumber: 38,
+    lineNumber: 44,
     columnNumber: 9
   }, undefined);
 };
@@ -14906,7 +16307,7 @@ const RegistrationForm = () => {
 
 /***/ }),
 
-/***/ 93391:
+/***/ 37450:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -14945,7 +16346,7 @@ const PasswordVisibilityIcon = ({
 
 /***/ }),
 
-/***/ 25600:
+/***/ 4532:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -14963,7 +16364,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2784);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _meddbriefer_mdb_firebase__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(89526);
+/* harmony import */ var _meddbriefer_mdb_firebase__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(44551);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/mdb-auth/src/lib/contexts/Auth.js";
 
@@ -15171,6 +16572,15 @@ function AuthProvider({
     return data.data();
   };
 
+  const getClassCodes = async () => {
+    const ccSnapShot = await db.collection("class-codes").get();
+    const classCodes = ccSnapShot.docs.map(doc => {
+      const data = doc.data();
+      return data.name;
+    });
+    return classCodes;
+  };
+
   return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)(AuthContext.Provider, {
     value: {
       auth,
@@ -15197,19 +16607,20 @@ function AuthProvider({
       userPrefs,
       setUserPrefs,
       saveUserData,
-      getUserData
+      getUserData,
+      getClassCodes
     },
     children: children
   }, void 0, false, {
     fileName: _jsxFileName,
-    lineNumber: 218,
+    lineNumber: 227,
     columnNumber: 5
   }, this);
 }
 
 /***/ }),
 
-/***/ 39585:
+/***/ 10532:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -15223,8 +16634,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2784);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(7267);
-/* harmony import */ var _contexts_Auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(25600);
-/* harmony import */ var _components_AuthFlow__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2956);
+/* harmony import */ var _contexts_Auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4532);
+/* harmony import */ var _components_AuthFlow__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(23302);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
 
 const _excluded = ["component", "authFlowLayout"];
@@ -15309,7 +16720,7 @@ const PrivateRoute = _ref => {
 
 /***/ }),
 
-/***/ 90609:
+/***/ 78669:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -15323,8 +16734,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2784);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(7267);
-/* harmony import */ var _contexts_Auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(25600);
-/* harmony import */ var _components_AuthFlow__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2956);
+/* harmony import */ var _contexts_Auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4532);
+/* harmony import */ var _components_AuthFlow__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(23302);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
 
 const _excluded = ["component", "authFlowLayout"];
@@ -15445,24 +16856,100 @@ const StaffRoute = _ref => {
 
 /***/ }),
 
-/***/ 55334:
+/***/ 83325:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "MDBModal": () => (/* reexport safe */ _lib_modal__WEBPACK_IMPORTED_MODULE_2__.MDBModal),
 /* harmony export */   "MDBNavBar": () => (/* reexport safe */ _lib_navbar_MDBNavBar__WEBPACK_IMPORTED_MODULE_1__.MDBNavBar),
 /* harmony export */   "Snackbar": () => (/* reexport safe */ _lib_snackbar_Snackbar__WEBPACK_IMPORTED_MODULE_0__.Snackbar),
 /* harmony export */   "useSnackbar": () => (/* reexport safe */ _lib_snackbar_Snackbar__WEBPACK_IMPORTED_MODULE_0__.useSnackbar)
 /* harmony export */ });
-/* harmony import */ var _lib_snackbar_Snackbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(84106);
-/* harmony import */ var _lib_navbar_MDBNavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(13042);
+/* harmony import */ var _lib_snackbar_Snackbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31694);
+/* harmony import */ var _lib_navbar_MDBNavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(82417);
+/* harmony import */ var _lib_modal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(90527);
+
 
 
 
 /***/ }),
 
-/***/ 13042:
+/***/ 95445:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ MDBModal)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(19939);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(74278);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(3743);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(49663);
+var _jsxFileName = "/Users/user/Projects/monorepo/libs/mdb-ui/src/lib/modal/MDBModal.jsx";
+
+
+
+function MDBModal({
+  title,
+  show,
+  dismiss,
+  size = "xl",
+  children
+}) {
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    isOpen: show,
+    toggle: dismiss,
+    size: size,
+    backdrop: "static",
+    children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      toggle: dismiss,
+      children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("span", {
+        className: "h2",
+        children: title
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 16,
+        columnNumber: 17
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 13
+    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      children: children
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 13
+    }, this)]
+  }, void 0, true, {
+    fileName: _jsxFileName,
+    lineNumber: 9,
+    columnNumber: 9
+  }, this);
+}
+
+/***/ }),
+
+/***/ 90527:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "MDBModal": () => (/* reexport safe */ _MDBModal__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _MDBModal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(95445);
+
+
+/***/ }),
+
+/***/ 82417:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -15476,9 +16963,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(39876);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(2441);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(47933);
-/* harmony import */ var _meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(36011);
-/* harmony import */ var _UserDropDown__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(42495);
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(92910);
+/* harmony import */ var _meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(97650);
+/* harmony import */ var _UserDropDown__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(30848);
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(66545);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/mdb-ui/src/lib/navbar/MDBNavBar.js";
 
@@ -15553,7 +17040,7 @@ function MDBNavBar({
 
 /***/ }),
 
-/***/ 42495:
+/***/ 30848:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -15571,8 +17058,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(97772);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(52845);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(72664);
-/* harmony import */ var _meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(36011);
-/* harmony import */ var _UserIcon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(69220);
+/* harmony import */ var _meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(97650);
+/* harmony import */ var _UserIcon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(83142);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/mdb-ui/src/lib/navbar/UserDropDown.js";
 
@@ -15659,7 +17146,7 @@ function UserDropDown({
 
 /***/ }),
 
-/***/ 69220:
+/***/ 83142:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -15694,7 +17181,7 @@ const UserIcon = ({
 
 /***/ }),
 
-/***/ 84106:
+/***/ 31694:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -15705,7 +17192,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var zustand__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(92467);
 /* harmony import */ var zustand_shallow__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(32414);
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(92910);
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(66545);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/mdb-ui/src/lib/snackbar/Snackbar.js";
 
@@ -15753,7 +17240,7 @@ function Snackbar() {
 
 /***/ }),
 
-/***/ 47026:
+/***/ 77643:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -15765,7 +17252,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(72779);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(97794);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4400);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/CallOutText.js";
 
@@ -15796,7 +17283,7 @@ const CallOutText = ({
 
 /***/ }),
 
-/***/ 59654:
+/***/ 26161:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -15804,8 +17291,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(97794);
-/* harmony import */ var _icons_CheckBoxIcon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(50146);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4400);
+/* harmony import */ var _icons_CheckBoxIcon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(50706);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/CheckBox.js";
 
@@ -15852,7 +17339,7 @@ const CheckBox = props => {
 
 /***/ }),
 
-/***/ 56254:
+/***/ 37818:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -15865,9 +17352,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(73441);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(72779);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(97794);
-/* harmony import */ var _CheckListItem__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(54844);
-/* harmony import */ var _icons_ChevronIcon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(38074);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4400);
+/* harmony import */ var _CheckListItem__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(55879);
+/* harmony import */ var _icons_ChevronIcon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(46209);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/CheckList.js";
 
@@ -15949,7 +17436,7 @@ function CheckList({
 
 /***/ }),
 
-/***/ 54844:
+/***/ 55879:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -15957,11 +17444,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _meddbriefer_scenario_data_constants_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(95558);
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(97794);
-/* harmony import */ var _CheckBox__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(59654);
-/* harmony import */ var _CallOutText__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(47026);
-/* harmony import */ var _icons_CallOutIcon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(44724);
+/* harmony import */ var _meddbriefer_scenario_data_constants_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(33811);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4400);
+/* harmony import */ var _CheckBox__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(26161);
+/* harmony import */ var _CallOutText__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(77643);
+/* harmony import */ var _icons_CallOutIcon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(8414);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/CheckListItem.js";
 
@@ -16214,7 +17701,7 @@ const CheckListItem = ({
 
 /***/ }),
 
-/***/ 58235:
+/***/ 60369:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -16235,9 +17722,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(77122);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(84210);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(98983);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(38428);
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(97794);
-/* harmony import */ var _meddbriefer_scenario_data_constants_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(95558);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(91412);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(4400);
+/* harmony import */ var _meddbriefer_scenario_data_constants_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(33811);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/InterventionStatus.js";
 
@@ -16434,7 +17921,7 @@ const InterventionStatus = () => {
 
 /***/ }),
 
-/***/ 79984:
+/***/ 30109:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -16457,10 +17944,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(8668);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(72779);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _meddbriefer_scenario_data_constants_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(95558);
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(97794);
-/* harmony import */ var _icons_ChevronIcon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(38074);
-/* harmony import */ var _Panel__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(27383);
+/* harmony import */ var _meddbriefer_scenario_data_constants_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(33811);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(4400);
+/* harmony import */ var _icons_ChevronIcon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(46209);
+/* harmony import */ var _Panel__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(31276);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/InterventionsList.js";
 
@@ -16677,7 +18164,7 @@ function InterventionsList() {
 
 /***/ }),
 
-/***/ 19701:
+/***/ 33596:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -16685,8 +18172,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(97794);
-/* harmony import */ var _Panel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(27383);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4400);
+/* harmony import */ var _Panel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(31276);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/InterventionsPerformed.js";
 
@@ -16722,7 +18209,7 @@ const InterventionsPerformed = () => {
 
 /***/ }),
 
-/***/ 25923:
+/***/ 59941:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -16784,7 +18271,7 @@ const MDBContainer = ({
 
 /***/ }),
 
-/***/ 27383:
+/***/ 31276:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -16805,7 +18292,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(20613);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(72779);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _icons_ChevronIcon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(38074);
+/* harmony import */ var _icons_ChevronIcon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(46209);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/Panel.js";
 
@@ -16940,7 +18427,7 @@ const Panel = ({
 
 /***/ }),
 
-/***/ 68289:
+/***/ 83473:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -16955,14 +18442,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(7618);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(72779);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(97794);
-/* harmony import */ var _tabs_OPQRST__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2005);
-/* harmony import */ var _tabs_SampleTab__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1081);
-/* harmony import */ var _tabs_VitalsTab__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(75324);
-/* harmony import */ var _tabs_GeneralTab__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(51770);
-/* harmony import */ var _tabs_AirwayTab__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(47256);
-/* harmony import */ var _tabs_BreathingTab__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(97932);
-/* harmony import */ var _tabs_CirculationTab__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(63672);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4400);
+/* harmony import */ var _tabs_OPQRST__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7316);
+/* harmony import */ var _tabs_SampleTab__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(83024);
+/* harmony import */ var _tabs_VitalsTab__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(23088);
+/* harmony import */ var _tabs_GeneralTab__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(22024);
+/* harmony import */ var _tabs_AirwayTab__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(2810);
+/* harmony import */ var _tabs_BreathingTab__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(49269);
+/* harmony import */ var _tabs_CirculationTab__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(9908);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/PatientStatus.js";
 
@@ -17203,7 +18690,7 @@ const PatientStatus = () => {
 
 /***/ }),
 
-/***/ 98596:
+/***/ 39862:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -17217,10 +18704,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2784);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(97794);
-/* harmony import */ var _meddbriefer_scenario_data_constants__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(95558);
-/* harmony import */ var _CheckList__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(56254);
-/* harmony import */ var _Panel__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(27383);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4400);
+/* harmony import */ var _meddbriefer_scenario_data_constants__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(33811);
+/* harmony import */ var _CheckList__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(37818);
+/* harmony import */ var _Panel__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(31276);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/PhaseCheckList.js";
 
@@ -17295,7 +18782,7 @@ const PhaseCheckList = ({
 
 /***/ }),
 
-/***/ 79374:
+/***/ 5273:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -17306,8 +18793,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(72779);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7267);
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(97794);
-/* harmony import */ var _SubPhaseNav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(90002);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4400);
+/* harmony import */ var _SubPhaseNav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9806);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/PhaseNav.js";
 
@@ -17424,7 +18911,7 @@ const PhaseNav = ({
 
 /***/ }),
 
-/***/ 3593:
+/***/ 1508:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -17433,9 +18920,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7267);
-/* harmony import */ var _meddbriefer_scenario_data_constants_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(95558);
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(97794);
-/* harmony import */ var _PhaseNav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(79374);
+/* harmony import */ var _meddbriefer_scenario_data_constants_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(33811);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4400);
+/* harmony import */ var _PhaseNav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5273);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/PhaseNavPane.js";
 
@@ -17472,7 +18959,7 @@ const PhaseNavPane = () => {
 
 /***/ }),
 
-/***/ 76370:
+/***/ 42842:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -17482,8 +18969,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(38428);
-/* harmony import */ var _RevealTableRow__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(37055);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(91412);
+/* harmony import */ var _RevealTableRow__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(67413);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/RevealTable.js";
 
@@ -17541,7 +19028,7 @@ function RevealTable({
 
 /***/ }),
 
-/***/ 37055:
+/***/ 67413:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -17558,7 +19045,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(77122);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(84210);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(98983);
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(97794);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4400);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/RevealTableRow.js";
 
@@ -17652,7 +19139,7 @@ function RevealTableRow({
 
 /***/ }),
 
-/***/ 90002:
+/***/ 9806:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -17661,7 +19148,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7267);
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(97794);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4400);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/SubPhaseNav.js";
 
@@ -17712,7 +19199,7 @@ const SubPhaseNav = ({
 
 /***/ }),
 
-/***/ 74073:
+/***/ 19608:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -17780,7 +19267,7 @@ function CheckBoxGroup({
 
 /***/ }),
 
-/***/ 56586:
+/***/ 36984:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -17788,8 +19275,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(97794);
-/* harmony import */ var _icons_CheckBoxIcon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(50146);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4400);
+/* harmony import */ var _icons_CheckBoxIcon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(50706);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/forms/FormCheckBox.js";
 
@@ -17834,7 +19321,7 @@ const FormCheckBox = ({
 
 /***/ }),
 
-/***/ 80337:
+/***/ 56551:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -17854,12 +19341,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(2784);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _meddbriefer_scenario_data__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(48913);
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(97794);
-/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(71880);
-/* harmony import */ var _Panel__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(27383);
-/* harmony import */ var _PromptsForm__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(22582);
-/* harmony import */ var _meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(7686);
+/* harmony import */ var _meddbriefer_scenario_data__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(81657);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(4400);
+/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(6332);
+/* harmony import */ var _Panel__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(31276);
+/* harmony import */ var _PromptsForm__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(15929);
+/* harmony import */ var _meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(7696);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/forms/IntvForm.js";
 
@@ -18183,7 +19670,7 @@ function IntvForm({
 
 /***/ }),
 
-/***/ 45087:
+/***/ 79399:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -18195,9 +19682,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var core_js_modules_es_string_includes_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(31235);
 /* harmony import */ var core_js_modules_es_string_includes_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_includes_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _meddbriefer_scenario_data_constants_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(95558);
-/* harmony import */ var _CheckBoxGroup__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(74073);
-/* harmony import */ var _RadioGroup__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7063);
+/* harmony import */ var _meddbriefer_scenario_data_constants_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(33811);
+/* harmony import */ var _CheckBoxGroup__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(19608);
+/* harmony import */ var _RadioGroup__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(28233);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/forms/Prompt.js";
 
@@ -18256,7 +19743,7 @@ function Prompt({
 
 /***/ }),
 
-/***/ 26112:
+/***/ 9004:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -18266,7 +19753,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(43105);
 /* harmony import */ var core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Prompt__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(45087);
+/* harmony import */ var _Prompt__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(79399);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/forms/PromptList.js";
 
@@ -18307,7 +19794,7 @@ const PromptList = ({
 
 /***/ }),
 
-/***/ 22582:
+/***/ 15929:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -18316,7 +19803,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ PromptsForm)
 /* harmony export */ });
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(77122);
-/* harmony import */ var _PromptList__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(26112);
+/* harmony import */ var _PromptList__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9004);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/forms/PromptsForm.jsx";
 
@@ -18364,7 +19851,7 @@ function PromptsForm({
 
 /***/ }),
 
-/***/ 7063:
+/***/ 28233:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -18449,7 +19936,7 @@ function RadioGroup({
 
 /***/ }),
 
-/***/ 51228:
+/***/ 72269:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -18462,12 +19949,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "PromptList": () => (/* reexport safe */ _PromptList__WEBPACK_IMPORTED_MODULE_4__["default"]),
 /* harmony export */   "RadioGroup": () => (/* reexport safe */ _RadioGroup__WEBPACK_IMPORTED_MODULE_5__["default"])
 /* harmony export */ });
-/* harmony import */ var _CheckBoxGroup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74073);
-/* harmony import */ var _FormCheckBox__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(56586);
-/* harmony import */ var _IntvForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(80337);
-/* harmony import */ var _Prompt__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(45087);
-/* harmony import */ var _PromptList__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(26112);
-/* harmony import */ var _RadioGroup__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7063);
+/* harmony import */ var _CheckBoxGroup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(19608);
+/* harmony import */ var _FormCheckBox__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(36984);
+/* harmony import */ var _IntvForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(56551);
+/* harmony import */ var _Prompt__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(79399);
+/* harmony import */ var _PromptList__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9004);
+/* harmony import */ var _RadioGroup__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(28233);
 
  // export {default} from "./FormUtils"
 
@@ -18478,7 +19965,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 71880:
+/***/ 6332:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -18523,7 +20010,7 @@ function logicalAndCorrectness(correctSet, incorrectSet, selectedSet) {
 
 /***/ }),
 
-/***/ 44724:
+/***/ 8414:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -18533,7 +20020,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(97794);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4400);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/icons/CallOutIcon.js";
 
@@ -18570,7 +20057,7 @@ const CallOutIcon = ({
 
 /***/ }),
 
-/***/ 50146:
+/***/ 50706:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -18602,7 +20089,7 @@ const CheckBoxIcon = ({
 
 /***/ }),
 
-/***/ 5456:
+/***/ 44409:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -18639,7 +20126,7 @@ const CheckmarkIcon = ({
 
 /***/ }),
 
-/***/ 38074:
+/***/ 46209:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -18671,7 +20158,7 @@ const ChevronIcon = ({
 
 /***/ }),
 
-/***/ 64193:
+/***/ 10371:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -18708,7 +20195,7 @@ const DoneIcon = ({
 
 /***/ }),
 
-/***/ 34395:
+/***/ 82782:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -18734,7 +20221,7 @@ const FormIcon = () => {
 
 /***/ }),
 
-/***/ 12305:
+/***/ 97584:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -18763,7 +20250,7 @@ const TimerIcon = ({
 
 /***/ }),
 
-/***/ 284:
+/***/ 68479:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -18777,13 +20264,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "FormIcon": () => (/* reexport safe */ _FormIcon__WEBPACK_IMPORTED_MODULE_5__["default"]),
 /* harmony export */   "TimerIcon": () => (/* reexport safe */ _TimerIcon__WEBPACK_IMPORTED_MODULE_6__["default"])
 /* harmony export */ });
-/* harmony import */ var _CallOutIcon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(44724);
-/* harmony import */ var _CheckBoxIcon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(50146);
-/* harmony import */ var _CheckmarkIcon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5456);
-/* harmony import */ var _ChevronIcon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(38074);
-/* harmony import */ var _DoneIcon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(64193);
-/* harmony import */ var _FormIcon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(34395);
-/* harmony import */ var _TimerIcon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(12305);
+/* harmony import */ var _CallOutIcon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8414);
+/* harmony import */ var _CheckBoxIcon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(50706);
+/* harmony import */ var _CheckmarkIcon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(44409);
+/* harmony import */ var _ChevronIcon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(46209);
+/* harmony import */ var _DoneIcon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(10371);
+/* harmony import */ var _FormIcon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(82782);
+/* harmony import */ var _TimerIcon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(97584);
 
 
 
@@ -18794,7 +20281,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 64060:
+/***/ 33188:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -18849,26 +20336,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "UnauthedLayout": () => (/* reexport safe */ _layouts__WEBPACK_IMPORTED_MODULE_15__.UnauthedLayout),
 /* harmony export */   "VitalsTab": () => (/* reexport safe */ _tabs__WEBPACK_IMPORTED_MODULE_19__.VitalsTab)
 /* harmony export */ });
-/* harmony import */ var _CallOutText__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(47026);
-/* harmony import */ var _CheckBox__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(59654);
-/* harmony import */ var _CheckList__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(56254);
-/* harmony import */ var _CheckListItem__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(54844);
-/* harmony import */ var _InterventionsPerformed__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(19701);
-/* harmony import */ var _MDBContainer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(25923);
-/* harmony import */ var _Panel__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(27383);
-/* harmony import */ var _PatientStatus__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(68289);
-/* harmony import */ var _PhaseCheckList__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(98596);
-/* harmony import */ var _PhaseNav__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(79374);
-/* harmony import */ var _PhaseNavPane__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(3593);
-/* harmony import */ var _RevealTable__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(76370);
-/* harmony import */ var _RevealTableRow__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(37055);
-/* harmony import */ var _SubPhaseNav__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(90002);
-/* harmony import */ var _forms__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(51228);
-/* harmony import */ var _layouts__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(9496);
-/* harmony import */ var _icons__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(284);
-/* harmony import */ var _modals__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(82517);
-/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(19017);
-/* harmony import */ var _tabs__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(70538);
+/* harmony import */ var _CallOutText__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(77643);
+/* harmony import */ var _CheckBox__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(26161);
+/* harmony import */ var _CheckList__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(37818);
+/* harmony import */ var _CheckListItem__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(55879);
+/* harmony import */ var _InterventionsPerformed__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(33596);
+/* harmony import */ var _MDBContainer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(59941);
+/* harmony import */ var _Panel__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(31276);
+/* harmony import */ var _PatientStatus__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(83473);
+/* harmony import */ var _PhaseCheckList__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(39862);
+/* harmony import */ var _PhaseNav__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(5273);
+/* harmony import */ var _PhaseNavPane__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(1508);
+/* harmony import */ var _RevealTable__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(42842);
+/* harmony import */ var _RevealTableRow__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(67413);
+/* harmony import */ var _SubPhaseNav__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(9806);
+/* harmony import */ var _forms__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(72269);
+/* harmony import */ var _layouts__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(14837);
+/* harmony import */ var _icons__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(68479);
+/* harmony import */ var _modals__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(77787);
+/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(95916);
+/* harmony import */ var _tabs__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(23775);
 
 
 
@@ -18894,7 +20381,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 35592:
+/***/ 77485:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -18960,7 +20447,7 @@ const IntvLayout = ({
 
 /***/ }),
 
-/***/ 75822:
+/***/ 10964:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -19025,7 +20512,7 @@ const PhaseLayout = ({
 
 /***/ }),
 
-/***/ 61937:
+/***/ 15165:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -19036,21 +20523,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(36719);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(49966);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(7267);
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(97794);
-/* harmony import */ var _meddbriefer_mdb_ui__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(55334);
-/* harmony import */ var _routes_Section__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(69799);
-/* harmony import */ var _navbar_SaveScenarioButton__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6858);
-/* harmony import */ var _navbar_ScenarioInfoButton__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9576);
-/* harmony import */ var _navbar_Timer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(57807);
-/* harmony import */ var _modals_ScenarioCompleteModal__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(86971);
-/* harmony import */ var _modals_ScenarioDoneModal__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(99049);
-/* harmony import */ var _modals_ScenarioInfo__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(68779);
-/* harmony import */ var _PhaseNavPane__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(3593);
-/* harmony import */ var _InterventionsList__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(79984);
-/* harmony import */ var _forms_IntvForm__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(80337);
-/* harmony import */ var _IntvLayout__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(35592);
-/* harmony import */ var _InterventionStatus__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(58235);
-/* harmony import */ var _Panel__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(27383);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4400);
+/* harmony import */ var _meddbriefer_mdb_ui__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(83325);
+/* harmony import */ var _routes_Section__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(75122);
+/* harmony import */ var _navbar_SaveScenarioButton__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1147);
+/* harmony import */ var _navbar_ScenarioInfoButton__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(3336);
+/* harmony import */ var _navbar_Timer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(73581);
+/* harmony import */ var _modals_ScenarioCompleteModal__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(60507);
+/* harmony import */ var _modals_ScenarioDoneModal__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(11516);
+/* harmony import */ var _modals_ScenarioInfo__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(49150);
+/* harmony import */ var _PhaseNavPane__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(1508);
+/* harmony import */ var _InterventionsList__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(30109);
+/* harmony import */ var _forms_IntvForm__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(56551);
+/* harmony import */ var _IntvLayout__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(77485);
+/* harmony import */ var _InterventionStatus__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(60369);
+/* harmony import */ var _Panel__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(31276);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/layouts/ScenarioLayout.js";
 // import { useEffect, useState } from "react"
@@ -19272,7 +20759,7 @@ function ScenarioLayout({
 
 /***/ }),
 
-/***/ 85601:
+/***/ 94511:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -19289,8 +20776,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(36719);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(49966);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(67465);
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(97794);
-/* harmony import */ var _forms_IntvForm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(80337);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4400);
+/* harmony import */ var _forms_IntvForm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(56551);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/layouts/SectionLayout.js";
 
@@ -19362,7 +20849,7 @@ const SectionLayout = ({
 
 /***/ }),
 
-/***/ 75985:
+/***/ 7577:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -19372,7 +20859,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _meddbriefer_mdb_ui__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(55334);
+/* harmony import */ var _meddbriefer_mdb_ui__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(83325);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/layouts/UnauthedLayout.js";
 
@@ -19396,7 +20883,7 @@ const UnauthedLayout = props => {
 
 /***/ }),
 
-/***/ 9496:
+/***/ 14837:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -19407,10 +20894,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "SectionLayout": () => (/* reexport safe */ _SectionLayout__WEBPACK_IMPORTED_MODULE_2__["default"]),
 /* harmony export */   "UnauthedLayout": () => (/* reexport safe */ _UnauthedLayout__WEBPACK_IMPORTED_MODULE_3__["default"])
 /* harmony export */ });
-/* harmony import */ var _PhaseLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(75822);
-/* harmony import */ var _ScenarioLayout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(61937);
-/* harmony import */ var _SectionLayout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(85601);
-/* harmony import */ var _UnauthedLayout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(75985);
+/* harmony import */ var _PhaseLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(10964);
+/* harmony import */ var _ScenarioLayout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(15165);
+/* harmony import */ var _SectionLayout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(94511);
+/* harmony import */ var _UnauthedLayout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7577);
 // export {default as CheckListRaterInfoLayout} from "./CheckListRaterInfoLayout"
 // export {default as PhaseDetailsLayout} from "./PhaseDetailsLayout"
 
@@ -19420,7 +20907,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 11119:
+/***/ 1267:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -19428,9 +20915,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(97794);
-/* harmony import */ var _MDBModal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(26226);
-/* harmony import */ var _PatientStatus__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(68289);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4400);
+/* harmony import */ var _MDBModal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42244);
+/* harmony import */ var _PatientStatus__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(83473);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/modals/FindingsModal.js";
 
@@ -19463,7 +20950,7 @@ const FindingsModal = () => {
 
 /***/ }),
 
-/***/ 26226:
+/***/ 42244:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -19526,7 +21013,7 @@ const MDBModal = props => {
 
 /***/ }),
 
-/***/ 37151:
+/***/ 33219:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -19537,8 +21024,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(77122);
-/* harmony import */ var _contexts_PreferencesContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(69386);
-/* harmony import */ var _MDBModal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(26226);
+/* harmony import */ var _contexts_PreferencesContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(89102);
+/* harmony import */ var _MDBModal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(42244);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/modals/PreferencesForm.js";
 
@@ -19650,7 +21137,7 @@ const PreferencesForm = ({
 
 /***/ }),
 
-/***/ 86971:
+/***/ 60507:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -19668,8 +21155,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(7267);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(77122);
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(97794);
-/* harmony import */ var _MDBModal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(26226);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(4400);
+/* harmony import */ var _MDBModal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(42244);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/modals/ScenarioCompleteModal.js";
 
@@ -19822,7 +21309,7 @@ function ScenarioCompleteModal() {
 
 /***/ }),
 
-/***/ 99049:
+/***/ 11516:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -19840,9 +21327,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(7267);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(77122);
-/* harmony import */ var _meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(36011);
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(97794);
-/* harmony import */ var _MDBModal__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(26226);
+/* harmony import */ var _meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(97650);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(4400);
+/* harmony import */ var _MDBModal__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(42244);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/modals/ScenarioDoneModal.jsx";
 
@@ -19964,7 +21451,7 @@ function ScenarioDoneModal({
 
 /***/ }),
 
-/***/ 68779:
+/***/ 49150:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -19978,11 +21465,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2784);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(38428);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(91412);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(77122);
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(97794);
-/* harmony import */ var _MDBModal__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(26226);
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(83411);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4400);
+/* harmony import */ var _MDBModal__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(42244);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(62611);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/modals/ScenarioInfo.js";
 
@@ -20276,7 +21763,7 @@ const ScenarioInfo = () => {
 
 /***/ }),
 
-/***/ 82517:
+/***/ 77787:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -20288,11 +21775,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "ScenarioCompleteModal": () => (/* reexport safe */ _ScenarioCompleteModal__WEBPACK_IMPORTED_MODULE_3__["default"]),
 /* harmony export */   "ScenarioInfo": () => (/* reexport safe */ _ScenarioInfo__WEBPACK_IMPORTED_MODULE_4__["default"])
 /* harmony export */ });
-/* harmony import */ var _FindingsModal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(11119);
-/* harmony import */ var _MDBModal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(26226);
-/* harmony import */ var _PreferencesForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(37151);
-/* harmony import */ var _ScenarioCompleteModal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(86971);
-/* harmony import */ var _ScenarioInfo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(68779);
+/* harmony import */ var _FindingsModal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1267);
+/* harmony import */ var _MDBModal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42244);
+/* harmony import */ var _PreferencesForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(33219);
+/* harmony import */ var _ScenarioCompleteModal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(60507);
+/* harmony import */ var _ScenarioInfo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(49150);
 
 
 
@@ -20301,7 +21788,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 83714:
+/***/ 35886:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -20312,7 +21799,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(77122);
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(97794);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4400);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/navbar/FindingsButton.js";
 
@@ -20341,7 +21828,7 @@ const FindingsButton = () => {
 
 /***/ }),
 
-/***/ 6858:
+/***/ 1147:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -20352,7 +21839,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(77122);
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(97794);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4400);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/navbar/SaveScenarioButton.js";
 
@@ -20380,7 +21867,7 @@ function SaveScenarioButton({
 
 /***/ }),
 
-/***/ 9576:
+/***/ 3336:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -20391,7 +21878,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(77122);
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(97794);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4400);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/navbar/ScenarioInfoButton.js";
 
@@ -20420,7 +21907,7 @@ const ScenarioInfoButton = () => {
 
 /***/ }),
 
-/***/ 57807:
+/***/ 73581:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -20431,9 +21918,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(39876);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(72779);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(97794);
-/* harmony import */ var _icons_TimerIcon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12305);
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(83411);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4400);
+/* harmony import */ var _icons_TimerIcon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(97584);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(62611);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/navbar/Timer.js";
 
@@ -20482,7 +21969,7 @@ const Timer = () => {
 
 /***/ }),
 
-/***/ 19017:
+/***/ 95916:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -20493,10 +21980,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "ScenarioInfoButton": () => (/* reexport safe */ _ScenarioInfoButton__WEBPACK_IMPORTED_MODULE_2__["default"]),
 /* harmony export */   "Timer": () => (/* reexport safe */ _Timer__WEBPACK_IMPORTED_MODULE_3__["default"])
 /* harmony export */ });
-/* harmony import */ var _FindingsButton__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(83714);
-/* harmony import */ var _SaveScenarioButton__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6858);
-/* harmony import */ var _ScenarioInfoButton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9576);
-/* harmony import */ var _Timer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(57807);
+/* harmony import */ var _FindingsButton__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(35886);
+/* harmony import */ var _SaveScenarioButton__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1147);
+/* harmony import */ var _ScenarioInfoButton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3336);
+/* harmony import */ var _Timer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(73581);
 
 
 
@@ -20504,7 +21991,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 47256:
+/***/ 2810:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -20512,8 +21999,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(97794);
-/* harmony import */ var _RevealTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76370);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4400);
+/* harmony import */ var _RevealTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42842);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/tabs/AirwayTab.js";
 
@@ -20540,7 +22027,7 @@ const AirwayTabContent = () => {
 
 /***/ }),
 
-/***/ 49408:
+/***/ 54999:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -20550,9 +22037,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(38428);
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(97794);
-/* harmony import */ var _CallOutText__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(47026);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(91412);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4400);
+/* harmony import */ var _CallOutText__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(77643);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/tabs/AssessmentFindings.js";
 
@@ -20640,7 +22127,7 @@ const AssessmentFindingsTabContent = () => {
 
 /***/ }),
 
-/***/ 97932:
+/***/ 49269:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -20648,8 +22135,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(97794);
-/* harmony import */ var _RevealTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76370);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4400);
+/* harmony import */ var _RevealTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42842);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/tabs/BreathingTab.js";
 
@@ -20676,7 +22163,7 @@ const BreathingTabContent = () => {
 
 /***/ }),
 
-/***/ 63672:
+/***/ 9908:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -20684,8 +22171,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(97794);
-/* harmony import */ var _RevealTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76370);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4400);
+/* harmony import */ var _RevealTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42842);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/tabs/CirculationTab.js";
 
@@ -20698,7 +22185,7 @@ const CirculationTabContent = () => {
   } = (0,_contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__.useScenario)();
   return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_RevealTable__WEBPACK_IMPORTED_MODULE_1__["default"], {
     title: "Circulation",
-    category: "findings",
+    category: "circulation",
     headings: ["Assessments", "Current Value"],
     rows: circulationFindings
   }, void 0, false, {
@@ -20712,7 +22199,7 @@ const CirculationTabContent = () => {
 
 /***/ }),
 
-/***/ 51770:
+/***/ 22024:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -20720,8 +22207,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(97794);
-/* harmony import */ var _RevealTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76370);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4400);
+/* harmony import */ var _RevealTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42842);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/tabs/GeneralTab.js";
 
@@ -20748,7 +22235,7 @@ const GeneralTabContent = () => {
 
 /***/ }),
 
-/***/ 2005:
+/***/ 7316:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -20756,8 +22243,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(97794);
-/* harmony import */ var _RevealTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76370);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4400);
+/* harmony import */ var _RevealTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42842);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/tabs/OPQRST.js";
 
@@ -20790,7 +22277,7 @@ const OPQRSTTabContent = () => {
 
 /***/ }),
 
-/***/ 1081:
+/***/ 83024:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -20798,8 +22285,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(97794);
-/* harmony import */ var _RevealTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76370);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4400);
+/* harmony import */ var _RevealTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42842);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/tabs/SampleTab.js";
 
@@ -20832,7 +22319,7 @@ const SampleTabContent = () => {
 
 /***/ }),
 
-/***/ 75324:
+/***/ 23088:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -20846,8 +22333,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2784);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(97794);
-/* harmony import */ var _RevealTable__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(76370);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4400);
+/* harmony import */ var _RevealTable__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(42842);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/tabs/VitalsTab.js";
 
@@ -20891,7 +22378,7 @@ const VitalsTabContent = () => {
 
 /***/ }),
 
-/***/ 70538:
+/***/ 23775:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -20906,14 +22393,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "SampleTab": () => (/* reexport safe */ _SampleTab__WEBPACK_IMPORTED_MODULE_2__["default"]),
 /* harmony export */   "VitalsTab": () => (/* reexport safe */ _VitalsTab__WEBPACK_IMPORTED_MODULE_3__["default"])
 /* harmony export */ });
-/* harmony import */ var _AssessmentFindings__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(49408);
-/* harmony import */ var _OPQRST__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2005);
-/* harmony import */ var _SampleTab__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1081);
-/* harmony import */ var _VitalsTab__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(75324);
-/* harmony import */ var _GeneralTab__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(51770);
-/* harmony import */ var _AirwayTab__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(47256);
-/* harmony import */ var _BreathingTab__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(97932);
-/* harmony import */ var _CirculationTab__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(63672);
+/* harmony import */ var _AssessmentFindings__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(54999);
+/* harmony import */ var _OPQRST__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7316);
+/* harmony import */ var _SampleTab__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(83024);
+/* harmony import */ var _VitalsTab__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(23088);
+/* harmony import */ var _GeneralTab__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(22024);
+/* harmony import */ var _AirwayTab__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(2810);
+/* harmony import */ var _BreathingTab__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(49269);
+/* harmony import */ var _CirculationTab__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(9908);
  // export {default as InterventionsTab} from  "./InterventionsTab"
 
 
@@ -20926,7 +22413,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 80789:
+/***/ 31561:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -20945,7 +22432,7 @@ const useObserverContext = () => (0,react__WEBPACK_IMPORTED_MODULE_0__.useContex
 
 /***/ }),
 
-/***/ 69386:
+/***/ 89102:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -20961,7 +22448,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2784);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(36011);
+/* harmony import */ var _meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(97650);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/contexts/PreferencesContext.js";
 
@@ -21055,7 +22542,7 @@ const usePrefs = () => (0,react__WEBPACK_IMPORTED_MODULE_2__.useContext)(Prefere
 
 /***/ }),
 
-/***/ 97794:
+/***/ 4400:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -21087,11 +22574,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es_string_includes_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_includes_js__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(2784);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _meddbriefer_mdb_firebase__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(89526);
-/* harmony import */ var _meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(36011);
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(83411);
-/* harmony import */ var _meddbriefer_analysis__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(54303);
-/* harmony import */ var _meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(7686);
+/* harmony import */ var _meddbriefer_mdb_firebase__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(44551);
+/* harmony import */ var _meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(97650);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(62611);
+/* harmony import */ var _meddbriefer_analysis__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(72105);
+/* harmony import */ var _meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(7696);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/contexts/ScenarioContext.js";
 
@@ -21712,7 +23199,7 @@ const ScenarioProvider = ({
     if (!good) {
       let clis = Object.values(checkListItems).filter(rec => !!rec && rec.constructor.name === "Object");
       let actions = clis.concat(patientStatusRequests);
-      let vitalsCount = (0,_meddbriefer_analysis__WEBPACK_IMPORTED_MODULE_14__.doVitalsCounts)(actions, scenario.name);
+      let vitalsCount = (0,_meddbriefer_analysis__WEBPACK_IMPORTED_MODULE_14__.doVitalsCounts)(actions, scenario.name, _meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_15__.vitalsToStep);
 
       for (const [, count] of Object.entries(vitalsCount)) {
         if (count >= 2) {
@@ -21828,7 +23315,7 @@ const useScenario = () => (0,react__WEBPACK_IMPORTED_MODULE_10__.useContext)(Sce
 
 /***/ }),
 
-/***/ 53390:
+/***/ 25678:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -21843,16 +23330,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "usePrefs": () => (/* reexport safe */ _PreferencesContext__WEBPACK_IMPORTED_MODULE_0__.usePrefs),
 /* harmony export */   "useScenario": () => (/* reexport safe */ _ScenarioContext__WEBPACK_IMPORTED_MODULE_1__.useScenario)
 /* harmony export */ });
-/* harmony import */ var _PreferencesContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(69386);
-/* harmony import */ var _ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(97794);
-/* harmony import */ var _ObserverContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(80789);
+/* harmony import */ var _PreferencesContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(89102);
+/* harmony import */ var _ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4400);
+/* harmony import */ var _ObserverContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(31561);
 
 
 
 
 /***/ }),
 
-/***/ 42012:
+/***/ 13162:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -21918,11 +23405,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "usePrefs": () => (/* reexport safe */ _contexts__WEBPACK_IMPORTED_MODULE_3__.usePrefs),
 /* harmony export */   "useScenario": () => (/* reexport safe */ _contexts__WEBPACK_IMPORTED_MODULE_3__.useScenario)
 /* harmony export */ });
-/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(18080);
-/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(59961);
-/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(64060);
-/* harmony import */ var _contexts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(53390);
-/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(37728);
+/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(58886);
+/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7272);
+/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(33188);
+/* harmony import */ var _contexts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(25678);
+/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(99381);
 
 
 
@@ -21931,7 +23418,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 67270:
+/***/ 12278:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -21946,10 +23433,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2784);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(7267);
-/* harmony import */ var _meddbriefer_mdb_firebase__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(89526);
-/* harmony import */ var _meddbriefer_scenario_data_index_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(48913);
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(97794);
-/* harmony import */ var _components_layouts_ScenarioLayout__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(61937);
+/* harmony import */ var _meddbriefer_mdb_firebase__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(44551);
+/* harmony import */ var _meddbriefer_scenario_data_index_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(81657);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(4400);
+/* harmony import */ var _components_layouts_ScenarioLayout__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(15165);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/routes/Scenario.js";
 
@@ -22040,7 +23527,7 @@ function Scenario({
 
 /***/ }),
 
-/***/ 54966:
+/***/ 62766:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -22058,9 +23545,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(36719);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(49966);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(67465);
-/* harmony import */ var _meddbriefer_mdb_firebase__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(89526);
-/* harmony import */ var _meddbriefer_mdb_ui__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(55334);
-/* harmony import */ var _contexts_ObserverContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(80789);
+/* harmony import */ var _meddbriefer_mdb_firebase__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(44551);
+/* harmony import */ var _meddbriefer_mdb_ui__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(83325);
+/* harmony import */ var _contexts_ObserverContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(31561);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/routes/ScenarioList.js";
 
@@ -22167,7 +23654,7 @@ function ScenarioList(props) {
 
 /***/ }),
 
-/***/ 69799:
+/***/ 75122:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -22182,11 +23669,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2784);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(7267);
-/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(97794);
-/* harmony import */ var _components_layouts_PhaseLayout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(75822);
-/* harmony import */ var _components_PhaseCheckList__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(98596);
-/* harmony import */ var _components_PatientStatus__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(68289);
-/* harmony import */ var _components_Panel__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(27383);
+/* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4400);
+/* harmony import */ var _components_layouts_PhaseLayout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(10964);
+/* harmony import */ var _components_PhaseCheckList__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(39862);
+/* harmony import */ var _components_PatientStatus__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(83473);
+/* harmony import */ var _components_Panel__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(31276);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/routes/Section.js";
 
@@ -22282,7 +23769,7 @@ const Section = () => {
 
 /***/ }),
 
-/***/ 37728:
+/***/ 99381:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -22292,16 +23779,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "ScenarioList": () => (/* reexport safe */ _ScenarioList__WEBPACK_IMPORTED_MODULE_1__["default"]),
 /* harmony export */   "Section": () => (/* reexport safe */ _Section__WEBPACK_IMPORTED_MODULE_2__["default"])
 /* harmony export */ });
-/* harmony import */ var _Scenario__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(67270);
-/* harmony import */ var _ScenarioList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(54966);
-/* harmony import */ var _Section__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(69799);
+/* harmony import */ var _Scenario__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(12278);
+/* harmony import */ var _ScenarioList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(62766);
+/* harmony import */ var _Section__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(75122);
 
 
 
 
 /***/ }),
 
-/***/ 83411:
+/***/ 62611:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -22344,7 +23831,7 @@ const logicalExprParser = new expressionparser__WEBPACK_IMPORTED_MODULE_0__.Expr
 
 /***/ }),
 
-/***/ 87988:
+/***/ 54386:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -22355,12 +23842,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "processAssessmentAnswers": () => (/* reexport safe */ _prompt_answer_grading__WEBPACK_IMPORTED_MODULE_0__.processAssessmentAnswers),
 /* harmony export */   "processInterventionAnswers": () => (/* reexport safe */ _prompt_answer_grading__WEBPACK_IMPORTED_MODULE_0__.processInterventionAnswers)
 /* harmony export */ });
-/* harmony import */ var _prompt_answer_grading__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1095);
+/* harmony import */ var _prompt_answer_grading__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(41089);
 
 
 /***/ }),
 
-/***/ 1095:
+/***/ 41089:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -22434,7 +23921,11 @@ function getPrescribedInvAnswers(interventionID, variantDef) {
   let intvEntry = scenario.interventionVariantAnswers[interventionID];
 
   if (intvEntry && !!variantDef) {
-    return intvEntry[variantDef];
+    if (intvEntry[variantDef]) {
+      return intvEntry[variantDef];
+    } else {
+      return intvEntry["{}"];
+    }
   } else {
     return false;
   }
@@ -22632,17 +24123,17 @@ const getAnswerLabels = (answerIDs, answerType) => {
 
 /***/ }),
 
-/***/ 89322:
+/***/ 22304:
 /***/ ((module) => {
 
-module.exports = [[module.id, "/* The snackbar - position it at the bottom and in the middle of the screen */\n#mdb-snackbar {\n    visibility: hidden;\n    /* Hidden by default. Visible on click */\n    /* min-width: 250px; */\n    width: 100%;\n    /* Set a default minimum width */\n    /* margin-left: -125px; */\n    /* margin-left: 0; */\n    /* Divide value of min-width by 2 */\n    background-color: #333;\n    /* Black background color */\n    color: #fff;\n    /* White text color */\n    text-align: center;\n    /* Centered text */\n    border-radius: 2px;\n    /* Rounded borders */\n    padding: 16px;\n    /* Padding */\n    position: fixed;\n    /* Sit on top of the screen */\n    z-index: 1;\n    /* Add a z-index if needed */\n    /* left: 50%; */\n    /* Center the snackbar */\n    bottom: 0px;\n    /* 30px from the bottom */\n}\n/* Show the snackbar when clicking on a button (class added with JavaScript) */\n#mdb-snackbar.show {\n    visibility: visible;\n    /* Show the snackbar */\n    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.\n  However, delay the fade out process for 2.5 seconds */\n    -webkit-animation: fadein 1.0s, fadeout 1.0s 2.5s;\n    animation: fadein 1.0s, fadeout 1.0s 2.5s;\n}\n/* Animations to fade the snackbar in and out */\n@-webkit-keyframes fadein {\n    from {\n        bottom: -30px;\n        opacity: 0;\n    }\n    to {\n        bottom: 0;\n        opacity: 1;\n    }\n}\n@keyframes fadein {\n    from {\n        bottom: -30px;\n        opacity: 0;\n    }\n    to {\n        bottom: 0;\n        opacity: 1;\n    }\n}\n@-webkit-keyframes fadeout {\n    from {\n        bottom: 0;\n        opacity: 1;\n    }\n\n    to {\n        bottom: -30;\n        opacity: 0;\n    }\n}\n@keyframes fadeout {\n    from {\n        bottom: 0;\n        opacity: 1;\n    }\n\n    to {\n        bottom: -30px;\n        opacity: 0;\n    }\n}\nnav.navbar {\n    margin-left: 0;\n    padding-left: 15px;\n    padding-top: 0;\n    padding-bottom: 0;\n    padding-right: 0;\n}\n.brand-wrapper {\n    padding: 0;\n}\n.brand {\n    color: #007bff;\n    font-size: 30px;\n    margin-right: 4px;\n    padding-right: 8px;\n}\n.mdb-title {\n    font-size: 24px;\n    padding-top: 11px;\n    padding-bottom: 5px;\n}\n.navbar-text {\n    margin-bottom: 0;\n}\n.nav button {\n    margin-left: 2px;\n    margin-right: 2px;\n}\n.navbar-btn {\n    text-transform: uppercase;\n    margin-top: 12px;\n    padding-top: 0;\n    padding-bottom: 0;\n    border: 0;\n    height: 25px;\n    margin-left: 7px !important;\n    margin-right: 7px !important;\n}", '', {"version":3,"sources":["/Users/user/Projects/monorepo/libs/mdb-ui/src/lib/index.css"],"names":[],"mappings":"AAAA,6EAA6E;AAC7E;IACI,kBAAkB;IAClB,wCAAwC;IACxC,sBAAsB;IACtB,WAAW;IACX,gCAAgC;IAChC,yBAAyB;IACzB,oBAAoB;IACpB,mCAAmC;IACnC,sBAAsB;IACtB,2BAA2B;IAC3B,WAAW;IACX,qBAAqB;IACrB,kBAAkB;IAClB,kBAAkB;IAClB,kBAAkB;IAClB,oBAAoB;IACpB,aAAa;IACb,YAAY;IACZ,eAAe;IACf,6BAA6B;IAC7B,UAAU;IACV,4BAA4B;IAC5B,eAAe;IACf,wBAAwB;IACxB,WAAW;IACX,yBAAyB;AAC7B;AAEA,8EAA8E;AAC9E;IACI,mBAAmB;IACnB,sBAAsB;IACtB;uDACmD;IACnD,iDAAiD;IACjD,yCAAyC;AAC7C;AAEA,+CAA+C;AAC/C;IACI;QACI,aAAa;QACb,UAAU;IACd;IACA;QACI,SAAS;QACT,UAAU;IACd;AACJ;AAEA;IACI;QACI,aAAa;QACb,UAAU;IACd;IACA;QACI,SAAS;QACT,UAAU;IACd;AACJ;AAEA;IACI;QACI,SAAS;QACT,UAAU;IACd;;IAEA;QACI,WAAW;QACX,UAAU;IACd;AACJ;AAEA;IACI;QACI,SAAS;QACT,UAAU;IACd;;IAEA;QACI,aAAa;QACb,UAAU;IACd;AACJ;AACA;IACI,cAAc;IACd,kBAAkB;IAClB,cAAc;IACd,iBAAiB;IACjB,gBAAgB;AACpB;AAEA;IACI,UAAU;AACd;AAEA;IACI,cAAc;IACd,eAAe;IACf,iBAAiB;IACjB,kBAAkB;AACtB;AAEA;IACI,eAAe;IACf,iBAAiB;IACjB,mBAAmB;AACvB;AAEA;IACI,gBAAgB;AACpB;AAEA;IACI,gBAAgB;IAChB,iBAAiB;AACrB;AAEA;IACI,yBAAyB;IACzB,gBAAgB;IAChB,cAAc;IACd,iBAAiB;IACjB,SAAS;IACT,YAAY;IACZ,2BAA2B;IAC3B,4BAA4B;AAChC","sourcesContent":["/* The snackbar - position it at the bottom and in the middle of the screen */\n#mdb-snackbar {\n    visibility: hidden;\n    /* Hidden by default. Visible on click */\n    /* min-width: 250px; */\n    width: 100%;\n    /* Set a default minimum width */\n    /* margin-left: -125px; */\n    /* margin-left: 0; */\n    /* Divide value of min-width by 2 */\n    background-color: #333;\n    /* Black background color */\n    color: #fff;\n    /* White text color */\n    text-align: center;\n    /* Centered text */\n    border-radius: 2px;\n    /* Rounded borders */\n    padding: 16px;\n    /* Padding */\n    position: fixed;\n    /* Sit on top of the screen */\n    z-index: 1;\n    /* Add a z-index if needed */\n    /* left: 50%; */\n    /* Center the snackbar */\n    bottom: 0px;\n    /* 30px from the bottom */\n}\n\n/* Show the snackbar when clicking on a button (class added with JavaScript) */\n#mdb-snackbar.show {\n    visibility: visible;\n    /* Show the snackbar */\n    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.\n  However, delay the fade out process for 2.5 seconds */\n    -webkit-animation: fadein 1.0s, fadeout 1.0s 2.5s;\n    animation: fadein 1.0s, fadeout 1.0s 2.5s;\n}\n\n/* Animations to fade the snackbar in and out */\n@-webkit-keyframes fadein {\n    from {\n        bottom: -30px;\n        opacity: 0;\n    }\n    to {\n        bottom: 0;\n        opacity: 1;\n    }\n}\n\n@keyframes fadein {\n    from {\n        bottom: -30px;\n        opacity: 0;\n    }\n    to {\n        bottom: 0;\n        opacity: 1;\n    }\n}\n\n@-webkit-keyframes fadeout {\n    from {\n        bottom: 0;\n        opacity: 1;\n    }\n\n    to {\n        bottom: -30;\n        opacity: 0;\n    }\n}\n\n@keyframes fadeout {\n    from {\n        bottom: 0;\n        opacity: 1;\n    }\n\n    to {\n        bottom: -30px;\n        opacity: 0;\n    }\n}\nnav.navbar {\n    margin-left: 0;\n    padding-left: 15px;\n    padding-top: 0;\n    padding-bottom: 0;\n    padding-right: 0;\n}\n\n.brand-wrapper {\n    padding: 0;\n}\n\n.brand {\n    color: #007bff;\n    font-size: 30px;\n    margin-right: 4px;\n    padding-right: 8px;\n}\n\n.mdb-title {\n    font-size: 24px;\n    padding-top: 11px;\n    padding-bottom: 5px;\n}\n\n.navbar-text {\n    margin-bottom: 0;\n}\n\n.nav button {\n    margin-left: 2px;\n    margin-right: 2px;\n}\n\n.navbar-btn {\n    text-transform: uppercase;\n    margin-top: 12px;\n    padding-top: 0;\n    padding-bottom: 0;\n    border: 0;\n    height: 25px;\n    margin-left: 7px !important;\n    margin-right: 7px !important;\n}"],"sourceRoot":""}]]
+module.exports = [[module.id, "/* The snackbar - position it at the bottom and in the middle of the screen */\n#mdb-snackbar {\n    visibility: hidden;\n    /* Hidden by default. Visible on click */\n    /* min-width: 250px; */\n    width: 100%;\n    /* Set a default minimum width */\n    /* margin-left: -125px; */\n    /* margin-left: 0; */\n    /* Divide value of min-width by 2 */\n    background-color: #333;\n    /* Black background color */\n    color: #fff;\n    /* White text color */\n    text-align: center;\n    /* Centered text */\n    border-radius: 2px;\n    /* Rounded borders */\n    padding: 16px;\n    /* Padding */\n    position: fixed;\n    /* Sit on top of the screen */\n    z-index: 1;\n    /* Add a z-index if needed */\n    /* left: 50%; */\n    /* Center the snackbar */\n    bottom: 0px;\n    /* 30px from the bottom */\n}\n/* Show the snackbar when clicking on a button (class added with JavaScript) */\n#mdb-snackbar.show {\n    visibility: visible;\n    /* Show the snackbar */\n    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.\n  However, delay the fade out process for 2.5 seconds */\n    animation: fadein 1.0s, fadeout 1.0s 2.5s;\n}\n/* Animations to fade the snackbar in and out */\n@keyframes fadein {\n    from {\n        bottom: -30px;\n        opacity: 0;\n    }\n    to {\n        bottom: 0;\n        opacity: 1;\n    }\n}\n@keyframes fadeout {\n    from {\n        bottom: 0;\n        opacity: 1;\n    }\n\n    to {\n        bottom: -30px;\n        opacity: 0;\n    }\n}\nnav.navbar {\n    margin-left: 0;\n    padding-left: 15px;\n    padding-top: 0;\n    padding-bottom: 0;\n    padding-right: 0;\n}\n.brand-wrapper {\n    padding: 0;\n}\n.brand {\n    color: #007bff;\n    font-size: 30px;\n    margin-right: 4px;\n    padding-right: 8px;\n}\n.mdb-title {\n    font-size: 24px;\n    padding-top: 11px;\n    padding-bottom: 5px;\n}\n.navbar-text {\n    margin-bottom: 0;\n}\n.nav button {\n    margin-left: 2px;\n    margin-right: 2px;\n}\n.navbar-btn {\n    text-transform: uppercase;\n    margin-top: 12px;\n    padding-top: 0;\n    padding-bottom: 0;\n    border: 0;\n    height: 25px;\n    margin-left: 7px !important;\n    margin-right: 7px !important;\n}", '', {"version":3,"sources":["/Users/user/Projects/monorepo/libs/mdb-ui/src/lib/index.css"],"names":[],"mappings":"AAAA,6EAA6E;AAC7E;IACI,kBAAkB;IAClB,wCAAwC;IACxC,sBAAsB;IACtB,WAAW;IACX,gCAAgC;IAChC,yBAAyB;IACzB,oBAAoB;IACpB,mCAAmC;IACnC,sBAAsB;IACtB,2BAA2B;IAC3B,WAAW;IACX,qBAAqB;IACrB,kBAAkB;IAClB,kBAAkB;IAClB,kBAAkB;IAClB,oBAAoB;IACpB,aAAa;IACb,YAAY;IACZ,eAAe;IACf,6BAA6B;IAC7B,UAAU;IACV,4BAA4B;IAC5B,eAAe;IACf,wBAAwB;IACxB,WAAW;IACX,yBAAyB;AAC7B;AAEA,8EAA8E;AAC9E;IACI,mBAAmB;IACnB,sBAAsB;IACtB;uDACmD;IAEnD,yCAAyC;AAC7C;AAEA,+CAA+C;AAY/C;IACI;QACI,aAAa;QACb,UAAU;IACd;IACA;QACI,SAAS;QACT,UAAU;IACd;AACJ;AAcA;IACI;QACI,SAAS;QACT,UAAU;IACd;;IAEA;QACI,aAAa;QACb,UAAU;IACd;AACJ;AACA;IACI,cAAc;IACd,kBAAkB;IAClB,cAAc;IACd,iBAAiB;IACjB,gBAAgB;AACpB;AAEA;IACI,UAAU;AACd;AAEA;IACI,cAAc;IACd,eAAe;IACf,iBAAiB;IACjB,kBAAkB;AACtB;AAEA;IACI,eAAe;IACf,iBAAiB;IACjB,mBAAmB;AACvB;AAEA;IACI,gBAAgB;AACpB;AAEA;IACI,gBAAgB;IAChB,iBAAiB;AACrB;AAEA;IACI,yBAAyB;IACzB,gBAAgB;IAChB,cAAc;IACd,iBAAiB;IACjB,SAAS;IACT,YAAY;IACZ,2BAA2B;IAC3B,4BAA4B;AAChC","sourcesContent":["/* The snackbar - position it at the bottom and in the middle of the screen */\n#mdb-snackbar {\n    visibility: hidden;\n    /* Hidden by default. Visible on click */\n    /* min-width: 250px; */\n    width: 100%;\n    /* Set a default minimum width */\n    /* margin-left: -125px; */\n    /* margin-left: 0; */\n    /* Divide value of min-width by 2 */\n    background-color: #333;\n    /* Black background color */\n    color: #fff;\n    /* White text color */\n    text-align: center;\n    /* Centered text */\n    border-radius: 2px;\n    /* Rounded borders */\n    padding: 16px;\n    /* Padding */\n    position: fixed;\n    /* Sit on top of the screen */\n    z-index: 1;\n    /* Add a z-index if needed */\n    /* left: 50%; */\n    /* Center the snackbar */\n    bottom: 0px;\n    /* 30px from the bottom */\n}\n\n/* Show the snackbar when clicking on a button (class added with JavaScript) */\n#mdb-snackbar.show {\n    visibility: visible;\n    /* Show the snackbar */\n    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.\n  However, delay the fade out process for 2.5 seconds */\n    -webkit-animation: fadein 1.0s, fadeout 1.0s 2.5s;\n    animation: fadein 1.0s, fadeout 1.0s 2.5s;\n}\n\n/* Animations to fade the snackbar in and out */\n@-webkit-keyframes fadein {\n    from {\n        bottom: -30px;\n        opacity: 0;\n    }\n    to {\n        bottom: 0;\n        opacity: 1;\n    }\n}\n\n@keyframes fadein {\n    from {\n        bottom: -30px;\n        opacity: 0;\n    }\n    to {\n        bottom: 0;\n        opacity: 1;\n    }\n}\n\n@-webkit-keyframes fadeout {\n    from {\n        bottom: 0;\n        opacity: 1;\n    }\n\n    to {\n        bottom: -30;\n        opacity: 0;\n    }\n}\n\n@keyframes fadeout {\n    from {\n        bottom: 0;\n        opacity: 1;\n    }\n\n    to {\n        bottom: -30px;\n        opacity: 0;\n    }\n}\nnav.navbar {\n    margin-left: 0;\n    padding-left: 15px;\n    padding-top: 0;\n    padding-bottom: 0;\n    padding-right: 0;\n}\n\n.brand-wrapper {\n    padding: 0;\n}\n\n.brand {\n    color: #007bff;\n    font-size: 30px;\n    margin-right: 4px;\n    padding-right: 8px;\n}\n\n.mdb-title {\n    font-size: 24px;\n    padding-top: 11px;\n    padding-bottom: 5px;\n}\n\n.navbar-text {\n    margin-bottom: 0;\n}\n\n.nav button {\n    margin-left: 2px;\n    margin-right: 2px;\n}\n\n.navbar-btn {\n    text-transform: uppercase;\n    margin-top: 12px;\n    padding-top: 0;\n    padding-bottom: 0;\n    border: 0;\n    height: 25px;\n    margin-left: 7px !important;\n    margin-right: 7px !important;\n}"],"sourceRoot":""}]]
 
 /***/ }),
 
-/***/ 63573:
+/***/ 29490:
 /***/ ((module) => {
 
-module.exports = [[module.id, "\n.container-fluid,\n.main {\n  width: 100%;\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  overflow: hidden;\n}\n\n.main-region {\n  height: 100%;\n  width: 100%;\n  padding-left: 0;\n  padding-right: 0;\n}\n\ntable {\n  font-size: 0.75em;\n}\n\n.request-btn {\n  font-size: 0.75em;\n}\n\n.confirm-intv {\n  margin-top: 10px;\n  font-size: 0.75em;\n}\n\n.row {\n  margin-left: 0;\n  width: 100%;\n  margin-right: 0;\n  overflow: hidden;\n}\n\n.wrapper-row {\n  height: 100%;\n  width: 100%;\n}\n\n.main-row {\n  height: calc(100% - 52px);\n}\n\n.col {\n  height: 100%;\n  padding-top: 5px;\n  padding-bottom: 5px;\n  padding: 15px;\n  overflow-y: hidden;\n  /* -webkit-overflow-scrolling: touch; */\n}\n\n/* nav.navbar {\n  margin-left: 0;\n  padding-left: 15px;\n  padding-top: 0;\n  padding-bottom: 0;\n  padding-right: 0;\n}\n\n.brand-wrapper {\n  padding: 0;\n}\n.brand {\n  color: #007bff;\n  font-size: 30px;\n  margin-right: 4px;\n  padding-right: 8px;\n}\n.mdb-title {\n  font-size: 24px;\n  padding-top: 11px;\n  padding-bottom: 5px;\n}\n.navbar-text {\n  margin-bottom: 0;\n}\n.nav button {\n  margin-left: 2px;\n  margin-right: 2px;\n}\n.navbar-btn {\n  text-transform: uppercase;\n  margin-top: 12px;\n  padding-top: 0;\n  padding-bottom: 0;\n  border: 0;\n  height: 25px;\n  margin-left: 7px !important;\n  margin-right: 7px !important;\n} */\n\n.time-remaining {\n  font-size: 24px;\n  padding-left: 8px;\n}\n\n.phase-nav-pane {\n  background-color: #666666ff;\n  height: 100%;\n  padding: 0;\n}\n\n.phase-nav {\n  padding-bottom: 8px;\n  /* padding-bottom: 0; */\n}\n\n.phase-nav.no-children {\n  padding-bottom: 0;\n}\n\n.phase-nav button {\n  width: 100%;\n  background-color: transparent;\n  text-align: left;\n  border: 0;\n  padding-top: 6px;\n  padding-bottom: 6px;\n  padding-left: 5px;\n  padding-right: 0 !important;\n  /* font-size: 1.1em; */\n  font-size: 15.8px;\n  font-weight: bold;\n  color: white;\n}\n\n.phase-label button {\n  color: white;\n  /* font-size: 1.1em; */\n  font-size: 15.8px;\n  line-height: 1.2em;\n  font-weight: bold;\n  padding-bottom: 0;\n  padding-right: 0 !important;\n  /* padding-top: 4px; */\n}\n\n.subphase-nav button {\n  color: white;\n  padding-top: 2.5px;\n  padding-bottom: 2.5px;\n  /* padding-left: 15px; */\n  font-size: 0.75em;\n  font-weight: 300;\n  text-transform: uppercase;\n}\n\n/*\n.phase-details {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 0;\n  overflow:hidden;\n} */\n\n.phase-container {\n  height: 100%;\n}\n\n.phase-row {\n  height: 100%;\n  overflow: hidden;\n}\n\n.phase-col {\n  height: 100%;\n  padding-left: 5px;\n  padding-right: 0;\n  overflow-y: hidden;\n}\n\n.left-col-contents {\n  height: 100%;\n  overflow-y: hidden;\n}\n\n.interventions-col {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  overflow-y: scroll;\n}\n\n.checklist-row {\n  min-height: 270px;\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n  max-height: 640px;\n}\n\n/*\n.interventions-row {\n  height: 100%;\n  overflow-y: hidden;\n}\n.interventions-col {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n}\n*/\n\n.patient-status-row {\n  width: 100%;\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n  overflow-y: hidden;\n}\n\n.patient-status-col {\n  height: 100%;\n  padding-left: 5px;\n  padding-right: 0;\n  overflow-y: scroll;\n}\n\nul.interventions-outline {\n  height: 100%;\n  overflow-y: scroll;\n}\n\nhr.minimal {\n  margin-top: 8px;\n  margin-bottom: 8px;\n  border-top-width: 2px;\n}\n\nul {\n  list-style: none;\n  padding-left: 20px;\n  margin: 0px;\n}\n\nul.first {\n  padding-left: 5px;\n}\n\nli.menu-depth-1 {\n  padding-left: 0;\n}\n\nli.menu-depth-2 {\n  padding-left: 20px;\n}\n\nli.menu-depth-3 {\n  padding-left: 40px;\n\n}\n\nli.menu-depth-4 {\n  padding-left: 60px;\n}\n\nli.menu-heading {\n  font-weight: bold;\n  font-size: 0.85em;\n}\n\nli.intervention button {\n  font-size: 0.75em;\n}\n\n.intervention-submenu {\n  font-size: 15.8px;\n  padding-top: 4px;\n  padding-bottom: 4px;\n}\n\n.intervention-outline-wrapper {\n  padding-bottom: 5px;\n}\n\n.nav-tabs {\n  width: 100%;\n}\n\nul.nav-tabs a.nav-link {\n  padding-left: 6px;\n  padding-right: 6px;\n  padding-top: 4px;\n  padding-bottom: 4px;\n}\n\n.intervention-btn {\n  text-align: left;\n}\n\n.checkbox-icon {\n  transform: translateY(4px);\n  font-size: medium;\n  margin-right: 4px;\n}\n\n.callout-icon {\n  margin-left: 10px;\n  font-size: medium;\n  transform: translateY(5px);\n}\n\n.chevron-icon {\n  transform: translateY(5px)\n}\n\n.timer-icon {\n  transform: translateY(8px)\n}\n\n.callout {\n  margin-left: 10px;\n  /* color: blue; */\n  font-size: 0.75em;\n  font-style: italic;\n  overflow: none;\n  text-overflow: ellipsis;\n}\n\n.callout.currentCallOut {\n  background-color: yellow;\n}\n\n.collapse {\n  height: 100%;\n}\n\n.card {\n  border: 0;\n  /* overflow-y: hidden; */\n}\n\n/* .card {\n  height: 100%;\n  overflow-y: hidden;\n} */\n\n/* .card-header {\n  margin-top: 5px;\n  padding-left: 5px;\n} */\n\n.card-body {\n  border: 0;\n  /* height: 110%; */\n  /* height: 100%; */\n  padding-top: 5px;\n  /* margin-bottom: 20px; */\n  padding-bottom: 10px;\n  /* overflow-y: scroll; */\n}\n\n.interventions-card {\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n  border: 0;\n}\n\n.interventions-card-header {\n  background-color: white;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n\n.interventions-card-body {\n  height: calc(100% -53px);\n  /* height: fit-content; */\n  padding-left: 0;\n  padding-right: 0;\n  padding-top: 0;\n  padding-bottom: 0;\n  /* margin-bottom: 40px; */\n  overflow-y: scroll;\n}\n\n.checklist-card-header {\n  background-color: white;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n\n.interventions-performed-header {\n  background-color: white;\n  border: 0;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n\n.vert-tabs-container {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 20px;\n  overflow: hidden;\n}\n\n.prompt-list {\n  padding-left: 0;\n}\n\n.prompt-label {\n  color: #2980b9;\n  font-size: 0.9em;\n}\n\n.prompt-option {\n  font-size: 0.75em;\n  padding-right: 5px;\n}\n\ninput[type=radio].prompt-radio-btn {\n  margin-right: 5px;\n}\n\n.checkbox-group-options {\n  padding-left: 0;\n}\n\n.clear-radio-btn {\n  padding-top: 1px;\n  padding-bottom: 1px;\n  padding-left: 3px;\n  padding-right: 3px;\n}\n\n.vert-tabs .intv-cat-btn {\n  height: 100%;\n  width: 100%;\n  padding-top: 6px;\n  padding-bottom: 6px;\n  background-color: transparent;\n  border: 1px solid #abb2b9;\n  border-top-left-radius: 10px;\n  border-bottom-left-radius: 10px;\n  border-top-right-radius: 0px;\n  text-align: center;\n}\n\n.intv-cat-btn.active {\n  border: 1px solid black;\n  border-right: 0px;\n  background-color: blue;\n  color: white;\n}\n\nul.interventions-outline {\n  height: 100%;\n  /* margin-bottom: 40px !important; */\n  padding-left: 0;\n  overflow-y: scroll;\n}\n\n.hidden {\n  display: none;\n}\n\n.tab-content {\n  height: 100%;\n}\n\n.tab-pane {\n  overflow-y: auto;\n}\n\n.dev {\n  border: 1px dashed hotpink;\n}\n\n.hoverable.active {\n  filter: invert(57%) sepia(92%) saturate(4739%) hue-rotate(342deg) brightness(108%) contrast(101%);\n}\n\n.hoverable:hover {\n  filter: invert(78%) sepia(44%) saturate(1107%) hue-rotate(164deg) brightness(102%) contrast(97%);\n}\n\n/*\n.stick-figure-nav {\n  display: flex;\n  flex-flow: row;\n} */\n\n.depth-1 {\n  margin-left: 20px;\n}\n\n.depth-2 {\n  margin-left: 40px;\n}\n\n.depth-3 {\n  margin-left: 60px\n}\n\n.dropdown-menu {\n  transform: translateX(-80px);\n}\n\n.dropdown-item {\n  padding-top: 2px;\n  padding-bottom: 2px;\n}\n\n.dropdown-header {\n  font-weight:900;\n  font-size: 1.1rem;\n  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;\n  padding-top: 2px;\n  padding-bottom: 2px;\n  background-color: #545b62;\n  color: white;\n}\n\n.dropdown-depth-1 {\n  padding-left: 10px;\n}\n\n.dropdown-depth-2 {\n  padding-left: 30px;\n}\n\n.dropdown-depth-3 {\n  padding-left: 50px;\n}\n\n.dropdown-form {\n  padding-left: 40px;\n}\n", '', {"version":3,"sources":["/Users/user/Projects/monorepo/libs/observer-ui/src/styles.css"],"names":[],"mappings":";AACA;;EAEE,WAAW;EACX,SAAS;EACT,UAAU;EACV,YAAY;EACZ,gBAAgB;AAClB;;AAEA;EACE,YAAY;EACZ,WAAW;EACX,eAAe;EACf,gBAAgB;AAClB;;AAEA;EACE,iBAAiB;AACnB;;AACA;EACE,iBAAiB;AACnB;;AAEA;EACE,gBAAgB;EAChB,iBAAiB;AACnB;;AAIA;EACE,cAAc;EACd,WAAW;EACX,eAAe;EACf,gBAAgB;AAClB;;AACA;EACE,YAAY;EACZ,WAAW;AACb;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,YAAY;EACZ,gBAAgB;EAChB,mBAAmB;EACnB,aAAa;EACb,kBAAkB;EAClB,uCAAuC;AACzC;;AAEA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;GAsCG;;AACH;EACE,eAAe;EACf,iBAAiB;AACnB;;AAEA;EACE,2BAA2B;EAC3B,YAAY;EACZ,UAAU;AACZ;;AAEA;EACE,mBAAmB;EACnB,uBAAuB;AACzB;;AACA;EACE,iBAAiB;AACnB;;AAEA;EACE,WAAW;EACX,6BAA6B;EAC7B,gBAAgB;EAChB,SAAS;EACT,gBAAgB;EAChB,mBAAmB;EACnB,iBAAiB;EACjB,2BAA2B;EAC3B,sBAAsB;EACtB,iBAAiB;EACjB,iBAAiB;EACjB,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,sBAAsB;EACtB,iBAAiB;EACjB,kBAAkB;EAClB,iBAAiB;EACjB,iBAAiB;EACjB,2BAA2B;EAC3B,sBAAsB;AACxB;;AAEA;EACE,YAAY;EACZ,kBAAkB;EAClB,qBAAqB;EACrB,wBAAwB;EACxB,iBAAiB;EACjB,gBAAgB;EAChB,yBAAyB;AAC3B;;AAEA;;;;;;;GAOG;;AAEH;EACE,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,gBAAgB;AAClB;;AAEA;EACE,YAAY;EACZ,iBAAiB;EACjB,gBAAgB;EAChB,kBAAkB;AACpB;;AACA;EACE,YAAY;EACZ,kBAAkB;AACpB;;AAGA;EACE,YAAY;EACZ,eAAe;EACf,gBAAgB;EAChB,kBAAkB;AACpB;;AAEA;EACE,iBAAiB;EACjB,2BAAmB;EAAnB,wBAAmB;EAAnB,mBAAmB;EACnB,iBAAiB;AACnB;;AACA;;;;;;;;;;CAUC;;AAED;EACE,WAAW;EACX,2BAAmB;EAAnB,wBAAmB;EAAnB,mBAAmB;EACnB,kBAAkB;AACpB;;AACA;EACE,YAAY;EACZ,iBAAiB;EACjB,gBAAgB;EAChB,kBAAkB;AACpB;;AACA;EACE,YAAY;EACZ,kBAAkB;AACpB;;AAGA;EACE,eAAe;EACf,kBAAkB;EAClB,qBAAqB;AACvB;;AAEA;EACE,gBAAgB;EAChB,kBAAkB;EAClB,WAAW;AACb;;AACA;EACE,iBAAiB;AACnB;;AAGA;EACE,eAAe;AACjB;;AACA;EACE,kBAAkB;AACpB;;AACA;EACE,kBAAkB;;AAEpB;;AACA;EACE,kBAAkB;AACpB;;AAEA;EACE,iBAAiB;EACjB,iBAAiB;AACnB;;AACA;EACE,iBAAiB;AACnB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;EAChB,mBAAmB;AACrB;;AACA;EACE,mBAAmB;AACrB;;AACA;EACE,WAAW;AACb;;AAEA;EACE,iBAAiB;EACjB,kBAAkB;EAClB,gBAAgB;EAChB,mBAAmB;AACrB;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,0BAA0B;EAC1B,iBAAiB;EACjB,iBAAiB;AACnB;;AACA;EACE,iBAAiB;EACjB,iBAAiB;EACjB,0BAA0B;AAC5B;;AACA;EACE;AACF;;AACA;EACE;AACF;;AAEA;EACE,iBAAiB;EACjB,iBAAiB;EACjB,iBAAiB;EACjB,kBAAkB;EAClB,cAAc;EACd,uBAAuB;AACzB;;AACA;EACE,wBAAwB;AAC1B;;AAGA;EACE,YAAY;AACd;;AAEA;EACE,SAAS;EACT,wBAAwB;AAC1B;;AACA;;;GAGG;;AACH;;;GAGG;;AAEH;EACE,SAAS;EACT,kBAAkB;EAClB,kBAAkB;EAClB,gBAAgB;EAChB,yBAAyB;EACzB,oBAAoB;EACpB,wBAAwB;AAC1B;;AAEA;EACE,2BAAmB;EAAnB,wBAAmB;EAAnB,mBAAmB;EACnB,SAAS;AACX;;AACA;EACE,uBAAuB;EACvB,gBAAgB;EAChB,iBAAiB;EACjB,iBAAiB;AACnB;;AACA;EACE,wBAAwB;EACxB,yBAAyB;EACzB,eAAe;EACf,gBAAgB;EAChB,cAAc;EACd,iBAAiB;EACjB,yBAAyB;EACzB,kBAAkB;AACpB;;AAEA;EACE,uBAAuB;EACvB,gBAAgB;EAChB,iBAAiB;EACjB,iBAAiB;AACnB;;AAEA;EACE,uBAAuB;EACvB,SAAS;EACT,gBAAgB;EAChB,iBAAiB;EACjB,iBAAiB;AACnB;;AACA;EACE,YAAY;EACZ,eAAe;EACf,gBAAgB;EAChB,oBAAoB;EACpB,gBAAgB;AAClB;;AAEA;EACE,eAAe;AACjB;;AACA;EACE,cAAc;EACd,gBAAgB;AAClB;;AACA;EACE,iBAAiB;EACjB,kBAAkB;AACpB;;AACA;EACE,iBAAiB;AACnB;;AACA;EACE,eAAe;AACjB;;AACA;EACE,gBAAgB;EAChB,mBAAmB;EACnB,iBAAiB;EACjB,kBAAkB;AACpB;;AAEA;EACE,YAAY;EACZ,WAAW;EACX,gBAAgB;EAChB,mBAAmB;EACnB,6BAA6B;EAC7B,yBAAyB;EACzB,4BAA4B;EAC5B,+BAA+B;EAC/B,4BAA4B;EAC5B,kBAAkB;AACpB;;AAEA;EACE,uBAAuB;EACvB,iBAAiB;EACjB,sBAAsB;EACtB,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,oCAAoC;EACpC,eAAe;EACf,kBAAkB;AACpB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,gBAAgB;AAClB;;AAGA;EACE,0BAA0B;AAC5B;;AAIA;EACE,iGAAiG;AACnG;;AAEA;EACE,gGAAgG;AAClG;;AACA;;;;GAIG;;AAGH;EACE,iBAAiB;AACnB;;AACA;EACE,iBAAiB;AACnB;;AACA;EACE;AACF;;AAEA;EACE,4BAA4B;AAC9B;;AACA;EACE,gBAAgB;EAChB,mBAAmB;AACrB;;AACA;EACE,eAAe;EACf,iBAAiB;EACjB,oGAAoG;EACpG,gBAAgB;EAChB,mBAAmB;EACnB,yBAAyB;EACzB,YAAY;AACd;;AACA;EACE,kBAAkB;AACpB;;AACA;EACE,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;AACpB","sourcesContent":["\n.container-fluid,\n.main {\n  width: 100%;\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  overflow: hidden;\n}\n\n.main-region {\n  height: 100%;\n  width: 100%;\n  padding-left: 0;\n  padding-right: 0;\n}\n\ntable {\n  font-size: 0.75em;\n}\n.request-btn {\n  font-size: 0.75em;\n}\n\n.confirm-intv {\n  margin-top: 10px;\n  font-size: 0.75em;\n}\n\n\n\n.row {\n  margin-left: 0;\n  width: 100%;\n  margin-right: 0;\n  overflow: hidden;\n}\n.wrapper-row {\n  height: 100%;\n  width: 100%;\n}\n\n.main-row {\n  height: calc(100% - 52px);\n}\n\n.col {\n  height: 100%;\n  padding-top: 5px;\n  padding-bottom: 5px;\n  padding: 15px;\n  overflow-y: hidden;\n  /* -webkit-overflow-scrolling: touch; */\n}\n\n/* nav.navbar {\n  margin-left: 0;\n  padding-left: 15px;\n  padding-top: 0;\n  padding-bottom: 0;\n  padding-right: 0;\n}\n\n.brand-wrapper {\n  padding: 0;\n}\n.brand {\n  color: #007bff;\n  font-size: 30px;\n  margin-right: 4px;\n  padding-right: 8px;\n}\n.mdb-title {\n  font-size: 24px;\n  padding-top: 11px;\n  padding-bottom: 5px;\n}\n.navbar-text {\n  margin-bottom: 0;\n}\n.nav button {\n  margin-left: 2px;\n  margin-right: 2px;\n}\n.navbar-btn {\n  text-transform: uppercase;\n  margin-top: 12px;\n  padding-top: 0;\n  padding-bottom: 0;\n  border: 0;\n  height: 25px;\n  margin-left: 7px !important;\n  margin-right: 7px !important;\n} */\n.time-remaining {\n  font-size: 24px;\n  padding-left: 8px;\n}\n\n.phase-nav-pane {\n  background-color: #666666ff;\n  height: 100%;\n  padding: 0;\n}\n\n.phase-nav {\n  padding-bottom: 8px;\n  /* padding-bottom: 0; */\n}\n.phase-nav.no-children {\n  padding-bottom: 0;\n}\n\n.phase-nav button {\n  width: 100%;\n  background-color: transparent;\n  text-align: left;\n  border: 0;\n  padding-top: 6px;\n  padding-bottom: 6px;\n  padding-left: 5px;\n  padding-right: 0 !important;\n  /* font-size: 1.1em; */\n  font-size: 15.8px;\n  font-weight: bold;\n  color: white;\n}\n\n.phase-label button {\n  color: white;\n  /* font-size: 1.1em; */\n  font-size: 15.8px;\n  line-height: 1.2em;\n  font-weight: bold;\n  padding-bottom: 0;\n  padding-right: 0 !important;\n  /* padding-top: 4px; */\n}\n\n.subphase-nav button {\n  color: white;\n  padding-top: 2.5px;\n  padding-bottom: 2.5px;\n  /* padding-left: 15px; */\n  font-size: 0.75em;\n  font-weight: 300;\n  text-transform: uppercase;\n}\n\n/*\n.phase-details {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 0;\n  overflow:hidden;\n} */\n\n.phase-container {\n  height: 100%;\n}\n\n.phase-row {\n  height: 100%;\n  overflow: hidden;\n}\n\n.phase-col {\n  height: 100%;\n  padding-left: 5px;\n  padding-right: 0;\n  overflow-y: hidden;\n}\n.left-col-contents {\n  height: 100%;\n  overflow-y: hidden;\n}\n\n\n.interventions-col {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  overflow-y: scroll;\n}\n\n.checklist-row {\n  min-height: 270px;\n  height: fit-content;\n  max-height: 640px;\n}\n/*\n.interventions-row {\n  height: 100%;\n  overflow-y: hidden;\n}\n.interventions-col {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n}\n*/\n\n.patient-status-row {\n  width: 100%;\n  height: fit-content;\n  overflow-y: hidden;\n}\n.patient-status-col {\n  height: 100%;\n  padding-left: 5px;\n  padding-right: 0;\n  overflow-y: scroll;\n}\nul.interventions-outline {\n  height: 100%;\n  overflow-y: scroll;\n}\n\n\nhr.minimal {\n  margin-top: 8px;\n  margin-bottom: 8px;\n  border-top-width: 2px;\n}\n\nul {\n  list-style: none;\n  padding-left: 20px;\n  margin: 0px;\n}\nul.first {\n  padding-left: 5px;\n}\n\n\nli.menu-depth-1 {\n  padding-left: 0;\n}\nli.menu-depth-2 {\n  padding-left: 20px;\n}\nli.menu-depth-3 {\n  padding-left: 40px;\n\n}\nli.menu-depth-4 {\n  padding-left: 60px;\n}\n\nli.menu-heading {\n  font-weight: bold;\n  font-size: 0.85em;\n}\nli.intervention button {\n  font-size: 0.75em;\n}\n\n.intervention-submenu {\n  font-size: 15.8px;\n  padding-top: 4px;\n  padding-bottom: 4px;\n}\n.intervention-outline-wrapper {\n  padding-bottom: 5px;\n}\n.nav-tabs {\n  width: 100%;\n}\n\nul.nav-tabs a.nav-link {\n  padding-left: 6px;\n  padding-right: 6px;\n  padding-top: 4px;\n  padding-bottom: 4px;\n}\n\n.intervention-btn {\n  text-align: left;\n}\n\n.checkbox-icon {\n  transform: translateY(4px);\n  font-size: medium;\n  margin-right: 4px;\n}\n.callout-icon {\n  margin-left: 10px;\n  font-size: medium;\n  transform: translateY(5px);\n}\n.chevron-icon {\n  transform: translateY(5px)\n}\n.timer-icon {\n  transform: translateY(8px)\n}\n\n.callout {\n  margin-left: 10px;\n  /* color: blue; */\n  font-size: 0.75em;\n  font-style: italic;\n  overflow: none;\n  text-overflow: ellipsis;\n}\n.callout.currentCallOut {\n  background-color: yellow;\n}\n\n\n.collapse {\n  height: 100%;\n}\n\n.card {\n  border: 0;\n  /* overflow-y: hidden; */\n}\n/* .card {\n  height: 100%;\n  overflow-y: hidden;\n} */\n/* .card-header {\n  margin-top: 5px;\n  padding-left: 5px;\n} */\n\n.card-body {\n  border: 0;\n  /* height: 110%; */\n  /* height: 100%; */\n  padding-top: 5px;\n  /* margin-bottom: 20px; */\n  padding-bottom: 10px;\n  /* overflow-y: scroll; */\n}\n\n.interventions-card {\n  height: fit-content;\n  border: 0;\n}\n.interventions-card-header {\n  background-color: white;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n.interventions-card-body {\n  height: calc(100% -53px);\n  /* height: fit-content; */\n  padding-left: 0;\n  padding-right: 0;\n  padding-top: 0;\n  padding-bottom: 0;\n  /* margin-bottom: 40px; */\n  overflow-y: scroll;\n}\n\n.checklist-card-header {\n  background-color: white;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n\n.interventions-performed-header {\n  background-color: white;\n  border: 0;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n.vert-tabs-container {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 20px;\n  overflow: hidden;\n}\n\n.prompt-list {\n  padding-left: 0;\n}\n.prompt-label {\n  color: #2980b9;\n  font-size: 0.9em;\n}\n.prompt-option {\n  font-size: 0.75em;\n  padding-right: 5px;\n}\ninput[type=radio].prompt-radio-btn {\n  margin-right: 5px;\n}\n.checkbox-group-options {\n  padding-left: 0;\n}\n.clear-radio-btn {\n  padding-top: 1px;\n  padding-bottom: 1px;\n  padding-left: 3px;\n  padding-right: 3px;\n}\n\n.vert-tabs .intv-cat-btn {\n  height: 100%;\n  width: 100%;\n  padding-top: 6px;\n  padding-bottom: 6px;\n  background-color: transparent;\n  border: 1px solid #abb2b9;\n  border-top-left-radius: 10px;\n  border-bottom-left-radius: 10px;\n  border-top-right-radius: 0px;\n  text-align: center;\n}\n\n.intv-cat-btn.active {\n  border: 1px solid black;\n  border-right: 0px;\n  background-color: blue;\n  color: white;\n}\n\nul.interventions-outline {\n  height: 100%;\n  /* margin-bottom: 40px !important; */\n  padding-left: 0;\n  overflow-y: scroll;\n}\n\n.hidden {\n  display: none;\n}\n\n.tab-content {\n  height: 100%;\n}\n\n.tab-pane {\n  overflow-y: auto;\n}\n\n\n.dev {\n  border: 1px dashed hotpink;\n}\n\n\n\n.hoverable.active {\n  filter: invert(57%) sepia(92%) saturate(4739%) hue-rotate(342deg) brightness(108%) contrast(101%);\n}\n\n.hoverable:hover {\n  filter: invert(78%) sepia(44%) saturate(1107%) hue-rotate(164deg) brightness(102%) contrast(97%);\n}\n/*\n.stick-figure-nav {\n  display: flex;\n  flex-flow: row;\n} */\n\n\n.depth-1 {\n  margin-left: 20px;\n}\n.depth-2 {\n  margin-left: 40px;\n}\n.depth-3 {\n  margin-left: 60px\n}\n\n.dropdown-menu {\n  transform: translateX(-80px);\n}\n.dropdown-item {\n  padding-top: 2px;\n  padding-bottom: 2px;\n}\n.dropdown-header {\n  font-weight:900;\n  font-size: 1.1rem;\n  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;\n  padding-top: 2px;\n  padding-bottom: 2px;\n  background-color: #545b62;\n  color: white;\n}\n.dropdown-depth-1 {\n  padding-left: 10px;\n}\n.dropdown-depth-2 {\n  padding-left: 30px;\n}\n\n.dropdown-depth-3 {\n  padding-left: 50px;\n}\n\n.dropdown-form {\n  padding-left: 40px;\n}\n"],"sourceRoot":""}]]
+module.exports = [[module.id, "\n.container-fluid,\n.main {\n  width: 100%;\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  overflow: hidden;\n}\n\n.main-region {\n  height: 100%;\n  width: 100%;\n  padding-left: 0;\n  padding-right: 0;\n}\n\ntable {\n  font-size: 0.75em;\n}\n\n.request-btn {\n  font-size: 0.75em;\n}\n\n.confirm-intv {\n  margin-top: 10px;\n  font-size: 0.75em;\n}\n\n.row {\n  margin-left: 0;\n  width: 100%;\n  margin-right: 0;\n  overflow: hidden;\n}\n\n.wrapper-row {\n  height: 100%;\n  width: 100%;\n}\n\n.main-row {\n  height: calc(100% - 52px);\n}\n\n.col {\n  height: 100%;\n  padding-top: 5px;\n  padding-bottom: 5px;\n  padding: 15px;\n  overflow-y: hidden;\n  /* -webkit-overflow-scrolling: touch; */\n}\n\n/* nav.navbar {\n  margin-left: 0;\n  padding-left: 15px;\n  padding-top: 0;\n  padding-bottom: 0;\n  padding-right: 0;\n}\n\n.brand-wrapper {\n  padding: 0;\n}\n.brand {\n  color: #007bff;\n  font-size: 30px;\n  margin-right: 4px;\n  padding-right: 8px;\n}\n.mdb-title {\n  font-size: 24px;\n  padding-top: 11px;\n  padding-bottom: 5px;\n}\n.navbar-text {\n  margin-bottom: 0;\n}\n.nav button {\n  margin-left: 2px;\n  margin-right: 2px;\n}\n.navbar-btn {\n  text-transform: uppercase;\n  margin-top: 12px;\n  padding-top: 0;\n  padding-bottom: 0;\n  border: 0;\n  height: 25px;\n  margin-left: 7px !important;\n  margin-right: 7px !important;\n} */\n\n.time-remaining {\n  font-size: 24px;\n  padding-left: 8px;\n}\n\n.phase-nav-pane {\n  background-color: #666666ff;\n  height: 100%;\n  padding: 0;\n}\n\n.phase-nav {\n  padding-bottom: 8px;\n  /* padding-bottom: 0; */\n}\n\n.phase-nav.no-children {\n  padding-bottom: 0;\n}\n\n.phase-nav button {\n  width: 100%;\n  background-color: transparent;\n  text-align: left;\n  border: 0;\n  padding-top: 6px;\n  padding-bottom: 6px;\n  padding-left: 5px;\n  padding-right: 0 !important;\n  /* font-size: 1.1em; */\n  font-size: 15.8px;\n  font-weight: bold;\n  color: white;\n}\n\n.phase-label button {\n  color: white;\n  /* font-size: 1.1em; */\n  font-size: 15.8px;\n  line-height: 1.2em;\n  font-weight: bold;\n  padding-bottom: 0;\n  padding-right: 0 !important;\n  /* padding-top: 4px; */\n}\n\n.subphase-nav button {\n  color: white;\n  padding-top: 2.5px;\n  padding-bottom: 2.5px;\n  /* padding-left: 15px; */\n  font-size: 0.75em;\n  font-weight: 300;\n  text-transform: uppercase;\n}\n\n/*\n.phase-details {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 0;\n  overflow:hidden;\n} */\n\n.phase-container {\n  height: 100%;\n}\n\n.phase-row {\n  height: 100%;\n  overflow: hidden;\n}\n\n.phase-col {\n  height: 100%;\n  padding-left: 5px;\n  padding-right: 0;\n  overflow-y: hidden;\n}\n\n.left-col-contents {\n  height: 100%;\n  overflow-y: hidden;\n}\n\n.interventions-col {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  overflow-y: scroll;\n}\n\n.checklist-row {\n  min-height: 270px;\n  height: -moz-fit-content;\n  height: fit-content;\n  max-height: 640px;\n}\n\n/*\n.interventions-row {\n  height: 100%;\n  overflow-y: hidden;\n}\n.interventions-col {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n}\n*/\n\n.patient-status-row {\n  width: 100%;\n  height: -moz-fit-content;\n  height: fit-content;\n  overflow-y: hidden;\n}\n\n.patient-status-col {\n  height: 100%;\n  padding-left: 5px;\n  padding-right: 0;\n  overflow-y: scroll;\n}\n\nul.interventions-outline {\n  height: 100%;\n  overflow-y: scroll;\n}\n\nhr.minimal {\n  margin-top: 8px;\n  margin-bottom: 8px;\n  border-top-width: 2px;\n}\n\nul {\n  list-style: none;\n  padding-left: 20px;\n  margin: 0px;\n}\n\nul.first {\n  padding-left: 5px;\n}\n\nli.menu-depth-1 {\n  padding-left: 0;\n}\n\nli.menu-depth-2 {\n  padding-left: 20px;\n}\n\nli.menu-depth-3 {\n  padding-left: 40px;\n\n}\n\nli.menu-depth-4 {\n  padding-left: 60px;\n}\n\nli.menu-heading {\n  font-weight: bold;\n  font-size: 0.85em;\n}\n\nli.intervention button {\n  font-size: 0.75em;\n}\n\n.intervention-submenu {\n  font-size: 15.8px;\n  padding-top: 4px;\n  padding-bottom: 4px;\n}\n\n.intervention-outline-wrapper {\n  padding-bottom: 5px;\n}\n\n.nav-tabs {\n  width: 100%;\n}\n\nul.nav-tabs a.nav-link {\n  padding-left: 6px;\n  padding-right: 6px;\n  padding-top: 4px;\n  padding-bottom: 4px;\n}\n\n.intervention-btn {\n  text-align: left;\n}\n\n.checkbox-icon {\n  transform: translateY(4px);\n  font-size: medium;\n  margin-right: 4px;\n}\n\n.callout-icon {\n  margin-left: 10px;\n  font-size: medium;\n  transform: translateY(5px);\n}\n\n.chevron-icon {\n  transform: translateY(5px)\n}\n\n.timer-icon {\n  transform: translateY(8px)\n}\n\n.callout {\n  margin-left: 10px;\n  /* color: blue; */\n  font-size: 0.75em;\n  font-style: italic;\n  overflow: none;\n  text-overflow: ellipsis;\n}\n\n.callout.currentCallOut {\n  background-color: yellow;\n}\n\n.collapse {\n  height: 100%;\n}\n\n.card {\n  border: 0;\n  /* overflow-y: hidden; */\n}\n\n/* .card {\n  height: 100%;\n  overflow-y: hidden;\n} */\n\n/* .card-header {\n  margin-top: 5px;\n  padding-left: 5px;\n} */\n\n.card-body {\n  border: 0;\n  /* height: 110%; */\n  /* height: 100%; */\n  padding-top: 5px;\n  /* margin-bottom: 20px; */\n  padding-bottom: 10px;\n  /* overflow-y: scroll; */\n}\n\n.interventions-card {\n  height: -moz-fit-content;\n  height: fit-content;\n  border: 0;\n}\n\n.interventions-card-header {\n  background-color: white;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n\n.interventions-card-body {\n  height: calc(100% -53px);\n  /* height: fit-content; */\n  padding-left: 0;\n  padding-right: 0;\n  padding-top: 0;\n  padding-bottom: 0;\n  /* margin-bottom: 40px; */\n  overflow-y: scroll;\n}\n\n.checklist-card-header {\n  background-color: white;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n\n.interventions-performed-header {\n  background-color: white;\n  border: 0;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n\n.vert-tabs-container {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 20px;\n  overflow: hidden;\n}\n\n.prompt-list {\n  padding-left: 0;\n}\n\n.prompt-label {\n  color: #2980b9;\n  font-size: 0.9em;\n}\n\n.prompt-option {\n  font-size: 0.75em;\n  padding-right: 5px;\n}\n\ninput[type=radio].prompt-radio-btn {\n  margin-right: 5px;\n}\n\n.checkbox-group-options {\n  padding-left: 0;\n}\n\n.clear-radio-btn {\n  padding-top: 1px;\n  padding-bottom: 1px;\n  padding-left: 3px;\n  padding-right: 3px;\n}\n\n.vert-tabs .intv-cat-btn {\n  height: 100%;\n  width: 100%;\n  padding-top: 6px;\n  padding-bottom: 6px;\n  background-color: transparent;\n  border: 1px solid #abb2b9;\n  border-top-left-radius: 10px;\n  border-bottom-left-radius: 10px;\n  border-top-right-radius: 0px;\n  text-align: center;\n}\n\n.intv-cat-btn.active {\n  border: 1px solid black;\n  border-right: 0px;\n  background-color: blue;\n  color: white;\n}\n\nul.interventions-outline {\n  height: 100%;\n  /* margin-bottom: 40px !important; */\n  padding-left: 0;\n  overflow-y: scroll;\n}\n\n.hidden {\n  display: none;\n}\n\n.tab-content {\n  height: 100%;\n}\n\n.tab-pane {\n  overflow-y: auto;\n}\n\n.dev {\n  border: 1px dashed hotpink;\n}\n\n.hoverable.active {\n  filter: invert(57%) sepia(92%) saturate(4739%) hue-rotate(342deg) brightness(108%) contrast(101%);\n}\n\n.hoverable:hover {\n  filter: invert(78%) sepia(44%) saturate(1107%) hue-rotate(164deg) brightness(102%) contrast(97%);\n}\n\n/*\n.stick-figure-nav {\n  display: flex;\n  flex-flow: row;\n} */\n\n.depth-1 {\n  margin-left: 20px;\n}\n\n.depth-2 {\n  margin-left: 40px;\n}\n\n.depth-3 {\n  margin-left: 60px\n}\n\n.dropdown-menu {\n  transform: translateX(-80px);\n}\n\n.dropdown-item {\n  padding-top: 2px;\n  padding-bottom: 2px;\n}\n\n.dropdown-header {\n  font-weight:900;\n  font-size: 1.1rem;\n  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;\n  padding-top: 2px;\n  padding-bottom: 2px;\n  background-color: #545b62;\n  color: white;\n}\n\n.dropdown-depth-1 {\n  padding-left: 10px;\n}\n\n.dropdown-depth-2 {\n  padding-left: 30px;\n}\n\n.dropdown-depth-3 {\n  padding-left: 50px;\n}\n\n.dropdown-form {\n  padding-left: 40px;\n}\n", '', {"version":3,"sources":["/Users/user/Projects/monorepo/libs/observer-ui/src/styles.css"],"names":[],"mappings":";AACA;;EAEE,WAAW;EACX,SAAS;EACT,UAAU;EACV,YAAY;EACZ,gBAAgB;AAClB;;AAEA;EACE,YAAY;EACZ,WAAW;EACX,eAAe;EACf,gBAAgB;AAClB;;AAEA;EACE,iBAAiB;AACnB;;AACA;EACE,iBAAiB;AACnB;;AAEA;EACE,gBAAgB;EAChB,iBAAiB;AACnB;;AAIA;EACE,cAAc;EACd,WAAW;EACX,eAAe;EACf,gBAAgB;AAClB;;AACA;EACE,YAAY;EACZ,WAAW;AACb;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,YAAY;EACZ,gBAAgB;EAChB,mBAAmB;EACnB,aAAa;EACb,kBAAkB;EAClB,uCAAuC;AACzC;;AAEA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;GAsCG;;AACH;EACE,eAAe;EACf,iBAAiB;AACnB;;AAEA;EACE,2BAA2B;EAC3B,YAAY;EACZ,UAAU;AACZ;;AAEA;EACE,mBAAmB;EACnB,uBAAuB;AACzB;;AACA;EACE,iBAAiB;AACnB;;AAEA;EACE,WAAW;EACX,6BAA6B;EAC7B,gBAAgB;EAChB,SAAS;EACT,gBAAgB;EAChB,mBAAmB;EACnB,iBAAiB;EACjB,2BAA2B;EAC3B,sBAAsB;EACtB,iBAAiB;EACjB,iBAAiB;EACjB,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,sBAAsB;EACtB,iBAAiB;EACjB,kBAAkB;EAClB,iBAAiB;EACjB,iBAAiB;EACjB,2BAA2B;EAC3B,sBAAsB;AACxB;;AAEA;EACE,YAAY;EACZ,kBAAkB;EAClB,qBAAqB;EACrB,wBAAwB;EACxB,iBAAiB;EACjB,gBAAgB;EAChB,yBAAyB;AAC3B;;AAEA;;;;;;;GAOG;;AAEH;EACE,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,gBAAgB;AAClB;;AAEA;EACE,YAAY;EACZ,iBAAiB;EACjB,gBAAgB;EAChB,kBAAkB;AACpB;;AACA;EACE,YAAY;EACZ,kBAAkB;AACpB;;AAGA;EACE,YAAY;EACZ,eAAe;EACf,gBAAgB;EAChB,kBAAkB;AACpB;;AAEA;EACE,iBAAiB;EACjB,wBAAmB;EAAnB,mBAAmB;EACnB,iBAAiB;AACnB;;AACA;;;;;;;;;;CAUC;;AAED;EACE,WAAW;EACX,wBAAmB;EAAnB,mBAAmB;EACnB,kBAAkB;AACpB;;AACA;EACE,YAAY;EACZ,iBAAiB;EACjB,gBAAgB;EAChB,kBAAkB;AACpB;;AACA;EACE,YAAY;EACZ,kBAAkB;AACpB;;AAGA;EACE,eAAe;EACf,kBAAkB;EAClB,qBAAqB;AACvB;;AAEA;EACE,gBAAgB;EAChB,kBAAkB;EAClB,WAAW;AACb;;AACA;EACE,iBAAiB;AACnB;;AAGA;EACE,eAAe;AACjB;;AACA;EACE,kBAAkB;AACpB;;AACA;EACE,kBAAkB;;AAEpB;;AACA;EACE,kBAAkB;AACpB;;AAEA;EACE,iBAAiB;EACjB,iBAAiB;AACnB;;AACA;EACE,iBAAiB;AACnB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;EAChB,mBAAmB;AACrB;;AACA;EACE,mBAAmB;AACrB;;AACA;EACE,WAAW;AACb;;AAEA;EACE,iBAAiB;EACjB,kBAAkB;EAClB,gBAAgB;EAChB,mBAAmB;AACrB;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,0BAA0B;EAC1B,iBAAiB;EACjB,iBAAiB;AACnB;;AACA;EACE,iBAAiB;EACjB,iBAAiB;EACjB,0BAA0B;AAC5B;;AACA;EACE;AACF;;AACA;EACE;AACF;;AAEA;EACE,iBAAiB;EACjB,iBAAiB;EACjB,iBAAiB;EACjB,kBAAkB;EAClB,cAAc;EACd,uBAAuB;AACzB;;AACA;EACE,wBAAwB;AAC1B;;AAGA;EACE,YAAY;AACd;;AAEA;EACE,SAAS;EACT,wBAAwB;AAC1B;;AACA;;;GAGG;;AACH;;;GAGG;;AAEH;EACE,SAAS;EACT,kBAAkB;EAClB,kBAAkB;EAClB,gBAAgB;EAChB,yBAAyB;EACzB,oBAAoB;EACpB,wBAAwB;AAC1B;;AAEA;EACE,wBAAmB;EAAnB,mBAAmB;EACnB,SAAS;AACX;;AACA;EACE,uBAAuB;EACvB,gBAAgB;EAChB,iBAAiB;EACjB,iBAAiB;AACnB;;AACA;EACE,wBAAwB;EACxB,yBAAyB;EACzB,eAAe;EACf,gBAAgB;EAChB,cAAc;EACd,iBAAiB;EACjB,yBAAyB;EACzB,kBAAkB;AACpB;;AAEA;EACE,uBAAuB;EACvB,gBAAgB;EAChB,iBAAiB;EACjB,iBAAiB;AACnB;;AAEA;EACE,uBAAuB;EACvB,SAAS;EACT,gBAAgB;EAChB,iBAAiB;EACjB,iBAAiB;AACnB;;AACA;EACE,YAAY;EACZ,eAAe;EACf,gBAAgB;EAChB,oBAAoB;EACpB,gBAAgB;AAClB;;AAEA;EACE,eAAe;AACjB;;AACA;EACE,cAAc;EACd,gBAAgB;AAClB;;AACA;EACE,iBAAiB;EACjB,kBAAkB;AACpB;;AACA;EACE,iBAAiB;AACnB;;AACA;EACE,eAAe;AACjB;;AACA;EACE,gBAAgB;EAChB,mBAAmB;EACnB,iBAAiB;EACjB,kBAAkB;AACpB;;AAEA;EACE,YAAY;EACZ,WAAW;EACX,gBAAgB;EAChB,mBAAmB;EACnB,6BAA6B;EAC7B,yBAAyB;EACzB,4BAA4B;EAC5B,+BAA+B;EAC/B,4BAA4B;EAC5B,kBAAkB;AACpB;;AAEA;EACE,uBAAuB;EACvB,iBAAiB;EACjB,sBAAsB;EACtB,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,oCAAoC;EACpC,eAAe;EACf,kBAAkB;AACpB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,gBAAgB;AAClB;;AAGA;EACE,0BAA0B;AAC5B;;AAIA;EACE,iGAAiG;AACnG;;AAEA;EACE,gGAAgG;AAClG;;AACA;;;;GAIG;;AAGH;EACE,iBAAiB;AACnB;;AACA;EACE,iBAAiB;AACnB;;AACA;EACE;AACF;;AAEA;EACE,4BAA4B;AAC9B;;AACA;EACE,gBAAgB;EAChB,mBAAmB;AACrB;;AACA;EACE,eAAe;EACf,iBAAiB;EACjB,oGAAoG;EACpG,gBAAgB;EAChB,mBAAmB;EACnB,yBAAyB;EACzB,YAAY;AACd;;AACA;EACE,kBAAkB;AACpB;;AACA;EACE,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;AACpB","sourcesContent":["\n.container-fluid,\n.main {\n  width: 100%;\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  overflow: hidden;\n}\n\n.main-region {\n  height: 100%;\n  width: 100%;\n  padding-left: 0;\n  padding-right: 0;\n}\n\ntable {\n  font-size: 0.75em;\n}\n.request-btn {\n  font-size: 0.75em;\n}\n\n.confirm-intv {\n  margin-top: 10px;\n  font-size: 0.75em;\n}\n\n\n\n.row {\n  margin-left: 0;\n  width: 100%;\n  margin-right: 0;\n  overflow: hidden;\n}\n.wrapper-row {\n  height: 100%;\n  width: 100%;\n}\n\n.main-row {\n  height: calc(100% - 52px);\n}\n\n.col {\n  height: 100%;\n  padding-top: 5px;\n  padding-bottom: 5px;\n  padding: 15px;\n  overflow-y: hidden;\n  /* -webkit-overflow-scrolling: touch; */\n}\n\n/* nav.navbar {\n  margin-left: 0;\n  padding-left: 15px;\n  padding-top: 0;\n  padding-bottom: 0;\n  padding-right: 0;\n}\n\n.brand-wrapper {\n  padding: 0;\n}\n.brand {\n  color: #007bff;\n  font-size: 30px;\n  margin-right: 4px;\n  padding-right: 8px;\n}\n.mdb-title {\n  font-size: 24px;\n  padding-top: 11px;\n  padding-bottom: 5px;\n}\n.navbar-text {\n  margin-bottom: 0;\n}\n.nav button {\n  margin-left: 2px;\n  margin-right: 2px;\n}\n.navbar-btn {\n  text-transform: uppercase;\n  margin-top: 12px;\n  padding-top: 0;\n  padding-bottom: 0;\n  border: 0;\n  height: 25px;\n  margin-left: 7px !important;\n  margin-right: 7px !important;\n} */\n.time-remaining {\n  font-size: 24px;\n  padding-left: 8px;\n}\n\n.phase-nav-pane {\n  background-color: #666666ff;\n  height: 100%;\n  padding: 0;\n}\n\n.phase-nav {\n  padding-bottom: 8px;\n  /* padding-bottom: 0; */\n}\n.phase-nav.no-children {\n  padding-bottom: 0;\n}\n\n.phase-nav button {\n  width: 100%;\n  background-color: transparent;\n  text-align: left;\n  border: 0;\n  padding-top: 6px;\n  padding-bottom: 6px;\n  padding-left: 5px;\n  padding-right: 0 !important;\n  /* font-size: 1.1em; */\n  font-size: 15.8px;\n  font-weight: bold;\n  color: white;\n}\n\n.phase-label button {\n  color: white;\n  /* font-size: 1.1em; */\n  font-size: 15.8px;\n  line-height: 1.2em;\n  font-weight: bold;\n  padding-bottom: 0;\n  padding-right: 0 !important;\n  /* padding-top: 4px; */\n}\n\n.subphase-nav button {\n  color: white;\n  padding-top: 2.5px;\n  padding-bottom: 2.5px;\n  /* padding-left: 15px; */\n  font-size: 0.75em;\n  font-weight: 300;\n  text-transform: uppercase;\n}\n\n/*\n.phase-details {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 0;\n  overflow:hidden;\n} */\n\n.phase-container {\n  height: 100%;\n}\n\n.phase-row {\n  height: 100%;\n  overflow: hidden;\n}\n\n.phase-col {\n  height: 100%;\n  padding-left: 5px;\n  padding-right: 0;\n  overflow-y: hidden;\n}\n.left-col-contents {\n  height: 100%;\n  overflow-y: hidden;\n}\n\n\n.interventions-col {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  overflow-y: scroll;\n}\n\n.checklist-row {\n  min-height: 270px;\n  height: fit-content;\n  max-height: 640px;\n}\n/*\n.interventions-row {\n  height: 100%;\n  overflow-y: hidden;\n}\n.interventions-col {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n}\n*/\n\n.patient-status-row {\n  width: 100%;\n  height: fit-content;\n  overflow-y: hidden;\n}\n.patient-status-col {\n  height: 100%;\n  padding-left: 5px;\n  padding-right: 0;\n  overflow-y: scroll;\n}\nul.interventions-outline {\n  height: 100%;\n  overflow-y: scroll;\n}\n\n\nhr.minimal {\n  margin-top: 8px;\n  margin-bottom: 8px;\n  border-top-width: 2px;\n}\n\nul {\n  list-style: none;\n  padding-left: 20px;\n  margin: 0px;\n}\nul.first {\n  padding-left: 5px;\n}\n\n\nli.menu-depth-1 {\n  padding-left: 0;\n}\nli.menu-depth-2 {\n  padding-left: 20px;\n}\nli.menu-depth-3 {\n  padding-left: 40px;\n\n}\nli.menu-depth-4 {\n  padding-left: 60px;\n}\n\nli.menu-heading {\n  font-weight: bold;\n  font-size: 0.85em;\n}\nli.intervention button {\n  font-size: 0.75em;\n}\n\n.intervention-submenu {\n  font-size: 15.8px;\n  padding-top: 4px;\n  padding-bottom: 4px;\n}\n.intervention-outline-wrapper {\n  padding-bottom: 5px;\n}\n.nav-tabs {\n  width: 100%;\n}\n\nul.nav-tabs a.nav-link {\n  padding-left: 6px;\n  padding-right: 6px;\n  padding-top: 4px;\n  padding-bottom: 4px;\n}\n\n.intervention-btn {\n  text-align: left;\n}\n\n.checkbox-icon {\n  transform: translateY(4px);\n  font-size: medium;\n  margin-right: 4px;\n}\n.callout-icon {\n  margin-left: 10px;\n  font-size: medium;\n  transform: translateY(5px);\n}\n.chevron-icon {\n  transform: translateY(5px)\n}\n.timer-icon {\n  transform: translateY(8px)\n}\n\n.callout {\n  margin-left: 10px;\n  /* color: blue; */\n  font-size: 0.75em;\n  font-style: italic;\n  overflow: none;\n  text-overflow: ellipsis;\n}\n.callout.currentCallOut {\n  background-color: yellow;\n}\n\n\n.collapse {\n  height: 100%;\n}\n\n.card {\n  border: 0;\n  /* overflow-y: hidden; */\n}\n/* .card {\n  height: 100%;\n  overflow-y: hidden;\n} */\n/* .card-header {\n  margin-top: 5px;\n  padding-left: 5px;\n} */\n\n.card-body {\n  border: 0;\n  /* height: 110%; */\n  /* height: 100%; */\n  padding-top: 5px;\n  /* margin-bottom: 20px; */\n  padding-bottom: 10px;\n  /* overflow-y: scroll; */\n}\n\n.interventions-card {\n  height: fit-content;\n  border: 0;\n}\n.interventions-card-header {\n  background-color: white;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n.interventions-card-body {\n  height: calc(100% -53px);\n  /* height: fit-content; */\n  padding-left: 0;\n  padding-right: 0;\n  padding-top: 0;\n  padding-bottom: 0;\n  /* margin-bottom: 40px; */\n  overflow-y: scroll;\n}\n\n.checklist-card-header {\n  background-color: white;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n\n.interventions-performed-header {\n  background-color: white;\n  border: 0;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n.vert-tabs-container {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 20px;\n  overflow: hidden;\n}\n\n.prompt-list {\n  padding-left: 0;\n}\n.prompt-label {\n  color: #2980b9;\n  font-size: 0.9em;\n}\n.prompt-option {\n  font-size: 0.75em;\n  padding-right: 5px;\n}\ninput[type=radio].prompt-radio-btn {\n  margin-right: 5px;\n}\n.checkbox-group-options {\n  padding-left: 0;\n}\n.clear-radio-btn {\n  padding-top: 1px;\n  padding-bottom: 1px;\n  padding-left: 3px;\n  padding-right: 3px;\n}\n\n.vert-tabs .intv-cat-btn {\n  height: 100%;\n  width: 100%;\n  padding-top: 6px;\n  padding-bottom: 6px;\n  background-color: transparent;\n  border: 1px solid #abb2b9;\n  border-top-left-radius: 10px;\n  border-bottom-left-radius: 10px;\n  border-top-right-radius: 0px;\n  text-align: center;\n}\n\n.intv-cat-btn.active {\n  border: 1px solid black;\n  border-right: 0px;\n  background-color: blue;\n  color: white;\n}\n\nul.interventions-outline {\n  height: 100%;\n  /* margin-bottom: 40px !important; */\n  padding-left: 0;\n  overflow-y: scroll;\n}\n\n.hidden {\n  display: none;\n}\n\n.tab-content {\n  height: 100%;\n}\n\n.tab-pane {\n  overflow-y: auto;\n}\n\n\n.dev {\n  border: 1px dashed hotpink;\n}\n\n\n\n.hoverable.active {\n  filter: invert(57%) sepia(92%) saturate(4739%) hue-rotate(342deg) brightness(108%) contrast(101%);\n}\n\n.hoverable:hover {\n  filter: invert(78%) sepia(44%) saturate(1107%) hue-rotate(164deg) brightness(102%) contrast(97%);\n}\n/*\n.stick-figure-nav {\n  display: flex;\n  flex-flow: row;\n} */\n\n\n.depth-1 {\n  margin-left: 20px;\n}\n.depth-2 {\n  margin-left: 40px;\n}\n.depth-3 {\n  margin-left: 60px\n}\n\n.dropdown-menu {\n  transform: translateX(-80px);\n}\n.dropdown-item {\n  padding-top: 2px;\n  padding-bottom: 2px;\n}\n.dropdown-header {\n  font-weight:900;\n  font-size: 1.1rem;\n  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;\n  padding-top: 2px;\n  padding-bottom: 2px;\n  background-color: #545b62;\n  color: white;\n}\n.dropdown-depth-1 {\n  padding-left: 10px;\n}\n.dropdown-depth-2 {\n  padding-left: 30px;\n}\n\n.dropdown-depth-3 {\n  padding-left: 50px;\n}\n\n.dropdown-form {\n  padding-left: 40px;\n}\n"],"sourceRoot":""}]]
 
 /***/ }),
 
@@ -22655,11 +24146,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 // extracted by mini-css-extract-plugin
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"container":"auth-styles_container__10AGD","container-fluid":"auth-styles_container-fluid__fwIkl","container-xl":"auth-styles_container-xl__3ys0F","container-lg":"auth-styles_container-lg__5IrFs","container-md":"auth-styles_container-md__30y2c","container-sm":"auth-styles_container-sm__3rV-I","row":"auth-styles_row__2mDwO","no-gutters":"auth-styles_no-gutters__2JKk5","col":"auth-styles_col__3ldCj","col-xl":"auth-styles_col-xl__2Y9VE","col-xl-auto":"auth-styles_col-xl-auto__1NU79","col-xl-12":"auth-styles_col-xl-12__2cHm3","col-xl-11":"auth-styles_col-xl-11__3NJtT","col-xl-10":"auth-styles_col-xl-10__2KsYU","col-xl-9":"auth-styles_col-xl-9__1xLiS","col-xl-8":"auth-styles_col-xl-8__3erd8","col-xl-7":"auth-styles_col-xl-7__2fcIl","col-xl-6":"auth-styles_col-xl-6__1sdz8","col-xl-5":"auth-styles_col-xl-5__3RtO0","col-xl-4":"auth-styles_col-xl-4__1Tdlx","col-xl-3":"auth-styles_col-xl-3__1eyqY","col-xl-2":"auth-styles_col-xl-2__3Q8G3","col-xl-1":"auth-styles_col-xl-1__2L8ID","col-lg":"auth-styles_col-lg__27OgK","col-lg-auto":"auth-styles_col-lg-auto__37EzL","col-lg-12":"auth-styles_col-lg-12__1UdqO","col-lg-11":"auth-styles_col-lg-11__WDNJE","col-lg-10":"auth-styles_col-lg-10__1Q9Mt","col-lg-9":"auth-styles_col-lg-9__1sq-o","col-lg-8":"auth-styles_col-lg-8__3Opus","col-lg-7":"auth-styles_col-lg-7__2bxn2","col-lg-6":"auth-styles_col-lg-6__1R-_o","col-lg-5":"auth-styles_col-lg-5__keq_w","col-lg-4":"auth-styles_col-lg-4__BOl7q","col-lg-3":"auth-styles_col-lg-3__c4ose","col-lg-2":"auth-styles_col-lg-2__2Ldvo","col-lg-1":"auth-styles_col-lg-1__2eOCB","col-md":"auth-styles_col-md__280Kr","col-md-auto":"auth-styles_col-md-auto__3b9B1","col-md-12":"auth-styles_col-md-12__1d6nc","col-md-11":"auth-styles_col-md-11__3dcqK","col-md-10":"auth-styles_col-md-10__rLZ-p","col-md-9":"auth-styles_col-md-9__OvPfP","col-md-8":"auth-styles_col-md-8__3WMD0","col-md-7":"auth-styles_col-md-7__2oSlY","col-md-6":"auth-styles_col-md-6__3peJd","col-md-5":"auth-styles_col-md-5__31sX_","col-md-4":"auth-styles_col-md-4__2J1-h","col-md-3":"auth-styles_col-md-3__1KjCA","col-md-2":"auth-styles_col-md-2__-yWxg","col-md-1":"auth-styles_col-md-1__VXFTn","col-sm":"auth-styles_col-sm__2ySNy","col-sm-auto":"auth-styles_col-sm-auto__1qooL","col-sm-12":"auth-styles_col-sm-12__2oSEw","col-sm-11":"auth-styles_col-sm-11__1GFbu","col-sm-10":"auth-styles_col-sm-10__3xeeR","col-sm-9":"auth-styles_col-sm-9__2G2BH","col-sm-8":"auth-styles_col-sm-8__16wvo","col-sm-7":"auth-styles_col-sm-7__8Gwhq","col-sm-6":"auth-styles_col-sm-6__2PLpR","col-sm-5":"auth-styles_col-sm-5__3FYYp","col-sm-4":"auth-styles_col-sm-4__vU45W","col-sm-3":"auth-styles_col-sm-3__2rUc2","col-sm-2":"auth-styles_col-sm-2__3tlGJ","col-sm-1":"auth-styles_col-sm-1__1gSFk","col-auto":"auth-styles_col-auto__mOtLf","col-12":"auth-styles_col-12__HkJhz","col-11":"auth-styles_col-11__1TZkf","col-10":"auth-styles_col-10__2PHE5","col-9":"auth-styles_col-9__3upp1","col-8":"auth-styles_col-8__3OMmH","col-7":"auth-styles_col-7__3y0BG","col-6":"auth-styles_col-6__z2OvX","col-5":"auth-styles_col-5__1bmv4","col-4":"auth-styles_col-4__ooaUD","col-3":"auth-styles_col-3__3md1A","col-2":"auth-styles_col-2__ZG0mP","col-1":"auth-styles_col-1__3vw5D","row-cols-1":"auth-styles_row-cols-1__1FgYA","row-cols-2":"auth-styles_row-cols-2__T22x2","row-cols-3":"auth-styles_row-cols-3__33SFY","row-cols-4":"auth-styles_row-cols-4__1Upyr","row-cols-5":"auth-styles_row-cols-5__3s0l2","row-cols-6":"auth-styles_row-cols-6__195mx","order-first":"auth-styles_order-first__32Xyg","order-last":"auth-styles_order-last__1gpEV","order-0":"auth-styles_order-0__37anm","order-1":"auth-styles_order-1__1cYTz","order-2":"auth-styles_order-2__2WgEu","order-3":"auth-styles_order-3__1c1Ge","order-4":"auth-styles_order-4__7ses6","order-5":"auth-styles_order-5__OPIHT","order-6":"auth-styles_order-6__2EExL","order-7":"auth-styles_order-7__-LNNy","order-8":"auth-styles_order-8__17xHi","order-9":"auth-styles_order-9__3KedA","order-10":"auth-styles_order-10__2Rcp7","order-11":"auth-styles_order-11__1ldSL","order-12":"auth-styles_order-12__QYXvE","offset-1":"auth-styles_offset-1__S_yky","offset-2":"auth-styles_offset-2__3L8fT","offset-3":"auth-styles_offset-3__1R6FV","offset-4":"auth-styles_offset-4__1uA9L","offset-5":"auth-styles_offset-5__2pHj2","offset-6":"auth-styles_offset-6__1WM7j","offset-7":"auth-styles_offset-7__2l8T6","offset-8":"auth-styles_offset-8__2PX1q","offset-9":"auth-styles_offset-9__NHkNE","offset-10":"auth-styles_offset-10__3A8Zk","offset-11":"auth-styles_offset-11__q7vhc","row-cols-sm-1":"auth-styles_row-cols-sm-1__2IW8N","row-cols-sm-2":"auth-styles_row-cols-sm-2__2TmMR","row-cols-sm-3":"auth-styles_row-cols-sm-3__1Bcpm","row-cols-sm-4":"auth-styles_row-cols-sm-4__2Jgca","row-cols-sm-5":"auth-styles_row-cols-sm-5__1wTaB","row-cols-sm-6":"auth-styles_row-cols-sm-6__N7dM_","order-sm-first":"auth-styles_order-sm-first__1LHjA","order-sm-last":"auth-styles_order-sm-last__1OG2P","order-sm-0":"auth-styles_order-sm-0__3VAGC","order-sm-1":"auth-styles_order-sm-1__3zlDN","order-sm-2":"auth-styles_order-sm-2__2Id98","order-sm-3":"auth-styles_order-sm-3__15b2I","order-sm-4":"auth-styles_order-sm-4__170Pr","order-sm-5":"auth-styles_order-sm-5__1TtxJ","order-sm-6":"auth-styles_order-sm-6__9pb2G","order-sm-7":"auth-styles_order-sm-7__SIm6q","order-sm-8":"auth-styles_order-sm-8__2t0hf","order-sm-9":"auth-styles_order-sm-9__17vw7","order-sm-10":"auth-styles_order-sm-10__31bMw","order-sm-11":"auth-styles_order-sm-11__2ReIr","order-sm-12":"auth-styles_order-sm-12__1ViJl","offset-sm-0":"auth-styles_offset-sm-0__UP_Ye","offset-sm-1":"auth-styles_offset-sm-1__3svSJ","offset-sm-2":"auth-styles_offset-sm-2__3POI4","offset-sm-3":"auth-styles_offset-sm-3__1w0kW","offset-sm-4":"auth-styles_offset-sm-4__3JWGY","offset-sm-5":"auth-styles_offset-sm-5__2EEPf","offset-sm-6":"auth-styles_offset-sm-6__22GCC","offset-sm-7":"auth-styles_offset-sm-7__2q_3d","offset-sm-8":"auth-styles_offset-sm-8__2HZtt","offset-sm-9":"auth-styles_offset-sm-9__2Y-bk","offset-sm-10":"auth-styles_offset-sm-10__3jNcV","offset-sm-11":"auth-styles_offset-sm-11__3Q0ul","row-cols-md-1":"auth-styles_row-cols-md-1__xFmDr","row-cols-md-2":"auth-styles_row-cols-md-2__qZ_pn","row-cols-md-3":"auth-styles_row-cols-md-3__3uzyG","row-cols-md-4":"auth-styles_row-cols-md-4__1xY6o","row-cols-md-5":"auth-styles_row-cols-md-5__ir_PD","row-cols-md-6":"auth-styles_row-cols-md-6__37Dx8","order-md-first":"auth-styles_order-md-first__PXmJ9","order-md-last":"auth-styles_order-md-last__18UQ7","order-md-0":"auth-styles_order-md-0__RcECW","order-md-1":"auth-styles_order-md-1__3Ixnl","order-md-2":"auth-styles_order-md-2__m1tAM","order-md-3":"auth-styles_order-md-3__QDe0k","order-md-4":"auth-styles_order-md-4__31o0n","order-md-5":"auth-styles_order-md-5__3WXPf","order-md-6":"auth-styles_order-md-6__3ULOf","order-md-7":"auth-styles_order-md-7__3VjfE","order-md-8":"auth-styles_order-md-8__3u3G9","order-md-9":"auth-styles_order-md-9__20_DE","order-md-10":"auth-styles_order-md-10__3nlP7","order-md-11":"auth-styles_order-md-11__21LDw","order-md-12":"auth-styles_order-md-12__k3d-a","offset-md-0":"auth-styles_offset-md-0__328EE","offset-md-1":"auth-styles_offset-md-1__1Pv38","offset-md-2":"auth-styles_offset-md-2__EkZRk","offset-md-3":"auth-styles_offset-md-3__1QwfK","offset-md-4":"auth-styles_offset-md-4__2qkvS","offset-md-5":"auth-styles_offset-md-5__2-1Sl","offset-md-6":"auth-styles_offset-md-6__1foUV","offset-md-7":"auth-styles_offset-md-7__1lT_G","offset-md-8":"auth-styles_offset-md-8__3LqIe","offset-md-9":"auth-styles_offset-md-9__2NZK4","offset-md-10":"auth-styles_offset-md-10__1-I-n","offset-md-11":"auth-styles_offset-md-11__30FC1","row-cols-lg-1":"auth-styles_row-cols-lg-1__2BeEB","row-cols-lg-2":"auth-styles_row-cols-lg-2__1-duX","row-cols-lg-3":"auth-styles_row-cols-lg-3__1Ppur","row-cols-lg-4":"auth-styles_row-cols-lg-4__vslwG","row-cols-lg-5":"auth-styles_row-cols-lg-5__34Bqy","row-cols-lg-6":"auth-styles_row-cols-lg-6__17nYq","order-lg-first":"auth-styles_order-lg-first__2KPTW","order-lg-last":"auth-styles_order-lg-last__sd62e","order-lg-0":"auth-styles_order-lg-0__14g0P","order-lg-1":"auth-styles_order-lg-1__1-Fi6","order-lg-2":"auth-styles_order-lg-2__1UeSK","order-lg-3":"auth-styles_order-lg-3__2Bnqq","order-lg-4":"auth-styles_order-lg-4__3wLF4","order-lg-5":"auth-styles_order-lg-5__3BWET","order-lg-6":"auth-styles_order-lg-6__22vzu","order-lg-7":"auth-styles_order-lg-7__1q4YC","order-lg-8":"auth-styles_order-lg-8__2Wn2X","order-lg-9":"auth-styles_order-lg-9__2zwR0","order-lg-10":"auth-styles_order-lg-10__3S5Kf","order-lg-11":"auth-styles_order-lg-11__3lViv","order-lg-12":"auth-styles_order-lg-12__1HbM4","offset-lg-0":"auth-styles_offset-lg-0__3vXRO","offset-lg-1":"auth-styles_offset-lg-1__1qpeE","offset-lg-2":"auth-styles_offset-lg-2__2VlLm","offset-lg-3":"auth-styles_offset-lg-3__29oiZ","offset-lg-4":"auth-styles_offset-lg-4__3zPy2","offset-lg-5":"auth-styles_offset-lg-5__3NNON","offset-lg-6":"auth-styles_offset-lg-6__14HL7","offset-lg-7":"auth-styles_offset-lg-7__fw7as","offset-lg-8":"auth-styles_offset-lg-8__26zm0","offset-lg-9":"auth-styles_offset-lg-9__3lGAr","offset-lg-10":"auth-styles_offset-lg-10__1jr81","offset-lg-11":"auth-styles_offset-lg-11__SABrM","row-cols-xl-1":"auth-styles_row-cols-xl-1__2KEIY","row-cols-xl-2":"auth-styles_row-cols-xl-2__2Q9jD","row-cols-xl-3":"auth-styles_row-cols-xl-3__serpJ","row-cols-xl-4":"auth-styles_row-cols-xl-4__17lXh","row-cols-xl-5":"auth-styles_row-cols-xl-5__se3PY","row-cols-xl-6":"auth-styles_row-cols-xl-6__3Dv0I","order-xl-first":"auth-styles_order-xl-first__2cXN7","order-xl-last":"auth-styles_order-xl-last__3Bu_n","order-xl-0":"auth-styles_order-xl-0__QNT-4","order-xl-1":"auth-styles_order-xl-1__2uJW9","order-xl-2":"auth-styles_order-xl-2__1urQz","order-xl-3":"auth-styles_order-xl-3__HrnTR","order-xl-4":"auth-styles_order-xl-4__lqyBd","order-xl-5":"auth-styles_order-xl-5__1boyL","order-xl-6":"auth-styles_order-xl-6__2ljrn","order-xl-7":"auth-styles_order-xl-7__sAp62","order-xl-8":"auth-styles_order-xl-8__3QIeu","order-xl-9":"auth-styles_order-xl-9__30U3w","order-xl-10":"auth-styles_order-xl-10__1ST15","order-xl-11":"auth-styles_order-xl-11__pbkTF","order-xl-12":"auth-styles_order-xl-12__1s6HJ","offset-xl-0":"auth-styles_offset-xl-0__1BSft","offset-xl-1":"auth-styles_offset-xl-1__2paww","offset-xl-2":"auth-styles_offset-xl-2__6PmLy","offset-xl-3":"auth-styles_offset-xl-3__3Z-Tv","offset-xl-4":"auth-styles_offset-xl-4__2FFWB","offset-xl-5":"auth-styles_offset-xl-5__31OSu","offset-xl-6":"auth-styles_offset-xl-6__3s_gh","offset-xl-7":"auth-styles_offset-xl-7__uzLWG","offset-xl-8":"auth-styles_offset-xl-8__MUIfK","offset-xl-9":"auth-styles_offset-xl-9__3FedX","offset-xl-10":"auth-styles_offset-xl-10__6N_6d","offset-xl-11":"auth-styles_offset-xl-11__jdWF2","form-control":"auth-styles_form-control__TWWjx","form-control-file":"auth-styles_form-control-file__2hM0e","form-control-range":"auth-styles_form-control-range__1L_5t","col-form-label":"auth-styles_col-form-label__nwIeC","col-form-label-lg":"auth-styles_col-form-label-lg__3_NoG","col-form-label-sm":"auth-styles_col-form-label-sm__30gfe","form-control-plaintext":"auth-styles_form-control-plaintext__35RzL","form-control-sm":"auth-styles_form-control-sm__2XZXA","form-control-lg":"auth-styles_form-control-lg__3X3MG","form-group":"auth-styles_form-group__11rq4","form-text":"auth-styles_form-text__2dVxs","form-row":"auth-styles_form-row__kAOLu","form-check":"auth-styles_form-check__2OFdL","form-check-input":"auth-styles_form-check-input__3P2bC","form-check-label":"auth-styles_form-check-label__1v1JV","form-check-inline":"auth-styles_form-check-inline__3rsW7","valid-feedback":"auth-styles_valid-feedback__1_T7-","valid-tooltip":"auth-styles_valid-tooltip__dSCQM","was-validated":"auth-styles_was-validated__1foJB","is-valid":"auth-styles_is-valid__30FJs","custom-select":"auth-styles_custom-select__EDd2g","custom-control-input":"auth-styles_custom-control-input__34O46","custom-control-label":"auth-styles_custom-control-label__3M8RN","custom-file-input":"auth-styles_custom-file-input__24wnE","custom-file-label":"auth-styles_custom-file-label__b7a1j","invalid-feedback":"auth-styles_invalid-feedback__mhQo-","invalid-tooltip":"auth-styles_invalid-tooltip__DQUyl","is-invalid":"auth-styles_is-invalid__2jvIP","form-inline":"auth-styles_form-inline__2VVKx","input-group":"auth-styles_input-group__1a2ep","custom-control":"auth-styles_custom-control__1rlbV","btn":"auth-styles_btn__2MeMF","focus":"auth-styles_focus__3tRPo","disabled":"auth-styles_disabled__3SfTf","btn-primary":"auth-styles_btn-primary__2kI78","active":"auth-styles_active__j6Q1A","show":"auth-styles_show__1auI0","dropdown-toggle":"auth-styles_dropdown-toggle__BJr6U","btn-secondary":"auth-styles_btn-secondary__3c7Cl","btn-success":"auth-styles_btn-success__3k5kU","btn-info":"auth-styles_btn-info__1Jo-l","btn-warning":"auth-styles_btn-warning__kZ8UD","btn-danger":"auth-styles_btn-danger__3hHi0","btn-light":"auth-styles_btn-light__35KKO","btn-dark":"auth-styles_btn-dark__2qjsW","btn-outline-primary":"auth-styles_btn-outline-primary__l7U0o","btn-outline-secondary":"auth-styles_btn-outline-secondary__1Y7Jb","btn-outline-success":"auth-styles_btn-outline-success__bORqD","btn-outline-info":"auth-styles_btn-outline-info__3xoZY","btn-outline-warning":"auth-styles_btn-outline-warning__2yk0b","btn-outline-danger":"auth-styles_btn-outline-danger__2lsp0","btn-outline-light":"auth-styles_btn-outline-light__PFtsK","btn-outline-dark":"auth-styles_btn-outline-dark__26zGm","btn-link":"auth-styles_btn-link__2ucDw","btn-lg":"auth-styles_btn-lg__2IBeZ","btn-sm":"auth-styles_btn-sm__YTkcH","btn-block":"auth-styles_btn-block__3afcY","custom-file":"auth-styles_custom-file__3ftOJ","has-validation":"auth-styles_has-validation__2_Ce9","input-group-prepend":"auth-styles_input-group-prepend__1qaRA","input-group-append":"auth-styles_input-group-append__3pS8K","input-group-text":"auth-styles_input-group-text__1Qb29","input-group-lg":"auth-styles_input-group-lg__1wXEc","input-group-sm":"auth-styles_input-group-sm__18rhn","text-monospace":"auth-styles_text-monospace__1X9A_","text-justify":"auth-styles_text-justify__10_Ve","text-wrap":"auth-styles_text-wrap__1WwEN","text-nowrap":"auth-styles_text-nowrap__1brBE","text-truncate":"auth-styles_text-truncate__2sYj6","text-left":"auth-styles_text-left__2Svts","text-right":"auth-styles_text-right__2_2vI","text-center":"auth-styles_text-center__1z62y","text-sm-left":"auth-styles_text-sm-left__rDHNS","text-sm-right":"auth-styles_text-sm-right__2Q3uT","text-sm-center":"auth-styles_text-sm-center__14hl_","text-md-left":"auth-styles_text-md-left__3qN5c","text-md-right":"auth-styles_text-md-right__2_J53","text-md-center":"auth-styles_text-md-center__35czq","text-lg-left":"auth-styles_text-lg-left__2hmZb","text-lg-right":"auth-styles_text-lg-right__3ow46","text-lg-center":"auth-styles_text-lg-center__1c_KS","text-xl-left":"auth-styles_text-xl-left__GAexL","text-xl-right":"auth-styles_text-xl-right__1lwhB","text-xl-center":"auth-styles_text-xl-center__1Y5yA","text-lowercase":"auth-styles_text-lowercase__2WcMH","text-uppercase":"auth-styles_text-uppercase__EUzPY","text-capitalize":"auth-styles_text-capitalize__2JLp5","font-weight-light":"auth-styles_font-weight-light__OLEh9","font-weight-lighter":"auth-styles_font-weight-lighter__sWCNg","font-weight-normal":"auth-styles_font-weight-normal__229q5","font-weight-bold":"auth-styles_font-weight-bold__1pMRf","font-weight-bolder":"auth-styles_font-weight-bolder__95d11","font-italic":"auth-styles_font-italic__2jtAw","text-white":"auth-styles_text-white__1N8Wd","text-primary":"auth-styles_text-primary__1qUwM","text-secondary":"auth-styles_text-secondary__2B2Ge","text-success":"auth-styles_text-success__3b9Jf","text-info":"auth-styles_text-info__jr8Pv","text-warning":"auth-styles_text-warning__3P8Kl","text-danger":"auth-styles_text-danger__eLgOG","text-light":"auth-styles_text-light__33Ovy","text-dark":"auth-styles_text-dark__RWLO_","text-body":"auth-styles_text-body__3rlQl","text-muted":"auth-styles_text-muted__20KiX","text-black-50":"auth-styles_text-black-50__3ivKm","text-white-50":"auth-styles_text-white-50__1hVag","text-hide":"auth-styles_text-hide__3xzc6","text-decoration-none":"auth-styles_text-decoration-none__3NGqL","text-break":"auth-styles_text-break__2ghoE","text-reset":"auth-styles_text-reset__2elij"});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"container":"auth-styles_container__wmY9N","container-fluid":"auth-styles_container-fluid__HMOzV","container-xl":"auth-styles_container-xl__OTeiG","container-lg":"auth-styles_container-lg__nQdmU","container-md":"auth-styles_container-md__7Da6o","container-sm":"auth-styles_container-sm__R4ama","row":"auth-styles_row__H72kq","no-gutters":"auth-styles_no-gutters__IhTZl","col":"auth-styles_col__C8xKr","col-xl":"auth-styles_col-xl__rmYjV","col-xl-auto":"auth-styles_col-xl-auto__CDlGz","col-xl-12":"auth-styles_col-xl-12__FOqus","col-xl-11":"auth-styles_col-xl-11__33za8","col-xl-10":"auth-styles_col-xl-10__iKvUs","col-xl-9":"auth-styles_col-xl-9__yaxQK","col-xl-8":"auth-styles_col-xl-8__uChAZ","col-xl-7":"auth-styles_col-xl-7__++iRV","col-xl-6":"auth-styles_col-xl-6__Dd9hp","col-xl-5":"auth-styles_col-xl-5__9RjFa","col-xl-4":"auth-styles_col-xl-4__1QSIP","col-xl-3":"auth-styles_col-xl-3__LulTv","col-xl-2":"auth-styles_col-xl-2__Q2A+Q","col-xl-1":"auth-styles_col-xl-1__f5CS6","col-lg":"auth-styles_col-lg__bduT+","col-lg-auto":"auth-styles_col-lg-auto__QlGp8","col-lg-12":"auth-styles_col-lg-12__EyCVi","col-lg-11":"auth-styles_col-lg-11__6Coaa","col-lg-10":"auth-styles_col-lg-10__l4DUy","col-lg-9":"auth-styles_col-lg-9__ItCeu","col-lg-8":"auth-styles_col-lg-8__vSQUj","col-lg-7":"auth-styles_col-lg-7__brKxp","col-lg-6":"auth-styles_col-lg-6__UzJip","col-lg-5":"auth-styles_col-lg-5__gDPlB","col-lg-4":"auth-styles_col-lg-4__6aIAG","col-lg-3":"auth-styles_col-lg-3__v8SFX","col-lg-2":"auth-styles_col-lg-2__q74Qj","col-lg-1":"auth-styles_col-lg-1__1ZPM+","col-md":"auth-styles_col-md__TDFW4","col-md-auto":"auth-styles_col-md-auto__CLxR1","col-md-12":"auth-styles_col-md-12__KVgkU","col-md-11":"auth-styles_col-md-11__G6f-y","col-md-10":"auth-styles_col-md-10__QH12U","col-md-9":"auth-styles_col-md-9__tD34m","col-md-8":"auth-styles_col-md-8__hiR-0","col-md-7":"auth-styles_col-md-7__wdq8I","col-md-6":"auth-styles_col-md-6__nwFAD","col-md-5":"auth-styles_col-md-5__9am4p","col-md-4":"auth-styles_col-md-4__opW0r","col-md-3":"auth-styles_col-md-3__OV5-f","col-md-2":"auth-styles_col-md-2__9HPaM","col-md-1":"auth-styles_col-md-1__Ht05T","col-sm":"auth-styles_col-sm__6yjxy","col-sm-auto":"auth-styles_col-sm-auto__nQHn-","col-sm-12":"auth-styles_col-sm-12__qSIIU","col-sm-11":"auth-styles_col-sm-11__lNh5r","col-sm-10":"auth-styles_col-sm-10__JU7Wa","col-sm-9":"auth-styles_col-sm-9__-Omk2","col-sm-8":"auth-styles_col-sm-8__SMiO6","col-sm-7":"auth-styles_col-sm-7__PJ8g7","col-sm-6":"auth-styles_col-sm-6__COZaP","col-sm-5":"auth-styles_col-sm-5__YNPCm","col-sm-4":"auth-styles_col-sm-4__iuSwu","col-sm-3":"auth-styles_col-sm-3__4EH9Y","col-sm-2":"auth-styles_col-sm-2__8uOgO","col-sm-1":"auth-styles_col-sm-1__F0dzz","col-auto":"auth-styles_col-auto__3y9MI","col-12":"auth-styles_col-12__8YCLT","col-11":"auth-styles_col-11__zbhQx","col-10":"auth-styles_col-10__8lQOA","col-9":"auth-styles_col-9__xsA1u","col-8":"auth-styles_col-8__HuSZT","col-7":"auth-styles_col-7__kDP0d","col-6":"auth-styles_col-6__9A2N8","col-5":"auth-styles_col-5__XvGxq","col-4":"auth-styles_col-4__qqGok","col-3":"auth-styles_col-3__TIwG3","col-2":"auth-styles_col-2__iEaNs","col-1":"auth-styles_col-1__o8S6E","row-cols-1":"auth-styles_row-cols-1__TeQas","row-cols-2":"auth-styles_row-cols-2__a27QD","row-cols-3":"auth-styles_row-cols-3__CyRvM","row-cols-4":"auth-styles_row-cols-4__Jwqxa","row-cols-5":"auth-styles_row-cols-5__Atg7i","row-cols-6":"auth-styles_row-cols-6__wHSQz","order-first":"auth-styles_order-first__gHzux","order-last":"auth-styles_order-last__WH4y6","order-0":"auth-styles_order-0__FTrTr","order-1":"auth-styles_order-1__uIMUB","order-2":"auth-styles_order-2__HINTF","order-3":"auth-styles_order-3__NNtmH","order-4":"auth-styles_order-4__auZ6g","order-5":"auth-styles_order-5__HhREf","order-6":"auth-styles_order-6__2-uJo","order-7":"auth-styles_order-7__5GUeR","order-8":"auth-styles_order-8__9HA2Q","order-9":"auth-styles_order-9__-Z2sQ","order-10":"auth-styles_order-10__-QcoN","order-11":"auth-styles_order-11__pSof4","order-12":"auth-styles_order-12__OPxGb","offset-1":"auth-styles_offset-1__qYoBC","offset-2":"auth-styles_offset-2__8kHBh","offset-3":"auth-styles_offset-3__RkY2x","offset-4":"auth-styles_offset-4__g08om","offset-5":"auth-styles_offset-5__Sp95p","offset-6":"auth-styles_offset-6__0ZUns","offset-7":"auth-styles_offset-7__s+nSI","offset-8":"auth-styles_offset-8__MiKEE","offset-9":"auth-styles_offset-9__73uWi","offset-10":"auth-styles_offset-10__ITDF5","offset-11":"auth-styles_offset-11__rJ1l2","row-cols-sm-1":"auth-styles_row-cols-sm-1__UNKR7","row-cols-sm-2":"auth-styles_row-cols-sm-2__1i7rN","row-cols-sm-3":"auth-styles_row-cols-sm-3__1ZGRj","row-cols-sm-4":"auth-styles_row-cols-sm-4__sh8p+","row-cols-sm-5":"auth-styles_row-cols-sm-5__DomOA","row-cols-sm-6":"auth-styles_row-cols-sm-6__9WUIf","order-sm-first":"auth-styles_order-sm-first__7VelP","order-sm-last":"auth-styles_order-sm-last__2uEcV","order-sm-0":"auth-styles_order-sm-0__r6aKQ","order-sm-1":"auth-styles_order-sm-1__g9CeC","order-sm-2":"auth-styles_order-sm-2__C8VGB","order-sm-3":"auth-styles_order-sm-3__z1wpP","order-sm-4":"auth-styles_order-sm-4__7PlZP","order-sm-5":"auth-styles_order-sm-5__9MROx","order-sm-6":"auth-styles_order-sm-6__glQLp","order-sm-7":"auth-styles_order-sm-7__ktglA","order-sm-8":"auth-styles_order-sm-8__la8a0","order-sm-9":"auth-styles_order-sm-9__tJdKB","order-sm-10":"auth-styles_order-sm-10__QrtWj","order-sm-11":"auth-styles_order-sm-11__y2Ndu","order-sm-12":"auth-styles_order-sm-12__MrhM9","offset-sm-0":"auth-styles_offset-sm-0__eFUIY","offset-sm-1":"auth-styles_offset-sm-1__UVINW","offset-sm-2":"auth-styles_offset-sm-2__Q+J2x","offset-sm-3":"auth-styles_offset-sm-3__i+Sd8","offset-sm-4":"auth-styles_offset-sm-4__fWCLl","offset-sm-5":"auth-styles_offset-sm-5__uTwXC","offset-sm-6":"auth-styles_offset-sm-6__W-Ytp","offset-sm-7":"auth-styles_offset-sm-7__rO2fs","offset-sm-8":"auth-styles_offset-sm-8__+CvAV","offset-sm-9":"auth-styles_offset-sm-9__+G36-","offset-sm-10":"auth-styles_offset-sm-10__5RohT","offset-sm-11":"auth-styles_offset-sm-11__vFrb2","row-cols-md-1":"auth-styles_row-cols-md-1__I4+cf","row-cols-md-2":"auth-styles_row-cols-md-2__dIC9K","row-cols-md-3":"auth-styles_row-cols-md-3__0rXYw","row-cols-md-4":"auth-styles_row-cols-md-4__oS9I3","row-cols-md-5":"auth-styles_row-cols-md-5__lojdG","row-cols-md-6":"auth-styles_row-cols-md-6__3RuZp","order-md-first":"auth-styles_order-md-first__DOb-U","order-md-last":"auth-styles_order-md-last__Yu4Fl","order-md-0":"auth-styles_order-md-0__04RHm","order-md-1":"auth-styles_order-md-1__aXOtf","order-md-2":"auth-styles_order-md-2__nk1si","order-md-3":"auth-styles_order-md-3__ZEuc+","order-md-4":"auth-styles_order-md-4__Vn2m5","order-md-5":"auth-styles_order-md-5__Ifzhq","order-md-6":"auth-styles_order-md-6__ndRQM","order-md-7":"auth-styles_order-md-7__2DmL2","order-md-8":"auth-styles_order-md-8__qFCkv","order-md-9":"auth-styles_order-md-9__9+51D","order-md-10":"auth-styles_order-md-10__7eKWZ","order-md-11":"auth-styles_order-md-11__tIsKc","order-md-12":"auth-styles_order-md-12__AwYk5","offset-md-0":"auth-styles_offset-md-0__+7TjR","offset-md-1":"auth-styles_offset-md-1__HGwZd","offset-md-2":"auth-styles_offset-md-2__wWLTo","offset-md-3":"auth-styles_offset-md-3__teeof","offset-md-4":"auth-styles_offset-md-4__aW-gw","offset-md-5":"auth-styles_offset-md-5__-tAGW","offset-md-6":"auth-styles_offset-md-6__P0F8K","offset-md-7":"auth-styles_offset-md-7__xp2is","offset-md-8":"auth-styles_offset-md-8__+Iaa8","offset-md-9":"auth-styles_offset-md-9__FrRpk","offset-md-10":"auth-styles_offset-md-10__oRhkj","offset-md-11":"auth-styles_offset-md-11__r9dZj","row-cols-lg-1":"auth-styles_row-cols-lg-1__5dRTM","row-cols-lg-2":"auth-styles_row-cols-lg-2__2N21H","row-cols-lg-3":"auth-styles_row-cols-lg-3__NFWLS","row-cols-lg-4":"auth-styles_row-cols-lg-4__lzReQ","row-cols-lg-5":"auth-styles_row-cols-lg-5__16M68","row-cols-lg-6":"auth-styles_row-cols-lg-6__XM+tL","order-lg-first":"auth-styles_order-lg-first__LuXSs","order-lg-last":"auth-styles_order-lg-last__9uJ21","order-lg-0":"auth-styles_order-lg-0__VH7hH","order-lg-1":"auth-styles_order-lg-1__VSUsC","order-lg-2":"auth-styles_order-lg-2__RKtdZ","order-lg-3":"auth-styles_order-lg-3__v232g","order-lg-4":"auth-styles_order-lg-4__CxVLO","order-lg-5":"auth-styles_order-lg-5__2wFsN","order-lg-6":"auth-styles_order-lg-6__gACB1","order-lg-7":"auth-styles_order-lg-7__nRxM4","order-lg-8":"auth-styles_order-lg-8__h-Nvi","order-lg-9":"auth-styles_order-lg-9__F1hr0","order-lg-10":"auth-styles_order-lg-10__3uWfz","order-lg-11":"auth-styles_order-lg-11__vdChB","order-lg-12":"auth-styles_order-lg-12__q0Znt","offset-lg-0":"auth-styles_offset-lg-0__bevnF","offset-lg-1":"auth-styles_offset-lg-1__CpJMP","offset-lg-2":"auth-styles_offset-lg-2__rOfUa","offset-lg-3":"auth-styles_offset-lg-3__ZoRb-","offset-lg-4":"auth-styles_offset-lg-4__VzJ73","offset-lg-5":"auth-styles_offset-lg-5__9QsIN","offset-lg-6":"auth-styles_offset-lg-6__kil1D","offset-lg-7":"auth-styles_offset-lg-7__SlXC5","offset-lg-8":"auth-styles_offset-lg-8__pMDkH","offset-lg-9":"auth-styles_offset-lg-9__warwm","offset-lg-10":"auth-styles_offset-lg-10__nbLNz","offset-lg-11":"auth-styles_offset-lg-11__wl5Ui","row-cols-xl-1":"auth-styles_row-cols-xl-1__98eie","row-cols-xl-2":"auth-styles_row-cols-xl-2__FLEIV","row-cols-xl-3":"auth-styles_row-cols-xl-3__DUFwK","row-cols-xl-4":"auth-styles_row-cols-xl-4__mF-Pl","row-cols-xl-5":"auth-styles_row-cols-xl-5__12Yov","row-cols-xl-6":"auth-styles_row-cols-xl-6__Rgfyu","order-xl-first":"auth-styles_order-xl-first__eHjij","order-xl-last":"auth-styles_order-xl-last__ly1cn","order-xl-0":"auth-styles_order-xl-0__NYRnl","order-xl-1":"auth-styles_order-xl-1__-+E76","order-xl-2":"auth-styles_order-xl-2__SAX6L","order-xl-3":"auth-styles_order-xl-3__MG-1i","order-xl-4":"auth-styles_order-xl-4__gI0g3","order-xl-5":"auth-styles_order-xl-5__BlMx4","order-xl-6":"auth-styles_order-xl-6__-G4yl","order-xl-7":"auth-styles_order-xl-7__u3HAv","order-xl-8":"auth-styles_order-xl-8__Kt9vQ","order-xl-9":"auth-styles_order-xl-9__l5gjO","order-xl-10":"auth-styles_order-xl-10__A3p+n","order-xl-11":"auth-styles_order-xl-11__GQm9a","order-xl-12":"auth-styles_order-xl-12__jUA7q","offset-xl-0":"auth-styles_offset-xl-0__WbUp1","offset-xl-1":"auth-styles_offset-xl-1__lOJhm","offset-xl-2":"auth-styles_offset-xl-2__FV01D","offset-xl-3":"auth-styles_offset-xl-3__QNtwY","offset-xl-4":"auth-styles_offset-xl-4__1PzJr","offset-xl-5":"auth-styles_offset-xl-5__D2ZcH","offset-xl-6":"auth-styles_offset-xl-6__f4cMo","offset-xl-7":"auth-styles_offset-xl-7__CYtWV","offset-xl-8":"auth-styles_offset-xl-8__gqQi+","offset-xl-9":"auth-styles_offset-xl-9__QTcWk","offset-xl-10":"auth-styles_offset-xl-10__FiC77","offset-xl-11":"auth-styles_offset-xl-11__qht63","form-control":"auth-styles_form-control__iwKc0","form-control-file":"auth-styles_form-control-file__YbTY3","form-control-range":"auth-styles_form-control-range__jDLiP","col-form-label":"auth-styles_col-form-label__ZAdiI","col-form-label-lg":"auth-styles_col-form-label-lg__N4x8w","col-form-label-sm":"auth-styles_col-form-label-sm__hxo+9","form-control-plaintext":"auth-styles_form-control-plaintext__H+r2E","form-control-sm":"auth-styles_form-control-sm__D5tl1","form-control-lg":"auth-styles_form-control-lg__hMD3k","form-group":"auth-styles_form-group__Ft4+Y","form-text":"auth-styles_form-text__vy2gy","form-row":"auth-styles_form-row__UoEQ9","form-check":"auth-styles_form-check__cuxMu","form-check-input":"auth-styles_form-check-input__50FqX","form-check-label":"auth-styles_form-check-label__XQuIf","form-check-inline":"auth-styles_form-check-inline__cb2qz","valid-feedback":"auth-styles_valid-feedback__MJHyo","valid-tooltip":"auth-styles_valid-tooltip__4QKTb","was-validated":"auth-styles_was-validated__zFYg-","is-valid":"auth-styles_is-valid__9Gcci","custom-select":"auth-styles_custom-select__ohM+Z","custom-control-input":"auth-styles_custom-control-input__qGl-9","custom-control-label":"auth-styles_custom-control-label__w7-WN","custom-file-input":"auth-styles_custom-file-input__8pod1","custom-file-label":"auth-styles_custom-file-label__FgCE-","invalid-feedback":"auth-styles_invalid-feedback__j2NfW","invalid-tooltip":"auth-styles_invalid-tooltip__oq966","is-invalid":"auth-styles_is-invalid__BOC45","form-inline":"auth-styles_form-inline__O-Fq0","input-group":"auth-styles_input-group__gg4tK","custom-control":"auth-styles_custom-control__Ep0sK","btn":"auth-styles_btn__DTIUe","focus":"auth-styles_focus__knCO9","disabled":"auth-styles_disabled__IuFqv","btn-primary":"auth-styles_btn-primary__uCdIY","active":"auth-styles_active__bWBWy","show":"auth-styles_show__qpvu9","dropdown-toggle":"auth-styles_dropdown-toggle__88znH","btn-secondary":"auth-styles_btn-secondary__zuPAG","btn-success":"auth-styles_btn-success__7I2U2","btn-info":"auth-styles_btn-info__HF-f4","btn-warning":"auth-styles_btn-warning__r2LUp","btn-danger":"auth-styles_btn-danger__QzxdL","btn-light":"auth-styles_btn-light__CV7H6","btn-dark":"auth-styles_btn-dark__DcybZ","btn-outline-primary":"auth-styles_btn-outline-primary__LxyaA","btn-outline-secondary":"auth-styles_btn-outline-secondary__Dbz0l","btn-outline-success":"auth-styles_btn-outline-success__gtQnC","btn-outline-info":"auth-styles_btn-outline-info__gTm2i","btn-outline-warning":"auth-styles_btn-outline-warning__VY0zH","btn-outline-danger":"auth-styles_btn-outline-danger__zJdVl","btn-outline-light":"auth-styles_btn-outline-light__UICV1","btn-outline-dark":"auth-styles_btn-outline-dark__x5t-o","btn-link":"auth-styles_btn-link__8i1iJ","btn-lg":"auth-styles_btn-lg__XBbj3","btn-sm":"auth-styles_btn-sm__McLN6","btn-block":"auth-styles_btn-block__nIT1y","custom-file":"auth-styles_custom-file__aaxkv","has-validation":"auth-styles_has-validation__qtYfS","input-group-prepend":"auth-styles_input-group-prepend__Myfsl","input-group-append":"auth-styles_input-group-append__M0WQI","input-group-text":"auth-styles_input-group-text__S60jp","input-group-lg":"auth-styles_input-group-lg__VihAB","input-group-sm":"auth-styles_input-group-sm__DvtGZ","text-monospace":"auth-styles_text-monospace__3KRN1","text-justify":"auth-styles_text-justify__viZ6T","text-wrap":"auth-styles_text-wrap__Fw0kg","text-nowrap":"auth-styles_text-nowrap__It5FH","text-truncate":"auth-styles_text-truncate__0QwpN","text-left":"auth-styles_text-left__rrnLS","text-right":"auth-styles_text-right__vnTJL","text-center":"auth-styles_text-center__6IDNY","text-sm-left":"auth-styles_text-sm-left__nMx3e","text-sm-right":"auth-styles_text-sm-right__oRJTf","text-sm-center":"auth-styles_text-sm-center__SCC38","text-md-left":"auth-styles_text-md-left__374Er","text-md-right":"auth-styles_text-md-right__xKYI+","text-md-center":"auth-styles_text-md-center__oG5bN","text-lg-left":"auth-styles_text-lg-left__GiLOY","text-lg-right":"auth-styles_text-lg-right__CuHQs","text-lg-center":"auth-styles_text-lg-center__oCpZK","text-xl-left":"auth-styles_text-xl-left__BueJ7","text-xl-right":"auth-styles_text-xl-right__7jGN8","text-xl-center":"auth-styles_text-xl-center__mymm0","text-lowercase":"auth-styles_text-lowercase__8FeAy","text-uppercase":"auth-styles_text-uppercase__qyFNz","text-capitalize":"auth-styles_text-capitalize__hyUV8","font-weight-light":"auth-styles_font-weight-light__jOAmc","font-weight-lighter":"auth-styles_font-weight-lighter__ZmrAS","font-weight-normal":"auth-styles_font-weight-normal__hC+FD","font-weight-bold":"auth-styles_font-weight-bold__ZHrrz","font-weight-bolder":"auth-styles_font-weight-bolder__M+Qgm","font-italic":"auth-styles_font-italic__4k1PB","text-white":"auth-styles_text-white__5LzrW","text-primary":"auth-styles_text-primary__GZG+l","text-secondary":"auth-styles_text-secondary__PJlhU","text-success":"auth-styles_text-success__1dUYC","text-info":"auth-styles_text-info__lcdyx","text-warning":"auth-styles_text-warning__RYV2e","text-danger":"auth-styles_text-danger__k+qH+","text-light":"auth-styles_text-light__UXkAg","text-dark":"auth-styles_text-dark__aY0OL","text-body":"auth-styles_text-body__zdXbZ","text-muted":"auth-styles_text-muted__f+v8b","text-black-50":"auth-styles_text-black-50__i9rmS","text-white-50":"auth-styles_text-white-50__iGtiQ","text-hide":"auth-styles_text-hide__CG1+i","text-decoration-none":"auth-styles_text-decoration-none__CR0nL","text-break":"auth-styles_text-break__7uz7Y","text-reset":"auth-styles_text-reset__-CHT9"});
 
 /***/ }),
 
-/***/ 92910:
+/***/ 66545:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -22679,10 +24170,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(42464);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_nrwl_web_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_index_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(89322);
-/* harmony import */ var _node_modules_nrwl_web_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_index_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_node_modules_nrwl_web_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_index_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _node_modules_nrwl_webpack_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_index_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(22304);
+/* harmony import */ var _node_modules_nrwl_webpack_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_index_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_node_modules_nrwl_webpack_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_index_css__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony reexport (unknown) */ var __WEBPACK_REEXPORT_OBJECT__ = {};
-/* harmony reexport (unknown) */ for(const __WEBPACK_IMPORT_KEY__ in _node_modules_nrwl_web_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_index_css__WEBPACK_IMPORTED_MODULE_6__) if(__WEBPACK_IMPORT_KEY__ !== "default") __WEBPACK_REEXPORT_OBJECT__[__WEBPACK_IMPORT_KEY__] = () => _node_modules_nrwl_web_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_index_css__WEBPACK_IMPORTED_MODULE_6__[__WEBPACK_IMPORT_KEY__]
+/* harmony reexport (unknown) */ for(const __WEBPACK_IMPORT_KEY__ in _node_modules_nrwl_webpack_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_index_css__WEBPACK_IMPORTED_MODULE_6__) if(__WEBPACK_IMPORT_KEY__ !== "default") __WEBPACK_REEXPORT_OBJECT__[__WEBPACK_IMPORT_KEY__] = () => _node_modules_nrwl_webpack_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_index_css__WEBPACK_IMPORTED_MODULE_6__[__WEBPACK_IMPORT_KEY__]
 /* harmony reexport (unknown) */ __webpack_require__.d(__webpack_exports__, __WEBPACK_REEXPORT_OBJECT__);
 
       
@@ -22705,17 +24196,17 @@ options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWi
 options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()((_node_modules_nrwl_web_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_index_css__WEBPACK_IMPORTED_MODULE_6___default()), options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()((_node_modules_nrwl_webpack_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_index_css__WEBPACK_IMPORTED_MODULE_6___default()), options);
 
 
 
 
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((_node_modules_nrwl_web_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_index_css__WEBPACK_IMPORTED_MODULE_6___default()) && (_node_modules_nrwl_web_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_index_css__WEBPACK_IMPORTED_MODULE_6___default().locals) ? (_node_modules_nrwl_web_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_index_css__WEBPACK_IMPORTED_MODULE_6___default().locals) : undefined);
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((_node_modules_nrwl_webpack_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_index_css__WEBPACK_IMPORTED_MODULE_6___default()) && (_node_modules_nrwl_webpack_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_index_css__WEBPACK_IMPORTED_MODULE_6___default().locals) ? (_node_modules_nrwl_webpack_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_index_css__WEBPACK_IMPORTED_MODULE_6___default().locals) : undefined);
 
 
 /***/ }),
 
-/***/ 59961:
+/***/ 7272:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -22735,10 +24226,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(42464);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_nrwl_web_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_styles_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(63573);
-/* harmony import */ var _node_modules_nrwl_web_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_styles_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_node_modules_nrwl_web_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_styles_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _node_modules_nrwl_webpack_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_styles_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(29490);
+/* harmony import */ var _node_modules_nrwl_webpack_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_styles_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_node_modules_nrwl_webpack_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_styles_css__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony reexport (unknown) */ var __WEBPACK_REEXPORT_OBJECT__ = {};
-/* harmony reexport (unknown) */ for(const __WEBPACK_IMPORT_KEY__ in _node_modules_nrwl_web_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_styles_css__WEBPACK_IMPORTED_MODULE_6__) if(__WEBPACK_IMPORT_KEY__ !== "default") __WEBPACK_REEXPORT_OBJECT__[__WEBPACK_IMPORT_KEY__] = () => _node_modules_nrwl_web_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_styles_css__WEBPACK_IMPORTED_MODULE_6__[__WEBPACK_IMPORT_KEY__]
+/* harmony reexport (unknown) */ for(const __WEBPACK_IMPORT_KEY__ in _node_modules_nrwl_webpack_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_styles_css__WEBPACK_IMPORTED_MODULE_6__) if(__WEBPACK_IMPORT_KEY__ !== "default") __WEBPACK_REEXPORT_OBJECT__[__WEBPACK_IMPORT_KEY__] = () => _node_modules_nrwl_webpack_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_styles_css__WEBPACK_IMPORTED_MODULE_6__[__WEBPACK_IMPORT_KEY__]
 /* harmony reexport (unknown) */ __webpack_require__.d(__webpack_exports__, __WEBPACK_REEXPORT_OBJECT__);
 
       
@@ -22761,17 +24252,17 @@ options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWi
 options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()((_node_modules_nrwl_web_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_styles_css__WEBPACK_IMPORTED_MODULE_6___default()), options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()((_node_modules_nrwl_webpack_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_styles_css__WEBPACK_IMPORTED_MODULE_6___default()), options);
 
 
 
 
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((_node_modules_nrwl_web_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_styles_css__WEBPACK_IMPORTED_MODULE_6___default()) && (_node_modules_nrwl_web_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_styles_css__WEBPACK_IMPORTED_MODULE_6___default().locals) ? (_node_modules_nrwl_web_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_styles_css__WEBPACK_IMPORTED_MODULE_6___default().locals) : undefined);
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((_node_modules_nrwl_webpack_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_styles_css__WEBPACK_IMPORTED_MODULE_6___default()) && (_node_modules_nrwl_webpack_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_styles_css__WEBPACK_IMPORTED_MODULE_6___default().locals) ? (_node_modules_nrwl_webpack_src_utils_webpack_plugins_raw_css_loader_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_3_oneOf_4_use_2_styles_css__WEBPACK_IMPORTED_MODULE_6___default().locals) : undefined);
 
 
 /***/ }),
 
-/***/ 89526:
+/***/ 44551:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -22873,7 +24364,7 @@ const useFirebase = () => (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(Fire
 
 /***/ }),
 
-/***/ 95558:
+/***/ 33811:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -23022,6 +24513,7 @@ const PROTOCOL_RELATIONSHIPS = Object.freeze({
   OPT: "optional",
   REQ: "required",
   CONTRA: "contraindicated",
+  NOTIND: "not indicated",
   UNN: "unnecessary",
   IR: "irrelevant",
   ALT: "alternative"
@@ -23029,7 +24521,7 @@ const PROTOCOL_RELATIONSHIPS = Object.freeze({
 
 /***/ }),
 
-/***/ 48913:
+/***/ 81657:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -23097,13 +24589,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(76635);
 /* harmony import */ var json_stable_stringify__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(22117);
-/* harmony import */ var _constants_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(95558);
-/* harmony import */ var _types_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7237);
-/* harmony import */ var _intvs_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(84028);
-/* harmony import */ var _intvPrompts_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(53836);
-/* harmony import */ var _intvPromptAnswers_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(37246);
-/* harmony import */ var _intvMenusCats_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(838);
-/* harmony import */ var _intvMenuItems_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(11722);
+/* harmony import */ var _constants_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(33811);
+/* harmony import */ var _types_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(76215);
+/* harmony import */ var _intvs_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(22302);
+/* harmony import */ var _intvPrompts_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(70040);
+/* harmony import */ var _intvPromptAnswers_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(82194);
+/* harmony import */ var _intvMenusCats_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(97002);
+/* harmony import */ var _intvMenuItems_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(60474);
 
 
 
@@ -23517,7 +25009,9 @@ function exportObserverLogMetaData(doc) {
     scenario: data.scenarioName,
     scenarioID: data.scenarioID,
     userName: data.userName,
-    timestamp: data.timestamp
+    timestamp: data.timestamp,
+    classCode: data.classCode,
+    condition: data.condition
   };
 }
 
@@ -23805,7 +25299,7 @@ const intvVariant2JSON = intvVariant => {
 
 /***/ }),
 
-/***/ 11722:
+/***/ 60474:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -24224,7 +25718,7 @@ const INTV_MENU_ITEMS = [{
 
 /***/ }),
 
-/***/ 838:
+/***/ 97002:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -24277,7 +25771,7 @@ const INTV_MENU_CATS = [{
 
 /***/ }),
 
-/***/ 37246:
+/***/ 82194:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -24789,7 +26283,7 @@ const INTV_PROMPT_ANSWERS = [{
 
 /***/ }),
 
-/***/ 53836:
+/***/ 70040:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -24797,7 +26291,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _meddbriefer_scenario_data__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(48913);
+/* harmony import */ var _meddbriefer_scenario_data__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(81657);
 
 const INTV_PROMPTS = [{
   "id": "prompt-wound-location",
@@ -25031,7 +26525,7 @@ const INTV_PROMPTS = [{
 
 /***/ }),
 
-/***/ 84028:
+/***/ 22302:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -25306,7 +26800,7 @@ const INTVS = [{
 
 /***/ }),
 
-/***/ 7237:
+/***/ 76215:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -25315,8 +26809,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "PublishedScenario": () => (/* binding */ PublishedScenario),
 /* harmony export */   "ScenarioType": () => (/* binding */ ScenarioType)
 /* harmony export */ });
-/* harmony import */ var _constants_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(95558);
-/* harmony import */ var _utils_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(97414);
+/* harmony import */ var _constants_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(33811);
+/* harmony import */ var _utils_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(15773);
 
 
 class ScenarioType {
@@ -25878,7 +27372,7 @@ class PublishedScenario {
 
 /***/ }),
 
-/***/ 97414:
+/***/ 15773:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -25913,7 +27407,7 @@ const groupByKey = (list, key) => list.reduce((hash, obj) => ({ ...hash,
 },
 /******/ __webpack_require__ => { // webpackRuntimeModules
 /******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ __webpack_require__.O(0, ["vendor"], () => (__webpack_exec__(57645)));
+/******/ __webpack_require__.O(0, ["vendor"], () => (__webpack_exec__(39782)));
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
