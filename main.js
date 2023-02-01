@@ -105,7 +105,7 @@ __webpack_require__.r(__webpack_exports__);
 const environment = {
   production: false,
   firebaseProject: "MedDBrieferDev" || 0,
-  classCode: "pilot"
+  classCode: "demo"
 };
 
 /***/ }),
@@ -13863,6 +13863,52 @@ const intvStatusRules = {
       val: "Pale, cool"
     }]
   }, {
+    ands: ["intv-open-airway-method-modified-jaw-thrust", "intv-airway-patency-technique-suction-airway", "intv-nasotracheal-intubation", "intv-nasopharyngeal-airway"],
+    updates: [{
+      id: "",
+      tab: ["A"],
+      label: "Patency",
+      val: "Clear and secured"
+    }, {
+      id: "",
+      tab: ["B"],
+      label: "Rate, rhythm, quality",
+      val: "Respirations assisted, gurgling stopped"
+    }, {
+      id: "",
+      tab: ["C"],
+      label: "Pulse",
+      val: "Regular, strong"
+    }, {
+      id: "checks-skin",
+      tab: ["C"],
+      label: "Skin",
+      val: "Pale, cool"
+    }]
+  }, {
+    ands: ["intv-open-airway-method-modified-jaw-thrust", "intv-airway-patency-technique-suction-airway", "intv-nasotracheal-intubation", "intv-oropharyngeal-airway"],
+    updates: [{
+      id: "",
+      tab: ["A"],
+      label: "Patency",
+      val: "Clear and secured"
+    }, {
+      id: "",
+      tab: ["B"],
+      label: "Rate, rhythm, quality",
+      val: "Respirations assisted, gurgling stopped"
+    }, {
+      id: "",
+      tab: ["C"],
+      label: "Pulse",
+      val: "Regular, strong"
+    }, {
+      id: "checks-skin",
+      tab: ["C"],
+      label: "Skin",
+      val: "Pale, cool"
+    }]
+  }, {
     ands: ["intv-orotracheal-intubation"],
     updates: [{
       id: "",
@@ -14046,31 +14092,8 @@ const intvStatusRules = {
       label: "Lung sounds",
       val: "No stridor, LS equal and clear"
     }]
-  }, // added because didn't implement ors and don't want the one below to fire and wipe out the one above
-  {
-    ands: ["intv-sedation-assisted-intubation", "intv-ventilation-technique-bag-valve-mask"],
-    updates: [{
-      id: "assess-loc",
-      tab: ["General"],
-      label: "LOC",
-      val: "Sedated"
-    }, {
-      id: "",
-      tab: ["A"],
-      label: "Patency",
-      val: "Secured with ET tube in place"
-    }, {
-      id: "",
-      tab: ["B"],
-      label: "Rate, rhythm, quality",
-      val: "Assisted breaths"
-    }, {
-      id: "assessment-check-breath-sounds",
-      tab: ["B"],
-      label: "Lung sounds",
-      val: "No stridor, LS equal and clear"
-    }]
   }, {
+    nots: ["intv-sedation-assisted-intubation"],
     ands: ["intv-ventilation-technique-bag-valve-mask"],
     updates: [{
       id: "assess-loc",
@@ -18535,7 +18558,7 @@ const PatientStatus = () => {
             active: isActiveTab('general')
           }),
           onClick: () => activateTab('general'),
-          children: "General"
+          children: "LOC"
         }, void 0, false, {
           fileName: _jsxFileName,
           lineNumber: 59,
@@ -22220,7 +22243,7 @@ const GeneralTabContent = () => {
     generalFindings
   } = (0,_contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__.useScenario)();
   return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_RevealTable__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    title: "General",
+    title: "LOC",
     category: "general",
     headings: ["Assessments", "Current Value"],
     rows: generalFindings
@@ -23099,6 +23122,16 @@ const ScenarioProvider = ({
     return rules;
   };
 
+  const updateFindings = (findings, update) => {
+    let entry = findings.findLast(e => e.label === update.label);
+
+    if (!entry || !!entry && entry.value !== update.value) {
+      findings.push(update);
+    }
+
+    return findings;
+  };
+
   const updateAssessmentStatus = intvData => {
     let rules;
 
@@ -23110,60 +23143,53 @@ const ScenarioProvider = ({
 
     for (let rule of rules) {
       if (!rule.fired) {
-        let ands = rule["ands"];
-        let andResult = intvHistory.concat(intvData).filter(e => ands.includes(e.interventionID));
+        let history = intvHistory.concat(intvData).map(e => e.interventionID);
+        let nots = rule["nots"] || [];
+        let notResult = nots.filter(e => history.includes(e));
+        let ands = rule["ands"] || [];
+        let andResult = ands.filter(e => history.includes(e)); //let andResult = intvHistory.concat(intvData).filter(e => ands.includes(e.interventionID))
+
         let updates = rule["updates"];
 
-        if (updates && (ands.length === 0 || !!andResult && ands.length === andResult.length)) {
+        if (notResult.length === 0 && updates && (ands.length === 0 || !!andResult && ands.length === andResult.length)) {
           rule.fired = true;
 
           for (let update of updates) {
             //Only update an assessment finding in the checklist if it is in
-            // in the secondary assessment section
+            //the secondary assessment section
             let assessment = scenario._checkListMetaData.find(rec => rec.id === update.id);
 
             if (assessment && assessment.phase === "secondary-assessment") {
               scenario.assessmentFindings[update.id] = update.val;
             } //if a tab value is provided, put the update label and val in that tab
+            //if val has changed since the last time
 
 
             if (update.tab && update.tab.length !== 0) {
               let result;
+              let updateVal = {
+                label: update.label,
+                value: update.val
+              };
               update.tab.forEach(tab => {
                 switch (tab) {
                   case "General":
-                    result = generalFindings;
-                    result.push({
-                      label: update.label,
-                      value: update.val
-                    });
+                    result = updateFindings(generalFindings, updateVal);
                     setGeneralFindings(result);
                     break;
 
                   case "A":
-                    result = airwayFindings;
-                    result.push({
-                      label: update.label,
-                      value: update.val
-                    });
+                    result = updateFindings(airwayFindings, updateVal);
                     setAirwayFindings(result);
                     break;
 
                   case "B":
-                    result = breathingFindings;
-                    result.push({
-                      label: update.label,
-                      value: update.val
-                    });
+                    result = updateFindings(breathingFindings, updateVal);
                     setBreathingFindings(result);
                     break;
 
                   case "C":
-                    result = circulationFindings;
-                    result.push({
-                      label: update.label,
-                      value: update.val
-                    });
+                    result = updateFindings(circulationFindings, updateVal);
                     setCirculationFindings(result);
                     break;
 
@@ -23307,7 +23333,7 @@ const ScenarioProvider = ({
     children: children
   }, void 0, false, {
     fileName: _jsxFileName,
-    lineNumber: 609,
+    lineNumber: 622,
     columnNumber: 9
   }, undefined);
 };
