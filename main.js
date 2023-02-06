@@ -15,7 +15,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _meddbriefer_observer_ui__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(13162);
 /* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(57216);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/apps/mockup/src/App.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/apps/mockup/src/App.js";
 
 
 
@@ -104,8 +104,8 @@ __webpack_require__.r(__webpack_exports__);
 // When building for production, this file is replaced with `environment.prod.ts`.
 const environment = {
   production: false,
-  firebaseProject: "MedDBrieferDev" || 0,
-  classCode: "demo"
+  firebaseProject: "ScottDev" || 0,
+  classCode: ({"NODE_ENV":"development","NX_FIREBASE_PROJECT":"ScottDev","NX_CLI_SET":"true","NX_LOAD_DOT_ENV_FILES":"true","NX_WORKSPACE_ROOT":"/Users/sts125/projects/monorepo","NX_TERMINAL_OUTPUT_PATH":"/Users/sts125/projects/monorepo/node_modules/.cache/nx/terminalOutputs/43adab06424e55ee31796ae36619f367d4c3561476d61344123355f5fae71756","NX_STREAM_OUTPUT":"true","NX_TASK_TARGET_PROJECT":"mockup","NX_TASK_HASH":"43adab06424e55ee31796ae36619f367d4c3561476d61344123355f5fae71756"}).NX_CLASS_CODE || "pilot"
 };
 
 /***/ }),
@@ -120,7 +120,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(17029);
 /* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6619);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/apps/mockup/src/main.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/apps/mockup/src/main.js";
 
 
 
@@ -410,7 +410,7 @@ var itemByLabel; // sts 1/23/22 - added as global
 let checklistHierarchy;
 let training; // analysisFields to include in output
 
-let analysisFields = ["numericalID", "actionDescription", "id", "type", "label", "labelID", "answerDetails", "vital", "vitalType", "value", "subPhase", "finding", "intvStatus", "vitalsStage", "vitalsStageCoverage", "probLabel", "feedback", "phFeedback", "phaseOrderStatus", "lateRelativeTo", "why", "orderingFB", "vitalsFB", "minVitalsFB", "incorrectAnswersFB", "intvStatusFB", "redundantToFB", "minimalWhy", "timestamp", "status", "displayColor", "comment"];
+let analysisFields = ["numericalID", "actionDescription", "id", "type", "label", "labelID", "answerDetails", "variantDetails", "intvVariant", "vital", "vitalType", "value", "subPhase", "finding", "intvStatus", "vitalsStage", "vitalsStageCoverage", "probLabel", "feedback", "phFeedback", "phaseOrderStatus", "lateRelativeTo", "why", "orderingFB", "vitalsFB", "minVitalsFB", "incorrectAnswersFB", "intvStatusFB", "redundantToFB", "minimalWhy", "timestamp", "status", "displayColor", "comment"];
 
 function initGlobals(scen) {
   problemStates = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_1__.getStatesForStatus)("Problem", _meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_7__.fbTemplatesDef);
@@ -584,6 +584,7 @@ const processRawLogForDisplay = events => {
       "why": "",
       "answerCorrect": "false",
       "answerDetails": {},
+      "variantDetails": {},
       "expertPhase": "",
       //filled in only for interventions
       "workingPhase": "",
@@ -611,8 +612,7 @@ const processRawLogForDisplay = events => {
     } // copy over the event fields that exist in the input log from observer UI (which is type dependent)
 
 
-    const EVENT_FIELDS = ["id", "interventionID", //"intvVariant",  //ignoring intvVariant for now until questions resolved 8/10/22
-    "label", "finding", "phase", "subPhase", "vitalType", "vital", "value", "type", "prompt", "promptID", "intervention", "timestamp", "probLabel"];
+    const EVENT_FIELDS = ["id", "interventionID", "intvVariant", "label", "finding", "phase", "subPhase", "vitalType", "vital", "value", "type", "prompt", "promptID", "intervention", "timestamp", "probLabel"];
     EVENT_FIELDS.forEach(fldName => {
       if (!!event[fldName]) {
         eventObj[fldName] = event[fldName];
@@ -703,6 +703,7 @@ const annotateInputEvents = (events, problems) => {
       "why": "",
       "answerCorrect": "false",
       "answerDetails": {},
+      "variantDetails": {},
       "expertPhase": "",
       //filled in only for interventions
       "workingPhase": "",
@@ -730,8 +731,7 @@ const annotateInputEvents = (events, problems) => {
     } // copy over the event fields that exist in the input log from observer UI (which is type dependent)
 
 
-    const EVENT_FIELDS = ["id", "interventionID", //"intvVariant",  //ignoring intvVariant for now until questions resolved 8/10/22
-    "label", "finding", "phase", "subPhase", "vitalType", "vital", "value", "type", "prompt", "promptID", "intervention", "timestamp", "probLabel"];
+    const EVENT_FIELDS = ["id", "interventionID", "intvVariant", "label", "finding", "phase", "subPhase", "vitalType", "vital", "value", "type", "prompt", "promptID", "intervention", "timestamp", "probLabel"];
     EVENT_FIELDS.forEach(fldName => {
       if (!!event[fldName]) {
         eventObj[fldName] = event[fldName];
@@ -961,16 +961,18 @@ const annotateInputEvents = (events, problems) => {
 
         let variant = "{}";
 
-        if (!!event.intvVariant && typeof event.intvVariant === 'string' && event.intvVariant !== "{}") {
-          let origVariant = JSON.parse(event.intvVariant); //intvVariant2JSON(event.intvVariant)}
+        if (!!event.intvVariant && event.intvVariant !== "{}") {
+          let origVariant = JSON.parse(event.intvVariant); //convert string to object 
 
           let key = Object.keys(origVariant)[0];
-          let val = origVariant[key][0];
-          eventObj.variantID = val;
-          variant = "{\"" + key + "\":\"" + val + "\"}";
-        } //else { variant = "{}" }   //intvVariant2JSON({})} 
+          let val = origVariant[key];
+          eventObj.variantDetails[key] = {
+            label: (0,_meddebriefer_prompt_answer_grading__WEBPACK_IMPORTED_MODULE_8__.getPromptLabel)(key),
+            givenVariant: (0,_meddebriefer_prompt_answer_grading__WEBPACK_IMPORTED_MODULE_8__.getAnswerLabel)(val)
+          }; //variant = "{\"" + key + "\":\"" + val + "\"}"  //not yet using the variant info during analysis
+        }
 
-
+        eventObj.variant = variant;
         let prescribedAnswers = (0,_meddebriefer_prompt_answer_grading__WEBPACK_IMPORTED_MODULE_8__.getPrescribedInvAnswers)(event.interventionID, variant);
         eventObj = (0,_meddebriefer_prompt_answer_grading__WEBPACK_IMPORTED_MODULE_8__.processInterventionAnswers)(event, eventObj, prescribedAnswers, "incorrect-answers"); //anything with leftover status of intervention means it wasn't part of the solution
 
@@ -1003,15 +1005,7 @@ const annotateInputEvents = (events, problems) => {
 
 
       if (eventObj.type === "intervention") {
-        let variant;
-
-        if (!!eventObj.intvVariant) {
-          variant = eventObj.intvVariant;
-        } else {
-          variant = "{}";
-        }
-
-        confirmedEvents.push(eventObj.id + "+" + variant);
+        confirmedEvents.push(eventObj.id + "+" + eventObj.variant);
         interventionsConfirmed.push(eventObj.id);
       } else {
         confirmedEvents.push(eventObj.id);
@@ -1355,15 +1349,25 @@ function findBestSolMatch(prob, confirmedEvents) {
   solutions.forEach((sol, j) => {
     let solVal;
     sol.found = [];
-    sol.notFound = []; //let variant   //commenting out until variant questions resolved 8/10/22
-
-    let variant = "{}";
+    sol.notFound = [];
+    let variant;
     sol.actions.forEach((action, f) => {
-      //commenting out until variant questions resolved 8/10/22
+      variant = (0,_meddbriefer_scenario_data__WEBPACK_IMPORTED_MODULE_0__.intvVariant2JSON)(action.interventionVariant); //convert object to string
 
-      /* if (!!action.interventionVariant){  
-          variant = intvVariant2JSON(action.interventionVariant)}
-      else {variant = "{}"} */
+      if (variant !== "{}") {
+        let key = Object.keys(action.interventionVariant)[0];
+        let val = action.interventionVariant[key];
+        action.variantDetails = {};
+        action.variantDetails[key] = {
+          label: (0,_meddebriefer_prompt_answer_grading__WEBPACK_IMPORTED_MODULE_8__.getPromptLabel)(key),
+          givenVariant: (0,_meddebriefer_prompt_answer_grading__WEBPACK_IMPORTED_MODULE_8__.getAnswerLabel)(val)
+        };
+      } //not yet using variant info during analysis
+
+
+      variant = "{}";
+      action.intvVariant = variant;
+
       if (confirmedEvents.includes(action.id + "+" + variant)) {
         sol.found.push(action.id);
       } else {
@@ -1408,15 +1412,25 @@ function findBestSolMatch(prob, confirmedEvents) {
   fSol.ordering = [...fSol.actionsInSuggestedOrder];
 
   if (fSol.altActions.length !== 0) {
-    //let variant  //commenting out until variant questions resolved 8/10/22
-    let variant = "{}";
+    let variant;
 
     for (let action of fSol.altActions) {
-      //commenting out until variant questions resolved 8/10/22
+      variant = (0,_meddbriefer_scenario_data__WEBPACK_IMPORTED_MODULE_0__.intvVariant2JSON)(action.interventionVariant); //convert object to string
 
-      /* if (!!action.interventionVariant){
-          variant = intvVariant2JSON(action.interventionVariant)}
-      else {variant = "{}"} */
+      if (variant !== "{}") {
+        let key = Object.keys(action.interventionVariant)[0];
+        let val = action.interventionVariant[key];
+        action.variantDetails = {};
+        action.variantDetails[key] = {
+          label: (0,_meddebriefer_prompt_answer_grading__WEBPACK_IMPORTED_MODULE_8__.getPromptLabel)(key),
+          givenVariant: (0,_meddebriefer_prompt_answer_grading__WEBPACK_IMPORTED_MODULE_8__.getAnswerLabel)(val)
+        };
+      } //not yet using variant info during analysis
+
+
+      variant = "{}";
+      action.intvVariant = variant;
+
       if (confirmedEvents.includes(action.id + "+" + variant)) {
         foundOneAltAction = true;
         break;
@@ -1450,12 +1464,21 @@ const insertMissingInterventions = (problems, confirmedEvents, indexCounter, pha
     let actions = sol.notFound;
     let variant;
     actions.forEach((action, k) => {
-      //commenting out until variant questions resolved 8/10/22
-      variant = "{}";
-      /* if (!!action.interventionVariant){
-          variant = intvVariant2JSON(action.interventionVariant)}
-      else {variant = "{}"} */
+      variant = (0,_meddbriefer_scenario_data__WEBPACK_IMPORTED_MODULE_0__.intvVariant2JSON)(action.interventionVariant); //convert object to string
 
+      if (variant !== "{}") {
+        let key = Object.keys(action.interventionVariant)[0];
+        let val = action.interventionVariant[key];
+        action.variantDetails = {};
+        action.variantDetails[key] = {
+          label: (0,_meddebriefer_prompt_answer_grading__WEBPACK_IMPORTED_MODULE_8__.getPromptLabel)(key),
+          givenVariant: (0,_meddebriefer_prompt_answer_grading__WEBPACK_IMPORTED_MODULE_8__.getAnswerLabel)(val)
+        };
+      } //not yet using variant info during analysis  
+
+
+      variant = "{}";
+      action.intvVariant = variant;
       confirmedEvents.push(action.id);
       confirmedEvents.push(action.id + "+" + variant);
       let phaseObject = {
@@ -1484,6 +1507,7 @@ const insertMissingInterventions = (problems, confirmedEvents, indexCounter, pha
           phaseObject[fldName] = action[fldName];
         }
       });
+      phaseObject["intvVariant"] = action["interventionVariant"];
 
       if (phaseObject["protocolRelationship"] === "alternative") {
         phaseObject["protocolRelationship"] = "required";
@@ -2323,8 +2347,8 @@ function getFBField(currentEntry, field, c2FB) {
   let combinedResult = "";
   let indexLabel;
 
-  if (currentEntry.variantID) {
-    indexLabel = currentEntry.id + "-" + currentEntry.variantID;
+  if (currentEntry.variant) {
+    indexLabel = currentEntry.id; //+ "-" + currentEntry.variant  //condition 2 fb has no variants
   } else {
     indexLabel = currentEntry.id;
   }
@@ -2418,8 +2442,8 @@ const getPhaseFeedback = (entry, phaseFBGiven, c2FB) => {
     if (!phaseFBGiven[entry.labelID]) {
       phaseFBGiven[entry.labelID] = true;
 
-      if (entry.variantID) {
-        indexLabel = entry.labelID + "-" + variantID;
+      if (entry.variant) {
+        indexLabel = entry.labelID; //+ "-" + variant  //commented out cause condition 2 feedback doesn't have variants
       } else {
         indexLabel = entry.labelID;
       }
@@ -4823,21 +4847,6 @@ const B4CA_PhaseIE = {
           subActionsList: false,
           subActions: []
         }, {
-          id: "intv-bulky-dressing"
-          /* optional intervention */
-          ,
-          label: "Bulky dressing",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.OPT,
-          feedbackAbsent: [""],
-          feedbackOutOfOrder: [""],
-          feedbackErrors: [""],
-          examineIfAbsent: false,
-          examineIfErrors: false,
-          promptsIfAbsent: "",
-          promptsIfErrors: "",
-          subActionsList: false,
-          subActions: []
-        }, {
           id: "intv-pleural-decompression"
           /* not indicated intervention */
           ,
@@ -5771,6 +5780,21 @@ const B4CA_PhaseIE = {
           feedbackAbsent: ["Apply a sling to the patient's injured shoulder before transferring him to an immobilization device."],
           subActions: []
         }]
+      }, {
+        id: "intv-bulky-dressing"
+        /* optional intervention */
+        ,
+        label: "Bulky dressing",
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.OPT,
+        feedbackAbsent: [""],
+        feedbackOutOfOrder: [""],
+        feedbackErrors: [""],
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
+        subActionsList: false,
+        subActions: []
       }, {
         id: "intv-place-on-immobilization-device",
         label: "Place the patient on an immobilization device",
@@ -10241,7 +10265,7 @@ const C5CA_PhaseIE = {
       }, {
         id: "intv-establish-iv",
         label: "Establish at lease one large bore IV en route",
-        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.OPT,
         feedbackAbsent: ["Even if you had no imminent plans to administer fluids, it is beneficial to preemptively place IVs in case your patient were to deteriorate. Keep in mind that if your patient is bleeding and becoming more and more hypotensive, inserting an IV will become increasingly difficult."],
         feedbackOutOfOrder: [""],
         feedbackErrors: ["Even if you had no imminent plans to administer fluids, it is beneficial to preemptively place IVs in case your patient were to deteriorate. Keep in mind that if your patient is bleeding and becoming more and more hypotensive, inserting an IV will become increasingly difficult."],
@@ -13630,12 +13654,12 @@ const criticalInterventions = {
   //training scenarios
   B4CA: [["intv-supplemental-oxygen-device-nasal-cannula"], ["intv-supplemental-oxygen-device-non-rebreather-mask"]],
   B5CA: [["intv-supplemental-oxygen-device-nasal-cannula", "intv-occlusive-dressing", "intv-pleural-decompression"], ["intv-supplemental-oxygen-device-non-rebreather-mask", "intv-occlusive-dressing", "intv-pleural-decompression"]],
-  C5CA: [["intv-control-severe-bleeding-technique-direct-pressure", "intv-control-severe-bleeding-technique-tourniquet", "intv-nasopharyngeal-airway", "intv-ventilation-technique-bag-valve-mask", "intv-control-shock-technique-administer-iv-boluses"]],
+  C5CA: [["intv-control-severe-bleeding-technique-tourniquet", "intv-nasopharyngeal-airway", "intv-ventilation-technique-bag-valve-mask", "intv-control-shock-technique-administer-iv-boluses"]],
   SC8CP: [["intv-airway-patency-technique-suction-airway", "intv-oropharyngeal-airway", "intv-orotracheal-intubation", "intv-ventilation-technique-bag-valve-mask"], ["intv-airway-patency-technique-suction-airway", "intv-oropharyngeal-airway", "intv-nasotracheal-intubation", "intv-ventilation-technique-bag-valve-mask"], ["intv-airway-patency-technique-suction-airway", "intv-oropharyngeal-airway", "intv-insert-advanced-airway", "intv-ventilation-technique-bag-valve-mask"], ["intv-airway-patency-technique-suction-airway", "intv-nasopharyngeal-airway", "intv-orotracheal-intubation", "intv-ventilation-technique-bag-valve-mask"], ["intv-airway-patency-technique-suction-airway", "intv-nasopharyngeal-airway", "intv-nasotracheal-intubation", "intv-ventilation-technique-bag-valve-mask"], ["intv-airway-patency-technique-suction-airway", "intv-nasopharyngeal-airway", "intv-insert-advanced-airway", "intv-ventilation-technique-bag-valve-mask"]],
   //test scenarios
-  B1CA: [["intv-nasopharyngeal-airway", "intv-ventilation-technique-bag-valve-mask", "intv-pleural-decompression", "intv-occlusive-dressing"]],
-  M1CA: [["intv-occlusive-dressing", "intv-nasopharyngeal-airway", "intv-control-shock-technique-administer-iv-boluses", "intv-ventilation-technique-bag-valve-mask"]],
-  M2CA: [["intv-control-severe-bleeding-technique-direct-pressure", "intv-control-severe-bleeding-technique-tourniquet", "intv-nasopharyngeal-airway", "intv-orotracheal-intubation", "intv-ventilation-technique-bag-valve-mask", "intv-control-shock-technique-administer-iv-boluses"], ["intv-control-severe-bleeding-technique-direct-pressure", "intv-control-severe-bleeding-technique-tourniquet", "intv-nasopharyngeal-airway", "intv-nasotracheal-intubation", "intv-ventilation-technique-bag-valve-mask", "intv-control-shock-technique-administer-iv-boluses"], ["intv-control-severe-bleeding-technique-direct-pressure", "intv-control-severe-bleeding-technique-tourniquet", "intv-nasopharyngeal-airway", "intv-insert-advanced-airway", "intv-ventilation-technique-bag-valve-mask", "intv-control-shock-technique-administer-iv-boluses"], ["intv-control-severe-bleeding-technique-direct-pressure", "intv-control-severe-bleeding-technique-tourniquet", "intv-oropharyngeal-airway", "intv-orotracheal-intubation", "intv-ventilation-technique-bag-valve-mask", "intv-control-shock-technique-administer-iv-boluses"], ["intv-control-severe-bleeding-technique-direct-pressure", "intv-control-severe-bleeding-technique-tourniquet", "intv-oropharyngeal-airway", "intv-nasotracheal-intubation", "intv-ventilation-technique-bag-valve-mask", "intv-control-shock-technique-administer-iv-boluses"], ["intv-control-severe-bleeding-technique-direct-pressure", "intv-control-severe-bleeding-technique-tourniquet", "intv-oropharyngeal-airway", "intv-insert-advanced-airway", "intv-ventilation-technique-bag-valve-mask", "intv-control-shock-technique-administer-iv-boluses"]],
+  B1CA: [["intv-supplemental-oxygen-device-non-rebreather-mask", "intv-pleural-decompression"]],
+  M1CA: [["intv-occlusive-dressing", "intv-sedation-assisted-intubation", "intv-control-shock-technique-administer-iv-boluses", "intv-ventilation-technique-bag-valve-mask"]],
+  M2CA: [["intv-control-severe-bleeding-technique-tourniquet", "intv-nasopharyngeal-airway", "intv-orotracheal-intubation", "intv-ventilation-technique-bag-valve-mask", "intv-control-shock-technique-administer-iv-boluses"], ["intv-control-severe-bleeding-technique-tourniquet", "intv-nasopharyngeal-airway", "intv-nasotracheal-intubation", "intv-ventilation-technique-bag-valve-mask", "intv-control-shock-technique-administer-iv-boluses"], ["intv-control-severe-bleeding-technique-direct-pressure", "intv-control-severe-bleeding-technique-tourniquet", "intv-nasopharyngeal-airway", "intv-insert-advanced-airway", "intv-ventilation-technique-bag-valve-mask", "intv-control-shock-technique-administer-iv-boluses"], ["intv-control-severe-bleeding-technique-tourniquet", "intv-oropharyngeal-airway", "intv-orotracheal-intubation", "intv-ventilation-technique-bag-valve-mask", "intv-control-shock-technique-administer-iv-boluses"], ["intv-control-severe-bleeding-technique-tourniquet", "intv-oropharyngeal-airway", "intv-nasotracheal-intubation", "intv-ventilation-technique-bag-valve-mask", "intv-control-shock-technique-administer-iv-boluses"], ["intv-control-severe-bleeding-technique-direct-pressure", "intv-control-severe-bleeding-technique-tourniquet", "intv-oropharyngeal-airway", "intv-insert-advanced-airway", "intv-ventilation-technique-bag-valve-mask", "intv-control-shock-technique-administer-iv-boluses"]],
   B7CA: [["intv-supplemental-oxygen-device-non-rebreather-mask", "intv-pleural-decompression", "intv-occlusive-dressing"], ["intv-supplemental-oxygen-device-nasal-cannula", "intv-pleural-decompression", "intv-occlusive-dressing"]]
 }; //could create a set of default good values but sounds like will
 //want to customize the descriptive text per scenario (and may not
@@ -13751,7 +13775,7 @@ const intvStatusRules = {
       val: "Breaths assisted; spontaneous breaths shallow"
     }]
   }, {
-    ands: ["intv-control-severe-bleeding-technique-direct-pressure", "intv-control-severe-bleeding-technique-tourniquet"],
+    ands: ["intv-control-severe-bleeding-technique-tourniquet"],
     updates: [{
       id: "inspects-left-leg-injury",
       tab: ["C"],
@@ -13964,6 +13988,34 @@ const intvStatusRules = {
       label: "Pulse",
       val: "Regular, strong"
     }]
+  }, {
+    ands: ["intv-insert-advanced-airway"],
+    updates: [{
+      id: "",
+      tab: ["C"],
+      label: "Pulse",
+      val: "Regular, strong"
+    }, {
+      id: "inspects-right-arm-pulse",
+      tab: [],
+      label: "Pulse",
+      val: "Regular, strong"
+    }, {
+      id: "inspects-left-arm-pulse",
+      tab: [],
+      label: "Pulse",
+      val: "Regular, strong"
+    }, {
+      id: "inspects-right-leg-pulse",
+      tab: [],
+      label: "Pulse",
+      val: "Regular, strong"
+    }, {
+      id: "inspects-left-leg-pulse",
+      tab: [],
+      label: "Pulse",
+      val: "Regular, strong"
+    }]
   }],
   //test scenarios
   //{ands: [], updates: []},
@@ -14002,7 +14054,7 @@ const intvStatusRules = {
       val: "Less rapid, regular, strong "
     }]
   }, {
-    ands: ["intv-pleural-decompression", "intv-ventilation-technique-bag-valve-mask"],
+    ands: ["intv-pleural-decompression", "intv-supplemental-oxygen-device-non-rebreather-mask"],
     updates: [{
       id: "checks-skin",
       tab: ["C"],
@@ -14131,13 +14183,9 @@ const intvStatusRules = {
   //{ands: [], updates: []},
   //{id: "", tab: [""], label: "", val: ""},
   M2CA: [{
-    ands: ["intv-sedation-assisted-intubation"],
-    updates: [{
-      id: "assess-loc",
-      tab: ["General"],
-      label: "LOC",
-      val: "Sedated"
-    }, {
+    ands: ["intv-orotracheal-intubation"],
+    updates: [//{id: "assess-loc", tab: ["General"], label: "LOC", val: "Sedated"},
+    {
       id: "",
       tab: ["B"],
       label: "Rate, rhythm, quality",
@@ -14149,7 +14197,35 @@ const intvStatusRules = {
       val: "Pale, diaphoretic"
     }]
   }, {
-    ands: ["intv-control-severe-bleeding-technique-direct-pressure", "intv-control-severe-bleeding-technique-tourniquet"],
+    ands: ["intv-nasotracheal-intubation"],
+    updates: [//{id: "assess-loc", tab: ["General"], label: "LOC", val: "Sedated"},
+    {
+      id: "",
+      tab: ["B"],
+      label: "Rate, rhythm, quality",
+      val: "Assisted breaths"
+    }, {
+      id: "checks-skin",
+      tab: ["C"],
+      label: "Skin",
+      val: "Pale, diaphoretic"
+    }]
+  }, {
+    ands: ["intv-insert-advanced-airway"],
+    updates: [//{id: "assess-loc", tab: ["General"], label: "LOC", val: "Sedated"},
+    {
+      id: "",
+      tab: ["B"],
+      label: "Rate, rhythm, quality",
+      val: "Assisted breaths"
+    }, {
+      id: "checks-skin",
+      tab: ["C"],
+      label: "Skin",
+      val: "Pale, diaphoretic"
+    }]
+  }, {
+    ands: ["intv-control-severe-bleeding-technique-tourniquet"],
     updates: [{
       id: "assess-major-bleeding",
       tab: ["C"],
@@ -15350,7 +15426,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _EmailVerification__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(23142);
 /* harmony import */ var _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(94292);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/mdb-auth/src/lib/components/AuthFlow.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/mdb-auth/src/lib/components/AuthFlow.js";
 
 
 
@@ -15434,7 +15510,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(94292);
 /* harmony import */ var _contexts_Auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4532);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/mdb-auth/src/lib/components/EmailVerification.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/mdb-auth/src/lib/components/EmailVerification.js";
  // useCallback, 
 
  // import cn from "classnames"
@@ -15639,7 +15715,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_Auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4532);
 /* harmony import */ var _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(94292);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/mdb-auth/src/lib/components/ForgotPasswordForm.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/mdb-auth/src/lib/components/ForgotPasswordForm.js";
 
 
 
@@ -15805,7 +15881,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(94292);
 /* harmony import */ var _icons_PasswordVisibilityIcon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(37450);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/mdb-auth/src/lib/components/LoginForm.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/mdb-auth/src/lib/components/LoginForm.js";
 
 
 
@@ -16037,7 +16113,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_Auth__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(4532);
 /* harmony import */ var _icons_PasswordVisibilityIcon__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(37450);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/mdb-auth/src/lib/components/RegistrationForm.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/mdb-auth/src/lib/components/RegistrationForm.js";
 
 
 
@@ -16344,7 +16420,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(94292);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/mdb-auth/src/lib/components/icons/PasswordVisibilityIcon.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/mdb-auth/src/lib/components/icons/PasswordVisibilityIcon.js";
 
 
 
@@ -16389,7 +16465,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _meddbriefer_mdb_firebase__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(44551);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/mdb-auth/src/lib/contexts/Auth.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/mdb-auth/src/lib/contexts/Auth.js";
 
 
 
@@ -16651,7 +16727,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Users_user_Projects_monorepo_node_modules_babel_runtime_helpers_esm_objectWithoutPropertiesLoose_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31461);
+/* harmony import */ var _Users_sts125_projects_monorepo_node_modules_babel_runtime_helpers_esm_objectWithoutPropertiesLoose_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31461);
 /* harmony import */ var core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(43105);
 /* harmony import */ var core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2784);
@@ -16662,7 +16738,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
 
 const _excluded = ["component", "authFlowLayout"];
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/mdb-auth/src/lib/routes/PrivateRoute.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/mdb-auth/src/lib/routes/PrivateRoute.js";
 
 
 /* eslint-disable no-extra-boolean-cast */
@@ -16677,7 +16753,7 @@ const PrivateRoute = _ref => {
     component: RouteComponent,
     authFlowLayout: Layout
   } = _ref,
-      rest = (0,_Users_user_Projects_monorepo_node_modules_babel_runtime_helpers_esm_objectWithoutPropertiesLoose_js__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, _excluded);
+      rest = (0,_Users_sts125_projects_monorepo_node_modules_babel_runtime_helpers_esm_objectWithoutPropertiesLoose_js__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, _excluded);
 
   const {
     emailVerified
@@ -16751,7 +16827,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Users_user_Projects_monorepo_node_modules_babel_runtime_helpers_esm_objectWithoutPropertiesLoose_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31461);
+/* harmony import */ var _Users_sts125_projects_monorepo_node_modules_babel_runtime_helpers_esm_objectWithoutPropertiesLoose_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31461);
 /* harmony import */ var core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(43105);
 /* harmony import */ var core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2784);
@@ -16762,7 +16838,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
 
 const _excluded = ["component", "authFlowLayout"];
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/mdb-auth/src/lib/routes/StaffRoute.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/mdb-auth/src/lib/routes/StaffRoute.js";
 
 
 
@@ -16789,7 +16865,7 @@ const StaffRoute = _ref => {
     component: RouteComponent,
     authFlowLayout: Layout
   } = _ref,
-      rest = (0,_Users_user_Projects_monorepo_node_modules_babel_runtime_helpers_esm_objectWithoutPropertiesLoose_js__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, _excluded);
+      rest = (0,_Users_sts125_projects_monorepo_node_modules_babel_runtime_helpers_esm_objectWithoutPropertiesLoose_js__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, _excluded);
 
   const {
     isAuthenticated,
@@ -16913,7 +16989,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(74278);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(3743);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/mdb-ui/src/lib/modal/MDBModal.jsx";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/mdb-ui/src/lib/modal/MDBModal.jsx";
 
 
 
@@ -16990,7 +17066,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _UserDropDown__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(30848);
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(66545);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/mdb-ui/src/lib/navbar/MDBNavBar.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/mdb-ui/src/lib/navbar/MDBNavBar.js";
 
 
 
@@ -17084,7 +17160,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(97650);
 /* harmony import */ var _UserIcon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(83142);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/mdb-ui/src/lib/navbar/UserDropDown.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/mdb-ui/src/lib/navbar/UserDropDown.js";
 
 
 
@@ -17180,7 +17256,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/mdb-ui/src/lib/navbar/UserIcon.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/mdb-ui/src/lib/navbar/UserIcon.js";
 
 
 
@@ -17217,7 +17293,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var zustand_shallow__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(32414);
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(66545);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/mdb-ui/src/lib/snackbar/Snackbar.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/mdb-ui/src/lib/snackbar/Snackbar.js";
 
  // import classNames from "classnames";
 // import styles from "./Snackbar.module.css";
@@ -17277,7 +17353,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4400);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/CallOutText.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/CallOutText.js";
 
 
 
@@ -17317,7 +17393,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4400);
 /* harmony import */ var _icons_CheckBoxIcon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(50706);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/CheckBox.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/CheckBox.js";
 
 
 
@@ -17379,7 +17455,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _CheckListItem__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(55879);
 /* harmony import */ var _icons_ChevronIcon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(46209);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/CheckList.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/CheckList.js";
 
 
 
@@ -17473,7 +17549,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _CallOutText__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(77643);
 /* harmony import */ var _icons_CallOutIcon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(8414);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/CheckListItem.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/CheckListItem.js";
 
 
 
@@ -17749,7 +17825,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(4400);
 /* harmony import */ var _meddbriefer_scenario_data_constants_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(33811);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/InterventionStatus.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/InterventionStatus.js";
 
 
 
@@ -17972,7 +18048,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _icons_ChevronIcon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(46209);
 /* harmony import */ var _Panel__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(31276);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/InterventionsList.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/InterventionsList.js";
 
 
 
@@ -18198,7 +18274,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4400);
 /* harmony import */ var _Panel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(31276);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/InterventionsPerformed.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/InterventionsPerformed.js";
 
 
 
@@ -18246,7 +18322,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49966);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(67465);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/MDBContainer.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/MDBContainer.js";
 
 
 
@@ -18317,7 +18393,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _icons_ChevronIcon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(46209);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/Panel.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/Panel.js";
 
 
 
@@ -18474,7 +18550,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _tabs_BreathingTab__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(49269);
 /* harmony import */ var _tabs_CirculationTab__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(9908);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/PatientStatus.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/PatientStatus.js";
 
 
  //import InterventionsStatus from "./tabs/InterventionsStatus"
@@ -18732,7 +18808,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _CheckList__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(37818);
 /* harmony import */ var _Panel__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(31276);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/PhaseCheckList.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/PhaseCheckList.js";
 
 
 
@@ -18819,7 +18895,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4400);
 /* harmony import */ var _SubPhaseNav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9806);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/PhaseNav.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/PhaseNav.js";
 
 
 
@@ -18947,7 +19023,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4400);
 /* harmony import */ var _PhaseNav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5273);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/PhaseNavPane.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/PhaseNavPane.js";
 
 
 
@@ -18995,7 +19071,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(91412);
 /* harmony import */ var _RevealTableRow__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(67413);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/RevealTable.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/RevealTable.js";
 
 
 
@@ -19070,7 +19146,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(98983);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4400);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/RevealTableRow.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/RevealTableRow.js";
 
 
 
@@ -19173,7 +19249,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7267);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4400);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/SubPhaseNav.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/SubPhaseNav.js";
 
 
 
@@ -19231,7 +19307,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ CheckBoxGroup)
 /* harmony export */ });
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/forms/CheckBoxGroup.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/forms/CheckBoxGroup.js";
 
 function CheckBoxGroup({
   id,
@@ -19301,7 +19377,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4400);
 /* harmony import */ var _icons_CheckBoxIcon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(50706);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/forms/FormCheckBox.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/forms/FormCheckBox.js";
 
 
 
@@ -19371,7 +19447,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _PromptsForm__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(15929);
 /* harmony import */ var _meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(7696);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/forms/IntvForm.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/forms/IntvForm.js";
 
 
 
@@ -19709,7 +19785,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _CheckBoxGroup__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(19608);
 /* harmony import */ var _RadioGroup__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(28233);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/forms/Prompt.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/forms/Prompt.js";
 
 
 
@@ -19778,7 +19854,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Prompt__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(79399);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/forms/PromptList.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/forms/PromptList.js";
 
 
 
@@ -19828,7 +19904,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(77122);
 /* harmony import */ var _PromptList__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9004);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/forms/PromptsForm.jsx";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/forms/PromptsForm.jsx";
 
 
 
@@ -19884,7 +19960,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(77122);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/forms/RadioGroup.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/forms/RadioGroup.js";
 
 
 
@@ -20045,7 +20121,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4400);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/icons/CallOutIcon.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/icons/CallOutIcon.js";
 
 
 
@@ -20091,7 +20167,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/icons/CheckBoxIcon.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/icons/CheckBoxIcon.js";
 
 
 
@@ -20125,7 +20201,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(72779);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/icons/CheckmarkIcon.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/icons/CheckmarkIcon.js";
 
 
 
@@ -20160,7 +20236,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/icons/ChevronIcon.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/icons/ChevronIcon.js";
 
 
 
@@ -20194,7 +20270,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(72779);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/icons/DoneIcon.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/icons/DoneIcon.js";
 
 
 
@@ -20227,7 +20303,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/icons/FormIcon.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/icons/FormIcon.js";
 
 
 const FormIcon = () => {
@@ -20253,7 +20329,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/icons/TimerIcon.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/icons/TimerIcon.js";
 
 
 const TimerIcon = ({
@@ -20416,7 +20492,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49966);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(67465);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/layouts/IntvLayout.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/layouts/IntvLayout.js";
 
 
 
@@ -20482,7 +20558,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49966);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(67465);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/layouts/PhaseLayout.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/layouts/PhaseLayout.js";
 
 
 
@@ -20562,7 +20638,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _InterventionStatus__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(60369);
 /* harmony import */ var _Panel__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(31276);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/layouts/ScenarioLayout.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/layouts/ScenarioLayout.js";
 // import { useEffect, useState } from "react"
 
 
@@ -20802,7 +20878,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4400);
 /* harmony import */ var _forms_IntvForm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(56551);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/layouts/SectionLayout.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/layouts/SectionLayout.js";
 
 
 
@@ -20884,7 +20960,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _meddbriefer_mdb_ui__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(83325);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/layouts/UnauthedLayout.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/layouts/UnauthedLayout.js";
 
 
 
@@ -20942,7 +21018,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _MDBModal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42244);
 /* harmony import */ var _PatientStatus__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(83473);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/modals/FindingsModal.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/modals/FindingsModal.js";
 
 
 
@@ -20987,7 +21063,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(74278);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(3743);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/modals/MDBModal.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/modals/MDBModal.js";
 
 
 
@@ -21050,7 +21126,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_PreferencesContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(89102);
 /* harmony import */ var _MDBModal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(42244);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/modals/PreferencesForm.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/modals/PreferencesForm.js";
 
 
 
@@ -21181,7 +21257,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(4400);
 /* harmony import */ var _MDBModal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(42244);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/modals/ScenarioCompleteModal.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/modals/ScenarioCompleteModal.js";
 
 
 
@@ -21354,7 +21430,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(4400);
 /* harmony import */ var _MDBModal__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(42244);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/modals/ScenarioDoneModal.jsx";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/modals/ScenarioDoneModal.jsx";
 
 
 
@@ -21494,7 +21570,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _MDBModal__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(42244);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(62611);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/modals/ScenarioInfo.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/modals/ScenarioInfo.js";
 
 
 
@@ -21574,27 +21650,51 @@ const ScenarioInfo = () => {
               columnNumber: 29
             }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("li", {
               children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("b", {
-                children: "Position:"
+                children: "Actions:"
               }, void 0, false, {
                 fileName: _jsxFileName,
                 lineNumber: 41,
                 columnNumber: 33
-              }, undefined), " ", scenario.info.patientInformation.position]
+              }, undefined), " ", scenario.info.patientInformation.actions]
             }, void 0, true, {
               fileName: _jsxFileName,
               lineNumber: 41,
               columnNumber: 29
             }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("li", {
               children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("b", {
-                children: "Actions:"
+                children: "Position:"
               }, void 0, false, {
                 fileName: _jsxFileName,
                 lineNumber: 42,
                 columnNumber: 33
-              }, undefined), " ", scenario.info.patientInformation.actions]
+              }, undefined), " ", scenario.info.patientInformation.position]
             }, void 0, true, {
               fileName: _jsxFileName,
               lineNumber: 42,
+              columnNumber: 29
+            }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("li", {
+              children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("b", {
+                children: "Gender:"
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 44,
+                columnNumber: 33
+              }, undefined), " ", scenario.info.patientInformation.gender, " \xA0", /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("b", {
+                children: "Age:"
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 45,
+                columnNumber: 33
+              }, undefined), " ", scenario.info.patientInformation.age, " \xA0", /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("b", {
+                children: "Weight:"
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 46,
+                columnNumber: 33
+              }, undefined), " ", scenario.info.patientInformation.weight]
+            }, void 0, true, {
+              fileName: _jsxFileName,
+              lineNumber: 43,
               columnNumber: 29
             }, undefined)]
           }, void 0, true, {
@@ -21619,18 +21719,18 @@ const ScenarioInfo = () => {
             children: "Dispatch Information"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 48,
+            lineNumber: 53,
             columnNumber: 25
           }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("p", {
             children: scenario.info.dispatchInfo
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 49,
+            lineNumber: 54,
             columnNumber: 25
           }, undefined)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 47,
+          lineNumber: 52,
           columnNumber: 21
         }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
           className: "col-6",
@@ -21638,23 +21738,23 @@ const ScenarioInfo = () => {
             children: "Scene Assessment"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 52,
+            lineNumber: 57,
             columnNumber: 25
           }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("p", {
             children: scenario.info.sceneAssessment
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 53,
+            lineNumber: 58,
             columnNumber: 25
           }, undefined)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 51,
+          lineNumber: 56,
           columnNumber: 21
         }, undefined)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 46,
+        lineNumber: 51,
         columnNumber: 17
       }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
         className: "row justify-content-md-center",
@@ -21667,35 +21767,35 @@ const ScenarioInfo = () => {
                 children: "Timer"
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 60,
+                lineNumber: 65,
                 columnNumber: 33
               }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("th", {
                 children: "Duration"
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 61,
+                lineNumber: 66,
                 columnNumber: 33
               }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("th", {
                 children: "Time Remaining"
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 62,
+                lineNumber: 67,
                 columnNumber: 33
               }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("th", {
                 children: "Expired"
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 63,
+                lineNumber: 68,
                 columnNumber: 33
               }, undefined)]
             }, void 0, true, {
               fileName: _jsxFileName,
-              lineNumber: 59,
+              lineNumber: 64,
               columnNumber: 29
             }, undefined)
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 58,
+            lineNumber: 63,
             columnNumber: 25
           }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("tbody", {
             children: timers.map(timer => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("tr", {
@@ -21704,45 +21804,45 @@ const ScenarioInfo = () => {
                 children: timer.id
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 72,
+                lineNumber: 77,
                 columnNumber: 37
               }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("td", {
                 children: (0,_utils__WEBPACK_IMPORTED_MODULE_5__.formatAsMinSecs)(timer.duration)
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 73,
+                lineNumber: 78,
                 columnNumber: 37
               }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("td", {
                 children: (0,_utils__WEBPACK_IMPORTED_MODULE_5__.formatAsMinSecs)(timer.timeRemaining)
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 74,
+                lineNumber: 79,
                 columnNumber: 37
               }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("td", {
                 children: `${timer.expired}`
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 75,
+                lineNumber: 80,
                 columnNumber: 37
               }, undefined)]
             }, timer.id, true, {
               fileName: _jsxFileName,
-              lineNumber: 68,
+              lineNumber: 73,
               columnNumber: 33
             }, undefined))
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 66,
+            lineNumber: 71,
             columnNumber: 25
           }, undefined)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 57,
+          lineNumber: 62,
           columnNumber: 21
         }, undefined)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 56,
+        lineNumber: 61,
         columnNumber: 17
       }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
         className: "row justify-content-md-center",
@@ -21753,7 +21853,7 @@ const ScenarioInfo = () => {
           children: " Start Scenario"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 83,
+          lineNumber: 88,
           columnNumber: 27
         }, undefined) : /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_8__["default"], {
           color: "success",
@@ -21762,12 +21862,12 @@ const ScenarioInfo = () => {
           children: " Resume Scenario "
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 84,
+          lineNumber: 89,
           columnNumber: 27
         }, undefined)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 81,
+        lineNumber: 86,
         columnNumber: 17
       }, undefined)]
     }, void 0, true, {
@@ -21824,7 +21924,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(77122);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4400);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/navbar/FindingsButton.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/navbar/FindingsButton.js";
 
 
 
@@ -21864,7 +21964,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(77122);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4400);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/navbar/SaveScenarioButton.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/navbar/SaveScenarioButton.js";
 
 
 
@@ -21903,7 +22003,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(77122);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4400);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/navbar/ScenarioInfoButton.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/navbar/ScenarioInfoButton.js";
 
 
 
@@ -21945,7 +22045,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _icons_TimerIcon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(97584);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(62611);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/navbar/Timer.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/navbar/Timer.js";
 
 
 
@@ -22025,7 +22125,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4400);
 /* harmony import */ var _RevealTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42842);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/tabs/AirwayTab.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/tabs/AirwayTab.js";
 
 
 
@@ -22064,7 +22164,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4400);
 /* harmony import */ var _CallOutText__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(77643);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/tabs/AssessmentFindings.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/tabs/AssessmentFindings.js";
 
 
 
@@ -22161,7 +22261,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4400);
 /* harmony import */ var _RevealTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42842);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/tabs/BreathingTab.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/tabs/BreathingTab.js";
 
 
 
@@ -22197,7 +22297,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4400);
 /* harmony import */ var _RevealTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42842);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/tabs/CirculationTab.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/tabs/CirculationTab.js";
 
 
 
@@ -22233,7 +22333,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4400);
 /* harmony import */ var _RevealTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42842);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/tabs/GeneralTab.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/tabs/GeneralTab.js";
 
 
 
@@ -22269,7 +22369,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4400);
 /* harmony import */ var _RevealTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42842);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/tabs/OPQRST.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/tabs/OPQRST.js";
 
 
 
@@ -22311,7 +22411,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4400);
 /* harmony import */ var _RevealTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42842);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/tabs/SampleTab.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/tabs/SampleTab.js";
 
 
 
@@ -22359,7 +22459,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4400);
 /* harmony import */ var _RevealTable__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(42842);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/components/tabs/VitalsTab.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/tabs/VitalsTab.js";
 
 
 
@@ -22473,7 +22573,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(97650);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/contexts/PreferencesContext.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/contexts/PreferencesContext.js";
 
 
 
@@ -22603,7 +22703,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _meddbriefer_analysis__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(72105);
 /* harmony import */ var _meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(7696);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/contexts/ScenarioContext.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/contexts/ScenarioContext.js";
 
 
 
@@ -23464,7 +23564,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(4400);
 /* harmony import */ var _components_layouts_ScenarioLayout__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(15165);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/routes/Scenario.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/routes/Scenario.js";
 
 
 
@@ -23575,7 +23675,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _meddbriefer_mdb_ui__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(83325);
 /* harmony import */ var _contexts_ObserverContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(31561);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/routes/ScenarioList.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/routes/ScenarioList.js";
 
 
 
@@ -23701,7 +23801,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_PatientStatus__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(83473);
 /* harmony import */ var _components_Panel__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(31276);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/user/Projects/monorepo/libs/observer-ui/src/routes/Section.js";
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/routes/Section.js";
 
 
 
@@ -23863,7 +23963,9 @@ const logicalExprParser = new expressionparser__WEBPACK_IMPORTED_MODULE_0__.Expr
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "getAnswerLabel": () => (/* reexport safe */ _prompt_answer_grading__WEBPACK_IMPORTED_MODULE_0__.getAnswerLabel),
 /* harmony export */   "getPrescribedInvAnswers": () => (/* reexport safe */ _prompt_answer_grading__WEBPACK_IMPORTED_MODULE_0__.getPrescribedInvAnswers),
+/* harmony export */   "getPromptLabel": () => (/* reexport safe */ _prompt_answer_grading__WEBPACK_IMPORTED_MODULE_0__.getPromptLabel),
 /* harmony export */   "initializePromptAnswerGrading": () => (/* reexport safe */ _prompt_answer_grading__WEBPACK_IMPORTED_MODULE_0__.initializePromptAnswerGrading),
 /* harmony export */   "processAssessmentAnswers": () => (/* reexport safe */ _prompt_answer_grading__WEBPACK_IMPORTED_MODULE_0__.processAssessmentAnswers),
 /* harmony export */   "processInterventionAnswers": () => (/* reexport safe */ _prompt_answer_grading__WEBPACK_IMPORTED_MODULE_0__.processInterventionAnswers)
@@ -23879,7 +23981,9 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "getAnswerLabel": () => (/* binding */ getAnswerLabel),
 /* harmony export */   "getPrescribedInvAnswers": () => (/* binding */ getPrescribedInvAnswers),
+/* harmony export */   "getPromptLabel": () => (/* binding */ getPromptLabel),
 /* harmony export */   "initializePromptAnswerGrading": () => (/* binding */ initializePromptAnswerGrading),
 /* harmony export */   "processAssessmentAnswers": () => (/* binding */ processAssessmentAnswers),
 /* harmony export */   "processInterventionAnswers": () => (/* binding */ processInterventionAnswers)
@@ -23942,7 +24046,6 @@ function getPromptLabel(promptID) {
     return null;
   }
 }
-
 function getPrescribedInvAnswers(interventionID, variantDef) {
   let intvEntry = scenario.interventionVariantAnswers[interventionID];
 
@@ -24115,6 +24218,10 @@ const getAnswerLabels = (answerIDs, answerType) => {
   let answerLabel = "";
   let conjText = "";
 
+  if (typeof answerIDs === 'string') {
+    answerIDs = [answerIDs];
+  }
+
   switch (answerType) {
     case "one-or-more":
     case "one":
@@ -24152,14 +24259,14 @@ const getAnswerLabels = (answerIDs, answerType) => {
 /***/ 22304:
 /***/ ((module) => {
 
-module.exports = [[module.id, "/* The snackbar - position it at the bottom and in the middle of the screen */\n#mdb-snackbar {\n    visibility: hidden;\n    /* Hidden by default. Visible on click */\n    /* min-width: 250px; */\n    width: 100%;\n    /* Set a default minimum width */\n    /* margin-left: -125px; */\n    /* margin-left: 0; */\n    /* Divide value of min-width by 2 */\n    background-color: #333;\n    /* Black background color */\n    color: #fff;\n    /* White text color */\n    text-align: center;\n    /* Centered text */\n    border-radius: 2px;\n    /* Rounded borders */\n    padding: 16px;\n    /* Padding */\n    position: fixed;\n    /* Sit on top of the screen */\n    z-index: 1;\n    /* Add a z-index if needed */\n    /* left: 50%; */\n    /* Center the snackbar */\n    bottom: 0px;\n    /* 30px from the bottom */\n}\n/* Show the snackbar when clicking on a button (class added with JavaScript) */\n#mdb-snackbar.show {\n    visibility: visible;\n    /* Show the snackbar */\n    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.\n  However, delay the fade out process for 2.5 seconds */\n    animation: fadein 1.0s, fadeout 1.0s 2.5s;\n}\n/* Animations to fade the snackbar in and out */\n@keyframes fadein {\n    from {\n        bottom: -30px;\n        opacity: 0;\n    }\n    to {\n        bottom: 0;\n        opacity: 1;\n    }\n}\n@keyframes fadeout {\n    from {\n        bottom: 0;\n        opacity: 1;\n    }\n\n    to {\n        bottom: -30px;\n        opacity: 0;\n    }\n}\nnav.navbar {\n    margin-left: 0;\n    padding-left: 15px;\n    padding-top: 0;\n    padding-bottom: 0;\n    padding-right: 0;\n}\n.brand-wrapper {\n    padding: 0;\n}\n.brand {\n    color: #007bff;\n    font-size: 30px;\n    margin-right: 4px;\n    padding-right: 8px;\n}\n.mdb-title {\n    font-size: 24px;\n    padding-top: 11px;\n    padding-bottom: 5px;\n}\n.navbar-text {\n    margin-bottom: 0;\n}\n.nav button {\n    margin-left: 2px;\n    margin-right: 2px;\n}\n.navbar-btn {\n    text-transform: uppercase;\n    margin-top: 12px;\n    padding-top: 0;\n    padding-bottom: 0;\n    border: 0;\n    height: 25px;\n    margin-left: 7px !important;\n    margin-right: 7px !important;\n}", '', {"version":3,"sources":["/Users/user/Projects/monorepo/libs/mdb-ui/src/lib/index.css"],"names":[],"mappings":"AAAA,6EAA6E;AAC7E;IACI,kBAAkB;IAClB,wCAAwC;IACxC,sBAAsB;IACtB,WAAW;IACX,gCAAgC;IAChC,yBAAyB;IACzB,oBAAoB;IACpB,mCAAmC;IACnC,sBAAsB;IACtB,2BAA2B;IAC3B,WAAW;IACX,qBAAqB;IACrB,kBAAkB;IAClB,kBAAkB;IAClB,kBAAkB;IAClB,oBAAoB;IACpB,aAAa;IACb,YAAY;IACZ,eAAe;IACf,6BAA6B;IAC7B,UAAU;IACV,4BAA4B;IAC5B,eAAe;IACf,wBAAwB;IACxB,WAAW;IACX,yBAAyB;AAC7B;AAEA,8EAA8E;AAC9E;IACI,mBAAmB;IACnB,sBAAsB;IACtB;uDACmD;IAEnD,yCAAyC;AAC7C;AAEA,+CAA+C;AAY/C;IACI;QACI,aAAa;QACb,UAAU;IACd;IACA;QACI,SAAS;QACT,UAAU;IACd;AACJ;AAcA;IACI;QACI,SAAS;QACT,UAAU;IACd;;IAEA;QACI,aAAa;QACb,UAAU;IACd;AACJ;AACA;IACI,cAAc;IACd,kBAAkB;IAClB,cAAc;IACd,iBAAiB;IACjB,gBAAgB;AACpB;AAEA;IACI,UAAU;AACd;AAEA;IACI,cAAc;IACd,eAAe;IACf,iBAAiB;IACjB,kBAAkB;AACtB;AAEA;IACI,eAAe;IACf,iBAAiB;IACjB,mBAAmB;AACvB;AAEA;IACI,gBAAgB;AACpB;AAEA;IACI,gBAAgB;IAChB,iBAAiB;AACrB;AAEA;IACI,yBAAyB;IACzB,gBAAgB;IAChB,cAAc;IACd,iBAAiB;IACjB,SAAS;IACT,YAAY;IACZ,2BAA2B;IAC3B,4BAA4B;AAChC","sourcesContent":["/* The snackbar - position it at the bottom and in the middle of the screen */\n#mdb-snackbar {\n    visibility: hidden;\n    /* Hidden by default. Visible on click */\n    /* min-width: 250px; */\n    width: 100%;\n    /* Set a default minimum width */\n    /* margin-left: -125px; */\n    /* margin-left: 0; */\n    /* Divide value of min-width by 2 */\n    background-color: #333;\n    /* Black background color */\n    color: #fff;\n    /* White text color */\n    text-align: center;\n    /* Centered text */\n    border-radius: 2px;\n    /* Rounded borders */\n    padding: 16px;\n    /* Padding */\n    position: fixed;\n    /* Sit on top of the screen */\n    z-index: 1;\n    /* Add a z-index if needed */\n    /* left: 50%; */\n    /* Center the snackbar */\n    bottom: 0px;\n    /* 30px from the bottom */\n}\n\n/* Show the snackbar when clicking on a button (class added with JavaScript) */\n#mdb-snackbar.show {\n    visibility: visible;\n    /* Show the snackbar */\n    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.\n  However, delay the fade out process for 2.5 seconds */\n    -webkit-animation: fadein 1.0s, fadeout 1.0s 2.5s;\n    animation: fadein 1.0s, fadeout 1.0s 2.5s;\n}\n\n/* Animations to fade the snackbar in and out */\n@-webkit-keyframes fadein {\n    from {\n        bottom: -30px;\n        opacity: 0;\n    }\n    to {\n        bottom: 0;\n        opacity: 1;\n    }\n}\n\n@keyframes fadein {\n    from {\n        bottom: -30px;\n        opacity: 0;\n    }\n    to {\n        bottom: 0;\n        opacity: 1;\n    }\n}\n\n@-webkit-keyframes fadeout {\n    from {\n        bottom: 0;\n        opacity: 1;\n    }\n\n    to {\n        bottom: -30;\n        opacity: 0;\n    }\n}\n\n@keyframes fadeout {\n    from {\n        bottom: 0;\n        opacity: 1;\n    }\n\n    to {\n        bottom: -30px;\n        opacity: 0;\n    }\n}\nnav.navbar {\n    margin-left: 0;\n    padding-left: 15px;\n    padding-top: 0;\n    padding-bottom: 0;\n    padding-right: 0;\n}\n\n.brand-wrapper {\n    padding: 0;\n}\n\n.brand {\n    color: #007bff;\n    font-size: 30px;\n    margin-right: 4px;\n    padding-right: 8px;\n}\n\n.mdb-title {\n    font-size: 24px;\n    padding-top: 11px;\n    padding-bottom: 5px;\n}\n\n.navbar-text {\n    margin-bottom: 0;\n}\n\n.nav button {\n    margin-left: 2px;\n    margin-right: 2px;\n}\n\n.navbar-btn {\n    text-transform: uppercase;\n    margin-top: 12px;\n    padding-top: 0;\n    padding-bottom: 0;\n    border: 0;\n    height: 25px;\n    margin-left: 7px !important;\n    margin-right: 7px !important;\n}"],"sourceRoot":""}]]
+module.exports = [[module.id, "/* The snackbar - position it at the bottom and in the middle of the screen */\n#mdb-snackbar {\n    visibility: hidden;\n    /* Hidden by default. Visible on click */\n    /* min-width: 250px; */\n    width: 100%;\n    /* Set a default minimum width */\n    /* margin-left: -125px; */\n    /* margin-left: 0; */\n    /* Divide value of min-width by 2 */\n    background-color: #333;\n    /* Black background color */\n    color: #fff;\n    /* White text color */\n    text-align: center;\n    /* Centered text */\n    border-radius: 2px;\n    /* Rounded borders */\n    padding: 16px;\n    /* Padding */\n    position: fixed;\n    /* Sit on top of the screen */\n    z-index: 1;\n    /* Add a z-index if needed */\n    /* left: 50%; */\n    /* Center the snackbar */\n    bottom: 0px;\n    /* 30px from the bottom */\n}\n/* Show the snackbar when clicking on a button (class added with JavaScript) */\n#mdb-snackbar.show {\n    visibility: visible;\n    /* Show the snackbar */\n    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.\n  However, delay the fade out process for 2.5 seconds */\n    animation: fadein 1.0s, fadeout 1.0s 2.5s;\n}\n/* Animations to fade the snackbar in and out */\n@keyframes fadein {\n    from {\n        bottom: -30px;\n        opacity: 0;\n    }\n    to {\n        bottom: 0;\n        opacity: 1;\n    }\n}\n@keyframes fadeout {\n    from {\n        bottom: 0;\n        opacity: 1;\n    }\n\n    to {\n        bottom: -30px;\n        opacity: 0;\n    }\n}\nnav.navbar {\n    margin-left: 0;\n    padding-left: 15px;\n    padding-top: 0;\n    padding-bottom: 0;\n    padding-right: 0;\n}\n.brand-wrapper {\n    padding: 0;\n}\n.brand {\n    color: #007bff;\n    font-size: 30px;\n    margin-right: 4px;\n    padding-right: 8px;\n}\n.mdb-title {\n    font-size: 24px;\n    padding-top: 11px;\n    padding-bottom: 5px;\n}\n.navbar-text {\n    margin-bottom: 0;\n}\n.nav button {\n    margin-left: 2px;\n    margin-right: 2px;\n}\n.navbar-btn {\n    text-transform: uppercase;\n    margin-top: 12px;\n    padding-top: 0;\n    padding-bottom: 0;\n    border: 0;\n    height: 25px;\n    margin-left: 7px !important;\n    margin-right: 7px !important;\n}", '', {"version":3,"sources":["/Users/sts125/projects/monorepo/libs/mdb-ui/src/lib/index.css"],"names":[],"mappings":"AAAA,6EAA6E;AAC7E;IACI,kBAAkB;IAClB,wCAAwC;IACxC,sBAAsB;IACtB,WAAW;IACX,gCAAgC;IAChC,yBAAyB;IACzB,oBAAoB;IACpB,mCAAmC;IACnC,sBAAsB;IACtB,2BAA2B;IAC3B,WAAW;IACX,qBAAqB;IACrB,kBAAkB;IAClB,kBAAkB;IAClB,kBAAkB;IAClB,oBAAoB;IACpB,aAAa;IACb,YAAY;IACZ,eAAe;IACf,6BAA6B;IAC7B,UAAU;IACV,4BAA4B;IAC5B,eAAe;IACf,wBAAwB;IACxB,WAAW;IACX,yBAAyB;AAC7B;AAEA,8EAA8E;AAC9E;IACI,mBAAmB;IACnB,sBAAsB;IACtB;uDACmD;IAEnD,yCAAyC;AAC7C;AAEA,+CAA+C;AAY/C;IACI;QACI,aAAa;QACb,UAAU;IACd;IACA;QACI,SAAS;QACT,UAAU;IACd;AACJ;AAcA;IACI;QACI,SAAS;QACT,UAAU;IACd;;IAEA;QACI,aAAa;QACb,UAAU;IACd;AACJ;AACA;IACI,cAAc;IACd,kBAAkB;IAClB,cAAc;IACd,iBAAiB;IACjB,gBAAgB;AACpB;AAEA;IACI,UAAU;AACd;AAEA;IACI,cAAc;IACd,eAAe;IACf,iBAAiB;IACjB,kBAAkB;AACtB;AAEA;IACI,eAAe;IACf,iBAAiB;IACjB,mBAAmB;AACvB;AAEA;IACI,gBAAgB;AACpB;AAEA;IACI,gBAAgB;IAChB,iBAAiB;AACrB;AAEA;IACI,yBAAyB;IACzB,gBAAgB;IAChB,cAAc;IACd,iBAAiB;IACjB,SAAS;IACT,YAAY;IACZ,2BAA2B;IAC3B,4BAA4B;AAChC","sourcesContent":["/* The snackbar - position it at the bottom and in the middle of the screen */\n#mdb-snackbar {\n    visibility: hidden;\n    /* Hidden by default. Visible on click */\n    /* min-width: 250px; */\n    width: 100%;\n    /* Set a default minimum width */\n    /* margin-left: -125px; */\n    /* margin-left: 0; */\n    /* Divide value of min-width by 2 */\n    background-color: #333;\n    /* Black background color */\n    color: #fff;\n    /* White text color */\n    text-align: center;\n    /* Centered text */\n    border-radius: 2px;\n    /* Rounded borders */\n    padding: 16px;\n    /* Padding */\n    position: fixed;\n    /* Sit on top of the screen */\n    z-index: 1;\n    /* Add a z-index if needed */\n    /* left: 50%; */\n    /* Center the snackbar */\n    bottom: 0px;\n    /* 30px from the bottom */\n}\n\n/* Show the snackbar when clicking on a button (class added with JavaScript) */\n#mdb-snackbar.show {\n    visibility: visible;\n    /* Show the snackbar */\n    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.\n  However, delay the fade out process for 2.5 seconds */\n    -webkit-animation: fadein 1.0s, fadeout 1.0s 2.5s;\n    animation: fadein 1.0s, fadeout 1.0s 2.5s;\n}\n\n/* Animations to fade the snackbar in and out */\n@-webkit-keyframes fadein {\n    from {\n        bottom: -30px;\n        opacity: 0;\n    }\n    to {\n        bottom: 0;\n        opacity: 1;\n    }\n}\n\n@keyframes fadein {\n    from {\n        bottom: -30px;\n        opacity: 0;\n    }\n    to {\n        bottom: 0;\n        opacity: 1;\n    }\n}\n\n@-webkit-keyframes fadeout {\n    from {\n        bottom: 0;\n        opacity: 1;\n    }\n\n    to {\n        bottom: -30;\n        opacity: 0;\n    }\n}\n\n@keyframes fadeout {\n    from {\n        bottom: 0;\n        opacity: 1;\n    }\n\n    to {\n        bottom: -30px;\n        opacity: 0;\n    }\n}\nnav.navbar {\n    margin-left: 0;\n    padding-left: 15px;\n    padding-top: 0;\n    padding-bottom: 0;\n    padding-right: 0;\n}\n\n.brand-wrapper {\n    padding: 0;\n}\n\n.brand {\n    color: #007bff;\n    font-size: 30px;\n    margin-right: 4px;\n    padding-right: 8px;\n}\n\n.mdb-title {\n    font-size: 24px;\n    padding-top: 11px;\n    padding-bottom: 5px;\n}\n\n.navbar-text {\n    margin-bottom: 0;\n}\n\n.nav button {\n    margin-left: 2px;\n    margin-right: 2px;\n}\n\n.navbar-btn {\n    text-transform: uppercase;\n    margin-top: 12px;\n    padding-top: 0;\n    padding-bottom: 0;\n    border: 0;\n    height: 25px;\n    margin-left: 7px !important;\n    margin-right: 7px !important;\n}"],"sourceRoot":""}]]
 
 /***/ }),
 
 /***/ 29490:
 /***/ ((module) => {
 
-module.exports = [[module.id, "\n.container-fluid,\n.main {\n  width: 100%;\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  overflow: hidden;\n}\n\n.main-region {\n  height: 100%;\n  width: 100%;\n  padding-left: 0;\n  padding-right: 0;\n}\n\ntable {\n  font-size: 0.75em;\n}\n\n.request-btn {\n  font-size: 0.75em;\n}\n\n.confirm-intv {\n  margin-top: 10px;\n  font-size: 0.75em;\n}\n\n.row {\n  margin-left: 0;\n  width: 100%;\n  margin-right: 0;\n  overflow: hidden;\n}\n\n.wrapper-row {\n  height: 100%;\n  width: 100%;\n}\n\n.main-row {\n  height: calc(100% - 52px);\n}\n\n.col {\n  height: 100%;\n  padding-top: 5px;\n  padding-bottom: 5px;\n  padding: 15px;\n  overflow-y: hidden;\n  /* -webkit-overflow-scrolling: touch; */\n}\n\n/* nav.navbar {\n  margin-left: 0;\n  padding-left: 15px;\n  padding-top: 0;\n  padding-bottom: 0;\n  padding-right: 0;\n}\n\n.brand-wrapper {\n  padding: 0;\n}\n.brand {\n  color: #007bff;\n  font-size: 30px;\n  margin-right: 4px;\n  padding-right: 8px;\n}\n.mdb-title {\n  font-size: 24px;\n  padding-top: 11px;\n  padding-bottom: 5px;\n}\n.navbar-text {\n  margin-bottom: 0;\n}\n.nav button {\n  margin-left: 2px;\n  margin-right: 2px;\n}\n.navbar-btn {\n  text-transform: uppercase;\n  margin-top: 12px;\n  padding-top: 0;\n  padding-bottom: 0;\n  border: 0;\n  height: 25px;\n  margin-left: 7px !important;\n  margin-right: 7px !important;\n} */\n\n.time-remaining {\n  font-size: 24px;\n  padding-left: 8px;\n}\n\n.phase-nav-pane {\n  background-color: #666666ff;\n  height: 100%;\n  padding: 0;\n}\n\n.phase-nav {\n  padding-bottom: 8px;\n  /* padding-bottom: 0; */\n}\n\n.phase-nav.no-children {\n  padding-bottom: 0;\n}\n\n.phase-nav button {\n  width: 100%;\n  background-color: transparent;\n  text-align: left;\n  border: 0;\n  padding-top: 6px;\n  padding-bottom: 6px;\n  padding-left: 5px;\n  padding-right: 0 !important;\n  /* font-size: 1.1em; */\n  font-size: 15.8px;\n  font-weight: bold;\n  color: white;\n}\n\n.phase-label button {\n  color: white;\n  /* font-size: 1.1em; */\n  font-size: 15.8px;\n  line-height: 1.2em;\n  font-weight: bold;\n  padding-bottom: 0;\n  padding-right: 0 !important;\n  /* padding-top: 4px; */\n}\n\n.subphase-nav button {\n  color: white;\n  padding-top: 2.5px;\n  padding-bottom: 2.5px;\n  /* padding-left: 15px; */\n  font-size: 0.75em;\n  font-weight: 300;\n  text-transform: uppercase;\n}\n\n/*\n.phase-details {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 0;\n  overflow:hidden;\n} */\n\n.phase-container {\n  height: 100%;\n}\n\n.phase-row {\n  height: 100%;\n  overflow: hidden;\n}\n\n.phase-col {\n  height: 100%;\n  padding-left: 5px;\n  padding-right: 0;\n  overflow-y: hidden;\n}\n\n.left-col-contents {\n  height: 100%;\n  overflow-y: hidden;\n}\n\n.interventions-col {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  overflow-y: scroll;\n}\n\n.checklist-row {\n  min-height: 270px;\n  height: -moz-fit-content;\n  height: fit-content;\n  max-height: 640px;\n}\n\n/*\n.interventions-row {\n  height: 100%;\n  overflow-y: hidden;\n}\n.interventions-col {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n}\n*/\n\n.patient-status-row {\n  width: 100%;\n  height: -moz-fit-content;\n  height: fit-content;\n  overflow-y: hidden;\n}\n\n.patient-status-col {\n  height: 100%;\n  padding-left: 5px;\n  padding-right: 0;\n  overflow-y: scroll;\n}\n\nul.interventions-outline {\n  height: 100%;\n  overflow-y: scroll;\n}\n\nhr.minimal {\n  margin-top: 8px;\n  margin-bottom: 8px;\n  border-top-width: 2px;\n}\n\nul {\n  list-style: none;\n  padding-left: 20px;\n  margin: 0px;\n}\n\nul.first {\n  padding-left: 5px;\n}\n\nli.menu-depth-1 {\n  padding-left: 0;\n}\n\nli.menu-depth-2 {\n  padding-left: 20px;\n}\n\nli.menu-depth-3 {\n  padding-left: 40px;\n\n}\n\nli.menu-depth-4 {\n  padding-left: 60px;\n}\n\nli.menu-heading {\n  font-weight: bold;\n  font-size: 0.85em;\n}\n\nli.intervention button {\n  font-size: 0.75em;\n}\n\n.intervention-submenu {\n  font-size: 15.8px;\n  padding-top: 4px;\n  padding-bottom: 4px;\n}\n\n.intervention-outline-wrapper {\n  padding-bottom: 5px;\n}\n\n.nav-tabs {\n  width: 100%;\n}\n\nul.nav-tabs a.nav-link {\n  padding-left: 6px;\n  padding-right: 6px;\n  padding-top: 4px;\n  padding-bottom: 4px;\n}\n\n.intervention-btn {\n  text-align: left;\n}\n\n.checkbox-icon {\n  transform: translateY(4px);\n  font-size: medium;\n  margin-right: 4px;\n}\n\n.callout-icon {\n  margin-left: 10px;\n  font-size: medium;\n  transform: translateY(5px);\n}\n\n.chevron-icon {\n  transform: translateY(5px)\n}\n\n.timer-icon {\n  transform: translateY(8px)\n}\n\n.callout {\n  margin-left: 10px;\n  /* color: blue; */\n  font-size: 0.75em;\n  font-style: italic;\n  overflow: none;\n  text-overflow: ellipsis;\n}\n\n.callout.currentCallOut {\n  background-color: yellow;\n}\n\n.collapse {\n  height: 100%;\n}\n\n.card {\n  border: 0;\n  /* overflow-y: hidden; */\n}\n\n/* .card {\n  height: 100%;\n  overflow-y: hidden;\n} */\n\n/* .card-header {\n  margin-top: 5px;\n  padding-left: 5px;\n} */\n\n.card-body {\n  border: 0;\n  /* height: 110%; */\n  /* height: 100%; */\n  padding-top: 5px;\n  /* margin-bottom: 20px; */\n  padding-bottom: 10px;\n  /* overflow-y: scroll; */\n}\n\n.interventions-card {\n  height: -moz-fit-content;\n  height: fit-content;\n  border: 0;\n}\n\n.interventions-card-header {\n  background-color: white;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n\n.interventions-card-body {\n  height: calc(100% -53px);\n  /* height: fit-content; */\n  padding-left: 0;\n  padding-right: 0;\n  padding-top: 0;\n  padding-bottom: 0;\n  /* margin-bottom: 40px; */\n  overflow-y: scroll;\n}\n\n.checklist-card-header {\n  background-color: white;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n\n.interventions-performed-header {\n  background-color: white;\n  border: 0;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n\n.vert-tabs-container {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 20px;\n  overflow: hidden;\n}\n\n.prompt-list {\n  padding-left: 0;\n}\n\n.prompt-label {\n  color: #2980b9;\n  font-size: 0.9em;\n}\n\n.prompt-option {\n  font-size: 0.75em;\n  padding-right: 5px;\n}\n\ninput[type=radio].prompt-radio-btn {\n  margin-right: 5px;\n}\n\n.checkbox-group-options {\n  padding-left: 0;\n}\n\n.clear-radio-btn {\n  padding-top: 1px;\n  padding-bottom: 1px;\n  padding-left: 3px;\n  padding-right: 3px;\n}\n\n.vert-tabs .intv-cat-btn {\n  height: 100%;\n  width: 100%;\n  padding-top: 6px;\n  padding-bottom: 6px;\n  background-color: transparent;\n  border: 1px solid #abb2b9;\n  border-top-left-radius: 10px;\n  border-bottom-left-radius: 10px;\n  border-top-right-radius: 0px;\n  text-align: center;\n}\n\n.intv-cat-btn.active {\n  border: 1px solid black;\n  border-right: 0px;\n  background-color: blue;\n  color: white;\n}\n\nul.interventions-outline {\n  height: 100%;\n  /* margin-bottom: 40px !important; */\n  padding-left: 0;\n  overflow-y: scroll;\n}\n\n.hidden {\n  display: none;\n}\n\n.tab-content {\n  height: 100%;\n}\n\n.tab-pane {\n  overflow-y: auto;\n}\n\n.dev {\n  border: 1px dashed hotpink;\n}\n\n.hoverable.active {\n  filter: invert(57%) sepia(92%) saturate(4739%) hue-rotate(342deg) brightness(108%) contrast(101%);\n}\n\n.hoverable:hover {\n  filter: invert(78%) sepia(44%) saturate(1107%) hue-rotate(164deg) brightness(102%) contrast(97%);\n}\n\n/*\n.stick-figure-nav {\n  display: flex;\n  flex-flow: row;\n} */\n\n.depth-1 {\n  margin-left: 20px;\n}\n\n.depth-2 {\n  margin-left: 40px;\n}\n\n.depth-3 {\n  margin-left: 60px\n}\n\n.dropdown-menu {\n  transform: translateX(-80px);\n}\n\n.dropdown-item {\n  padding-top: 2px;\n  padding-bottom: 2px;\n}\n\n.dropdown-header {\n  font-weight:900;\n  font-size: 1.1rem;\n  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;\n  padding-top: 2px;\n  padding-bottom: 2px;\n  background-color: #545b62;\n  color: white;\n}\n\n.dropdown-depth-1 {\n  padding-left: 10px;\n}\n\n.dropdown-depth-2 {\n  padding-left: 30px;\n}\n\n.dropdown-depth-3 {\n  padding-left: 50px;\n}\n\n.dropdown-form {\n  padding-left: 40px;\n}\n", '', {"version":3,"sources":["/Users/user/Projects/monorepo/libs/observer-ui/src/styles.css"],"names":[],"mappings":"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","sourcesContent":["\n.container-fluid,\n.main {\n  width: 100%;\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  overflow: hidden;\n}\n\n.main-region {\n  height: 100%;\n  width: 100%;\n  padding-left: 0;\n  padding-right: 0;\n}\n\ntable {\n  font-size: 0.75em;\n}\n.request-btn {\n  font-size: 0.75em;\n}\n\n.confirm-intv {\n  margin-top: 10px;\n  font-size: 0.75em;\n}\n\n\n\n.row {\n  margin-left: 0;\n  width: 100%;\n  margin-right: 0;\n  overflow: hidden;\n}\n.wrapper-row {\n  height: 100%;\n  width: 100%;\n}\n\n.main-row {\n  height: calc(100% - 52px);\n}\n\n.col {\n  height: 100%;\n  padding-top: 5px;\n  padding-bottom: 5px;\n  padding: 15px;\n  overflow-y: hidden;\n  /* -webkit-overflow-scrolling: touch; */\n}\n\n/* nav.navbar {\n  margin-left: 0;\n  padding-left: 15px;\n  padding-top: 0;\n  padding-bottom: 0;\n  padding-right: 0;\n}\n\n.brand-wrapper {\n  padding: 0;\n}\n.brand {\n  color: #007bff;\n  font-size: 30px;\n  margin-right: 4px;\n  padding-right: 8px;\n}\n.mdb-title {\n  font-size: 24px;\n  padding-top: 11px;\n  padding-bottom: 5px;\n}\n.navbar-text {\n  margin-bottom: 0;\n}\n.nav button {\n  margin-left: 2px;\n  margin-right: 2px;\n}\n.navbar-btn {\n  text-transform: uppercase;\n  margin-top: 12px;\n  padding-top: 0;\n  padding-bottom: 0;\n  border: 0;\n  height: 25px;\n  margin-left: 7px !important;\n  margin-right: 7px !important;\n} */\n.time-remaining {\n  font-size: 24px;\n  padding-left: 8px;\n}\n\n.phase-nav-pane {\n  background-color: #666666ff;\n  height: 100%;\n  padding: 0;\n}\n\n.phase-nav {\n  padding-bottom: 8px;\n  /* padding-bottom: 0; */\n}\n.phase-nav.no-children {\n  padding-bottom: 0;\n}\n\n.phase-nav button {\n  width: 100%;\n  background-color: transparent;\n  text-align: left;\n  border: 0;\n  padding-top: 6px;\n  padding-bottom: 6px;\n  padding-left: 5px;\n  padding-right: 0 !important;\n  /* font-size: 1.1em; */\n  font-size: 15.8px;\n  font-weight: bold;\n  color: white;\n}\n\n.phase-label button {\n  color: white;\n  /* font-size: 1.1em; */\n  font-size: 15.8px;\n  line-height: 1.2em;\n  font-weight: bold;\n  padding-bottom: 0;\n  padding-right: 0 !important;\n  /* padding-top: 4px; */\n}\n\n.subphase-nav button {\n  color: white;\n  padding-top: 2.5px;\n  padding-bottom: 2.5px;\n  /* padding-left: 15px; */\n  font-size: 0.75em;\n  font-weight: 300;\n  text-transform: uppercase;\n}\n\n/*\n.phase-details {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 0;\n  overflow:hidden;\n} */\n\n.phase-container {\n  height: 100%;\n}\n\n.phase-row {\n  height: 100%;\n  overflow: hidden;\n}\n\n.phase-col {\n  height: 100%;\n  padding-left: 5px;\n  padding-right: 0;\n  overflow-y: hidden;\n}\n.left-col-contents {\n  height: 100%;\n  overflow-y: hidden;\n}\n\n\n.interventions-col {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  overflow-y: scroll;\n}\n\n.checklist-row {\n  min-height: 270px;\n  height: fit-content;\n  max-height: 640px;\n}\n/*\n.interventions-row {\n  height: 100%;\n  overflow-y: hidden;\n}\n.interventions-col {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n}\n*/\n\n.patient-status-row {\n  width: 100%;\n  height: fit-content;\n  overflow-y: hidden;\n}\n.patient-status-col {\n  height: 100%;\n  padding-left: 5px;\n  padding-right: 0;\n  overflow-y: scroll;\n}\nul.interventions-outline {\n  height: 100%;\n  overflow-y: scroll;\n}\n\n\nhr.minimal {\n  margin-top: 8px;\n  margin-bottom: 8px;\n  border-top-width: 2px;\n}\n\nul {\n  list-style: none;\n  padding-left: 20px;\n  margin: 0px;\n}\nul.first {\n  padding-left: 5px;\n}\n\n\nli.menu-depth-1 {\n  padding-left: 0;\n}\nli.menu-depth-2 {\n  padding-left: 20px;\n}\nli.menu-depth-3 {\n  padding-left: 40px;\n\n}\nli.menu-depth-4 {\n  padding-left: 60px;\n}\n\nli.menu-heading {\n  font-weight: bold;\n  font-size: 0.85em;\n}\nli.intervention button {\n  font-size: 0.75em;\n}\n\n.intervention-submenu {\n  font-size: 15.8px;\n  padding-top: 4px;\n  padding-bottom: 4px;\n}\n.intervention-outline-wrapper {\n  padding-bottom: 5px;\n}\n.nav-tabs {\n  width: 100%;\n}\n\nul.nav-tabs a.nav-link {\n  padding-left: 6px;\n  padding-right: 6px;\n  padding-top: 4px;\n  padding-bottom: 4px;\n}\n\n.intervention-btn {\n  text-align: left;\n}\n\n.checkbox-icon {\n  transform: translateY(4px);\n  font-size: medium;\n  margin-right: 4px;\n}\n.callout-icon {\n  margin-left: 10px;\n  font-size: medium;\n  transform: translateY(5px);\n}\n.chevron-icon {\n  transform: translateY(5px)\n}\n.timer-icon {\n  transform: translateY(8px)\n}\n\n.callout {\n  margin-left: 10px;\n  /* color: blue; */\n  font-size: 0.75em;\n  font-style: italic;\n  overflow: none;\n  text-overflow: ellipsis;\n}\n.callout.currentCallOut {\n  background-color: yellow;\n}\n\n\n.collapse {\n  height: 100%;\n}\n\n.card {\n  border: 0;\n  /* overflow-y: hidden; */\n}\n/* .card {\n  height: 100%;\n  overflow-y: hidden;\n} */\n/* .card-header {\n  margin-top: 5px;\n  padding-left: 5px;\n} */\n\n.card-body {\n  border: 0;\n  /* height: 110%; */\n  /* height: 100%; */\n  padding-top: 5px;\n  /* margin-bottom: 20px; */\n  padding-bottom: 10px;\n  /* overflow-y: scroll; */\n}\n\n.interventions-card {\n  height: fit-content;\n  border: 0;\n}\n.interventions-card-header {\n  background-color: white;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n.interventions-card-body {\n  height: calc(100% -53px);\n  /* height: fit-content; */\n  padding-left: 0;\n  padding-right: 0;\n  padding-top: 0;\n  padding-bottom: 0;\n  /* margin-bottom: 40px; */\n  overflow-y: scroll;\n}\n\n.checklist-card-header {\n  background-color: white;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n\n.interventions-performed-header {\n  background-color: white;\n  border: 0;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n.vert-tabs-container {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 20px;\n  overflow: hidden;\n}\n\n.prompt-list {\n  padding-left: 0;\n}\n.prompt-label {\n  color: #2980b9;\n  font-size: 0.9em;\n}\n.prompt-option {\n  font-size: 0.75em;\n  padding-right: 5px;\n}\ninput[type=radio].prompt-radio-btn {\n  margin-right: 5px;\n}\n.checkbox-group-options {\n  padding-left: 0;\n}\n.clear-radio-btn {\n  padding-top: 1px;\n  padding-bottom: 1px;\n  padding-left: 3px;\n  padding-right: 3px;\n}\n\n.vert-tabs .intv-cat-btn {\n  height: 100%;\n  width: 100%;\n  padding-top: 6px;\n  padding-bottom: 6px;\n  background-color: transparent;\n  border: 1px solid #abb2b9;\n  border-top-left-radius: 10px;\n  border-bottom-left-radius: 10px;\n  border-top-right-radius: 0px;\n  text-align: center;\n}\n\n.intv-cat-btn.active {\n  border: 1px solid black;\n  border-right: 0px;\n  background-color: blue;\n  color: white;\n}\n\nul.interventions-outline {\n  height: 100%;\n  /* margin-bottom: 40px !important; */\n  padding-left: 0;\n  overflow-y: scroll;\n}\n\n.hidden {\n  display: none;\n}\n\n.tab-content {\n  height: 100%;\n}\n\n.tab-pane {\n  overflow-y: auto;\n}\n\n\n.dev {\n  border: 1px dashed hotpink;\n}\n\n\n\n.hoverable.active {\n  filter: invert(57%) sepia(92%) saturate(4739%) hue-rotate(342deg) brightness(108%) contrast(101%);\n}\n\n.hoverable:hover {\n  filter: invert(78%) sepia(44%) saturate(1107%) hue-rotate(164deg) brightness(102%) contrast(97%);\n}\n/*\n.stick-figure-nav {\n  display: flex;\n  flex-flow: row;\n} */\n\n\n.depth-1 {\n  margin-left: 20px;\n}\n.depth-2 {\n  margin-left: 40px;\n}\n.depth-3 {\n  margin-left: 60px\n}\n\n.dropdown-menu {\n  transform: translateX(-80px);\n}\n.dropdown-item {\n  padding-top: 2px;\n  padding-bottom: 2px;\n}\n.dropdown-header {\n  font-weight:900;\n  font-size: 1.1rem;\n  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;\n  padding-top: 2px;\n  padding-bottom: 2px;\n  background-color: #545b62;\n  color: white;\n}\n.dropdown-depth-1 {\n  padding-left: 10px;\n}\n.dropdown-depth-2 {\n  padding-left: 30px;\n}\n\n.dropdown-depth-3 {\n  padding-left: 50px;\n}\n\n.dropdown-form {\n  padding-left: 40px;\n}\n"],"sourceRoot":""}]]
+module.exports = [[module.id, "\n.container-fluid,\n.main {\n  width: 100%;\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  overflow: hidden;\n}\n\n.main-region {\n  height: 100%;\n  width: 100%;\n  padding-left: 0;\n  padding-right: 0;\n}\n\ntable {\n  font-size: 0.75em;\n}\n\n.request-btn {\n  font-size: 0.75em;\n}\n\n.confirm-intv {\n  margin-top: 10px;\n  font-size: 0.75em;\n}\n\n.row {\n  margin-left: 0;\n  width: 100%;\n  margin-right: 0;\n  overflow: hidden;\n}\n\n.wrapper-row {\n  height: 100%;\n  width: 100%;\n}\n\n.main-row {\n  height: calc(100% - 52px);\n}\n\n.col {\n  height: 100%;\n  padding-top: 5px;\n  padding-bottom: 5px;\n  padding: 15px;\n  overflow-y: hidden;\n  /* -webkit-overflow-scrolling: touch; */\n}\n\n/* nav.navbar {\n  margin-left: 0;\n  padding-left: 15px;\n  padding-top: 0;\n  padding-bottom: 0;\n  padding-right: 0;\n}\n\n.brand-wrapper {\n  padding: 0;\n}\n.brand {\n  color: #007bff;\n  font-size: 30px;\n  margin-right: 4px;\n  padding-right: 8px;\n}\n.mdb-title {\n  font-size: 24px;\n  padding-top: 11px;\n  padding-bottom: 5px;\n}\n.navbar-text {\n  margin-bottom: 0;\n}\n.nav button {\n  margin-left: 2px;\n  margin-right: 2px;\n}\n.navbar-btn {\n  text-transform: uppercase;\n  margin-top: 12px;\n  padding-top: 0;\n  padding-bottom: 0;\n  border: 0;\n  height: 25px;\n  margin-left: 7px !important;\n  margin-right: 7px !important;\n} */\n\n.time-remaining {\n  font-size: 24px;\n  padding-left: 8px;\n}\n\n.phase-nav-pane {\n  background-color: #666666ff;\n  height: 100%;\n  padding: 0;\n}\n\n.phase-nav {\n  padding-bottom: 8px;\n  /* padding-bottom: 0; */\n}\n\n.phase-nav.no-children {\n  padding-bottom: 0;\n}\n\n.phase-nav button {\n  width: 100%;\n  background-color: transparent;\n  text-align: left;\n  border: 0;\n  padding-top: 6px;\n  padding-bottom: 6px;\n  padding-left: 5px;\n  padding-right: 0 !important;\n  /* font-size: 1.1em; */\n  font-size: 15.8px;\n  font-weight: bold;\n  color: white;\n}\n\n.phase-label button {\n  color: white;\n  /* font-size: 1.1em; */\n  font-size: 15.8px;\n  line-height: 1.2em;\n  font-weight: bold;\n  padding-bottom: 0;\n  padding-right: 0 !important;\n  /* padding-top: 4px; */\n}\n\n.subphase-nav button {\n  color: white;\n  padding-top: 2.5px;\n  padding-bottom: 2.5px;\n  /* padding-left: 15px; */\n  font-size: 0.75em;\n  font-weight: 300;\n  text-transform: uppercase;\n}\n\n/*\n.phase-details {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 0;\n  overflow:hidden;\n} */\n\n.phase-container {\n  height: 100%;\n}\n\n.phase-row {\n  height: 100%;\n  overflow: hidden;\n}\n\n.phase-col {\n  height: 100%;\n  padding-left: 5px;\n  padding-right: 0;\n  overflow-y: hidden;\n}\n\n.left-col-contents {\n  height: 100%;\n  overflow-y: hidden;\n}\n\n.interventions-col {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  overflow-y: scroll;\n}\n\n.checklist-row {\n  min-height: 270px;\n  height: -moz-fit-content;\n  height: fit-content;\n  max-height: 640px;\n}\n\n/*\n.interventions-row {\n  height: 100%;\n  overflow-y: hidden;\n}\n.interventions-col {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n}\n*/\n\n.patient-status-row {\n  width: 100%;\n  height: -moz-fit-content;\n  height: fit-content;\n  overflow-y: hidden;\n}\n\n.patient-status-col {\n  height: 100%;\n  padding-left: 5px;\n  padding-right: 0;\n  overflow-y: scroll;\n}\n\nul.interventions-outline {\n  height: 100%;\n  overflow-y: scroll;\n}\n\nhr.minimal {\n  margin-top: 8px;\n  margin-bottom: 8px;\n  border-top-width: 2px;\n}\n\nul {\n  list-style: none;\n  padding-left: 20px;\n  margin: 0px;\n}\n\nul.first {\n  padding-left: 5px;\n}\n\nli.menu-depth-1 {\n  padding-left: 0;\n}\n\nli.menu-depth-2 {\n  padding-left: 20px;\n}\n\nli.menu-depth-3 {\n  padding-left: 40px;\n\n}\n\nli.menu-depth-4 {\n  padding-left: 60px;\n}\n\nli.menu-heading {\n  font-weight: bold;\n  font-size: 0.85em;\n}\n\nli.intervention button {\n  font-size: 0.75em;\n}\n\n.intervention-submenu {\n  font-size: 15.8px;\n  padding-top: 4px;\n  padding-bottom: 4px;\n}\n\n.intervention-outline-wrapper {\n  padding-bottom: 5px;\n}\n\n.nav-tabs {\n  width: 100%;\n}\n\nul.nav-tabs a.nav-link {\n  padding-left: 6px;\n  padding-right: 6px;\n  padding-top: 4px;\n  padding-bottom: 4px;\n}\n\n.intervention-btn {\n  text-align: left;\n}\n\n.checkbox-icon {\n  transform: translateY(4px);\n  font-size: medium;\n  margin-right: 4px;\n}\n\n.callout-icon {\n  margin-left: 10px;\n  font-size: medium;\n  transform: translateY(5px);\n}\n\n.chevron-icon {\n  transform: translateY(5px)\n}\n\n.timer-icon {\n  transform: translateY(8px)\n}\n\n.callout {\n  margin-left: 10px;\n  /* color: blue; */\n  font-size: 0.75em;\n  font-style: italic;\n  overflow: none;\n  text-overflow: ellipsis;\n}\n\n.callout.currentCallOut {\n  background-color: yellow;\n}\n\n.collapse {\n  height: 100%;\n}\n\n.card {\n  border: 0;\n  /* overflow-y: hidden; */\n}\n\n/* .card {\n  height: 100%;\n  overflow-y: hidden;\n} */\n\n/* .card-header {\n  margin-top: 5px;\n  padding-left: 5px;\n} */\n\n.card-body {\n  border: 0;\n  /* height: 110%; */\n  /* height: 100%; */\n  padding-top: 5px;\n  /* margin-bottom: 20px; */\n  padding-bottom: 10px;\n  /* overflow-y: scroll; */\n}\n\n.interventions-card {\n  height: -moz-fit-content;\n  height: fit-content;\n  border: 0;\n}\n\n.interventions-card-header {\n  background-color: white;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n\n.interventions-card-body {\n  height: calc(100% -53px);\n  /* height: fit-content; */\n  padding-left: 0;\n  padding-right: 0;\n  padding-top: 0;\n  padding-bottom: 0;\n  /* margin-bottom: 40px; */\n  overflow-y: scroll;\n}\n\n.checklist-card-header {\n  background-color: white;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n\n.interventions-performed-header {\n  background-color: white;\n  border: 0;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n\n.vert-tabs-container {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 20px;\n  overflow: hidden;\n}\n\n.prompt-list {\n  padding-left: 0;\n}\n\n.prompt-label {\n  color: #2980b9;\n  font-size: 0.9em;\n}\n\n.prompt-option {\n  font-size: 0.75em;\n  padding-right: 5px;\n}\n\ninput[type=radio].prompt-radio-btn {\n  margin-right: 5px;\n}\n\n.checkbox-group-options {\n  padding-left: 0;\n}\n\n.clear-radio-btn {\n  padding-top: 1px;\n  padding-bottom: 1px;\n  padding-left: 3px;\n  padding-right: 3px;\n}\n\n.vert-tabs .intv-cat-btn {\n  height: 100%;\n  width: 100%;\n  padding-top: 6px;\n  padding-bottom: 6px;\n  background-color: transparent;\n  border: 1px solid #abb2b9;\n  border-top-left-radius: 10px;\n  border-bottom-left-radius: 10px;\n  border-top-right-radius: 0px;\n  text-align: center;\n}\n\n.intv-cat-btn.active {\n  border: 1px solid black;\n  border-right: 0px;\n  background-color: blue;\n  color: white;\n}\n\nul.interventions-outline {\n  height: 100%;\n  /* margin-bottom: 40px !important; */\n  padding-left: 0;\n  overflow-y: scroll;\n}\n\n.hidden {\n  display: none;\n}\n\n.tab-content {\n  height: 100%;\n}\n\n.tab-pane {\n  overflow-y: auto;\n}\n\n.dev {\n  border: 1px dashed hotpink;\n}\n\n.hoverable.active {\n  filter: invert(57%) sepia(92%) saturate(4739%) hue-rotate(342deg) brightness(108%) contrast(101%);\n}\n\n.hoverable:hover {\n  filter: invert(78%) sepia(44%) saturate(1107%) hue-rotate(164deg) brightness(102%) contrast(97%);\n}\n\n/*\n.stick-figure-nav {\n  display: flex;\n  flex-flow: row;\n} */\n\n.depth-1 {\n  margin-left: 20px;\n}\n\n.depth-2 {\n  margin-left: 40px;\n}\n\n.depth-3 {\n  margin-left: 60px\n}\n\n.dropdown-menu {\n  transform: translateX(-80px);\n}\n\n.dropdown-item {\n  padding-top: 2px;\n  padding-bottom: 2px;\n}\n\n.dropdown-header {\n  font-weight:900;\n  font-size: 1.1rem;\n  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;\n  padding-top: 2px;\n  padding-bottom: 2px;\n  background-color: #545b62;\n  color: white;\n}\n\n.dropdown-depth-1 {\n  padding-left: 10px;\n}\n\n.dropdown-depth-2 {\n  padding-left: 30px;\n}\n\n.dropdown-depth-3 {\n  padding-left: 50px;\n}\n\n.dropdown-form {\n  padding-left: 40px;\n}\n", '', {"version":3,"sources":["/Users/sts125/projects/monorepo/libs/observer-ui/src/styles.css"],"names":[],"mappings":"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","sourcesContent":["\n.container-fluid,\n.main {\n  width: 100%;\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  overflow: hidden;\n}\n\n.main-region {\n  height: 100%;\n  width: 100%;\n  padding-left: 0;\n  padding-right: 0;\n}\n\ntable {\n  font-size: 0.75em;\n}\n.request-btn {\n  font-size: 0.75em;\n}\n\n.confirm-intv {\n  margin-top: 10px;\n  font-size: 0.75em;\n}\n\n\n\n.row {\n  margin-left: 0;\n  width: 100%;\n  margin-right: 0;\n  overflow: hidden;\n}\n.wrapper-row {\n  height: 100%;\n  width: 100%;\n}\n\n.main-row {\n  height: calc(100% - 52px);\n}\n\n.col {\n  height: 100%;\n  padding-top: 5px;\n  padding-bottom: 5px;\n  padding: 15px;\n  overflow-y: hidden;\n  /* -webkit-overflow-scrolling: touch; */\n}\n\n/* nav.navbar {\n  margin-left: 0;\n  padding-left: 15px;\n  padding-top: 0;\n  padding-bottom: 0;\n  padding-right: 0;\n}\n\n.brand-wrapper {\n  padding: 0;\n}\n.brand {\n  color: #007bff;\n  font-size: 30px;\n  margin-right: 4px;\n  padding-right: 8px;\n}\n.mdb-title {\n  font-size: 24px;\n  padding-top: 11px;\n  padding-bottom: 5px;\n}\n.navbar-text {\n  margin-bottom: 0;\n}\n.nav button {\n  margin-left: 2px;\n  margin-right: 2px;\n}\n.navbar-btn {\n  text-transform: uppercase;\n  margin-top: 12px;\n  padding-top: 0;\n  padding-bottom: 0;\n  border: 0;\n  height: 25px;\n  margin-left: 7px !important;\n  margin-right: 7px !important;\n} */\n.time-remaining {\n  font-size: 24px;\n  padding-left: 8px;\n}\n\n.phase-nav-pane {\n  background-color: #666666ff;\n  height: 100%;\n  padding: 0;\n}\n\n.phase-nav {\n  padding-bottom: 8px;\n  /* padding-bottom: 0; */\n}\n.phase-nav.no-children {\n  padding-bottom: 0;\n}\n\n.phase-nav button {\n  width: 100%;\n  background-color: transparent;\n  text-align: left;\n  border: 0;\n  padding-top: 6px;\n  padding-bottom: 6px;\n  padding-left: 5px;\n  padding-right: 0 !important;\n  /* font-size: 1.1em; */\n  font-size: 15.8px;\n  font-weight: bold;\n  color: white;\n}\n\n.phase-label button {\n  color: white;\n  /* font-size: 1.1em; */\n  font-size: 15.8px;\n  line-height: 1.2em;\n  font-weight: bold;\n  padding-bottom: 0;\n  padding-right: 0 !important;\n  /* padding-top: 4px; */\n}\n\n.subphase-nav button {\n  color: white;\n  padding-top: 2.5px;\n  padding-bottom: 2.5px;\n  /* padding-left: 15px; */\n  font-size: 0.75em;\n  font-weight: 300;\n  text-transform: uppercase;\n}\n\n/*\n.phase-details {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 0;\n  overflow:hidden;\n} */\n\n.phase-container {\n  height: 100%;\n}\n\n.phase-row {\n  height: 100%;\n  overflow: hidden;\n}\n\n.phase-col {\n  height: 100%;\n  padding-left: 5px;\n  padding-right: 0;\n  overflow-y: hidden;\n}\n.left-col-contents {\n  height: 100%;\n  overflow-y: hidden;\n}\n\n\n.interventions-col {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  overflow-y: scroll;\n}\n\n.checklist-row {\n  min-height: 270px;\n  height: fit-content;\n  max-height: 640px;\n}\n/*\n.interventions-row {\n  height: 100%;\n  overflow-y: hidden;\n}\n.interventions-col {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n}\n*/\n\n.patient-status-row {\n  width: 100%;\n  height: fit-content;\n  overflow-y: hidden;\n}\n.patient-status-col {\n  height: 100%;\n  padding-left: 5px;\n  padding-right: 0;\n  overflow-y: scroll;\n}\nul.interventions-outline {\n  height: 100%;\n  overflow-y: scroll;\n}\n\n\nhr.minimal {\n  margin-top: 8px;\n  margin-bottom: 8px;\n  border-top-width: 2px;\n}\n\nul {\n  list-style: none;\n  padding-left: 20px;\n  margin: 0px;\n}\nul.first {\n  padding-left: 5px;\n}\n\n\nli.menu-depth-1 {\n  padding-left: 0;\n}\nli.menu-depth-2 {\n  padding-left: 20px;\n}\nli.menu-depth-3 {\n  padding-left: 40px;\n\n}\nli.menu-depth-4 {\n  padding-left: 60px;\n}\n\nli.menu-heading {\n  font-weight: bold;\n  font-size: 0.85em;\n}\nli.intervention button {\n  font-size: 0.75em;\n}\n\n.intervention-submenu {\n  font-size: 15.8px;\n  padding-top: 4px;\n  padding-bottom: 4px;\n}\n.intervention-outline-wrapper {\n  padding-bottom: 5px;\n}\n.nav-tabs {\n  width: 100%;\n}\n\nul.nav-tabs a.nav-link {\n  padding-left: 6px;\n  padding-right: 6px;\n  padding-top: 4px;\n  padding-bottom: 4px;\n}\n\n.intervention-btn {\n  text-align: left;\n}\n\n.checkbox-icon {\n  transform: translateY(4px);\n  font-size: medium;\n  margin-right: 4px;\n}\n.callout-icon {\n  margin-left: 10px;\n  font-size: medium;\n  transform: translateY(5px);\n}\n.chevron-icon {\n  transform: translateY(5px)\n}\n.timer-icon {\n  transform: translateY(8px)\n}\n\n.callout {\n  margin-left: 10px;\n  /* color: blue; */\n  font-size: 0.75em;\n  font-style: italic;\n  overflow: none;\n  text-overflow: ellipsis;\n}\n.callout.currentCallOut {\n  background-color: yellow;\n}\n\n\n.collapse {\n  height: 100%;\n}\n\n.card {\n  border: 0;\n  /* overflow-y: hidden; */\n}\n/* .card {\n  height: 100%;\n  overflow-y: hidden;\n} */\n/* .card-header {\n  margin-top: 5px;\n  padding-left: 5px;\n} */\n\n.card-body {\n  border: 0;\n  /* height: 110%; */\n  /* height: 100%; */\n  padding-top: 5px;\n  /* margin-bottom: 20px; */\n  padding-bottom: 10px;\n  /* overflow-y: scroll; */\n}\n\n.interventions-card {\n  height: fit-content;\n  border: 0;\n}\n.interventions-card-header {\n  background-color: white;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n.interventions-card-body {\n  height: calc(100% -53px);\n  /* height: fit-content; */\n  padding-left: 0;\n  padding-right: 0;\n  padding-top: 0;\n  padding-bottom: 0;\n  /* margin-bottom: 40px; */\n  overflow-y: scroll;\n}\n\n.checklist-card-header {\n  background-color: white;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n\n.interventions-performed-header {\n  background-color: white;\n  border: 0;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n.vert-tabs-container {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 20px;\n  overflow: hidden;\n}\n\n.prompt-list {\n  padding-left: 0;\n}\n.prompt-label {\n  color: #2980b9;\n  font-size: 0.9em;\n}\n.prompt-option {\n  font-size: 0.75em;\n  padding-right: 5px;\n}\ninput[type=radio].prompt-radio-btn {\n  margin-right: 5px;\n}\n.checkbox-group-options {\n  padding-left: 0;\n}\n.clear-radio-btn {\n  padding-top: 1px;\n  padding-bottom: 1px;\n  padding-left: 3px;\n  padding-right: 3px;\n}\n\n.vert-tabs .intv-cat-btn {\n  height: 100%;\n  width: 100%;\n  padding-top: 6px;\n  padding-bottom: 6px;\n  background-color: transparent;\n  border: 1px solid #abb2b9;\n  border-top-left-radius: 10px;\n  border-bottom-left-radius: 10px;\n  border-top-right-radius: 0px;\n  text-align: center;\n}\n\n.intv-cat-btn.active {\n  border: 1px solid black;\n  border-right: 0px;\n  background-color: blue;\n  color: white;\n}\n\nul.interventions-outline {\n  height: 100%;\n  /* margin-bottom: 40px !important; */\n  padding-left: 0;\n  overflow-y: scroll;\n}\n\n.hidden {\n  display: none;\n}\n\n.tab-content {\n  height: 100%;\n}\n\n.tab-pane {\n  overflow-y: auto;\n}\n\n\n.dev {\n  border: 1px dashed hotpink;\n}\n\n\n\n.hoverable.active {\n  filter: invert(57%) sepia(92%) saturate(4739%) hue-rotate(342deg) brightness(108%) contrast(101%);\n}\n\n.hoverable:hover {\n  filter: invert(78%) sepia(44%) saturate(1107%) hue-rotate(164deg) brightness(102%) contrast(97%);\n}\n/*\n.stick-figure-nav {\n  display: flex;\n  flex-flow: row;\n} */\n\n\n.depth-1 {\n  margin-left: 20px;\n}\n.depth-2 {\n  margin-left: 40px;\n}\n.depth-3 {\n  margin-left: 60px\n}\n\n.dropdown-menu {\n  transform: translateX(-80px);\n}\n.dropdown-item {\n  padding-top: 2px;\n  padding-bottom: 2px;\n}\n.dropdown-header {\n  font-weight:900;\n  font-size: 1.1rem;\n  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;\n  padding-top: 2px;\n  padding-bottom: 2px;\n  background-color: #545b62;\n  color: white;\n}\n.dropdown-depth-1 {\n  padding-left: 10px;\n}\n.dropdown-depth-2 {\n  padding-left: 30px;\n}\n\n.dropdown-depth-3 {\n  padding-left: 50px;\n}\n\n.dropdown-form {\n  padding-left: 40px;\n}\n"],"sourceRoot":""}]]
 
 /***/ }),
 
